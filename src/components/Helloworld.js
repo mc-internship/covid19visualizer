@@ -13,7 +13,7 @@ class Hello extends Component{
     componentDidMount() {
         fetch('localhost:8000/api/helloworld')
           .then(response => response.json())
-          .then(data => this.setState({ data }));
+          .then(data => this.setState({ data : data.hello }));
     }
 
     
