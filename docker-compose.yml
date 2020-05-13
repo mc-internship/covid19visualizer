@@ -8,11 +8,12 @@ services:
     working_dir: /backend/
     command: sh entrypoint.sh
   frontend:
-    image: node:14
+    build: ./frontend
     command: sh entrypoint.sh
     working_dir: /frontend
     volumes:
       - ./frontend/:/frontend
+    stdin_open: true
   nginx:
     image: nginx:latest
     ports:
