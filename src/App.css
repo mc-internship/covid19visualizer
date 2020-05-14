@@ -1,4 +1,80 @@
-.App {
+.row-header{
+  margin:0px auto;
+  padding:0px auto;
+
+}
+
+.row-content {
+  margin:0px auto;
+  padding: 0px 0px 0px 0px;
+  border-bottom: 1px ridge;
+
+
+}
+
+.footer{
+  background-color:#4d004d;
+  color: whitesmoke;
+  margin:0px auto;
+  padding: 5px 0px 5px 0px;
+  position:absolute;
+  left:0;
+  bottom:0;
+  right:0;
+}
+.jumbotron {
+  padding:15px 2px 15px 2px;
+  margin:0px auto;
+  background: #4d004d;
+  color:floralwhite;
+  border-radius: 0 !important;
+}
+
+
+.navbar-dark {
+  background-color:black;
+  
+
+}
+
+.heading{
+  color:orange;
+}
+
+.body { 
+  background: navy !important; 
+}
+
+.card{
+  color: black;
+  width: 20%;
+  align-items: center;
+  display: inline-block;
+  background-color:#00b3b3;
+  text-decoration: none;
+  
+}
+
+.col-stats{
+  display: inline-block;
+  text-align: center;
+
+}
+
+.countrycard{
+  display: block;
+  margin-left:auto; margin-right:0;
+  text-align: center;
+  padding: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+
+
+
+
+/*.App {
   text-align: center;
 }
 
@@ -35,4 +111,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+}*/
