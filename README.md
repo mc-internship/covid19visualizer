@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/mc-internship/covid19visualizer.svg?branch=master)](https://travis-ci.com/mc-internship/covid19visualizer)
+
 # covid19visualizer
 This contains our project for MasterCard 2020 summer tech internship.
 
