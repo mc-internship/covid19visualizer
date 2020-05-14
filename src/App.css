@@ -47,9 +47,12 @@
 
 .card{
   color: black;
-  width: 10%;
+  width: 20%;
   align-items: center;
   display: inline-block;
+  background-color:#00b3b3;
+  text-decoration: none;
+  
 }
 
 .col-stats{
@@ -57,6 +60,17 @@
   text-align: center;
 
 }
+
+.countrycard{
+  display: block;
+  margin-left:auto; margin-right:0;
+  text-align: center;
+  padding: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+
 
 
 

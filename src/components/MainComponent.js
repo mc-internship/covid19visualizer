@@ -5,30 +5,23 @@ import Impact from './ImpactComponent';
 import Timeline from './TimelineComponent';
 import Demographics from './DemographicsComponent';
 import Footer from './FooterComponent';
+import India from './IndiaComponent';
+import Usa from './UsaComponent';
+import Germany from './GermanyComponent';
+import Italy from './ItalyComponent';
+import Singapore from './SingComponent';
 import { Switch, Route, Redirect, withRouter } from 'react-router-dom';
-import CountryDetail from './CountryDetailComponent';
-import { COUNTRIES } from '../shared/countries';
+
 
 class Main extends Component {
 
     constructor(props){
       super(props);
 
-      this.state = {
-        countries: COUNTRIES,
-      };
+      
   }
  
     render(){
-
-
-      const CountryWithId = ({match}) => {
-        return(
-          <CountryDetail country={this.state.countries.filter((country) => country.id === parseInt(match.params.countryId, 10 ))[0]}
-           
-            />
-        );
-      }
   
 
         return (
@@ -36,11 +29,15 @@ class Main extends Component {
               <Header />
               
               <Switch>
-                <Route exact path = "/home" component = {() => <Home countries = {this.props.countries}/>} />
-                <Route path = "/home/:countryId" component = {CountryWithId} />
+                <Route exact path = "/home" component = {Home} />
                 <Route exact path='/timeline' component={Timeline} />
                 <Route exact path = "/demographics" component = {Demographics} />
                 <Route exact path = "/impact" component = {Impact} />
+                <Route exact path = "/home/india" component = {India}/>
+                <Route exact path = "/home/usa" component = {Usa}/>
+                <Route exact path = "/home/germany" component = {Germany}/>
+                <Route exact path = "/home/italy" component = {Italy}/>
+                <Route exact path = "/home/singapore" component = {Singapore}/>
                 <Redirect to = "/home"/>
               </Switch>
               
