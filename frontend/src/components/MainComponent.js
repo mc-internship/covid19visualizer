@@ -10,16 +10,13 @@ import Usa from './UsaComponent';
 import Germany from './GermanyComponent';
 import Italy from './ItalyComponent';
 import Singapore from './SingComponent';
-import { Switch, Route, Redirect, withRouter } from 'react-router-dom';
+import { Switch, Route, Redirect } from 'react-router-dom';
 
 
 class Main extends Component {
 
-    constructor(props){
-      super(props);
-
       
-  }
+  
  
     render(){
   
