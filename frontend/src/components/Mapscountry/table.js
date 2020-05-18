@@ -5,9 +5,8 @@ import {capitalize, abbreviate} from '../../utils/commonfunctions.js';
 
 import classnames from 'classnames';
 import equal from 'fast-deep-equal';
-import React, {useState, useMemo, useCallback} from 'react';
+import React, {useState,  useCallback} from 'react';
 import {useTranslation} from 'react-i18next';
-import {Link} from 'react-router-dom';
 import ReactTooltip from 'react-tooltip';
 import {createBreakpoint, useLocalStorage, useEffectOnce} from 'react-use';
 

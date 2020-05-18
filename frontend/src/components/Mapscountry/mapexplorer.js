@@ -13,7 +13,6 @@ import {
 import equal from 'fast-deep-equal';
 import React, {useState, useEffect, useMemo, useCallback} from 'react';
 import ReactDOM from 'react-dom';
-import * as Icon from 'react-feather';
 import {useTranslation} from 'react-i18next';
 
 const isEqual = (prevProps, currProps) => {
