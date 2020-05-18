@@ -14,7 +14,6 @@ function IndiaStats(props) {
 
   const [fetched, setFetched] = useState(false);
   const [timeseries, setTimeseries] = useState([]);
-  const [rawData, setRawData] = useState([]);
   const [statesTimeSeries, setStatesTimeSeries] = useState([]);
 
   useEffect(() => {
@@ -27,7 +26,6 @@ function IndiaStats(props) {
     try {
       const [
         response,
-        rawDataResponse,
         stateDailyResponse,
       ] = await Promise.all([
         axios.get('https://api.covid19india.org/data.json'),

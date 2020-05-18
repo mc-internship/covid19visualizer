@@ -2,10 +2,10 @@ import {
     defaultOptions,
     xAxisDefaults,
     yAxisDefaults,
-    formatNumber,
+
   } from './chart-defaults';
   
-import {format, parse} from 'date-fns';
+import { parse} from 'date-fns';
 import deepmerge from 'deepmerge';
 import React from 'react';
 import {Line} from 'react-chartjs-2';

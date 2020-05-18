@@ -17,7 +17,7 @@ import 'intersection-observer';
 import axios from 'axios';
 import React, {useState, useCallback/*, useMemo*/} from 'react';
 /*import * as Icon from 'react-feather';*/
-import {useEffectOnce, useLocalStorage} from 'react-use';
+import {useEffectOnce} from 'react-use';
 import HeadBarAbove from './HeadBarAbove';
 
 function Home(props) {
@@ -38,10 +38,10 @@ function Home(props) {
     false
   );*/
 
-  const [lastViewedLog, setLastViewedLog] = useLocalStorage(
+  /*const [lastViewedLog, setLastViewedLog] = useLocalStorage(
     'lastViewedLog',
     null
-  );
+  );*/
  /* const [newUpdate, setNewUpdate] = useLocalStorage('newUpdate', false);
 
   const Bell = useMemo(

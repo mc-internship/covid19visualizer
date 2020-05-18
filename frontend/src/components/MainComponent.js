@@ -11,17 +11,12 @@ import Germany from './GermanyComponent';
 import Italy from './ItalyComponent';
 import Singapore from './SingComponent';
 import { Switch, Route, Redirect } from 'react-router-dom';
-import IndiaStats from './timeline/india';
-import UsaStats from './timeline/usa';
+
 
 
 class Main extends Component {
-
-    constructor(props){
-      super(props);
-
-      
-  }
+   
+  
  
     render(){
   

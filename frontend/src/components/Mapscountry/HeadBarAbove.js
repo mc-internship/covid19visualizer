@@ -67,7 +67,7 @@ import {
     });
     const currentMapMeta = MAP_META[currentMap.name];
   
-    const [statistic, currentMapData] = useMemo(() => {
+    const [currentMapData] = useMemo(() => {
       let currentMapData = {};
       let statistic = {};
       
@@ -125,7 +125,6 @@ import {
       currentMap.stat,
       currentMapMeta.mapType,
       districts,
-      zones,
       states,
     ]);
   

@@ -1,18 +1,15 @@
 import {STATE_ROW_STATISTICS, DISTRICT_ROW_STATISTICS} from '../../constants.js';
 import {
-  formatDate,
   formatNumber,
   capitalize,
   abbreviate,
 } from '../../utils/commonfunctions.js';
 
 import classnames from 'classnames';
-import {formatDistance} from 'date-fns';
 import equal from 'fast-deep-equal';
 import React, {useState, useCallback, useMemo} from 'react';
 import * as Icon from 'react-feather';
 import {useTranslation} from 'react-i18next';
-import {useHistory} from 'react-router-dom';
 import ReactTooltip from 'react-tooltip';
 import {createBreakpoint, useLocalStorage, useEffectOnce} from 'react-use';
 
@@ -181,7 +178,6 @@ function Row({
     isAscending: false,
   });
 
-  const history = useHistory();
   const {t} = useTranslation();
 
   const Chevron = useMemo(
