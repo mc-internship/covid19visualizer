@@ -6,6 +6,8 @@ services:
     volumes:
       - ./backend/:/backend # maps host diretory to internal container directory
     working_dir: /backend/
+    environment:
+      - DJANGO_SETTINGS_MODULE=backend.settings.development
     command: sh entrypoint.sh
   frontend:
     build: ./frontend
