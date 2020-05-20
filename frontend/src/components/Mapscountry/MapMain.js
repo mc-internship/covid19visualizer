@@ -9,8 +9,7 @@ import {
 } from '../../constants.js';
 
 import equal from 'fast-deep-equal';
-import React, {useState, useEffect, useMemo, useCallback} from 'react';
-import ReactDOM from 'react-dom';
+import React, {useState, useEffect, useMemo} from 'react';
 
 const isEqual = (prevProps, currProps) => {
   if (!equal(prevProps.regionHighlighted, currProps.regionHighlighted)) {

@@ -1,4 +1,4 @@
-import legend from './Legend';
+import legend from './Legend.js';
 
 import {MAP_META, MAP_STATISTICS, MAP_TYPES, MAP_VIEWS} from '../../constants.js';
 import {capitalizeAll, formatNumber} from '../../shared/UtilFunctions.js';
