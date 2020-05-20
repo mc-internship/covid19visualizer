@@ -1,5 +1,5 @@
 {
-  "name": "dashboard",
+  "name": "frontend",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -24,20 +24,21 @@
     "react-helmet": "^6.0.0",
     "react-i18next": "^11.4.0",
     "react-popper": "0.9.2",
-    "react-redux": "5.0.7",
-    "react-router-dom": "^5.1.2",
+    "react-redux": "7.2.0",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
     "react-tooltip": "^4.2.6",
     "react-use": "^14.2.0",
-    "reactstrap": "5.0.0",
-    "redux": "3.7.2",
+    "reactstrap": "8.4.1",
+    "redux": "4.0.5",
     "topojson": "^3.0.2",
-    "topojson-client": "^3.1.0"
+    "topojson-client": "^3.1.0",
+    "popper.js": "^1.16.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
   "browserslist": [
@@ -47,8 +48,8 @@
     "not op_mini all"
   ],
   "engines":{
-    "node": "14.2.0",
-    "npm": "6.14.4"
+    "node": "14.3.0",
+    "npm": "6.14.5"
   },
   "eslintConfig": {
     "extends": "react-app"
