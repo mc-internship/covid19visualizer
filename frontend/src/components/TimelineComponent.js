@@ -1,9 +1,9 @@
 import React from "react";
-import IndiaStats from './timeline/india';
-import UsaStats from './timeline/usa';
-import ItalyStats from './timeline/italy';
-import GermanyStats from './timeline/germany';
-import SingStats from './timeline/sing';
+import IndiaStats from './TrendCharts/IndiaTrends';
+import UsaStats from './TrendCharts/UsaTrends';
+import ItalyStats from './TrendCharts/ItalyTrends';
+import GermanyStats from './TrendCharts/GermanyTrends';
+import SingStats from './TrendCharts/SingTrends';
 
 
 function Timeline(props) {
@@ -13,8 +13,8 @@ function Timeline(props) {
       
 
 <div>
-<ul class="nav flex-column nav-pills ">
-  <li class="nav-item">
+<ul class="nav flex-column nav-pills orange">
+  <li class="nav-item ">
     <a class="nav-link active" href="#indiat">India</a>
   </li>
   <li class="nav-item">

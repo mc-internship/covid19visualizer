@@ -3,13 +3,12 @@ import {
   formatNumber,
   capitalize,
   abbreviate,
-} from '../../utils/commonfunctions.js';
+} from '../../shared/UtilFunctions.js';
 
 import classnames from 'classnames';
 import equal from 'fast-deep-equal';
 import React, {useState, useCallback, useMemo} from 'react';
 import * as Icon from 'react-feather';
-import {useTranslation} from 'react-i18next';
 import ReactTooltip from 'react-tooltip';
 import {createBreakpoint, useLocalStorage, useEffectOnce} from 'react-use';
 
@@ -33,8 +32,6 @@ function StateCell({state, statistic}) {
 
 function DistrictHeaderCell({handleSort, statistic, sortData}) {
   const breakpoint = useBreakpoint();
-  const {t} = useTranslation();
-
   return (
     <td onClick={() => handleSort(statistic)}>
       <div className="heading-content">
@@ -48,7 +45,7 @@ function DistrictHeaderCell({handleSort, statistic, sortData}) {
             ? capitalize(
                 abbreviate(statistic === 'deaths' ? 'deceased' : statistic)
               )
-            : t(capitalize(statistic === 'deaths' ? 'deceased' : statistic))}
+            : capitalize(statistic === 'deaths' ? 'deceased' : statistic)}
         </abbr>
         <div
           style={{
@@ -94,12 +91,10 @@ function PureDistrictRow({
   regionHighlighted,
   district,
   state,
-  /*zone,*/
   onHighlightDistrict,
   sortedDistricts,
   districts,
 }) {
-  const {t} = useTranslation();
 
   return (
     <tr
@@ -109,10 +104,10 @@ function PureDistrictRow({
       })}
       onMouseEnter={() => onHighlightDistrict(district, state)}
     >
-      <td /*className={classnames(`is-${zone?.zone}`)}*/>
+      <td>
         <div className="title-chevron">
           <span className="title-icon">
-            {t(district)}
+            {district}
             <span
               data-for="district"
               data-tip={[[sortedDistricts[district].notes]]}
@@ -120,7 +115,7 @@ function PureDistrictRow({
               data-event-off="mouseleave"
               onClick={(e) => e.stopPropagation()}
             >
-              {sortedDistricts[district].notes && <Icon.Info />}
+              {sortedDistricts[district].notes }
             </span>
           </span>
         </div>
@@ -166,7 +161,6 @@ function Row({
   index,
   state,
   districts,
-  /*zones,*/
   regionHighlighted,
   onHighlightState,
   onHighlightDistrict,
@@ -177,8 +171,6 @@ function Row({
     sortColumn: 'confirmed',
     isAscending: false,
   });
-
-  const {t} = useTranslation();
 
   const Chevron = useMemo(
     () => (
@@ -252,7 +244,6 @@ function Row({
           'state',
           {'is-total': state.statecode === 'TT'},
           {'is-highlighted': regionHighlighted?.state === state.state},
-          {'is-odd': index % 2 === 0}
         )}
         onMouseEnter={() => _onHighlightState(state)}
         onClick={
@@ -267,16 +258,7 @@ function Row({
           <div className="title-chevron">
             {state.statecode !== 'TT' && Chevron}
             <span className="title-icon">
-              {t(state.state)}
-
-              <span
-                data-tip={[t(`${state.statenotes}`)]}
-                data-event="touchstart mouseover"
-                data-event-off="mouseleave"
-                onClick={(e) => e.stopPropagation()}
-              >
-                {state.statenotes && <Icon.Info />}
-              </span>
+              {state.state}
             </span>
           </div>
         </td>
@@ -288,44 +270,10 @@ function Row({
 
       {showDistricts && (
         <React.Fragment>
-          <tr className="is-spacer">
-            <td colSpan={5}>
-              <p />
-            </td>
-          </tr>
-
-          {/*<tr className={'state-last-update'}>
-            <td colSpan={3} style={{paddingBottom: 0}}>
-              <p className="spacer"></p>
-              <p>
-                {isNaN(Date.parse(formatDate(state.lastupdatedtime)))
-                  ? ''
-                  : `${t('Last updated')} ${formatDistance(
-                      new Date(formatDate(state.lastupdatedtime)),
-                      new Date()
-                    )} ${t('ago')}`}
-              </p>
-              {sortedDistricts?.Unknown && (
-                <div className="disclaimer">
-                  <Icon.AlertCircle />
-                  {t('District-wise numbers are under reconciliation')}
-                </div>
-              )}
-            </td>
-            <td
-              align="center"
-              className="state-page-link"
-              colSpan={2}
-              onClick={() => {
-                history.push(`state/${state.statecode}`);
-              }}
-            >{`View ${t(state.state)}'s Page`}</td>
-            </tr>*/}
-
           <tr className={classnames('district-heading')}>
             <td onClick={() => handleSort('district')}>
               <div className="heading-content">
-                <abbr title="District">{t('District')}</abbr>
+                <abbr title="District">{'District'}</abbr>
                 <div
                   style={{
                     display:
@@ -360,7 +308,6 @@ function Row({
             state={state}
             district={district}
             districts={districts}
-            /*zone={zones[district]}*/
             sortedDistricts={sortedDistricts}
             regionHighlighted={regionHighlighted}
             onHighlightDistrict={onHighlightDistrict}
@@ -369,7 +316,7 @@ function Row({
 
       {showDistricts && (
         <tr className="is-spacer">
-          <td colSpan={5}>
+          <td>
             <p />
             <ReactTooltip
               id="district"

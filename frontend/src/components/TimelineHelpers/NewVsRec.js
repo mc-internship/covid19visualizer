@@ -2,7 +2,7 @@ import {
     defaultOptions,
     xAxisDefaults,
     yAxisDefaults,
-  } from './chart-defaults';
+  } from './ChartUtils';
   
 import { parse} from 'date-fns';
 import deepmerge from 'deepmerge';

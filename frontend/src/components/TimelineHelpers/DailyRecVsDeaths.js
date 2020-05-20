@@ -3,19 +3,17 @@ import {
     xAxisDefaults,
     yAxisDefaults,
 
-  } from './chart-defaults';
+  } from './ChartUtils';
   
 import { parse} from 'date-fns';
 import deepmerge from 'deepmerge';
 import React from 'react';
 import {Line} from 'react-chartjs-2';
 
-function ActiveVsRecChart(props) {
+function RecVsDeathChart(props) {
     const dates = [];
-    const confirmed = [];
     const recovered = [];
     const deceased = [];
-    const active = [];
 
         
     if (!props.timeseries || props.timeseries.length === 0) {
@@ -26,10 +24,8 @@ function ActiveVsRecChart(props) {
     if (index >= 31) {
         const date = parse(data.date, 'dd MMMM', new Date(2020, 0, 1));
         dates.push(date);
-        confirmed.push(data.dailyconfirmed);
         recovered.push(data.dailyrecovered);
         deceased.push(data.dailydeceased);
-        active.push(data.dailyconfirmed - data.dailyrecovered -data.dailydeceased);
         }
     });
 
@@ -47,11 +43,11 @@ function ActiveVsRecChart(props) {
         },
         {
         borderWidth: 2,
-        data: active,
+        data: deceased,
         borderCapStyle: 'round',
-        pointBackgroundColor: '#00ccff',
-        label: 'Active',
-        borderColor: '#00ccff',
+        pointBackgroundColor: '#6c757d',
+        label: 'Deceased',
+        borderColor: '#6c757d',
         pointHoverRadius: 4,
         },
     ],
@@ -135,5 +131,5 @@ function ActiveVsRecChart(props) {
     );
     }
 
-export default ActiveVsRecChart;
+export default RecVsDeathChart;
 

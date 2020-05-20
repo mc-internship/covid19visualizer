@@ -1,5 +1,5 @@
 import React from 'react';
-import Home from './Mapscountry/home.js'
+import Home from './Mapscountry/MainView.js'
 
 function India(props) {
   return(  

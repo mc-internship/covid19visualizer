@@ -3,7 +3,7 @@ import {
     xAxisDefaults,
     yAxisDefaults,
     formatNumber,
-  } from './chart-defaults';
+  } from './ChartUtils';
   
   import {format, parse} from 'date-fns';
   import deepmerge from 'deepmerge';
