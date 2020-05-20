@@ -1,9 +1,9 @@
 import React from "react";
-import IndiaDemo from './demographics/india';
-import UsaDemo from './demographics/usa';
-import ItalyDemo from './demographics/italy';
-import GermanyDemo from './demographics/germany';
-import SingDemo from './demographics/sing';
+import IndiaDemo from './DemographicsElements/IndiaDem';
+import UsaDemo from './DemographicsElements/UsaDem';
+import ItalyDemo from './DemographicsElements/ItalyDem';
+import GermanyDemo from './DemographicsElements/GermanyDem';
+import SingDemo from './DemographicsElements/SingDem';
 
 function Demographics(props) {
     return(

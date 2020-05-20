@@ -1,6 +1,6 @@
-import {defaultOptions, xAxisDefaults, yAxisDefaults} from './chart-defaults';
+import {defaultOptions, xAxisDefaults, yAxisDefaults} from './ChartUtils';
 
-import {getStateName} from '../../utils/commonfunctions';
+import {getStateName} from '../../shared/UtilFunctions.js';
 
 import {parse} from 'date-fns';
 import deepmerge from 'deepmerge';
@@ -172,7 +172,7 @@ function AllStatesChart(props) {
         <Line data={dataset} options={options} ref={chartReference} />
       </div>
       <div className="chart-note" style={{marginTop: '0px', height: '30px'}}>
-        <button onClick={toggleSelection}>Toggle Selection</button>
+        <button onClick={toggleSelection}>Select State</button>
       </div>
     </div>
   );

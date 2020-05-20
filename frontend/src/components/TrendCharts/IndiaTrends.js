@@ -1,10 +1,10 @@
 import React, {useState, useEffect} from 'react';
-import AllStatesChart from '../Charts/allstates';
-import DailyConfirmedChart from '../Charts/dailyconfirmedchart';
-import TotalConfirmedChart from '../Charts/totalconfirmedchart';
-import NewVsRecChart from '../Charts/newvsrec';
-import RecVsDeathChart from '../Charts/dailyrecvsdeaths';
-import ActiveVsRecChart from '../Charts/activevsrec';
+import AllStatesChart from '../TimelineHelpers/StatesChart';
+import DailyConfirmedChart from '../TimelineHelpers/DailyCases';
+import TotalConfirmedChart from '../TimelineHelpers/TotalCases';
+import NewVsRecChart from '../TimelineHelpers/NewVsRec';
+import RecVsDeathChart from '../TimelineHelpers/DailyRecVsDeaths';
+import ActiveVsRecChart from '../TimelineHelpers/ActiveVsRec';
 
 import axios from 'axios';
 import {Helmet} from 'react-helmet';
@@ -14,6 +14,7 @@ function IndiaStats(props) {
 
   const [fetched, setFetched] = useState(false);
   const [timeseries, setTimeseries] = useState([]);
+  const [rawData, setRawData] = useState([]);
   const [statesTimeSeries, setStatesTimeSeries] = useState([]);
 
   useEffect(() => {
@@ -26,6 +27,7 @@ function IndiaStats(props) {
     try {
       const [
         response,
+        rawDataResponse,
         stateDailyResponse,
       ] = await Promise.all([
         axios.get('https://api.covid19india.org/data.json'),

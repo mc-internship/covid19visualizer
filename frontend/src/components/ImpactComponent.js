@@ -1,9 +1,9 @@
 import React from "react";
-import IndiaIm from './impact/india';
-import UsaIm from './impact/usa';
-import ItalyIm from './impact/italy';
-import GermanyIm from './impact/germany';
-import SingIm from './impact/sing';
+import IndiaIm from './ImpactElements/IndiaImp';
+import UsaIm from './ImpactElements/UsaImp';
+import ItalyIm from './ImpactElements/ItalyImp';
+import GermanyIm from './ImpactElements/GermanyImp';
+import SingIm from './ImpactElements/SingImp';
 
 
 function Impact(props) {

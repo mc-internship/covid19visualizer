@@ -1,4 +1,4 @@
-import {defaultOptions, xAxisDefaults, yAxisDefaults} from './chart-defaults';
+import {defaultOptions, xAxisDefaults, yAxisDefaults} from './ChartUtils';
 
 import {parse} from 'date-fns';
 import deepmerge from 'deepmerge';
