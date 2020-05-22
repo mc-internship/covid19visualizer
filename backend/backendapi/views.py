@@ -9,9 +9,11 @@ from rest_framework.response import Response
 from rest_framework import status
 from . models import Coviddata
 from . models import RegionsHierarchy
+from . models import Industrydata
 from . serializers import CoviddataSerializer
 from . serializers import RegionsHierarchySerializer
 from . serializers import CoviddataSerializerfortimeseries
+from . serializers import impactdataserializer
 from django.core import serializers
 import json
 from django.core.serializers.json import DjangoJSONEncoder
@@ -71,3 +73,42 @@ class covidDataIndiaStatewise(APIView):
         lists = {"cases_time_series": countrytimeseriesdata, "statewise" : alist}
 
         return Response(lists)
+
+
+
+
+class covidimpact(APIView):
+
+    def get(self,request, countryid):
+
+        totaldata = Industrydata.objects.raw('''SELECT *
+                                        FROM Industrydata
+                                        WHERE regionid = %s''',[countryid])
+
+        totalcovserialize = impactdataserializer(totaldata, many = True)
+
+        totaldict = totalcovserialize.data
+
+        return Response(totaldict)                                
+
+
+
+
+
+
+            
+                 
+
+
+
+
+       
+
+
+
+
+
+
+
+
+        

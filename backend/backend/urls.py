@@ -22,4 +22,5 @@ from django.urls import path
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('covidDataIndiaStatewise/<int:countryid>/', views.covidDataIndiaStatewise.as_view()),
+    path('covidimpact/<int:countryid>/', views.covidimpact.as_view()),
 ]

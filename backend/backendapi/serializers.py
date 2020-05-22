@@ -1,6 +1,7 @@
 from rest_framework import serializers
 from . models import Coviddata
 from . models import RegionsHierarchy
+from . models import Industrydata
 
 class CoviddataSerializer(serializers.ModelSerializer):
     active = serializers.CharField(source='activecases')
@@ -37,3 +38,18 @@ class CoviddataSerializerfortimeseries(serializers.ModelSerializer):
     class Meta:
         model = Coviddata
         fields = [ 'dailyconfirmed', 'dailydeceased', 'dailyrecovered', 'date', 'totalconfirmed', 'totaldeceased','totalrecovered']
+
+
+
+
+
+class impactdataserializer(serializers.ModelSerializer):
+    airlines = serializers.CharField()
+    travel = serializers.CharField()
+    retail = serializers.CharField()
+    entertainment = serializers.CharField()
+    food = serializers.CharField()
+
+    class Meta:
+        model = Industrydata
+        fields = ['date', 'airlines', 'travel', 'retail', 'entertainment', 'food']
