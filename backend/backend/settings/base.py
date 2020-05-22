@@ -31,6 +31,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'corsheaders',
+    'rest_framework',
+    'backendapi',
 ]
 
 MIDDLEWARE = [
@@ -69,11 +71,19 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
-}
+     'default': {
+         'ENGINE': 'sql_server.pyodbc',
+         'NAME': 'CovidViz',
+         'USER': 'appLogin',
+         'PASSWORD': 'UI_covid19@MC',
+         'HOST': 'kanpurmcintern.database.windows.net',
+         'PORT': '',
+         'OPTIONS': {
+             'driver': 'ODBC Driver 17 for SQL Server',
+             'MARS_Connection': 'True',
+         }
+     }
+ }
 
 
 # Password validation
