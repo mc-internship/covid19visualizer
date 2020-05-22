@@ -13,9 +13,9 @@ import Singapore from './SingComponent';
 import { Switch, Route, Redirect } from 'react-router-dom';
 
 
-class Main extends Component {
 
-      
+class Main extends Component {
+   
   
  
     render(){
