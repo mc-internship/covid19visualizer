@@ -38,6 +38,27 @@ export const MAP_META = {
     mapType: MAP_TYPES.COUNTRY,
     graphObjectStates: 'india-states',
     graphObjectDistricts: 'india-districts-2019-734',
+  },
+
+  Germany: {
+    geoDataFile: `${MAPS_DIR}/germany.json`,
+    mapType: MAP_TYPES.COUNTRY,
+    graphObjectStates: 'layer',
+    graphObjectDistricts: 'india-districts-2019-734',
+  },
+
+  Italy: {
+    geoDataFile: `${MAPS_DIR}/italy.json`,
+    mapType: MAP_TYPES.COUNTRY,
+    graphObjectStates: 'ITA_adm1',
+    graphObjectDistricts: 'india-districts-2019-734',
+  },
+
+  USA: {
+    geoDataFile: `${MAPS_DIR}/usa.json`,
+    mapType: MAP_TYPES.COUNTRY,
+    graphObjectStates: 'us',
+    graphObjectDistricts: 'india-districts-2019-734',
   }
 };
 
@@ -79,7 +100,7 @@ export const STATE_CODES = {
   LD: 'Lakshadweep',
   PY: 'Puducherry',
 };
-
+/*
 export const STATE_POPULATIONS = {
   'Andaman and Nicobar Islands': 397000,
   'Andhra Pradesh': 52221000,
@@ -119,6 +140,6 @@ export const STATE_POPULATIONS = {
   'West Bengal': 96906000,
   Total: 1332900000,
 };
-
+*/
 
 

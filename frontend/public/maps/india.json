@@ -21024,22 +21024,6 @@
             }
             ,
             {
-                "arcs":[[[74,
-                75]],
-                [[78,
-                79]],
-                [[80,
-                81,
-                82,
-                83]]],
-                "type":"MultiPolygon",
-                "properties": {
-                    "ISO": "IND", "NAME_0": "India", "st_code": "23", "st_nm": "Daman and Diu", "VARNAME_1": "", "HASC_1": "IN.DD", "TYPE_1": "Union Territor", "ENGTYPE_1": "Union Territory"
-                },
-                "id": "Daman and Diu"
-            }
-            ,
-            {
                 "arcs":[[84,
                 85]],
                 "type":"Polygon",
@@ -21183,14 +21167,6 @@
             }
             ,
             {
-                "type":null,
-                "properties": {
-                    "ISO": "IND", "NAME_0": "India", "st_code": "31", "st_nm": "Lakshadweep", "VARNAME_1": "Íles Laquedives|Laccadive|Minicoy and Amindivi Islands|Laccadives|Lackadiverna|Lakkadiven|Lakkadi", "HASC_1": "IN.LD", "TYPE_1": "Union Territor", "ENGTYPE_1": "Union Territory"
-                },
-                "id": "Lakshadweep"
-            }
-            ,
-            {
                 "arcs":[[-70,
                 140,
                 -108,
@@ -21330,16 +21306,6 @@
                     "ISO": "IND", "NAME_0": "India", "st_code": "08", "st_nm": "Rajasthan", "VARNAME_1": "Greater Rajasthan|Rajputana", "HASC_1": "IN.RJ", "TYPE_1": "State", "ENGTYPE_1": "State"
                 },
                 "id": "Rajasthan"
-            }
-            ,
-            {
-                "arcs":[[168,
-                169]],
-                "type":"Polygon",
-                "properties": {
-                    "ISO": "IND", "NAME_0": "India", "st_code": "11", "st_nm": "Sikkim", "VARNAME_1": "", "HASC_1": "IN.SK", "TYPE_1": "State", "ENGTYPE_1": "State"
-                },
-                "id": "Sikkim"
             }
             ,
             {
