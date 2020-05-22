@@ -1,10 +1,17 @@
 import React from 'react';
+import Home from './Mapscountry/MainView.js'
 
 function Usa(props) {
-    return(
+  return(  
+    <div>
       <div className="container">
-        <h4>Usa</h4>
+        <h4>USA</h4>
       </div>
+      <div>
+          <Home 
+          nameofmap = "USA"/>
+      </div>
+    </div>  
     );
 }
 

@@ -5,7 +5,7 @@ import {
   MAP_STATISTICS,
   MAP_TYPES,
   MAP_VIEWS,
-  STATE_POPULATIONS,
+  //STATE_POPULATIONS,
 } from '../../constants.js';
 
 import equal from 'fast-deep-equal';
@@ -55,8 +55,8 @@ function MapExplorer({
           let typeCount = parseInt(
             state[dtype !== 'deceased' ? dtype : 'deaths']
           );
-          if (currentMap.stat === MAP_STATISTICS.PER_MILLION)
-            typeCount = (1e6 * typeCount) / STATE_POPULATIONS[state.state];
+          /*if (currentMap.stat === MAP_STATISTICS.PER_MILLION)
+            typeCount = (1e6 * typeCount) / STATE_POPULATIONS[state.state];*/
           if (state.state !== 'Total') {
             statistic[dtype].total += typeCount;
             if (typeCount > statistic[dtype].max) {
@@ -94,7 +94,6 @@ function MapExplorer({
     return [statistic, currentMapData];
   }, [
     currentMap.name,
-    currentMap.stat,
     currentMapMeta.mapType,
     districts,
     states,

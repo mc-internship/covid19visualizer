@@ -8,7 +8,8 @@ function India(props) {
         <h4>India</h4>
       </div>
       <div>
-          <Home />
+          <Home 
+          nameofmap = "India"/>
       </div>
     </div>  
     );
