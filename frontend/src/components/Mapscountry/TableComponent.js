@@ -153,7 +153,7 @@ function Table({
                     <Row
                       key={state.statecode}
                       state={state}
-                      districts={districts[state.state]?.districtData}
+                      /*districts={districts[state.state]?.districtData}*/
                       regionHighlighted={
                         equal(regionHighlighted?.state, state.state)
                           ? regionHighlighted

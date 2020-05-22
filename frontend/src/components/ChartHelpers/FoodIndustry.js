@@ -5,25 +5,19 @@ import deepmerge from 'deepmerge';
 import React from 'react';
 import {Line} from 'react-chartjs-2';
 
-function TotalConfirmedChart(props) {
+function FoodChart(props) {
   const dates = [];
-  const confirmed = [];
-  const recovered = [];
-  const deceased = [];
-  const active = [];
-
+  const foodindex = [];
+  
   if (!props.timeseries || props.timeseries.length === 0) {
     return <div></div>;
   }
 
   props.timeseries.forEach((data, index) => {
     if (index >= 31) {
-      const date = parse(data.date, 'dd MMMM', new Date(2020, 0, 1));
+      const date = parse(data.date, 'y-M-d', new Date(2020, 0, 1));
       dates.push(date);
-      confirmed.push(data.totalconfirmed);
-      recovered.push(data.totalrecovered);
-      deceased.push(data.totaldeceased);
-      active.push(data.totalconfirmed - data.totalrecovered -data.totaldeceased);
+      foodindex.push(data.food);
     }
   });
 
@@ -32,40 +26,13 @@ function TotalConfirmedChart(props) {
     datasets: [
       {
         borderWidth: 2,
-        data: confirmed,
+        data: foodindex,
         borderCapStyle: 'round',
-        pointBackgroundColor: '#ff6862',
-        label: 'Confirmed',
-        borderColor: '#ff6862',
+        pointBackgroundColor: '#ffcc66',
+        label: 'Food Industry Index',
+        borderColor: '#ffcc66',
         pointHoverRadius: 4,
-      },
-      {
-        borderWidth: 2,
-        data: active,
-        borderCapStyle: 'round',
-        pointBackgroundColor: '#00ccff',
-        label: 'Active',
-        borderColor: '#00ccff',
-        pointHoverRadius: 4,
-        },
-      {
-        borderWidth: 2,
-        data: recovered,
-        borderCapStyle: 'round',
-        pointBackgroundColor: '#7ebf80',
-        label: 'Recovered',
-        borderColor: '#7ebf80',
-        pointHoverRadius: 4,
-      },
-      {
-        borderWidth: 2,
-        data: deceased,
-        borderCapStyle: 'round',
-        pointBackgroundColor: '#6c757d',
-        label: 'Deceased',
-        borderColor: '#6c757d',
-        pointHoverRadius: 4,
-      },
+      }
     ],
   };
 
@@ -147,4 +114,4 @@ function TotalConfirmedChart(props) {
   );
 }
 
-export default TotalConfirmedChart;
+export default FoodChart;

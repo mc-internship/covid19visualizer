@@ -1,13 +1,16 @@
 import React, {useState, useEffect} from 'react';
-import AllStatesChart from '../TimelineHelpers/StatesChart';
-import DailyConfirmedChart from '../TimelineHelpers/DailyCases';
-import TotalConfirmedChart from '../TimelineHelpers/TotalCases';
-import NewVsRecChart from '../TimelineHelpers/NewVsRec';
-import RecVsDeathChart from '../TimelineHelpers/DailyRecVsDeaths';
-import ActiveVsRecChart from '../TimelineHelpers/ActiveVsRec';
+import AllStatesChart from '../ChartHelpers/StatesChart';
+import DailyConfirmedChart from '../ChartHelpers/DailyCases';
+import TotalConfirmedChart from '../ChartHelpers/TotalCases';
+import NewVsRecChart from '../ChartHelpers/NewVsRec';
+import RecVsDeathChart from '../ChartHelpers/DailyRecVsDeaths';
+import ActiveVsRecChart from '../ChartHelpers/ActiveVsRec';
+
 
 import axios from 'axios';
 import {Helmet} from 'react-helmet';
+
+import datajson from '../data/Indiadatajson.json';
 
 
 function IndiaStats(props) {
@@ -25,13 +28,11 @@ function IndiaStats(props) {
   const getStates = async () => {
     try {
       const [
-        response,
         stateDailyResponse,
       ] = await Promise.all([
-        axios.get('https://api.covid19india.org/data.json'),
         axios.get('https://api.covid19india.org/states_daily.json'),
       ]);
-      setTimeseries(response.data.cases_time_series);
+      setTimeseries(datajson.cases_time_series);
       setStatesTimeSeries(stateDailyResponse.data.states_daily);
       setFetched(true);
     } catch (err) {

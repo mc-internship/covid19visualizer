@@ -137,7 +137,7 @@ h6 {
   margin-left: 0rem;
   margin-right: 0rem;
 
-  .home-left,
+  .home-middle,
   .home-right,
   .home-new {
    display: flex;
@@ -152,10 +152,10 @@ h6 {
     width: 50px;
   }
 
-  .home-left {
+  .home-right {
     margin-left: 5rem;
     margin-right: 1rem;
-    width: 35%;
+    width: 500px;
     height: 700px;
     overflow-y: scroll;
     overflow-x:hidden;
@@ -163,7 +163,7 @@ h6 {
   
   
 
-  .home-right {
+  .home-middle {
     margin-left: 10rem;
     margin-right: 0.5rem;
     min-height: 10rem;
@@ -374,6 +374,7 @@ table {
   border-color: black;
   font-family: 'archia';
   position: relative;
+
   //width: 30rem;
 
   thead {
@@ -383,7 +384,7 @@ table {
     text-align: left;
 
     th {
-      background: #ff8000;
+      background: #fb9d3e;
       color: black;
       //border-radius: 0px;
       cursor: pointer;
@@ -394,7 +395,7 @@ table {
       z-index: 99;
 
       &:hover {
-        background:#1e9c9f;
+        background:#fdba62;
       }
     }
   }
@@ -409,7 +410,7 @@ table {
     font-size: 10px;
 
     abbr {
-      color:rgba(219, 34, 10, 0.904);
+      color:rgba(161, 25, 7, 0.918);
       text-align: right;
       text-decoration: none;
 
@@ -447,16 +448,10 @@ table {
     tr {
       cursor: pointer;
 
-      &:nth-child(odd) {
-        //background: $gray-light;
-      }
+     
 
       &.is-highlighted {
-        background: $gray-hover !important;
-      }
-
-      &.is-odd {
-        //background: $gray-light !important;
+        background:#411e2a!important;
       }
 
       &.is-total {
@@ -472,10 +467,10 @@ table {
       }
 
       &:hover {
-        background: $gray-hover !important;
+        background: #3b232b!important;
 
         .dropdown {
-          background: $gray-hover;
+          background: #fb9d3e;
         }
       }
     }
@@ -649,7 +644,7 @@ table {
     width: 13px;
 
     &:hover {
-      background: $gray-hover;
+      background: #323c47;
     }
 
     svg {

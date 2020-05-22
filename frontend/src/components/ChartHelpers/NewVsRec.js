@@ -2,7 +2,6 @@ import {
     defaultOptions,
     xAxisDefaults,
     yAxisDefaults,
-
   } from './ChartUtils';
   
 import { parse} from 'date-fns';
@@ -10,10 +9,10 @@ import deepmerge from 'deepmerge';
 import React from 'react';
 import {Line} from 'react-chartjs-2';
 
-function RecVsDeathChart(props) {
+function NewVsRecChart(props) {
     const dates = [];
+    const confirmed = [];
     const recovered = [];
-    const deceased = [];
 
         
     if (!props.timeseries || props.timeseries.length === 0) {
@@ -22,10 +21,10 @@ function RecVsDeathChart(props) {
     
     props.timeseries.forEach((data, index) => {
     if (index >= 31) {
-        const date = parse(data.date, 'dd MMMM', new Date(2020, 0, 1));
+        const date = parse(data.date, 'y-M-d', new Date(2020, 0, 1));
         dates.push(date);
+        confirmed.push(data.dailyconfirmed);
         recovered.push(data.dailyrecovered);
-        deceased.push(data.dailydeceased);
         }
     });
 
@@ -34,20 +33,20 @@ function RecVsDeathChart(props) {
     datasets: [
         {
         borderWidth: 2,
+        data: confirmed,
+        borderCapStyle: 'round',
+        pointBackgroundColor: '#ff6862',
+        label: 'Confirmed',
+        borderColor: '#ff6862',
+        pointHoverRadius: 4,
+        },
+        {
+        borderWidth: 2,
         data: recovered,
         borderCapStyle: 'round',
         pointBackgroundColor: '#7ebf80',
         label: 'Recovered',
         borderColor: '#7ebf80',
-        pointHoverRadius: 4,
-        },
-        {
-        borderWidth: 2,
-        data: deceased,
-        borderCapStyle: 'round',
-        pointBackgroundColor: '#6c757d',
-        label: 'Deceased',
-        borderColor: '#6c757d',
         pointHoverRadius: 4,
         },
     ],
@@ -131,5 +130,5 @@ function RecVsDeathChart(props) {
     );
     }
 
-export default RecVsDeathChart;
+export default NewVsRecChart;
 

@@ -1,18 +1,18 @@
-import {STATE_ROW_STATISTICS, DISTRICT_ROW_STATISTICS} from '../../constants.js';
+import {STATE_ROW_STATISTICS/*, DISTRICT_ROW_STATISTICS*/} from '../../constants.js';
 import {
   formatNumber,
-  capitalize,
-  abbreviate,
+  /*capitalize,
+  abbreviate,*/
 } from '../../shared/UtilFunctions.js';
 
 import classnames from 'classnames';
 import equal from 'fast-deep-equal';
 import React, {useState, useCallback, useMemo} from 'react';
 import * as Icon from 'react-feather';
-import ReactTooltip from 'react-tooltip';
-import {createBreakpoint, useLocalStorage, useEffectOnce} from 'react-use';
+//import ReactTooltip from 'react-tooltip';
+//import {createBreakpoint, useLocalStorage, useEffectOnce} from 'react-use';
 
-const useBreakpoint = createBreakpoint({XL: 1280, L: 768, S: 350});
+//const useBreakpoint = createBreakpoint({XL: 1280, L: 768, S: 350});
 
 function StateCell({state, statistic}) {
   const ArrowUp = useMemo(() => <Icon.ArrowUp />, []);
@@ -29,7 +29,7 @@ function StateCell({state, statistic}) {
     </td>
   );
 }
-
+/*
 function DistrictHeaderCell({handleSort, statistic, sortData}) {
   const breakpoint = useBreakpoint();
   return (
@@ -133,7 +133,7 @@ function PureDistrictRow({
 }
 
 const DistrictRow = React.memo(PureDistrictRow, isDistrictRowEqual);
-
+*/
 const isEqual = (prevProps, currProps) => {
   if (!equal(prevProps.state.state, currProps.state.state)) {
     return false;
@@ -160,18 +160,18 @@ const isEqual = (prevProps, currProps) => {
 function Row({
   index,
   state,
-  districts,
+  /*districts,*/
   regionHighlighted,
   onHighlightState,
   onHighlightDistrict,
 }) {
-  const [sortedDistricts, setSortedDistricts] = useState(districts);
+  //const [sortedDistricts, setSortedDistricts] = useState(districts);
   const [showDistricts, setShowDistricts] = useState(false);
-  const [sortData, setSortData] = useLocalStorage('districtSortData', {
+  /*const [sortData, setSortData] = useLocalStorage('districtSortData', {
     sortColumn: 'confirmed',
     isAscending: false,
   });
-
+  */
   const Chevron = useMemo(
     () => (
       <span
@@ -195,7 +195,7 @@ function Row({
     },
     [onHighlightState, regionHighlighted]
   );
-
+/*
   const doSort = useCallback(
     (sortData) => {
       const sorted = {};
@@ -236,6 +236,7 @@ function Row({
   useEffectOnce(() => {
     if (state.statecode !== 'TT') doSort(sortData);
   });
+  */ 
 
   return (
     <React.Fragment>
@@ -268,68 +269,7 @@ function Row({
         ))}
       </tr>
 
-      {showDistricts && (
-        <React.Fragment>
-          <tr className={classnames('district-heading')}>
-            <td onClick={() => handleSort('district')}>
-              <div className="heading-content">
-                <abbr title="District">{'District'}</abbr>
-                <div
-                  style={{
-                    display:
-                      sortData.sortColumn === 'district' ? 'initial' : 'none',
-                  }}
-                >
-                  {sortData.isAscending ? (
-                    <div className="arrow-up" />
-                  ) : (
-                    <div className="arrow-down" />
-                  )}
-                </div>
-              </div>
-            </td>
-
-            {DISTRICT_ROW_STATISTICS.map((statistic, index) => (
-              <DistrictHeaderCell
-                key={index}
-                handleSort={handleSort}
-                statistic={statistic}
-                sortData={sortData}
-              />
-            ))}
-          </tr>
-        </React.Fragment>
-      )}
-
-      {showDistricts &&
-        Object.keys(sortedDistricts).map((district, index) => (
-          <DistrictRow
-            key={district}
-            state={state}
-            district={district}
-            districts={districts}
-            sortedDistricts={sortedDistricts}
-            regionHighlighted={regionHighlighted}
-            onHighlightDistrict={onHighlightDistrict}
-          />
-        ))}
-
-      {showDistricts && (
-        <tr className="is-spacer">
-          <td>
-            <p />
-            <ReactTooltip
-              id="district"
-              place="right"
-              type="dark"
-              effect="solid"
-              multiline={true}
-              scrollHide={true}
-              globalEventOff="click"
-            />
-          </td>
-        </tr>
-      )}
+      
     </React.Fragment>
   );
 }

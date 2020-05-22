@@ -22,7 +22,7 @@ import {
   
     props.timeseries.forEach((data, index) => {
       if (index >= 31) {
-        const date = parse(data.date, 'dd MMMM', new Date(2020, 0, 1));
+        const date = parse(data.date, 'y-M-d', new Date(2020, 0, 1));
         dates.push(format(date, 'dd MMM'));
         confirmed.push(data.dailyconfirmed);
         recovered.push(data.dailyrecovered);

@@ -1,3 +1,8 @@
+import indiadatajson from '../data/Indiadatajson.json';
+import germandatajson from '../data/Germanydatajson.json'
+import italydatajson from '../data/Italydatajson.json'
+import usadatajson from '../data/USAdatajson.json'
+
 import '../../App.scss'
 import MapExplorer from './MapMain';
 import  Table from './TableComponent';
@@ -19,20 +24,25 @@ function Home(props) {
   useEffectOnce(() => {
     getStates();
   });
-
+  
   const getStates = async () => {
     try {
     
       const [
-        {data},
+        /*{data},*/
         {data: stateDistrictWiseResponse},
     
       ] = await Promise.all([
-        axios.get('https://api.covid19india.org/data.json'),
+        /*axios.get('http://localhost:8000/covidDataIndiaStatewise/2/?format=json'),*/
         axios.get('https://api.covid19india.org/state_district_wise.json')  
       ]);
+      
+  if(props.nameofmap === 'India'){setStates(indiadatajson.statewise);}
+  if(props.nameofmap === 'Germany'){setStates(germandatajson.statewise);}
+  if(props.nameofmap === 'Italy'){setStates(italydatajson.statewise);}
+  if(props.nameofmap === 'USA'){setStates(usadatajson.statewise);}
 
-      setStates(data.statewise);
+  
       setStateDistrictWiseData(stateDistrictWiseResponse);
       setFetched(true);
     } catch (err) {
@@ -56,13 +66,13 @@ function Home(props) {
       
       <div className="Home">
         
-        <div className="home-left" styles="overflow-y: scroll; height:400px;" >
+        <div className="home-right" styles="overflow-y: scroll; height:400px;" >
 
         {stateDistrictWiseData && (
             <Table
               states={states}
               summary={false}
-              districts={stateDistrictWiseData}
+              districts={null}
               
               regionHighlighted={regionHighlighted}
               setRegionHighlighted={setRegionHighlighted}
@@ -73,11 +83,11 @@ function Home(props) {
   
         </div>
 
-        <div className="home-right">
+        <div className="home-middle">
           <React.Fragment>
             {fetched && (
               <MapExplorer
-                mapName={'India'}
+                mapName={props.nameofmap}
                 states={states}
                 districts={null}                
                 regionHighlighted={regionHighlighted}
@@ -93,7 +103,7 @@ function Home(props) {
         <div classname='home-new'>
       {fetched && (
               <HeadBarAbove
-                mapName={'India'}
+                mapName={props.nameofmap}
                 states={states}
                 districts={null}               
                 regionHighlighted={regionHighlighted}

@@ -12,7 +12,7 @@ function Demographics(props) {
       
 
 <div>
-<ul class="nav flex-column nav-pills ">
+<ul class="nav flex-column nav-pills orange">
   <li class="nav-item">
     <a class="nav-link active" href="#indiat">India</a>
   </li>
