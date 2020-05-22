@@ -34,7 +34,7 @@ class Header extends Component {
                     <div className = "container">
                         <NavbarToggler onClick = {this.toggleNav} />
                         <div className = "heading">
-                            <h1>Covid-19 Tracker</h1>
+                            <h1>COVID-19 TRACKER</h1>
                         </div>
                         <Collapse isOpen = {this.state.isNavOpen} navbar>
                         <Nav navbar className = "navbar-nav ml-auto">
