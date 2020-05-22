@@ -17,10 +17,12 @@ from django.conf.urls import url
 from django.contrib import admin
 from rest_framework.urlpatterns import format_suffix_patterns
 from backendapi import views
+from backend import test_views
 from django.urls import path
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path(r'test/', test_views.index, name='index'),
     path('covidDataIndiaStatewise/<int:countryid>/', views.covidDataIndiaStatewise.as_view()),
     path('covidimpact/<int:countryid>/', views.covidimpact.as_view()),
 ]
