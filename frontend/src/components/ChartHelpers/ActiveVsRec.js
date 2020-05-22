@@ -29,7 +29,7 @@ function ActiveVsRecChart(props) {
         confirmed.push(data.dailyconfirmed);
         recovered.push(data.dailyrecovered);
         deceased.push(data.dailydeceased);
-        active.push(data.dailyconfirmed - data.dailyrecovered -data.dailydeceased);
+        active.push(Math.max(0,data.dailyconfirmed - data.dailyrecovered -data.dailydeceased));
         }
     });
 

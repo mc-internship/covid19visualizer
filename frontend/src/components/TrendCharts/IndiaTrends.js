@@ -51,24 +51,24 @@ function IndiaStats(props) {
 
       <section className="cards">
         <div className="card fadeInUp" style={{animationDelay: '0.7s'}}>
-          <TotalConfirmedChart title="Total Cases" timeseries={timeseries} />
+          <TotalConfirmedChart title="Total Cases - India" timeseries={timeseries} />
         </div>
 
         <div className="card fadeInUp" style={{animationDelay: '0.7s'}}>
-          <DailyConfirmedChart title="Daily Cases" timeseries={timeseries} />
+          <DailyConfirmedChart title="Daily Cases - India" timeseries={timeseries} />
         </div>
 
 
         <div className="card fadeInUp" style={{animationDelay: '0.7s'}}>
-          <NewVsRecChart title="Newly Infected vs Newly Recovered" timeseries={timeseries} />
+          <NewVsRecChart title="Newly Infected vs Newly Recovered - India" timeseries={timeseries} />
         </div>
 
         <div className="card fadeInUp" style={{animationDelay: '0.7s'}}>
-          <RecVsDeathChart title="Daily Recovered vs Daily Deaths" timeseries={timeseries} />
+          <RecVsDeathChart title="Daily Recovered vs Daily Deaths - India" timeseries={timeseries} />
         </div>
 
         <div className="card fadeInUp" style={{animationDelay: '0.7s'}}>
-          <ActiveVsRecChart title="Daily Active vs Daily Recovered" timeseries={timeseries} />
+          <ActiveVsRecChart title="Daily Active vs Daily Recovered - India" timeseries={timeseries} />
         </div>
 
         <div
@@ -76,7 +76,7 @@ function IndiaStats(props) {
           style={{animationDelay: '0.7s'}}
         >
           <AllStatesChart
-            title="Total Cases by State"
+            title="Total Cases by State - India"
             data={statesTimeSeries}
           />
         </div>

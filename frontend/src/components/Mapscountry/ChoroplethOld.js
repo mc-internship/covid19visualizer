@@ -5,14 +5,12 @@ import {capitalizeAll, formatNumber} from '../../shared/UtilFunctions.js';
 
 import * as d3 from 'd3';
 import React, {useCallback, useEffect, useRef} from 'react';
-import * as Icon from 'react-feather';
 import * as topojson from 'topojson';
 
 function ChoroplethMap({
   statistic,
   mapData,
   currentMap,
-  changeMap,
   regionHighlighted,
   setRegionHighlighted,
   isCountryLoaded,
@@ -80,25 +78,7 @@ function ChoroplethMap({
 
       // Colorbar
       let colorScale;
-      if (currentMap.stat === MAP_STATISTICS.ZONE) {
-        colorScale = d3.scaleOrdinal(
-          ['Red', 'Orange', 'Green'],
-          ['#d73027', '#fee08b', '#66bd63']
-        );
-
-        svgLegend.call(() =>
-          legend({
-            color: colorScale,
-            width: widthLegend,
-            height: heightLegend,
-            tickValues: [],
-            marginLeft: 2,
-            marginRight: 20,
-            svg: svgLegend,
-            ordinalWeights: Object.values(statistic),
-          })
-        );
-      } else {
+      
         const colorInterpolator = (t) => {
           switch (mapOption) {
             case 'confirmed':
@@ -106,7 +86,7 @@ function ChoroplethMap({
             case 'active':
               return d3.interpolatePurples(t * 1.5);
             case 'recovered':
-              return d3.interpolateYlGn(t * 1.5);
+              return d3.interpolateYlGn(t * 0.85);
             case 'deceased':
               return d3.interpolateGreys(t * 1.5);
             default:
@@ -122,11 +102,7 @@ function ChoroplethMap({
         svgLegend.call(() =>
           legend({
             color: colorScale,
-            title:
-              capitalizeAll(mapOption) +
-              (currentMap.stat === MAP_STATISTICS.PER_MILLION
-                ? ' cases per million'
-                : ' cases'),
+            title: capitalizeAll(mapOption),
             width: widthLegend,
             height: heightLegend,
             ticks: 6,
@@ -144,12 +120,7 @@ function ChoroplethMap({
             svg: svgLegend,
           })
         );
-      }
-      svgLegend.attr(
-        'class',
-        currentMap.stat === MAP_STATISTICS.ZONE ? 'zone' : ''
-      );
-
+    
       // Add id to each feature
       const featureStates = topologyStates.features.map((f) => {
         const state = f.properties.st_nm;
@@ -231,14 +202,7 @@ function ChoroplethMap({
         .transition(t)
         .attr('fill', function (d) {
           let n;
-          if (currentMap.stat === MAP_STATISTICS.ZONE) {
-            const state = d.properties.st_nm;
-            const district = d.properties.district;
-            n =
-              mapData[state] && mapData[state][district]
-                ? mapData[state][district]
-                : 0;
-          } else {
+          
             const state = d.properties.st_nm;
             const district = d.properties.district;
             if (district)
@@ -247,20 +211,18 @@ function ChoroplethMap({
                   ? mapData[state][district][mapOption]
                   : 0;
             else n = mapData[state] ? mapData[state][mapOption] : 0;
-          }
+          
           const color = n === 0 ? '#ffffff00' : colorScale(n);
           return color;
         })
-        .attr('stroke', function () {
+        /*.attr('stroke', function () {
           const isHovered = d3.select(this).classed('map-hover');
           if (isHovered) this.parentNode.appendChild(this);
-          if (currentMap.stat === MAP_STATISTICS.ZONE) {
-            return isHovered ? '#343a40' : null;
-          } else {
+          
             return isHovered
               ? `${
                   mapOption === 'confirmed'
-                    ? '#ff073a'
+                    ? '#ffffff'
                     : mapOption === 'active'
                     ? '#007bff'
                     : mapOption === 'recovered'
@@ -271,7 +233,7 @@ function ChoroplethMap({
                 }`
               : null;
           }
-        })
+        )*/
         .transition()
         .attr('pointer-events', 'all');
 
@@ -280,8 +242,7 @@ function ChoroplethMap({
         .duration(mapMeta.mapType === MAP_TYPES.STATE ? 250 : 0)
         .on('end', () =>
           svg.attr(
-            'class',
-            currentMap.stat === MAP_STATISTICS.ZONE ? 'zone' : ''
+            'class',  
           )
         );
 
@@ -326,9 +287,7 @@ function ChoroplethMap({
             : width / 250;
         })
         .attr('stroke', function () {
-          if (currentMap.stat === MAP_STATISTICS.ZONE) {
-            return '#00000060';
-          } else {
+         
             return `${
               mapOption === 'confirmed'
                 ? '#ff073a30'
@@ -340,7 +299,7 @@ function ChoroplethMap({
                 ? '#6c757d30'
                 : ''
             }`;
-          }
+          
         });
 
       svg
@@ -403,7 +362,6 @@ function ChoroplethMap({
       isCountryLoaded,
       mapData,
       setRegionHighlighted,
-     /*changeMap,*/
     ]
   );
 
@@ -427,11 +385,10 @@ function ChoroplethMap({
         ) {
           nodes[i].parentNode.appendChild(nodes[i]);
           d3.select(nodes[i]).attr('stroke', function (d) {
-            if (currentMap.stat === MAP_STATISTICS.ZONE) return '#343a40';
             return d3.select(this).classed('confirmed')
-              ? '#ff073a'
+              ? '#ff6600'
               : d3.select(this).classed('active')
-              ? '#007bff'
+              ? '#8000ff'
               : d3.select(this).classed('recovered')
               ? '#28a745'
               : d3.select(this).classed('deceased')
@@ -453,18 +410,7 @@ function ChoroplethMap({
           <g className="states" />
           <g className="districts" />
           <g className="state-borders" />
-          <g className="district-borders" />
         </svg>
-        {mapMeta.mapType === MAP_TYPES.STATE &&
-        mapData[currentMap.name]?.Unknown &&
-        mapData[currentMap.name]?.Unknown[mapOption] ? (
-          <div className="disclaimer">
-            <Icon.AlertCircle />
-            {`District-wise ${mapOption} numbers are under reconciliation`}
-          </div>
-        ) : (
-          ''
-        )}
       </div>
       <div
         className="svg-parent legend fadeInUp"
@@ -477,25 +423,15 @@ function ChoroplethMap({
           ref={choroplethLegend}
         >
           <image className="ramp" />
-          <g className="axis">
+        <g className="axis">
             <text className="axistext" />
-          </g>
+          </g>*/
         </svg>
         <canvas
           className="color-scale"
           style={{position: 'absolute', height: 0}}
         />
       </div>
-      <svg style={{position: 'absolute', height: 0}}>
-        <defs>
-          <filter id="balance-color" colorInterpolationFilters="sRGB">
-            <feColorMatrix
-              type="matrix"
-              values="0.91372549 0 0 0 0.08627451 0 0.91372549 0 0 0.08627451 0 0 0.854901961 0 0.145098039 0 0 0 1 0"
-            />
-          </filter>
-        </defs>
-      </svg>
     </React.Fragment>
   );
 }

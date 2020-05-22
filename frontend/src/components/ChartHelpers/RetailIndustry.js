@@ -30,7 +30,7 @@ function RetailChart(props) {
         borderCapStyle: 'round',
         pointBackgroundColor: '#b366ff',
         label: 'Retail Industry Index',
-        borderColor: '#ff6862',
+        borderColor: '#b366ff',
         pointHoverRadius: 4,
       }
     ],

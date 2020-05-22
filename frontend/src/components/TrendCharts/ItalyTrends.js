@@ -42,24 +42,24 @@ function ItalyStats(props) {
 
       <section className="cards">
         <div className="card fadeInUp" style={{animationDelay: '0.7s'}}>
-          <TotalConfirmedChart title="Total Cases" timeseries={timeseries} />
+          <TotalConfirmedChart title="Total Cases - Italy" timeseries={timeseries} />
         </div>
 
         <div className="card fadeInUp" style={{animationDelay: '0.7s'}}>
-          <DailyConfirmedChart title="Daily Cases" timeseries={timeseries} />
+          <DailyConfirmedChart title="Daily Cases - Italy" timeseries={timeseries} />
         </div>
 
 
         <div className="card fadeInUp" style={{animationDelay: '0.7s'}}>
-          <NewVsRecChart title="Newly Infected vs Newly Recovered" timeseries={timeseries} />
+          <NewVsRecChart title="Newly Infected vs Newly Recovered - Italy" timeseries={timeseries} />
         </div>
 
         <div className="card fadeInUp" style={{animationDelay: '0.7s'}}>
-          <RecVsDeathChart title="Daily Recovered vs Daily Deaths" timeseries={timeseries} />
+          <RecVsDeathChart title="Daily Recovered vs Daily Deaths - Italy" timeseries={timeseries} />
         </div>
 
         <div className="card fadeInUp" style={{animationDelay: '0.7s'}}>
-          <ActiveVsRecChart title="Daily Active vs Daily Recovered" timeseries={timeseries} />
+          <ActiveVsRecChart title="Daily Active vs Daily Recovered - Italy" timeseries={timeseries} />
         </div>
 
 
