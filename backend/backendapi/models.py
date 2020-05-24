@@ -58,6 +58,45 @@ class Industrydata(models.Model):
         unique_together = (('date', 'regionid'),)
 
 
+class Attributesdata(models.Model):
+    attributeid = models.ForeignKey('Attributeselements', models.DO_NOTHING, db_column='AttributeID', primary_key=True)  # Field name made lowercase.
+    regionid = models.ForeignKey('RegionsHierarchy', models.DO_NOTHING, db_column='RegionID')  # Field name made lowercase.
+    value = models.FloatField(db_column='Value', blank=True, null=True)  # Field name made lowercase.
+
+    class Meta:
+        managed = False
+        db_table = 'AttributesData'
+        unique_together = (('attributeid', 'regionid'),)
+
+
+
+class Attributeselements(models.Model):
+    attributeid = models.AutoField(db_column='AttributeID', primary_key=True)  # Field name made lowercase.
+    attributename = models.CharField(db_column='AttributeName', max_length=100, blank=True, null=True)  # Field name made lowercase.
+    attributetype = models.CharField(db_column='AttributeType', max_length=100, blank=True, null=True)  # Field name made lowercase.
+
+    class Meta:
+        managed = False
+        db_table = 'AttributesElements'
+
+
+
+class CvWorldFinal(models.Model):
+    date = models.DateField(db_column='Date', primary_key = True)  # Field name made lowercase.
+    totalcases = models.IntegerField(db_column='TotalCases')  # Field name made lowercase.
+    recoveredcases = models.IntegerField(db_column='RecoveredCases')  # Field name made lowercase.
+    deaths = models.IntegerField(db_column='Deaths')  # Field name made lowercase.
+    activecases = models.IntegerField(db_column='ActiveCases')  # Field name made lowercase.
+    newtotalcases = models.IntegerField(db_column='NewTotalCases')  # Field name made lowercase.
+    newrecoveredcases = models.IntegerField(db_column='NewRecoveredCases')  # Field name made lowercase.
+    newdeaths = models.IntegerField(db_column='NewDeaths')  # Field name made lowercase.
+    newactivecases = models.IntegerField(db_column='NewActiveCases')  # Field name made lowercase.
+
+    class Meta:
+        managed = False
+        db_table = 'cv_world_final'
+
+
 #class Metrics(models.Model):
 #    metricid = models.AutoField(db_column='MetricID', primary_key=True)  # Field name made lowercase.
 #    metricname = models.CharField(db_column='MetricName', max_length=100, blank=True, null=True)  # Field name made lowercase.

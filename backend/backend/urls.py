@@ -25,4 +25,8 @@ urlpatterns = [
     path(r'test/', test_views.index, name='index'),
     path('covidDataIndiaStatewise/<int:countryid>/', views.covidDataIndiaStatewise.as_view()),
     path('covidimpact/<int:countryid>/', views.covidimpact.as_view()),
+    path('statesdaily/<int:countryid>/', views.states_daily.as_view()),
+    path('countryattribute/<int:countryid>/',views.countrywise_attribute.as_view()),
+    path('world', views.world.as_view()),
+    path('events/<int:countryid>/', views.events.as_view())
 ]

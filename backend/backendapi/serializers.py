@@ -2,6 +2,9 @@ from rest_framework import serializers
 from . models import Coviddata
 from . models import RegionsHierarchy
 from . models import Industrydata
+from . models import Attributesdata
+from . models import CvWorldFinal
+from . models import Events
 
 class CoviddataSerializer(serializers.ModelSerializer):
     active = serializers.CharField(source='activecases')
@@ -53,3 +56,51 @@ class impactdataserializer(serializers.ModelSerializer):
     class Meta:
         model = Industrydata
         fields = ['date', 'airlines', 'travel', 'retail', 'entertainment', 'food']
+
+
+
+class allstatesdataserializer(serializers.ModelSerializer):
+    
+    class Meta:
+        model = Coviddata
+        fields = ['regionid', 'totalcases', 'deaths', 'recoveredcases', 'date']
+
+
+
+class datesserializer(serializers.ModelSerializer):
+    
+    class Meta:
+        model = Coviddata
+        fields = ['date']
+
+class attributedataserializer(serializers.ModelSerializer):
+
+    class Meta:
+        model = Attributesdata
+        fields = '__all__'
+
+class worlddataserializer(serializers.ModelSerializer):
+
+    active = serializers.CharField(source='activecases')
+    recovered = serializers.CharField(source='recoveredcases')
+    deceased = serializers.CharField(source = 'deaths')
+    confirmed = serializers.CharField(source='totalcases')
+    deltaactive = serializers.CharField(source='newactivecases')
+    deltarecovered = serializers.CharField(source='newrecoveredcases')
+    deltadeceased = serializers.CharField(source = 'newdeaths')
+    deltaconfirmed = serializers.CharField(source='newtotalcases')
+    
+    
+
+    class Meta:
+        model = CvWorldFinal
+        fields = ['active','recovered','deceased','confirmed','deltaactive','deltarecovered','deltadeceased','deltaconfirmed','date']
+
+
+class eventserializer(serializers.ModelSerializer):
+
+    event = serializers.CharField(source='eventname')
+
+    class Meta:
+        model = Events
+        fields = ['event','startdate','enddate']
