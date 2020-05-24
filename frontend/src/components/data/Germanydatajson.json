@@ -904,7 +904,13 @@
             "recovered": "137253",
             "state": "Total",
             "statecode": "TT",
-            "statenotes": ""
+            "statenotes": "",
+            "totalpop": "83783945.0",
+            "female": "50.7",
+            "male": "49.3",
+            "children": "13.0",
+            "adult": "65.55",
+            "oldage": "21.45"
         },
         {
             "active": "427",
@@ -917,7 +923,13 @@
             "recovered": "2414",
             "state": "Brandenburg",
             "statecode": "Brandenburg",
-            "statenotes": ""
+            "statenotes": "",
+            "totalpop": "2511917.0",
+            "female": "50.66",
+            "male": "49.34",
+            "children": "13.13",
+            "adult": "54.47",
+            "oldage": "32.41"
         },
         {
             "active": "1133",
@@ -930,7 +942,13 @@
             "recovered": "7123",
             "state": "Hessen",
             "statecode": "Hessen",
-            "statenotes": ""
+            "statenotes": "",
+            "totalpop": "6265809.0",
+            "female": "50.64",
+            "male": "49.36",
+            "children": "13.9",
+            "adult": "59.13",
+            "oldage": "26.97"
         },
         {
             "active": "327",
@@ -943,7 +961,13 @@
             "recovered": "2368",
             "state": "Schleswig-Holstein",
             "statecode": "Schleswig-Holstein",
-            "statenotes": ""
+            "statenotes": "",
+            "totalpop": "2896712.0",
+            "female": "51.0",
+            "male": "49.0",
+            "children": "13.34",
+            "adult": "57.19",
+            "oldage": "29.47"
         },
         {
             "active": "41",
@@ -956,7 +980,13 @@
             "recovered": "651",
             "state": "Mecklenburg-Vorpommern",
             "statecode": "Mecklenburg-Vorpommern",
-            "statenotes": ""
+            "statenotes": "",
+            "totalpop": "1609675.0",
+            "female": "50.7",
+            "male": "49.3",
+            "children": "12.73",
+            "adult": "54.29",
+            "oldage": "32.98"
         },
         {
             "active": "218",
@@ -969,7 +999,13 @@
             "recovered": "2267",
             "state": "Saarland",
             "statecode": "Saarland",
-            "statenotes": ""
+            "statenotes": "",
+            "totalpop": "990509.0",
+            "female": "50.92",
+            "male": "49.08",
+            "children": "12.1",
+            "adult": "56.42",
+            "oldage": "31.48"
         },
         {
             "active": "152",
@@ -982,7 +1018,13 @@
             "recovered": "1392",
             "state": "Sachsen-Anhalt",
             "statecode": "Sachsen-Anhalt",
-            "statenotes": ""
+            "statenotes": "",
+            "totalpop": "2208321.0",
+            "female": "50.79",
+            "male": "49.21",
+            "children": "12.24",
+            "adult": "53.32",
+            "oldage": "34.44"
         },
         {
             "active": "3606",
@@ -995,7 +1037,13 @@
             "recovered": "29011",
             "state": "Nordrhein-Westfalen",
             "statecode": "Nordrhein-Westfalen",
-            "statenotes": ""
+            "statenotes": "",
+            "totalpop": "17932651.0",
+            "female": "50.94",
+            "male": "49.06",
+            "children": "13.79",
+            "adult": "58.61",
+            "oldage": "27.6"
         },
         {
             "active": "4767",
@@ -1008,7 +1056,13 @@
             "recovered": "26325",
             "state": "Baden-Wuerttemberg",
             "statecode": "Baden-Wuerttemberg",
-            "statenotes": ""
+            "statenotes": "",
+            "totalpop": "11069533.0",
+            "female": "50.3",
+            "male": "49.7",
+            "children": "13.96",
+            "adult": "59.55",
+            "oldage": "26.49"
         },
         {
             "active": "249",
@@ -1021,7 +1075,13 @@
             "recovered": "636",
             "state": "Bremen",
             "statecode": "Bremen",
-            "statenotes": ""
+            "statenotes": "",
+            "totalpop": "682986.0",
+            "female": "50.51",
+            "male": "49.49",
+            "children": "13.48",
+            "adult": "59.36",
+            "oldage": "27.15"
         },
         {
             "active": "435",
@@ -1034,7 +1094,13 @@
             "recovered": "1890",
             "state": "Thueringen",
             "statecode": "Thueringen",
-            "statenotes": ""
+            "statenotes": "",
+            "totalpop": "2143145.0",
+            "female": "50.5",
+            "male": "49.5",
+            "children": "12.7",
+            "adult": "53.66",
+            "oldage": "33.63"
         },
         {
             "active": "610",
@@ -1047,7 +1113,13 @@
             "recovered": "5392",
             "state": "Rheinland-Pfalz",
             "statecode": "Rheinland-Pfalz",
-            "statenotes": ""
+            "statenotes": "",
+            "totalpop": "4084844.0",
+            "female": "50.61",
+            "male": "49.39",
+            "children": "13.34",
+            "adult": "57.88",
+            "oldage": "28.78"
         },
         {
             "active": "566",
@@ -1060,7 +1132,13 @@
             "recovered": "3906",
             "state": "Hamburg",
             "statecode": "Hamburg",
-            "statenotes": ""
+            "statenotes": "",
+            "totalpop": "1841179.0",
+            "female": "51.01",
+            "male": "48.99",
+            "children": "14.16",
+            "adult": "62.44",
+            "oldage": "23.41"
         },
         {
             "active": "1223",
@@ -1073,7 +1151,13 @@
             "recovered": "8760",
             "state": "Niedersachsen",
             "statecode": "Niedersachsen",
-            "statenotes": ""
+            "statenotes": "",
+            "totalpop": "7982448.0",
+            "female": "50.6",
+            "male": "49.4",
+            "children": "13.64",
+            "adult": "57.84",
+            "oldage": "28.52"
         },
         {
             "active": "575",
@@ -1086,7 +1170,13 @@
             "recovered": "4032",
             "state": "Sachsen",
             "statecode": "Sachsen",
-            "statenotes": ""
+            "statenotes": "",
+            "totalpop": "4077937.0",
+            "female": "50.72",
+            "male": "49.28",
+            "children": "13.27",
+            "adult": "53.49",
+            "oldage": "33.24"
         },
         {
             "active": "673",
@@ -1099,7 +1189,13 @@
             "recovered": "5255",
             "state": "Berlin",
             "statecode": "Berlin",
-            "statenotes": ""
+            "statenotes": "",
+            "totalpop": "3644826.0",
+            "female": "50.81",
+            "male": "49.19",
+            "children": "14.05",
+            "adult": "61.29",
+            "oldage": "24.66"
         },
         {
             "active": "5518",
@@ -1112,7 +1208,13 @@
             "recovered": "35831",
             "state": "Bayern",
             "statecode": "Bayern",
-            "statenotes": ""
+            "statenotes": "",
+            "totalpop": "13076721.0",
+            "female": "50.42",
+            "male": "49.58",
+            "children": "13.61",
+            "adult": "59.69",
+            "oldage": "26.7"
         }
     ]
 }

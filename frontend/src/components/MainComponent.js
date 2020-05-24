@@ -4,6 +4,7 @@ import Home from './HomeComponent';
 import Impact from './ImpactComponent';
 import Timeline from './TimelineComponent';
 import Demographics from './DemographicsComponent';
+import Events from './EventComponent';
 import Footer from './FooterComponent';
 import India from './IndiaComponent';
 import Usa from './UsaComponent';
@@ -30,6 +31,7 @@ class Main extends Component {
                 <Route exact path='/timeline' component={Timeline} />
                 <Route exact path = "/demographics" component = {Demographics} />
                 <Route exact path = "/impact" component = {Impact} />
+                <Route exact path = "/events" component = {Events} />
                 <Route exact path = "/home/india" component = {India}/>
                 <Route exact path = "/home/usa" component = {Usa}/>
                 <Route exact path = "/home/germany" component = {Germany}/>

@@ -1084,7 +1084,13 @@
             "recovered": "289392",
             "state": "Total",
             "statecode": "TT",
-            "statenotes": ""
+            "statenotes": "",
+            "totalpop": "331002647.0",
+            "female": "50.5",
+            "male": "49.5",
+            "children": "19.0",
+            "adult": "65.59",
+            "oldage": "15.41"
         },
         {
             "active": null,
@@ -1097,7 +1103,13 @@
             "recovered": null,
             "state": "Kentucky",
             "statecode": "Kentucky",
-            "statenotes": ""
+            "statenotes": "",
+            "totalpop": "4499692.0",
+            "female": "0.51",
+            "male": "0.49",
+            "children": "0.24",
+            "adult": "0.61",
+            "oldage": "0.16"
         },
         {
             "active": null,
@@ -1110,7 +1122,13 @@
             "recovered": null,
             "state": "South Dakota",
             "statecode": "South Dakota",
-            "statenotes": ""
+            "statenotes": "",
+            "totalpop": "903027.0",
+            "female": "0.5",
+            "male": "0.5",
+            "children": "0.26",
+            "adult": "0.58",
+            "oldage": "0.16"
         },
         {
             "active": null,
@@ -1123,7 +1141,13 @@
             "recovered": null,
             "state": "Massachusetts",
             "statecode": "Massachusetts",
-            "statenotes": ""
+            "statenotes": "",
+            "totalpop": "6976597.0",
+            "female": "0.51",
+            "male": "0.49",
+            "children": "0.21",
+            "adult": "0.62",
+            "oldage": "0.17"
         },
         {
             "active": null,
@@ -1136,7 +1160,13 @@
             "recovered": null,
             "state": "Texas",
             "statecode": "Texas",
-            "statenotes": ""
+            "statenotes": "",
+            "totalpop": "29472295.0",
+            "female": "0.51",
+            "male": "0.49",
+            "children": "0.27",
+            "adult": "0.59",
+            "oldage": "0.13"
         },
         {
             "active": null,
@@ -1149,7 +1179,13 @@
             "recovered": null,
             "state": "Arkansas",
             "statecode": "Arkansas",
-            "statenotes": ""
+            "statenotes": "",
+            "totalpop": "3038999.0",
+            "female": "0.51",
+            "male": "0.49",
+            "children": "0.25",
+            "adult": "0.59",
+            "oldage": "0.17"
         },
         {
             "active": null,
@@ -1162,7 +1198,13 @@
             "recovered": null,
             "state": "Iowa",
             "statecode": "Iowa",
-            "statenotes": ""
+            "statenotes": "",
+            "totalpop": "3179849.0",
+            "female": "0.51",
+            "male": "0.49",
+            "children": "0.25",
+            "adult": "0.58",
+            "oldage": "0.17"
         },
         {
             "active": null,
@@ -1175,7 +1217,13 @@
             "recovered": null,
             "state": "North Dakota",
             "statecode": "North Dakota",
-            "statenotes": ""
+            "statenotes": "",
+            "totalpop": "761723.0",
+            "female": "0.49",
+            "male": "0.51",
+            "children": "0.24",
+            "adult": "0.61",
+            "oldage": "0.15"
         },
         {
             "active": null,
@@ -1188,7 +1236,13 @@
             "recovered": null,
             "state": "Tennessee",
             "statecode": "Tennessee",
-            "statenotes": ""
+            "statenotes": "",
+            "totalpop": "6897576.0",
+            "female": "0.52",
+            "male": "0.48",
+            "children": "0.24",
+            "adult": "0.6",
+            "oldage": "0.16"
         },
         {
             "active": null,
@@ -1201,7 +1255,13 @@
             "recovered": null,
             "state": "Montana",
             "statecode": "Montana",
-            "statenotes": ""
+            "statenotes": "",
+            "totalpop": "1086759.0",
+            "female": "0.5",
+            "male": "0.5",
+            "children": "0.23",
+            "adult": "0.58",
+            "oldage": "0.19"
         },
         {
             "active": null,
@@ -1214,7 +1274,13 @@
             "recovered": null,
             "state": "Arizona",
             "statecode": "Arizona",
-            "statenotes": ""
+            "statenotes": "",
+            "totalpop": "7378494.0",
+            "female": "0.51",
+            "male": "0.49",
+            "children": "0.24",
+            "adult": "0.57",
+            "oldage": "0.18"
         },
         {
             "active": null,
@@ -1227,7 +1293,13 @@
             "recovered": null,
             "state": "Oklahoma",
             "statecode": "Oklahoma",
-            "statenotes": ""
+            "statenotes": "",
+            "totalpop": "3954821.0",
+            "female": "0.51",
+            "male": "0.49",
+            "children": "0.26",
+            "adult": "0.59",
+            "oldage": "0.16"
         },
         {
             "active": null,
@@ -1240,7 +1312,13 @@
             "recovered": null,
             "state": "Maine",
             "statecode": "Maine",
-            "statenotes": ""
+            "statenotes": "",
+            "totalpop": "1345790.0",
+            "female": "0.51",
+            "male": "0.49",
+            "children": "0.19",
+            "adult": "0.6",
+            "oldage": "0.21"
         },
         {
             "active": null,
@@ -1253,7 +1331,13 @@
             "recovered": null,
             "state": "Ohio",
             "statecode": "Ohio",
-            "statenotes": ""
+            "statenotes": "",
+            "totalpop": "11747694.0",
+            "female": "0.51",
+            "male": "0.49",
+            "children": "0.23",
+            "adult": "0.6",
+            "oldage": "0.17"
         },
         {
             "active": null,
@@ -1266,7 +1350,13 @@
             "recovered": null,
             "state": "New Mexico",
             "statecode": "New Mexico",
-            "statenotes": ""
+            "statenotes": "",
+            "totalpop": "2096640.0",
+            "female": "0.51",
+            "male": "0.49",
+            "children": "0.24",
+            "adult": "0.58",
+            "oldage": "0.18"
         },
         {
             "active": null,
@@ -1279,7 +1369,13 @@
             "recovered": null,
             "state": "Kansas",
             "statecode": "Kansas",
-            "statenotes": ""
+            "statenotes": "",
+            "totalpop": "2910357.0",
+            "female": "0.51",
+            "male": "0.5",
+            "children": "0.26",
+            "adult": "0.58",
+            "oldage": "0.16"
         },
         {
             "active": null,
@@ -1292,7 +1388,13 @@
             "recovered": null,
             "state": "Alaska",
             "statecode": "Alaska",
-            "statenotes": ""
+            "statenotes": "",
+            "totalpop": "734002.0",
+            "female": "0.49",
+            "male": "0.51",
+            "children": "0.27",
+            "adult": "0.61",
+            "oldage": "0.12"
         },
         {
             "active": null,
@@ -1318,7 +1420,13 @@
             "recovered": null,
             "state": "Missouri",
             "statecode": "Missouri",
-            "statenotes": ""
+            "statenotes": "",
+            "totalpop": "6169270.0",
+            "female": "0.51",
+            "male": "0.49",
+            "children": "0.24",
+            "adult": "0.6",
+            "oldage": "0.17"
         },
         {
             "active": null,
@@ -1331,7 +1439,13 @@
             "recovered": null,
             "state": "California",
             "statecode": "California",
-            "statenotes": ""
+            "statenotes": "",
+            "totalpop": "39937489.0",
+            "female": "0.51",
+            "male": "0.49",
+            "children": "0.24",
+            "adult": "0.61",
+            "oldage": "0.14"
         },
         {
             "active": null,
@@ -1344,7 +1458,13 @@
             "recovered": null,
             "state": "Washington",
             "statecode": "Washington",
-            "statenotes": ""
+            "statenotes": "",
+            "totalpop": "7797095.0",
+            "female": "0.5",
+            "male": "0.5",
+            "children": "0.23",
+            "adult": "0.61",
+            "oldage": "0.16"
         },
         {
             "active": null,
@@ -1357,7 +1477,13 @@
             "recovered": null,
             "state": "Virginia",
             "statecode": "Virginia",
-            "statenotes": ""
+            "statenotes": "",
+            "totalpop": "8626207.0",
+            "female": "0.52",
+            "male": "0.48",
+            "children": "0.24",
+            "adult": "0.6",
+            "oldage": "0.16"
         },
         {
             "active": null,
@@ -1370,7 +1496,13 @@
             "recovered": null,
             "state": "Pennsylvania",
             "statecode": "Pennsylvania",
-            "statenotes": ""
+            "statenotes": "",
+            "totalpop": "12820878.0",
+            "female": "0.51",
+            "male": "0.49",
+            "children": "0.22",
+            "adult": "0.59",
+            "oldage": "0.18"
         },
         {
             "active": null,
@@ -1383,7 +1515,13 @@
             "recovered": null,
             "state": "Vermont",
             "statecode": "Vermont",
-            "statenotes": ""
+            "statenotes": "",
+            "totalpop": "628061.0",
+            "female": "0.51",
+            "male": "0.49",
+            "children": "0.19",
+            "adult": "0.6",
+            "oldage": "0.2"
         },
         {
             "active": null,
@@ -1396,7 +1534,13 @@
             "recovered": null,
             "state": "Wisconsin",
             "statecode": "Wisconsin",
-            "statenotes": ""
+            "statenotes": "",
+            "totalpop": "5851754.0",
+            "female": "0.51",
+            "male": "0.5",
+            "children": "0.23",
+            "adult": "0.6",
+            "oldage": "0.17"
         },
         {
             "active": null,
@@ -1409,7 +1553,13 @@
             "recovered": null,
             "state": "North Carolina",
             "statecode": "North Carolina",
-            "statenotes": ""
+            "statenotes": "",
+            "totalpop": "10611862.0",
+            "female": "0.52",
+            "male": "0.48",
+            "children": "0.24",
+            "adult": "0.59",
+            "oldage": "0.16"
         },
         {
             "active": null,
@@ -1422,7 +1572,13 @@
             "recovered": null,
             "state": "Hawaii",
             "statecode": "Hawaii",
-            "statenotes": ""
+            "statenotes": "",
+            "totalpop": "1412687.0",
+            "female": "0.51",
+            "male": "0.49",
+            "children": "0.23",
+            "adult": "0.57",
+            "oldage": "0.19"
         },
         {
             "active": null,
@@ -1435,7 +1591,13 @@
             "recovered": null,
             "state": "New Hampshire",
             "statecode": "New Hampshire",
-            "statenotes": ""
+            "statenotes": "",
+            "totalpop": "1371246.0",
+            "female": "0.5",
+            "male": "0.5",
+            "children": "0.2",
+            "adult": "0.61",
+            "oldage": "0.18"
         },
         {
             "active": null,
@@ -1448,7 +1610,13 @@
             "recovered": null,
             "state": "Nebraska",
             "statecode": "Nebraska",
-            "statenotes": ""
+            "statenotes": "",
+            "totalpop": "1952570.0",
+            "female": "0.5",
+            "male": "0.5",
+            "children": "0.26",
+            "adult": "0.59",
+            "oldage": "0.16"
         },
         {
             "active": null,
@@ -1461,7 +1629,13 @@
             "recovered": null,
             "state": "Colorado",
             "statecode": "Colorado",
-            "statenotes": ""
+            "statenotes": "",
+            "totalpop": "5845526.0",
+            "female": "0.5",
+            "male": "0.5",
+            "children": "0.24",
+            "adult": "0.62",
+            "oldage": "0.14"
         },
         {
             "active": null,
@@ -1474,7 +1648,13 @@
             "recovered": null,
             "state": "Delaware",
             "statecode": "Delaware",
-            "statenotes": ""
+            "statenotes": "",
+            "totalpop": "982895.0",
+            "female": "0.52",
+            "male": "0.48",
+            "children": "0.22",
+            "adult": "0.59",
+            "oldage": "0.19"
         },
         {
             "active": null,
@@ -1487,7 +1667,13 @@
             "recovered": null,
             "state": "Connecticut",
             "statecode": "Connecticut",
-            "statenotes": ""
+            "statenotes": "",
+            "totalpop": "3563077.0",
+            "female": "0.51",
+            "male": "0.49",
+            "children": "0.22",
+            "adult": "0.61",
+            "oldage": "0.17"
         },
         {
             "active": null,
@@ -1500,7 +1686,13 @@
             "recovered": null,
             "state": "District of Columbia",
             "statecode": "District of Columbia",
-            "statenotes": ""
+            "statenotes": "",
+            "totalpop": "720687.0",
+            "female": "0.53",
+            "male": "0.47",
+            "children": "0.2",
+            "adult": "0.68",
+            "oldage": "0.12"
         },
         {
             "active": null,
@@ -1513,7 +1705,13 @@
             "recovered": null,
             "state": "New Jersey",
             "statecode": "New Jersey",
-            "statenotes": ""
+            "statenotes": "",
+            "totalpop": "8936574.0",
+            "female": "0.51",
+            "male": "0.49",
+            "children": "0.23",
+            "adult": "0.6",
+            "oldage": "0.16"
         },
         {
             "active": null,
@@ -1526,7 +1724,13 @@
             "recovered": null,
             "state": "Indiana",
             "statecode": "Indiana",
-            "statenotes": ""
+            "statenotes": "",
+            "totalpop": "6745354.0",
+            "female": "0.51",
+            "male": "0.49",
+            "children": "0.25",
+            "adult": "0.59",
+            "oldage": "0.16"
         },
         {
             "active": null,
@@ -1539,7 +1743,13 @@
             "recovered": null,
             "state": "New York",
             "statecode": "New York",
-            "statenotes": ""
+            "statenotes": "",
+            "totalpop": "19440469.0",
+            "female": "0.52",
+            "male": "0.48",
+            "children": "0.22",
+            "adult": "0.62",
+            "oldage": "0.16"
         },
         {
             "active": null,
@@ -1552,7 +1762,13 @@
             "recovered": null,
             "state": "Utah",
             "statecode": "Utah",
-            "statenotes": ""
+            "statenotes": "",
+            "totalpop": "3282115.0",
+            "female": "0.5",
+            "male": "0.5",
+            "children": "0.31",
+            "adult": "0.58",
+            "oldage": "0.11"
         },
         {
             "active": null,
@@ -1565,7 +1781,13 @@
             "recovered": null,
             "state": "West Virginia",
             "statecode": "West Virginia",
-            "statenotes": ""
+            "statenotes": "",
+            "totalpop": "1778070.0",
+            "female": "0.51",
+            "male": "0.49",
+            "children": "0.21",
+            "adult": "0.59",
+            "oldage": "0.2"
         },
         {
             "active": null,
@@ -1591,7 +1813,13 @@
             "recovered": null,
             "state": "Illinois",
             "statecode": "Illinois",
-            "statenotes": ""
+            "statenotes": "",
+            "totalpop": "12659682.0",
+            "female": "0.51",
+            "male": "0.49",
+            "children": "0.24",
+            "adult": "0.6",
+            "oldage": "0.15"
         },
         {
             "active": null,
@@ -1604,7 +1832,13 @@
             "recovered": null,
             "state": "Mississippi",
             "statecode": "Mississippi",
-            "statenotes": ""
+            "statenotes": "",
+            "totalpop": "2989260.0",
+            "female": "0.52",
+            "male": "0.48",
+            "children": "0.26",
+            "adult": "0.58",
+            "oldage": "0.16"
         },
         {
             "active": null,
@@ -1617,7 +1851,13 @@
             "recovered": null,
             "state": "Georgia",
             "statecode": "Georgia",
-            "statenotes": ""
+            "statenotes": "",
+            "totalpop": "10736059.0",
+            "female": "0.52",
+            "male": "0.48",
+            "children": "0.26",
+            "adult": "0.6",
+            "oldage": "0.14"
         },
         {
             "active": null,
@@ -1630,7 +1870,13 @@
             "recovered": null,
             "state": "Minnesota",
             "statecode": "Minnesota",
-            "statenotes": ""
+            "statenotes": "",
+            "totalpop": "5700671.0",
+            "female": "0.5",
+            "male": "0.5",
+            "children": "0.24",
+            "adult": "0.6",
+            "oldage": "0.16"
         },
         {
             "active": null,
@@ -1643,7 +1889,13 @@
             "recovered": null,
             "state": "Puerto Rico",
             "statecode": "Puerto Rico",
-            "statenotes": ""
+            "statenotes": "",
+            "totalpop": "3032165.0",
+            "female": "0.53",
+            "male": "0.48",
+            "children": "0.2",
+            "adult": "0.6",
+            "oldage": "0.21"
         },
         {
             "active": null,
@@ -1656,7 +1908,13 @@
             "recovered": null,
             "state": "Wyoming",
             "statecode": "Wyoming",
-            "statenotes": ""
+            "statenotes": "",
+            "totalpop": "567025.0",
+            "female": "0.49",
+            "male": "0.51",
+            "children": "0.24",
+            "adult": "0.58",
+            "oldage": "0.17"
         },
         {
             "active": null,
@@ -1669,7 +1927,13 @@
             "recovered": null,
             "state": "Oregon",
             "statecode": "Oregon",
-            "statenotes": ""
+            "statenotes": "",
+            "totalpop": "4301089.0",
+            "female": "0.51",
+            "male": "0.49",
+            "children": "0.22",
+            "adult": "0.6",
+            "oldage": "0.18"
         },
         {
             "active": null,
@@ -1682,7 +1946,13 @@
             "recovered": null,
             "state": "Maryland",
             "statecode": "Maryland",
-            "statenotes": ""
+            "statenotes": "",
+            "totalpop": "6083116.0",
+            "female": "0.52",
+            "male": "0.48",
+            "children": "0.23",
+            "adult": "0.61",
+            "oldage": "0.15"
         },
         {
             "active": null,
@@ -1695,7 +1965,13 @@
             "recovered": null,
             "state": "Rhode Island",
             "statecode": "Rhode Island",
-            "statenotes": ""
+            "statenotes": "",
+            "totalpop": "1056161.0",
+            "female": "0.52",
+            "male": "0.49",
+            "children": "0.2",
+            "adult": "0.63",
+            "oldage": "0.17"
         },
         {
             "active": null,
@@ -1708,7 +1984,13 @@
             "recovered": null,
             "state": "Florida",
             "statecode": "Florida",
-            "statenotes": ""
+            "statenotes": "",
+            "totalpop": "21992985.0",
+            "female": "0.52",
+            "male": "0.49",
+            "children": "0.21",
+            "adult": "0.59",
+            "oldage": "0.21"
         },
         {
             "active": null,
@@ -1721,7 +2003,13 @@
             "recovered": null,
             "state": "Louisiana",
             "statecode": "Louisiana",
-            "statenotes": ""
+            "statenotes": "",
+            "totalpop": "4645184.0",
+            "female": "0.52",
+            "male": "0.48",
+            "children": "0.25",
+            "adult": "0.59",
+            "oldage": "0.15"
         },
         {
             "active": null,
@@ -1734,7 +2022,13 @@
             "recovered": null,
             "state": "Michigan",
             "statecode": "Michigan",
-            "statenotes": ""
+            "statenotes": "",
+            "totalpop": "10045029.0",
+            "female": "0.51",
+            "male": "0.49",
+            "children": "0.23",
+            "adult": "0.6",
+            "oldage": "0.17"
         },
         {
             "active": null,
@@ -1747,7 +2041,13 @@
             "recovered": null,
             "state": "Idaho",
             "statecode": "Idaho",
-            "statenotes": ""
+            "statenotes": "",
+            "totalpop": "1826156.0",
+            "female": "0.5",
+            "male": "0.5",
+            "children": "0.27",
+            "adult": "0.57",
+            "oldage": "0.16"
         },
         {
             "active": null,
@@ -1773,7 +2073,13 @@
             "recovered": null,
             "state": "Alabama",
             "statecode": "Alabama",
-            "statenotes": ""
+            "statenotes": "",
+            "totalpop": "4908621.0",
+            "female": "0.52",
+            "male": "0.48",
+            "children": "0.24",
+            "adult": "0.6",
+            "oldage": "0.17"
         },
         {
             "active": null,
@@ -1786,7 +2092,13 @@
             "recovered": null,
             "state": "Nevada",
             "statecode": "Nevada",
-            "statenotes": ""
+            "statenotes": "",
+            "totalpop": "3139658.0",
+            "female": "0.5",
+            "male": "0.5",
+            "children": "0.24",
+            "adult": "0.61",
+            "oldage": "0.16"
         },
         {
             "active": null,
@@ -1799,7 +2111,13 @@
             "recovered": null,
             "state": "South Carolina",
             "statecode": "South Carolina",
-            "statenotes": ""
+            "statenotes": "",
+            "totalpop": "5210095.0",
+            "female": "0.52",
+            "male": "0.48",
+            "children": "0.23",
+            "adult": "0.59",
+            "oldage": "0.18"
         }
     ]
 }

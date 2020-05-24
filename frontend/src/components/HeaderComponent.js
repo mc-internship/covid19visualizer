@@ -1,6 +1,79 @@
-import React, { Component } from 'react';
+import React, {Component, useState, useEffect} from 'react';
 import { Navbar, Nav, NavbarToggler, Collapse, NavItem, Jumbotron} from 'reactstrap';
 import { NavLink } from 'react-router-dom';
+//import axios from 'axios';
+import { formatNumber} from '../shared/UtilFunctions.js';
+import datajson from './data/worlddata.json';
+
+function Worldstats(props) {
+
+   /* const [fetched, setFetched] = useState(false);
+  const [worlddata, setTimeseries] = useState([]);
+  const [statesTimeSeries, setStatesTimeSeries] = useState([]);
+
+  useEffect(() => {
+    if (fetched === false) {
+      getStates();
+    }
+  }, [fetched]);
+
+  const getStates = async () => {
+    try {
+      const [
+        stateDailyResponse,
+      ] = await Promise.all([
+        axios.get('https://api.covid19india.org/states_daily.json'),
+      ]);
+      setTimeseries(datajson);
+      setStatesTimeSeries(stateDailyResponse.data.states_daily);
+      setFetched(true);
+    } catch (err) {
+      console.log(err);
+    }
+  };*/
+
+  return(
+    <Jumbotron>
+    <div className = "container">
+        <div className = "row row-header align-items-left ">
+            <h6>WorldWide Stats</h6>
+        </div>
+            <div className = "col-2 col-stats" >
+                <h3>{formatNumber(datajson[datajson.length-1].confirmed)}</h3>
+                <h6>{`+${formatNumber(datajson[datajson.length-1].deltaconfirmed)}`}</h6>
+                <h5>Confirmed</h5>
+            </div>
+            <div className = "col-2 col-stats" >
+            <h3>{formatNumber(datajson[datajson.length-1].active)}</h3>
+                <h6>{`+${formatNumber(datajson[datajson.length-1].deltaactive)}`}</h6>
+                <h5>Active</h5>
+            </div>
+            <div className = "col-2 col-stats" >
+            <h3>{formatNumber(datajson[datajson.length-1].recovered)}</h3>
+                <h6>{`+${formatNumber(datajson[datajson.length-1].deltarecovered)}`}</h6>
+                <h5>Recovered</h5>
+            </div>
+            <div className = "col-2 col-stats" >
+            <h3>{formatNumber(datajson[datajson.length-1].deceased)}</h3>
+                <h6>{`+${formatNumber(datajson[datajson.length-1].deltadeceased)}`}</h6>
+                <h5>Deceased</h5>
+            </div>
+            <div className = "col-2 col-stats" >
+                <h3>6.81%</h3>
+                <h5>Fatality Rate</h5>
+            </div>
+            <div className = "col-2 col-stats" >
+                <h3>35.4%</h3>
+                <h5>Recovery Rate</h5>
+            </div>
+          
+    </div>
+</Jumbotron>
+  );
+
+
+
+}
 
 class Header extends Component {
 
@@ -25,6 +98,8 @@ class Header extends Component {
             isModalOpen: !this.state.isModalOpen
         });
     }
+
+    
 
     render() {
         return(
@@ -58,12 +133,17 @@ class Header extends Component {
                                     <span className = "fa fa-university fa-lg"></span> Impact
                                 </NavLink>
                             </NavItem>
+                            <NavItem>
+                                <NavLink className = "nav-link" to = "/events">
+                                    <span className = "fa fa-calendar fa-lg"></span> Events
+                                </NavLink>
+                            </NavItem>
                         </Nav>
                         </Collapse>
                         
                     </div>
                 </Navbar>
-                <Jumbotron>
+                {/*<Jumbotron>
                     <div className = "container">
                         <div className = "row row-header align-items-left ">
                             <h6>WorldWide Stats</h6>
@@ -94,7 +174,8 @@ class Header extends Component {
                             </div>
                           
                     </div>
-                </Jumbotron>
+                </Jumbotron>*/}
+                <Worldstats/>
             </>
         );
     }

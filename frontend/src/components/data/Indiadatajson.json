@@ -958,7 +958,13 @@
             "recovered": "24386",
             "state": "Total",
             "statecode": "TT",
-            "statenotes": ""
+            "statenotes": "",
+            "totalpop": "1380004385.0",
+            "female": "48.0",
+            "male": "52.0",
+            "children": "28.0",
+            "adult": "66.01",
+            "oldage": "5.99"
         },
         {
             "active": "18381",
@@ -971,7 +977,13 @@
             "recovered": "5125",
             "state": "Maharashtra",
             "statecode": "Maharashtra",
-            "statenotes": ""
+            "statenotes": "",
+            "totalpop": "38968920.0",
+            "female": "47.21",
+            "male": "52.79",
+            "children": "24.26",
+            "adult": "67.65",
+            "oldage": "8.08"
         },
         {
             "active": "490",
@@ -984,7 +996,13 @@
             "recovered": "476",
             "state": "Jammu and Kashmir",
             "statecode": "Jammu and Kashmir",
-            "statenotes": ""
+            "statenotes": "",
+            "totalpop": "1933209.0",
+            "female": "47.59",
+            "male": "52.41",
+            "children": "26.25",
+            "adult": "65.09",
+            "oldage": "8.66"
         },
         {
             "active": "1711",
@@ -997,7 +1015,13 @@
             "recovered": "171",
             "state": "Punjab",
             "statecode": "Punjab",
-            "statenotes": ""
+            "statenotes": "",
+            "totalpop": "5945282.0",
+            "female": "46.75",
+            "male": "53.25",
+            "children": "24.33",
+            "adult": "66.87",
+            "oldage": "8.8"
         },
         {
             "active": "31",
@@ -1010,7 +1034,13 @@
             "recovered": "489",
             "state": "Kerala",
             "statecode": "Kerala",
-            "statenotes": ""
+            "statenotes": "",
+            "totalpop": "3254224.0",
+            "female": "51.56",
+            "male": "48.44",
+            "children": "21.72",
+            "adult": "65.21",
+            "oldage": "13.07"
         },
         {
             "active": "1631",
@@ -1023,7 +1053,13 @@
             "recovered": "2378",
             "state": "Rajasthan",
             "statecode": "Rajasthan",
-            "statenotes": ""
+            "statenotes": "",
+            "totalpop": "10480755.0",
+            "female": "47.56",
+            "male": "52.44",
+            "children": "28.75",
+            "adult": "64.25",
+            "oldage": "6.99"
         },
         {
             "active": "0",
@@ -1036,7 +1072,13 @@
             "recovered": "1",
             "state": "Arunachal Pradesh",
             "statecode": "Arunachal Pradesh",
-            "statenotes": ""
+            "statenotes": "",
+            "totalpop": "1383727.0",
+            "female": "48.41",
+            "male": "51.59",
+            "children": "35.69",
+            "adult": "59.7",
+            "oldage": "4.6"
         },
         {
             "active": "152",
@@ -1049,7 +1091,13 @@
             "recovered": "2",
             "state": "Tripura",
             "statecode": "Tripura",
-            "statenotes": ""
+            "statenotes": "",
+            "totalpop": "400004.0",
+            "female": "49.97",
+            "male": "50.03",
+            "children": "20.28",
+            "adult": "70.45",
+            "oldage": "9.27"
         },
         {
             "active": "0",
@@ -1062,7 +1110,13 @@
             "recovered": "0",
             "state": "Nagaland",
             "statecode": "Nagaland",
-            "statenotes": ""
+            "statenotes": "",
+            "totalpop": "122834.0",
+            "female": "47.65",
+            "male": "52.35",
+            "children": "28.49",
+            "adult": "67.27",
+            "oldage": "4.24"
         },
         {
             "active": "2",
@@ -1075,7 +1129,13 @@
             "recovered": "10",
             "state": "Meghalaya",
             "statecode": "Meghalaya",
-            "statenotes": ""
+            "statenotes": "",
+            "totalpop": "143229.0",
+            "female": "51.03",
+            "male": "48.97",
+            "children": "24.04",
+            "adult": "69.53",
+            "oldage": "6.43"
         },
         {
             "active": "22",
@@ -1088,7 +1148,13 @@
             "recovered": "46",
             "state": "Uttarakhand",
             "statecode": "Uttarakhand",
-            "statenotes": ""
+            "statenotes": "",
+            "totalpop": "1402016.0",
+            "female": "47.32",
+            "male": "52.68",
+            "children": "26.66",
+            "adult": "65.12",
+            "oldage": "8.22"
         },
         {
             "active": "1363",
@@ -1101,7 +1167,13 @@
             "recovered": "612",
             "state": "West Bengal",
             "statecode": "West Bengal",
-            "statenotes": ""
+            "statenotes": "",
+            "totalpop": "18023956.0",
+            "female": "48.38",
+            "male": "51.62",
+            "children": "20.83",
+            "adult": "68.45",
+            "oldage": "10.72"
         },
         {
             "active": "0",
@@ -1114,7 +1186,13 @@
             "recovered": "33",
             "state": "Andaman and Nicobar Islands",
             "statecode": "Andaman and Nicobar Islands",
-            "statenotes": ""
+            "statenotes": "",
+            "totalpop": "108058.0",
+            "female": "46.55",
+            "male": "53.45",
+            "children": "23.29",
+            "adult": "71.68",
+            "oldage": "5.02"
         },
         {
             "active": "5120",
@@ -1127,7 +1205,13 @@
             "recovered": "3246",
             "state": "Gujarat",
             "statecode": "Gujarat",
-            "statenotes": ""
+            "statenotes": "",
+            "totalpop": "18670306.0",
+            "female": "46.51",
+            "male": "53.49",
+            "children": "25.32",
+            "adult": "67.31",
+            "oldage": "7.36"
         },
         {
             "active": "427",
@@ -1140,7 +1224,13 @@
             "recovered": "342",
             "state": "Haryana",
             "statecode": "Haryana",
-            "statenotes": ""
+            "statenotes": "",
+            "totalpop": "6014739.0",
+            "female": "46.61",
+            "male": "53.39",
+            "children": "26.85",
+            "adult": "65.36",
+            "oldage": "7.79"
         },
         {
             "active": "318",
@@ -1153,7 +1243,13 @@
             "recovered": "116",
             "state": "Odisha",
             "statecode": "Odisha",
-            "statenotes": ""
+            "statenotes": "",
+            "totalpop": "3161090.0",
+            "female": "47.8",
+            "male": "52.2",
+            "children": "23.26",
+            "adult": "68.93",
+            "oldage": "7.81"
         },
         {
             "active": "6523",
@@ -1166,7 +1262,13 @@
             "recovered": "2134",
             "state": "Tamil Nadu",
             "statecode": "Tamil Nadu",
-            "statenotes": ""
+            "statenotes": "",
+            "totalpop": "13841739.0",
+            "female": "49.93",
+            "male": "50.07",
+            "children": "22.05",
+            "adult": "67.98",
+            "oldage": "9.97"
         },
         {
             "active": "0",
@@ -1179,7 +1281,13 @@
             "recovered": "2",
             "state": "Manipur",
             "statecode": "Manipur",
-            "statenotes": ""
+            "statenotes": "",
+            "totalpop": "277196.0",
+            "female": "51.28",
+            "male": "48.72",
+            "children": "23.81",
+            "adult": "67.03",
+            "oldage": "9.16"
         },
         {
             "active": "1",
@@ -1192,7 +1300,13 @@
             "recovered": "0",
             "state": "Dadra and Nagar Haveli",
             "statecode": "Dadra and Nagar Haveli",
-            "statenotes": ""
+            "statenotes": "",
+            "totalpop": "343709.0",
+            "female": "43.63",
+            "male": "56.37",
+            "children": "31.4",
+            "adult": "64.55",
+            "oldage": "4.05"
         },
         {
             "active": "156",
@@ -1205,7 +1319,13 @@
             "recovered": "28",
             "state": "Chandigarh",
             "statecode": "Chandigarh",
-            "statenotes": ""
+            "statenotes": "",
+            "totalpop": "970602.0",
+            "female": "45.29",
+            "male": "54.71",
+            "children": "24.83",
+            "adult": "68.55",
+            "oldage": "6.63"
         },
         {
             "active": "90",
@@ -1218,7 +1338,13 @@
             "recovered": "79",
             "state": "Jharkhand",
             "statecode": "Jharkhand",
-            "statenotes": ""
+            "statenotes": "",
+            "totalpop": "4328014.0",
+            "female": "47.53",
+            "male": "52.47",
+            "children": "28.62",
+            "adult": "64.44",
+            "oldage": "6.94"
         },
         {
             "active": "1709",
@@ -1231,7 +1357,13 @@
             "recovered": "1873",
             "state": "Uttar Pradesh",
             "statecode": "Uttar Pradesh",
-            "statenotes": ""
+            "statenotes": "",
+            "totalpop": "27157648.0",
+            "female": "47.12",
+            "male": "52.88",
+            "children": "28.88",
+            "adult": "64.13",
+            "oldage": "6.99"
         },
         {
             "active": "461",
@@ -1244,7 +1376,13 @@
             "recovered": "433",
             "state": "Karnataka",
             "statecode": "Karnataka",
-            "statenotes": ""
+            "statenotes": "",
+            "totalpop": "16005370.0",
+            "female": "48.82",
+            "male": "51.18",
+            "children": "23.88",
+            "adult": "68.12",
+            "oldage": "8.0"
         },
         {
             "active": "5",
@@ -1257,7 +1395,13 @@
             "recovered": "54",
             "state": "Chhattisgarh",
             "statecode": "Chhattisgarh",
-            "statenotes": ""
+            "statenotes": "",
+            "totalpop": "3315980.0",
+            "female": "48.67",
+            "male": "51.33",
+            "children": "26.76",
+            "adult": "66.28",
+            "oldage": "6.96"
         },
         {
             "active": "5041",
@@ -1270,7 +1414,13 @@
             "recovered": "2512",
             "state": "Delhi",
             "statecode": "Delhi",
-            "statenotes": ""
+            "statenotes": "",
+            "totalpop": "13510933.0",
+            "female": "46.62",
+            "male": "53.38",
+            "children": "26.33",
+            "adult": "66.43",
+            "oldage": "7.24"
         },
         {
             "active": "1452",
@@ -1283,7 +1433,13 @@
             "recovered": "1886",
             "state": "Andhra Pradesh",
             "statecode": "Andhra Pradesh",
-            "statenotes": ""
+            "statenotes": "",
+            "totalpop": "19180116.0",
+            "female": "49.52",
+            "male": "50.48",
+            "children": "24.94",
+            "adult": "67.38",
+            "oldage": "7.68"
         },
         {
             "active": "24",
@@ -1296,7 +1452,13 @@
             "recovered": "39",
             "state": "Assam",
             "statecode": "Assam",
-            "statenotes": ""
+            "statenotes": "",
+            "totalpop": "1651373.0",
+            "female": "48.34",
+            "male": "51.66",
+            "children": "22.38",
+            "adult": "69.85",
+            "oldage": "7.78"
         },
         {
             "active": "442",
@@ -1309,7 +1471,13 @@
             "recovered": "383",
             "state": "Bihar",
             "statecode": "Bihar",
-            "statenotes": ""
+            "statenotes": "",
+            "totalpop": "6755370.0",
+            "female": "47.12",
+            "male": "52.88",
+            "children": "32.19",
+            "adult": "60.47",
+            "oldage": "7.34"
         },
         {
             "active": "0",
@@ -1322,7 +1490,13 @@
             "recovered": "1",
             "state": "Mizoram",
             "statecode": "Mizoram",
-            "statenotes": ""
+            "statenotes": "",
+            "totalpop": "293416.0",
+            "female": "50.61",
+            "male": "49.39",
+            "children": "26.69",
+            "adult": "67.07",
+            "oldage": "6.23"
         },
         {
             "active": "24",
@@ -1335,7 +1509,13 @@
             "recovered": "39",
             "state": "Himachal Pradesh",
             "statecode": "Himachal Pradesh",
-            "statenotes": ""
+            "statenotes": "",
+            "totalpop": "169578.0",
+            "female": "45.07",
+            "male": "54.93",
+            "children": "20.49",
+            "adult": "73.45",
+            "oldage": "6.06"
         },
         {
             "active": "3",
@@ -1348,7 +1528,13 @@
             "recovered": "9",
             "state": "Puducherry",
             "statecode": "Puducherry",
-            "statenotes": ""
+            "statenotes": "",
+            "totalpop": "544481.0",
+            "female": "50.8",
+            "male": "49.2",
+            "children": "22.29",
+            "adult": "67.57",
+            "oldage": "10.14"
         },
         {
             "active": "0",
@@ -1361,7 +1547,13 @@
             "recovered": "7",
             "state": "Goa",
             "statecode": "Goa",
-            "statenotes": ""
+            "statenotes": "",
+            "totalpop": "1458545.0",
+            "female": "49.32",
+            "male": "50.68",
+            "children": "21.84",
+            "adult": "66.93",
+            "oldage": "11.23"
         },
         {
             "active": "1901",
@@ -1374,7 +1566,13 @@
             "recovered": "1860",
             "state": "Madhya Pradesh",
             "statecode": "Madhya Pradesh",
-            "statenotes": ""
+            "statenotes": "",
+            "totalpop": "11162693.0",
+            "female": "47.84",
+            "male": "52.16",
+            "children": "27.2",
+            "adult": "65.05",
+            "oldage": "7.75"
         }
     ]
 }

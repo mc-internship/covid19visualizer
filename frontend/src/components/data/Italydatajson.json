@@ -760,7 +760,13 @@
             "recovered": "122810",
             "state": "Total",
             "statecode": "TT",
-            "statenotes": ""
+            "statenotes": "",
+            "totalpop": "60461826.0",
+            "female": "51.4",
+            "male": "48.6",
+            "children": "14.0",
+            "adult": "62.98",
+            "oldage": "23.02"
         },
         {
             "active": "343",
@@ -786,7 +792,13 @@
             "recovered": "17370",
             "state": "Emilia-Romagna",
             "statecode": "Emilia-Romagna",
-            "statenotes": ""
+            "statenotes": "",
+            "totalpop": "4459477.0",
+            "female": "51.37",
+            "male": "48.63",
+            "children": "13.1",
+            "adult": "63.0",
+            "oldage": "23.9"
         },
         {
             "active": "474",
@@ -799,7 +811,13 @@
             "recovered": "582",
             "state": "Calabria",
             "statecode": "Calabria",
-            "statenotes": ""
+            "statenotes": "",
+            "totalpop": "1947131.0",
+            "female": "50.92",
+            "male": "49.08",
+            "children": "13.2",
+            "adult": "65.2",
+            "oldage": "21.6"
         },
         {
             "active": "2533",
@@ -812,7 +830,13 @@
             "recovered": "5232",
             "state": "Liguria",
             "statecode": "Liguria",
-            "statenotes": ""
+            "statenotes": "",
+            "totalpop": "1550640.0",
+            "female": "52.16",
+            "male": "47.84",
+            "children": "11.1",
+            "adult": "60.4",
+            "oldage": "28.5"
         },
         {
             "active": "81",
@@ -825,7 +849,13 @@
             "recovered": "1268",
             "state": "Umbria",
             "statecode": "Umbria",
-            "statenotes": ""
+            "statenotes": "",
+            "totalpop": "882015.0",
+            "female": "51.84",
+            "male": "48.16",
+            "children": "12.5",
+            "adult": "61.9",
+            "oldage": "25.6"
         },
         {
             "active": "680",
@@ -836,9 +866,15 @@
             "deltarecovered": "68",
             "lastupdatedtime": "2020-05-16",
             "recovered": "2184",
-            "state": "Friuli Venezia Giulia",
-            "statecode": "Friuli Venezia Giulia",
-            "statenotes": ""
+            "state": "Friuli-Venezia Giulia",
+            "statecode": "Friuli-Venezia Giulia",
+            "statenotes": "",
+            "totalpop": "1215220.0",
+            "female": "51.38",
+            "male": "48.62",
+            "children": "12.0",
+            "adult": "61.8",
+            "oldage": "26.2"
         },
         {
             "active": "415",
@@ -851,7 +887,13 @@
             "recovered": "812",
             "state": "Sardegna",
             "statecode": "Sardegna",
-            "statenotes": ""
+            "statenotes": "",
+            "totalpop": "1639591.0",
+            "female": "50.86",
+            "male": "49.14",
+            "children": "11.2",
+            "adult": "64.2",
+            "oldage": "24.6"
         },
         {
             "active": "113",
@@ -864,7 +906,13 @@
             "recovered": "250",
             "state": "Basilicata",
             "statecode": "Basilicata",
-            "statenotes": ""
+            "statenotes": "",
+            "totalpop": "562869.0",
+            "female": "50.84",
+            "male": "49.16",
+            "children": "11.9",
+            "adult": "65.1",
+            "oldage": "23.0"
         },
         {
             "active": "2104",
@@ -875,9 +923,15 @@
             "deltarecovered": "83",
             "lastupdatedtime": "2020-05-16",
             "recovered": "1807",
-            "state": "Puglia",
-            "statecode": "Puglia",
-            "statenotes": ""
+            "state": "Apulia",
+            "statecode": "Apulia",
+            "statenotes": "",
+            "totalpop": "4029053.0",
+            "female": "51.36",
+            "male": "48.64",
+            "children": "13.1",
+            "adult": "64.8",
+            "oldage": "22.1"
         },
         {
             "active": "215",
@@ -890,7 +944,13 @@
             "recovered": "173",
             "state": "Molise",
             "statecode": "Molise",
-            "statenotes": ""
+            "statenotes": "",
+            "totalpop": "305617.0",
+            "female": "50.73",
+            "male": "49.27",
+            "children": "11.3",
+            "adult": "64.1",
+            "oldage": "24.6"
         },
         {
             "active": "4162",
@@ -903,7 +963,13 @@
             "recovered": "12983",
             "state": "Veneto",
             "statecode": "Veneto",
-            "statenotes": ""
+            "statenotes": "",
+            "totalpop": "4905854.0",
+            "female": "51.08",
+            "male": "48.92",
+            "children": "13.3",
+            "adult": "63.8",
+            "oldage": "22.9"
         },
         {
             "active": "1710",
@@ -916,7 +982,13 @@
             "recovered": "2562",
             "state": "Campania",
             "statecode": "Campania",
-            "statenotes": ""
+            "statenotes": "",
+            "totalpop": "5801692.0",
+            "female": "51.25",
+            "male": "48.75",
+            "children": "14.5",
+            "adult": "66.7",
+            "oldage": "18.8"
         },
         {
             "active": "345",
@@ -942,7 +1014,13 @@
             "recovered": "3003",
             "state": "Marche",
             "statecode": "Marche",
-            "statenotes": ""
+            "statenotes": "",
+            "totalpop": "1525271.0",
+            "female": "51.42",
+            "male": "48.58",
+            "children": "12.6",
+            "adult": "62.6",
+            "oldage": "24.8"
         },
         {
             "active": "2943",
@@ -955,7 +1033,13 @@
             "recovered": "5991",
             "state": "Toscana",
             "statecode": "Toscana",
-            "statenotes": ""
+            "statenotes": "",
+            "totalpop": "3729641.0",
+            "female": "51.72",
+            "male": "48.28",
+            "children": "12.4",
+            "adult": "62.2",
+            "oldage": "25.4"
         },
         {
             "active": "75",
@@ -968,7 +1052,13 @@
             "recovered": "956",
             "state": "Valle d'Aosta",
             "statecode": "Valle d'Aosta",
-            "statenotes": ""
+            "statenotes": "",
+            "totalpop": "125666.0",
+            "female": "51.12",
+            "male": "48.88",
+            "children": "13.1",
+            "adult": "63.1",
+            "oldage": "23.8"
         },
         {
             "active": "10702",
@@ -981,7 +1071,13 @@
             "recovered": "15187",
             "state": "Piemonte",
             "statecode": "Piemonte",
-            "statenotes": ""
+            "statenotes": "",
+            "totalpop": "4356406.0",
+            "female": "51.45",
+            "male": "48.55",
+            "children": "12.4",
+            "adult": "62.1",
+            "oldage": "25.5"
         },
         {
             "active": "27679",
@@ -994,7 +1090,13 @@
             "recovered": "41389",
             "state": "Lombardia",
             "statecode": "Lombardia",
-            "statenotes": ""
+            "statenotes": "",
+            "totalpop": "10060574.0",
+            "female": "51.05",
+            "male": "48.95",
+            "children": "13.7",
+            "adult": "63.7",
+            "oldage": "22.6"
         },
         {
             "active": "4022",
@@ -1007,7 +1109,13 @@
             "recovered": "2758",
             "state": "Lazio",
             "statecode": "Lazio",
-            "statenotes": ""
+            "statenotes": "",
+            "totalpop": "5879082.0",
+            "female": "51.72",
+            "male": "48.28",
+            "children": "13.3",
+            "adult": "65.0",
+            "oldage": "21.7"
         },
         {
             "active": "1423",
@@ -1020,7 +1128,13 @@
             "recovered": "1372",
             "state": "Abruzzo",
             "statecode": "Abruzzo",
-            "statenotes": ""
+            "statenotes": "",
+            "totalpop": "1311580.0",
+            "female": "51.19",
+            "male": "48.81",
+            "children": "12.4",
+            "adult": "63.8",
+            "oldage": "23.8"
         },
         {
             "active": "1659",
@@ -1031,8 +1145,27 @@
             "deltarecovered": "107",
             "lastupdatedtime": "2020-05-16",
             "recovered": "1458",
-            "state": "Sicilia",
-            "statecode": "Sicilia",
+            "state": "Sicily",
+            "statecode": "Sicily",
+            "statenotes": "",
+            "totalpop": "4999891.0",
+            "female": "51.35",
+            "male": "48.65",
+            "children": "13.8",
+            "adult": "65.0",
+            "oldage": "21.2"
+        },
+        {
+            "active": "688",
+            "confirmed": "6904",
+            "deaths": "743",
+            "deltaconfirmed": "8",
+            "deltadeaths": "2",
+            "deltarecovered": "83",
+            "lastupdatedtime": "2020-05-16",
+            "recovered": "5473",
+            "state": "Trentino-Alto Adige",
+            "statecode": "Trentino-Alto Adige",
             "statenotes": ""
         }
     ]

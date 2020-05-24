@@ -1,3 +1,6 @@
+import GenderChart from '../ChartHelpers/GenderDemographics';
+import AgeChart from '../ChartHelpers/AgeDemographics';
+
 import {
     MAP_META,
     MAP_STATISTICS,
@@ -239,6 +242,17 @@ function HeadBarAbove({
             <h1>{formatNumber(panelRegion.deaths)}</h1>
             <h6>{`+${formatNumber(panelRegion.deltadeaths)}`}</h6>
           </div>
+        </div>
+
+        <div className = "state gender">
+        <section className="cards">
+        <div className="card fadeInUp" style={{animationDelay: '0.7s'}}>
+          <GenderChart title="Gender Demographics" male = {panelRegion.male} female = {panelRegion.female}/>
+        </div>
+        <div className="card fadeInUp" style={{animationDelay: '0.7s'}}>
+          <AgeChart title="Age Demographics" children = {panelRegion.children} adult = {panelRegion.adult} oldage = {panelRegion.oldage}/>
+        </div>
+        </section>
         </div>
   
       </div>

@@ -1,0 +1,15 @@
+{
+    "country": {
+        "totalpop": 83783945.0,
+        "female": 50.7,
+        "male": 49.3,
+        "children": 13.0,
+        "adults": 65.55,
+        "oldage": 21.45,
+        "popdensity": 233.0,
+        "gni": 54560.0,
+        "diabetes": 8.31,
+        "malesmokers": 33.1,
+        "femalesmokers": 28.2
+    }
+}

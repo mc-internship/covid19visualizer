@@ -1048,7 +1048,13 @@
             "recovered": "8362",
             "state": "Total",
             "statecode": "TT",
-            "statenotes": ""
+            "statenotes": "",
+            "totalpop": "5850343.0",
+            "female": "47.7",
+            "male": "52.3",
+            "children": "15.0",
+            "adult": "72.08",
+            "oldage": "12.92"
         }
     ]
 }
