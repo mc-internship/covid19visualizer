@@ -6,16 +6,20 @@ import RecVsDeathChart from '../ChartHelpers/DailyRecVsDeaths';
 import ActiveVsRecChart from '../ChartHelpers/ActiveVsRec';
 
 
+
 //import axios from 'axios';
 import {Helmet} from 'react-helmet';
 
-import datajson from '../data/Singaporedatajson.json';
+import datajson from '../data/singaporedatajson.json';
+
 
 
 function SingStats(props) {
 
   const [fetched, setFetched] = useState(false);
   const [timeseries, setTimeseries] = useState([]);
+  const [statesTimeSeries, setStatesTimeSeries] = useState([]);
+
 
   useEffect(() => {
     if (fetched === false) {
@@ -26,6 +30,7 @@ function SingStats(props) {
   const getStates = async () => {
     try {
       setTimeseries(datajson.cases_time_series);
+
       setFetched(true);
     } catch (err) {
       console.log(err);
@@ -62,7 +67,6 @@ function SingStats(props) {
         <div className="card fadeInUp" style={{animationDelay: '0.7s'}}>
           <ActiveVsRecChart title="Daily Active vs Daily Recovered - Singapore" timeseries={timeseries} />
         </div>
-
 
       </section>
     </div>

@@ -2,16 +2,11 @@ import React from 'react';
 import Home from './Mapscountry/MainView.js'
 
 function India(props) {
-  return(  
-    <div>
-      <div className="container">
-        <h4>India</h4>
-      </div>
+  return( 
       <div>
           <Home 
           nameofmap = "India"/>
-      </div>
-    </div>  
+      </div>  
     );
 }
 

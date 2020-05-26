@@ -10,7 +10,9 @@ import ActiveVsRecChart from '../ChartHelpers/ActiveVsRec';
 import axios from 'axios';
 import {Helmet} from 'react-helmet';
 
-import datajson from '../data/Indiadatajson.json';
+import datajson from '../data/indiadatajson.json';
+import statesdata from '../data/indiastatesdaily.json';
+
 
 
 function IndiaStats(props) {
@@ -33,7 +35,7 @@ function IndiaStats(props) {
         axios.get('https://api.covid19india.org/states_daily.json'),
       ]);
       setTimeseries(datajson.cases_time_series);
-      setStatesTimeSeries(stateDailyResponse.data.states_daily);
+      setStatesTimeSeries(statesdata.states_daily);
       setFetched(true);
     } catch (err) {
       console.log(err);

@@ -4,17 +4,23 @@ import TotalConfirmedChart from '../ChartHelpers/TotalCases';
 import NewVsRecChart from '../ChartHelpers/NewVsRec';
 import RecVsDeathChart from '../ChartHelpers/DailyRecVsDeaths';
 import ActiveVsRecChart from '../ChartHelpers/ActiveVsRec';
+import AllStatesChart from '../ChartHelpers/StatesChart';
+
 
 //import axios from 'axios';
 import {Helmet} from 'react-helmet';
 
-import datajson from '../data/Germanydatajson.json';
+import datajson from '../data/germanydatajson.json';
+import statesdata from '../data/germanystatesdaily.json';
+
 
 
 function GermanyStats(props) {
 
   const [fetched, setFetched] = useState(false);
   const [timeseries, setTimeseries] = useState([]);
+  const [statesTimeSeries, setStatesTimeSeries] = useState([]);
+
 
   useEffect(() => {
     if (fetched === false) {
@@ -25,6 +31,8 @@ function GermanyStats(props) {
   const getStates = async () => {
     try {
       setTimeseries(datajson.cases_time_series);
+      setStatesTimeSeries(statesdata.states_daily);
+
       setFetched(true);
     } catch (err) {
       console.log(err);
@@ -60,6 +68,16 @@ function GermanyStats(props) {
 
         <div className="card fadeInUp" style={{animationDelay: '0.7s'}}>
           <ActiveVsRecChart title="Daily Active vs Daily Recovered - Germany" timeseries={timeseries} />
+        </div>
+
+        <div
+          className="card card-big fadeInUp"
+          style={{animationDelay: '0.7s'}}
+        >
+          <AllStatesChart
+            title="Total Cases by State - Germany"
+            data={statesTimeSeries}
+          />
         </div>
 
 

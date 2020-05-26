@@ -18,13 +18,13 @@ function AllStatesChart(props) {
   const statesData = new Map();
 
   props.data.forEach((data) => {
-    if (data.status !== 'Confirmed') {
+    if (data.status !== 'confirmed') {
       return;
     }
 
     Object.keys(data).forEach((key) => {
       if (key === 'date') {
-        const date = parse(data.date, 'dd-MMM-yy', new Date());
+        const date = parse(data.date, 'y-M-d', new Date(2020, 0, 1));
         dates.push(date);
       }
 

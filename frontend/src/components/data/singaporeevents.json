@@ -1,0 +1,70 @@
+{
+    "name": "Singapore",
+    "events": [
+        {
+            "event": "Inbound flights from Wuhan halted",
+            "startdate": "2020-01-23",
+            "enddate": "2020-06-02"
+        },
+        {
+            "event": "Arrival of all non-citizens who visited Mainland China fourteen days prior banned",
+            "startdate": "2020-02-02",
+            "enddate": "2020-06-02"
+        },
+        {
+            "event": "International travel bans extended to some European countries South Korea and Iran",
+            "startdate": "2020-02-25",
+            "enddate": "2020-03-13"
+        },
+        {
+            "event": "International returnees from all destinations quarantined",
+            "startdate": "2020-04-09",
+            "enddate": "2020-06-02"
+        },
+        {
+            "event": "Ticketed events of more than 250 people deferred or cancelled",
+            "startdate": "2020-03-13",
+            "enddate": "2020-06-02"
+        },
+        {
+            "event": "Entertainment outlets - places of worship - malls etc. told to reduce crowd density",
+            "startdate": "2020-03-26",
+            "enddate": "2020-12-31"
+        },
+        {
+            "event": "Social gatherings limited to max of ten people",
+            "startdate": "2020-03-26",
+            "enddate": "2020-04-30"
+        },
+        {
+            "event": "Non-essential businesses told to work remotely or close",
+            "startdate": "2020-03-31",
+            "enddate": "2020-06-02"
+        },
+        {
+            "event": "Schools closed",
+            "startdate": "2020-04-07",
+            "enddate": "2020-06-02"
+        },
+        {
+            "event": "Contact tracing app TraceTogether launched",
+            "startdate": "2020-03-20",
+            "enddate": "2020-03-20"
+        },
+        {
+            "event": "The Unity Budget Economic Package worth US Dollars 4.6 bn announced",
+            "startdate": "2020-02-18",
+            "enddate": "2020-02-18"
+        },
+        {
+            "event": "The Resilience Budget announced worth US Dollars 33.6 bn to help industries such as tourism",
+            "startdate": "2020-03-26",
+            "enddate": "2020-03-26"
+        },
+        {
+            "event": "The Solidarity Budget worth US Dollars 3.6 bn announced",
+            "startdate": "2020-04-06",
+            "enddate": "2020-04-06"
+        }
+    ]
+}

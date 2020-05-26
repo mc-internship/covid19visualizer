@@ -1,0 +1,25 @@
+{
+    "name": "Italy",
+    "events": [
+        {
+            "event": "Italy imposes lockdown",
+            "startdate": "2020-02-23",
+            "enddate": "2020-04-14"
+        },
+        {
+            "event": "EU countries re-institute border checks within the Schengen Area and banned all non-essential travel",
+            "startdate": "2020-03-16",
+            "enddate": "2020-12-31"
+        },
+        {
+            "event": "Relaxation in lockdown restrictions to open",
+            "startdate": "2020-05-04",
+            "enddate": "2020-05-04"
+        },
+        {
+            "event": "25bn Euro economic package announced to support the national health system families and SMEs",
+            "startdate": "2020-05-13",
+            "enddate": "2020-05-13"
+        }
+    ]
+}

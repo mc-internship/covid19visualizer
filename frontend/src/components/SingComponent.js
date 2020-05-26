@@ -1,9 +1,11 @@
 import React from 'react';
+import Home from './Mapscountry/MainView.js'
 
 function Singapore(props) {
     return(
-      <div className="container">
-        <h4>Singapore</h4>
+      <div>
+        <Home 
+        nameofmap = "Singapore"/>
       </div>
     );
 }

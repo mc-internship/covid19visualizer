@@ -1,0 +1,4615 @@
+
+{
+    "Brandenburg": {
+        "districtData": {
+            "SK Cottbus": {
+                "active": "1",
+                "confirmed": "39",
+                "recovered": "38",
+                "deceased": "0",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "SK Frankfurt (Oder)": {
+                "active": "1",
+                "confirmed": "28",
+                "recovered": "27",
+                "deceased": "0",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Potsdam-Mittelmark": {
+                "active": "78",
+                "confirmed": "431",
+                "recovered": "329",
+                "deceased": "24",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "SK Brandenburg a.d.Havel": {
+                "active": "9",
+                "confirmed": "59",
+                "recovered": "50",
+                "deceased": "0",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Prignitz": {
+                "active": "1",
+                "confirmed": "23",
+                "recovered": "22",
+                "deceased": "0",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "SK Potsdam": {
+                "active": "64",
+                "confirmed": "601",
+                "recovered": "498",
+                "deceased": "39",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Elbe-Elster": {
+                "active": "1",
+                "confirmed": "73",
+                "recovered": "69",
+                "deceased": "3",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Teltow-Flaeming": {
+                "active": "20",
+                "confirmed": "135",
+                "recovered": "106",
+                "deceased": "9",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Dahme-Spreewald": {
+                "active": "35",
+                "confirmed": "205",
+                "recovered": "163",
+                "deceased": "7",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Oberhavel": {
+                "active": "30",
+                "confirmed": "275",
+                "recovered": "239",
+                "deceased": "6",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Uckermark": {
+                "active": "3",
+                "confirmed": "35",
+                "recovered": "31",
+                "deceased": "1",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Oder-Spree": {
+                "active": "19",
+                "confirmed": "126",
+                "recovered": "105",
+                "deceased": "2",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Ostprignitz-Ruppin": {
+                "active": "23",
+                "confirmed": "68",
+                "recovered": "45",
+                "deceased": "0",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Barnim": {
+                "active": "85",
+                "confirmed": "385",
+                "recovered": "275",
+                "deceased": "25",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Spree-Neisse": {
+                "active": "11",
+                "confirmed": "63",
+                "recovered": "52",
+                "deceased": "0",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Oberspreewald-Lausitz": {
+                "active": "3",
+                "confirmed": "43",
+                "recovered": "38",
+                "deceased": "2",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Maerkisch-Oderland": {
+                "active": "31",
+                "confirmed": "217",
+                "recovered": "183",
+                "deceased": "3",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Havelland": {
+                "active": "12",
+                "confirmed": "162",
+                "recovered": "144",
+                "deceased": "6",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            }
+        },
+        "statecode": "AB"
+    },
+    "Hessen": {
+        "districtData": {
+            "LK Rheingau-Taunus-Kreis": {
+                "active": "8",
+                "confirmed": "200",
+                "recovered": "189",
+                "deceased": "3",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Fulda": {
+                "active": "7",
+                "confirmed": "302",
+                "recovered": "284",
+                "deceased": "11",
+                "delta": {
+                    "confirmed": "1",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Kassel": {
+                "active": "56",
+                "confirmed": "338",
+                "recovered": "258",
+                "deceased": "24",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Werra-Meissner-Kreis": {
+                "active": "61",
+                "confirmed": "179",
+                "recovered": "104",
+                "deceased": "14",
+                "delta": {
+                    "confirmed": "2",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Schwalm-Eder-Kreis": {
+                "active": "47",
+                "confirmed": "477",
+                "recovered": "399",
+                "deceased": "31",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Darmstadt-Dieburg": {
+                "active": "27",
+                "confirmed": "367",
+                "recovered": "324",
+                "deceased": "16",
+                "delta": {
+                    "confirmed": "2",
+                    "deceased": "0",
+                    "recovered": "1"
+                }
+            },
+            "LK Odenwaldkreis": {
+                "active": "58",
+                "confirmed": "365",
+                "recovered": "254",
+                "deceased": "53",
+                "delta": {
+                    "confirmed": "2",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Gross-Gerau": {
+                "active": "114",
+                "confirmed": "440",
+                "recovered": "316",
+                "deceased": "10",
+                "delta": {
+                    "confirmed": "9",
+                    "deceased": "0",
+                    "recovered": "1"
+                }
+            },
+            "LK Lahn-Dill-Kreis": {
+                "active": "11",
+                "confirmed": "335",
+                "recovered": "309",
+                "deceased": "15",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "SK Darmstadt": {
+                "active": "22",
+                "confirmed": "205",
+                "recovered": "169",
+                "deceased": "14",
+                "delta": {
+                    "confirmed": "2",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "SK Frankfurt am Main": {
+                "active": "198",
+                "confirmed": "1314",
+                "recovered": "1072",
+                "deceased": "44",
+                "delta": {
+                    "confirmed": "5",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Main-Taunus-Kreis": {
+                "active": "56",
+                "confirmed": "281",
+                "recovered": "217",
+                "deceased": "8",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Wetteraukreis": {
+                "active": "28",
+                "confirmed": "272",
+                "recovered": "232",
+                "deceased": "12",
+                "delta": {
+                    "confirmed": "1",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Hochtaunuskreis": {
+                "active": "15",
+                "confirmed": "245",
+                "recovered": "225",
+                "deceased": "5",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Marburg-Biedenkopf": {
+                "active": "11",
+                "confirmed": "183",
+                "recovered": "170",
+                "deceased": "2",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "SK Offenbach": {
+                "active": "36",
+                "confirmed": "115",
+                "recovered": "71",
+                "deceased": "8",
+                "delta": {
+                    "confirmed": "8",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Limburg-Weilburg": {
+                "active": "24",
+                "confirmed": "270",
+                "recovered": "244",
+                "deceased": "2",
+                "delta": {
+                    "confirmed": "4",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Bergstrasse": {
+                "active": "15",
+                "confirmed": "313",
+                "recovered": "296",
+                "deceased": "2",
+                "delta": {
+                    "confirmed": "1",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Offenbach": {
+                "active": "73",
+                "confirmed": "483",
+                "recovered": "382",
+                "deceased": "28",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "SK Wiesbaden": {
+                "active": "35",
+                "confirmed": "331",
+                "recovered": "285",
+                "deceased": "11",
+                "delta": {
+                    "confirmed": "4",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Hersfeld-Rotenburg": {
+                "active": "6",
+                "confirmed": "198",
+                "recovered": "170",
+                "deceased": "22",
+                "delta": {
+                    "confirmed": "1",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "SK Kassel": {
+                "active": "67",
+                "confirmed": "282",
+                "recovered": "209",
+                "deceased": "6",
+                "delta": {
+                    "confirmed": "3",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Main-Kinzig-Kreis": {
+                "active": "122",
+                "confirmed": "653",
+                "recovered": "497",
+                "deceased": "34",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Waldeck-Frankenberg": {
+                "active": "15",
+                "confirmed": "147",
+                "recovered": "129",
+                "deceased": "3",
+                "delta": {
+                    "confirmed": "1",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Giessen": {
+                "active": "16",
+                "confirmed": "226",
+                "recovered": "207",
+                "deceased": "3",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Vogelsbergkreis": {
+                "active": "5",
+                "confirmed": "121",
+                "recovered": "111",
+                "deceased": "5",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            }
+        },
+        "statecode": "AB"
+    },
+    "Schleswig-Holstein": {
+        "districtData": {
+            "LK Steinburg": {
+                "active": "53",
+                "confirmed": "132",
+                "recovered": "76",
+                "deceased": "3",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Dithmarschen": {
+                "active": "5",
+                "confirmed": "59",
+                "recovered": "51",
+                "deceased": "3",
+                "delta": {
+                    "confirmed": "4",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Segeberg": {
+                "active": "22",
+                "confirmed": "234",
+                "recovered": "209",
+                "deceased": "3",
+                "delta": {
+                    "confirmed": "5",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Ostholstein": {
+                "active": "5",
+                "confirmed": "67",
+                "recovered": "62",
+                "deceased": "0",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Rendsburg-Eckernfoerde": {
+                "active": "19",
+                "confirmed": "236",
+                "recovered": "203",
+                "deceased": "14",
+                "delta": {
+                    "confirmed": "1",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Stormarn": {
+                "active": "76",
+                "confirmed": "395",
+                "recovered": "294",
+                "deceased": "25",
+                "delta": {
+                    "confirmed": "1",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Nordfriesland": {
+                "active": "8",
+                "confirmed": "82",
+                "recovered": "73",
+                "deceased": "1",
+                "delta": {
+                    "confirmed": "1",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Ploen": {
+                "active": "11",
+                "confirmed": "119",
+                "recovered": "100",
+                "deceased": "8",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Schleswig-Flensburg": {
+                "active": "7",
+                "confirmed": "125",
+                "recovered": "115",
+                "deceased": "3",
+                "delta": {
+                    "confirmed": "1",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Pinneberg": {
+                "active": "64",
+                "confirmed": "563",
+                "recovered": "465",
+                "deceased": "34",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "SK Kiel": {
+                "active": "28",
+                "confirmed": "270",
+                "recovered": "233",
+                "deceased": "9",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "SK Luebeck": {
+                "active": "5",
+                "confirmed": "167",
+                "recovered": "161",
+                "deceased": "1",
+                "delta": {
+                    "confirmed": "1",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "SK Neumuenster": {
+                "active": "9",
+                "confirmed": "69",
+                "recovered": "58",
+                "deceased": "2",
+                "delta": {
+                    "confirmed": "2",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "SK Flensburg": {
+                "active": "1",
+                "confirmed": "34",
+                "recovered": "31",
+                "deceased": "2",
+                "delta": {
+                    "confirmed": "1",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Herzogtum Lauenburg": {
+                "active": "14",
+                "confirmed": "262",
+                "recovered": "237",
+                "deceased": "11",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            }
+        },
+        "statecode": "AB"
+    },
+    "Mecklenburg-Vorpommern": {
+        "districtData": {
+            "LK Rostock": {
+                "active": "10",
+                "confirmed": "67",
+                "recovered": "54",
+                "deceased": "3",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "SK Schwerin": {
+                "active": "1",
+                "confirmed": "90",
+                "recovered": "89",
+                "deceased": "0",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Mecklenburgische Seenplatte": {
+                "active": "4",
+                "confirmed": "111",
+                "recovered": "104",
+                "deceased": "3",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "SK Rostock": {
+                "active": "4",
+                "confirmed": "79",
+                "recovered": "73",
+                "deceased": "2",
+                "delta": {
+                    "confirmed": "3",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Vorpommern-Ruegen": {
+                "active": "4",
+                "confirmed": "80",
+                "recovered": "74",
+                "deceased": "2",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Ludwigslust-Parchim": {
+                "active": "4",
+                "confirmed": "71",
+                "recovered": "65",
+                "deceased": "2",
+                "delta": {
+                    "confirmed": "1",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Nordwestmecklenburg": {
+                "active": "5",
+                "confirmed": "78",
+                "recovered": "72",
+                "deceased": "1",
+                "delta": {
+                    "confirmed": "1",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Vorpommern-Greifswald": {
+                "active": "9",
+                "confirmed": "135",
+                "recovered": "120",
+                "deceased": "6",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            }
+        },
+        "statecode": "AB"
+    },
+    "Saarland": {
+        "districtData": {
+            "LK Stadtverband Saarbruecken": {
+                "active": "108",
+                "confirmed": "1221",
+                "recovered": "1015",
+                "deceased": "98",
+                "delta": {
+                    "confirmed": "1",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Merzig-Wadern": {
+                "active": "16",
+                "confirmed": "193",
+                "recovered": "175",
+                "deceased": "2",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Saarlouis": {
+                "active": "35",
+                "confirmed": "524",
+                "recovered": "470",
+                "deceased": "19",
+                "delta": {
+                    "confirmed": "1",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Saar-Pfalz-Kreis": {
+                "active": "22",
+                "confirmed": "287",
+                "recovered": "255",
+                "deceased": "10",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Neunkirchen": {
+                "active": "16",
+                "confirmed": "240",
+                "recovered": "218",
+                "deceased": "6",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Sankt Wendel": {
+                "active": "21",
+                "confirmed": "161",
+                "recovered": "134",
+                "deceased": "6",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            }
+        },
+        "statecode": "AB"
+    },
+    "Sachsen-Anhalt": {
+        "districtData": {
+            "SK Halle": {
+                "active": "29",
+                "confirmed": "326",
+                "recovered": "288",
+                "deceased": "9",
+                "delta": {
+                    "confirmed": "1",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Wittenberg": {
+                "active": "1",
+                "confirmed": "153",
+                "recovered": "149",
+                "deceased": "3",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Burgenlandkreis": {
+                "active": "13",
+                "confirmed": "91",
+                "recovered": "76",
+                "deceased": "2",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Mansfeld-Suedharz": {
+                "active": "3",
+                "confirmed": "38",
+                "recovered": "33",
+                "deceased": "2",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Stendal": {
+                "active": "10",
+                "confirmed": "105",
+                "recovered": "89",
+                "deceased": "6",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Boerde": {
+                "active": "17",
+                "confirmed": "142",
+                "recovered": "116",
+                "deceased": "9",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Harz": {
+                "active": "32",
+                "confirmed": "246",
+                "recovered": "210",
+                "deceased": "4",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Anhalt-Bitterfeld": {
+                "active": "5",
+                "confirmed": "69",
+                "recovered": "62",
+                "deceased": "2",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Saalekreis": {
+                "active": "18",
+                "confirmed": "119",
+                "recovered": "96",
+                "deceased": "5",
+                "delta": {
+                    "confirmed": "4",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Salzlandkreis": {
+                "active": "5",
+                "confirmed": "65",
+                "recovered": "60",
+                "deceased": "0",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "SK Dessau-Rosslau": {
+                "active": "14",
+                "confirmed": "65",
+                "recovered": "50",
+                "deceased": "1",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "SK Magdeburg": {
+                "active": "4",
+                "confirmed": "106",
+                "recovered": "101",
+                "deceased": "1",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Altmarkkreis Salzwedel": {
+                "active": "1",
+                "confirmed": "32",
+                "recovered": "31",
+                "deceased": "0",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Jerichower Land": {
+                "active": "0",
+                "confirmed": "33",
+                "recovered": "31",
+                "deceased": "2",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            }
+        },
+        "statecode": "AB"
+    },
+    "Nordrhein-Westfalen": {
+        "districtData": {
+            "SK Duesseldorf": {
+                "active": "237",
+                "confirmed": "1110",
+                "recovered": "849",
+                "deceased": "24",
+                "delta": {
+                    "confirmed": "23",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "StadtRegion Aachen": {
+                "active": "91",
+                "confirmed": "1890",
+                "recovered": "1715",
+                "deceased": "84",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "SK Wuppertal": {
+                "active": "146",
+                "confirmed": "838",
+                "recovered": "626",
+                "deceased": "66",
+                "delta": {
+                    "confirmed": "5",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Recklinghausen": {
+                "active": "164",
+                "confirmed": "1118",
+                "recovered": "928",
+                "deceased": "26",
+                "delta": {
+                    "confirmed": "2",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Soest": {
+                "active": "18",
+                "confirmed": "351",
+                "recovered": "327",
+                "deceased": "6",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "SK Bottrop": {
+                "active": "58",
+                "confirmed": "175",
+                "recovered": "111",
+                "deceased": "6",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "SK Krefeld": {
+                "active": "99",
+                "confirmed": "532",
+                "recovered": "412",
+                "deceased": "21",
+                "delta": {
+                    "confirmed": "4",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "SK Moenchengladbach": {
+                "active": "52",
+                "confirmed": "505",
+                "recovered": "417",
+                "deceased": "36",
+                "delta": {
+                    "confirmed": "2",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Olpe": {
+                "active": "54",
+                "confirmed": "582",
+                "recovered": "484",
+                "deceased": "44",
+                "delta": {
+                    "confirmed": "3",
+                    "deceased": "0",
+                    "recovered": "1"
+                }
+            },
+            "SK Leverkusen": {
+                "active": "18",
+                "confirmed": "207",
+                "recovered": "184",
+                "deceased": "5",
+                "delta": {
+                    "confirmed": "4",
+                    "deceased": "0",
+                    "recovered": "1"
+                }
+            },
+            "LK Rhein-Sieg-Kreis": {
+                "active": "155",
+                "confirmed": "1192",
+                "recovered": "994",
+                "deceased": "43",
+                "delta": {
+                    "confirmed": "1",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Heinsberg": {
+                "active": "73",
+                "confirmed": "1772",
+                "recovered": "1635",
+                "deceased": "64",
+                "delta": {
+                    "confirmed": "6",
+                    "deceased": "0",
+                    "recovered": "1"
+                }
+            },
+            "SK Essen": {
+                "active": "174",
+                "confirmed": "761",
+                "recovered": "552",
+                "deceased": "35",
+                "delta": {
+                    "confirmed": "5",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Maerkischer Kreis": {
+                "active": "71",
+                "confirmed": "565",
+                "recovered": "469",
+                "deceased": "25",
+                "delta": {
+                    "confirmed": "1",
+                    "deceased": "0",
+                    "recovered": "1"
+                }
+            },
+            "SK Remscheid": {
+                "active": "42",
+                "confirmed": "216",
+                "recovered": "159",
+                "deceased": "15",
+                "delta": {
+                    "confirmed": "2",
+                    "deceased": "1",
+                    "recovered": "0"
+                }
+            },
+            "LK Guetersloh": {
+                "active": "18",
+                "confirmed": "599",
+                "recovered": "562",
+                "deceased": "19",
+                "delta": {
+                    "confirmed": "1",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "SK Bochum": {
+                "active": "18",
+                "confirmed": "437",
+                "recovered": "403",
+                "deceased": "16",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "SK Hamm": {
+                "active": "49",
+                "confirmed": "450",
+                "recovered": "369",
+                "deceased": "32",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "SK Herne": {
+                "active": "36",
+                "confirmed": "169",
+                "recovered": "132",
+                "deceased": "1",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Paderborn": {
+                "active": "40",
+                "confirmed": "587",
+                "recovered": "520",
+                "deceased": "27",
+                "delta": {
+                    "confirmed": "3",
+                    "deceased": "0",
+                    "recovered": "2"
+                }
+            },
+            "SK Oberhausen": {
+                "active": "46",
+                "confirmed": "228",
+                "recovered": "181",
+                "deceased": "1",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "SK Solingen": {
+                "active": "17",
+                "confirmed": "229",
+                "recovered": "205",
+                "deceased": "7",
+                "delta": {
+                    "confirmed": "1",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "SK Dortmund": {
+                "active": "50",
+                "confirmed": "699",
+                "recovered": "643",
+                "deceased": "6",
+                "delta": {
+                    "confirmed": "6",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "SK Muenster": {
+                "active": "24",
+                "confirmed": "635",
+                "recovered": "598",
+                "deceased": "13",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "SK Gelsenkirchen": {
+                "active": "49",
+                "confirmed": "344",
+                "recovered": "284",
+                "deceased": "11",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Minden-Luebbecke": {
+                "active": "26",
+                "confirmed": "428",
+                "recovered": "395",
+                "deceased": "7",
+                "delta": {
+                    "confirmed": "1",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "SK Duisburg": {
+                "active": "173",
+                "confirmed": "933",
+                "recovered": "733",
+                "deceased": "27",
+                "delta": {
+                    "confirmed": "15",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Warendorf": {
+                "active": "38",
+                "confirmed": "472",
+                "recovered": "420",
+                "deceased": "14",
+                "delta": {
+                    "confirmed": "1",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Mettmann": {
+                "active": "101",
+                "confirmed": "873",
+                "recovered": "709",
+                "deceased": "63",
+                "delta": {
+                    "confirmed": "4",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Herford": {
+                "active": "15",
+                "confirmed": "325",
+                "recovered": "303",
+                "deceased": "7",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Hochsauerlandkreis": {
+                "active": "16",
+                "confirmed": "585",
+                "recovered": "552",
+                "deceased": "17",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Euskirchen": {
+                "active": "55",
+                "confirmed": "380",
+                "recovered": "308",
+                "deceased": "17",
+                "delta": {
+                    "confirmed": "3",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Unna": {
+                "active": "65",
+                "confirmed": "630",
+                "recovered": "534",
+                "deceased": "31",
+                "delta": {
+                    "confirmed": "4",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Lippe": {
+                "active": "50",
+                "confirmed": "730",
+                "recovered": "651",
+                "deceased": "29",
+                "delta": {
+                    "confirmed": "2",
+                    "deceased": "0",
+                    "recovered": "1"
+                }
+            },
+            "SK Hagen": {
+                "active": "58",
+                "confirmed": "272",
+                "recovered": "205",
+                "deceased": "9",
+                "delta": {
+                    "confirmed": "5",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Steinfurt": {
+                "active": "85",
+                "confirmed": "1257",
+                "recovered": "1102",
+                "deceased": "70",
+                "delta": {
+                    "confirmed": "3",
+                    "deceased": "1",
+                    "recovered": "0"
+                }
+            },
+            "LK Rhein-Erft-Kreis": {
+                "active": "126",
+                "confirmed": "1010",
+                "recovered": "826",
+                "deceased": "58",
+                "delta": {
+                    "confirmed": "5",
+                    "deceased": "0",
+                    "recovered": "1"
+                }
+            },
+            "SK Bonn": {
+                "active": "81",
+                "confirmed": "672",
+                "recovered": "585",
+                "deceased": "6",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Viersen": {
+                "active": "122",
+                "confirmed": "658",
+                "recovered": "503",
+                "deceased": "33",
+                "delta": {
+                    "confirmed": "6",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Ennepe-Ruhr-Kreis": {
+                "active": "24",
+                "confirmed": "400",
+                "recovered": "363",
+                "deceased": "13",
+                "delta": {
+                    "confirmed": "3",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Hoexter": {
+                "active": "36",
+                "confirmed": "308",
+                "recovered": "259",
+                "deceased": "13",
+                "delta": {
+                    "confirmed": "2",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "SK Bielefeld": {
+                "active": "83",
+                "confirmed": "384",
+                "recovered": "298",
+                "deceased": "3",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Borken": {
+                "active": "33",
+                "confirmed": "895",
+                "recovered": "825",
+                "deceased": "37",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Coesfeld": {
+                "active": "101",
+                "confirmed": "582",
+                "recovered": "458",
+                "deceased": "23",
+                "delta": {
+                    "confirmed": "30",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Kleve": {
+                "active": "105",
+                "confirmed": "580",
+                "recovered": "447",
+                "deceased": "28",
+                "delta": {
+                    "confirmed": "4",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Oberbergischer Kreis": {
+                "active": "27",
+                "confirmed": "458",
+                "recovered": "416",
+                "deceased": "15",
+                "delta": {
+                    "confirmed": "2",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Rhein-Kreis Neuss": {
+                "active": "53",
+                "confirmed": "623",
+                "recovered": "550",
+                "deceased": "20",
+                "delta": {
+                    "confirmed": "1",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "SK Koeln": {
+                "active": "169",
+                "confirmed": "2329",
+                "recovered": "2068",
+                "deceased": "92",
+                "delta": {
+                    "confirmed": "6",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Siegen-Wittgenstein": {
+                "active": "23",
+                "confirmed": "290",
+                "recovered": "259",
+                "deceased": "8",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Wesel": {
+                "active": "52",
+                "confirmed": "530",
+                "recovered": "452",
+                "deceased": "26",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Dueren": {
+                "active": "46",
+                "confirmed": "565",
+                "recovered": "485",
+                "deceased": "34",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Rheinisch-Bergischer Kreis": {
+                "active": "27",
+                "confirmed": "435",
+                "recovered": "391",
+                "deceased": "17",
+                "delta": {
+                    "confirmed": "2",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "SK Muelheim a.d.Ruhr": {
+                "active": "17",
+                "confirmed": "180",
+                "recovered": "155",
+                "deceased": "8",
+                "delta": {
+                    "confirmed": "3",
+                    "deceased": "1",
+                    "recovered": "0"
+                }
+            }
+        },
+        "statecode": "AB"
+    },
+    "Baden-Wuerttemberg": {
+        "districtData": {
+            "LK Hohenlohekreis": {
+                "active": "46",
+                "confirmed": "747",
+                "recovered": "664",
+                "deceased": "37",
+                "delta": {
+                    "confirmed": "1",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Calw": {
+                "active": "121",
+                "confirmed": "690",
+                "recovered": "546",
+                "deceased": "23",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "SK Heidelberg": {
+                "active": "15",
+                "confirmed": "288",
+                "recovered": "267",
+                "deceased": "6",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Main-Tauber-Kreis": {
+                "active": "97",
+                "confirmed": "371",
+                "recovered": "266",
+                "deceased": "8",
+                "delta": {
+                    "confirmed": "1",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "SK Stuttgart": {
+                "active": "108",
+                "confirmed": "1340",
+                "recovered": "1180",
+                "deceased": "52",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Ludwigsburg": {
+                "active": "180",
+                "confirmed": "1646",
+                "recovered": "1402",
+                "deceased": "64",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Esslingen": {
+                "active": "78",
+                "confirmed": "1702",
+                "recovered": "1530",
+                "deceased": "94",
+                "delta": {
+                    "confirmed": "2",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Heilbronn": {
+                "active": "124",
+                "confirmed": "889",
+                "recovered": "735",
+                "deceased": "30",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Freudenstadt": {
+                "active": "33",
+                "confirmed": "558",
+                "recovered": "491",
+                "deceased": "34",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Schwarzwald-Baar-Kreis": {
+                "active": "66",
+                "confirmed": "520",
+                "recovered": "435",
+                "deceased": "19",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Schwaebisch Hall": {
+                "active": "146",
+                "confirmed": "811",
+                "recovered": "616",
+                "deceased": "49",
+                "delta": {
+                    "confirmed": "2",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Loerrach": {
+                "active": "69",
+                "confirmed": "648",
+                "recovered": "527",
+                "deceased": "52",
+                "delta": {
+                    "confirmed": "2",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Ortenaukreis": {
+                "active": "104",
+                "confirmed": "1074",
+                "recovered": "873",
+                "deceased": "97",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Karlsruhe": {
+                "active": "60",
+                "confirmed": "913",
+                "recovered": "781",
+                "deceased": "72",
+                "delta": {
+                    "confirmed": "2",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Breisgau-Hochschwarzwald": {
+                "active": "95",
+                "confirmed": "1094",
+                "recovered": "941",
+                "deceased": "58",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Neckar-Odenwald-Kreis": {
+                "active": "131",
+                "confirmed": "382",
+                "recovered": "234",
+                "deceased": "17",
+                "delta": {
+                    "confirmed": "2",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Rottweil": {
+                "active": "152",
+                "confirmed": "639",
+                "recovered": "467",
+                "deceased": "20",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "SK Ulm": {
+                "active": "48",
+                "confirmed": "260",
+                "recovered": "207",
+                "deceased": "5",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "SK Karlsruhe": {
+                "active": "35",
+                "confirmed": "367",
+                "recovered": "323",
+                "deceased": "9",
+                "delta": {
+                    "confirmed": "1",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Alb-Donau-Kreis": {
+                "active": "127",
+                "confirmed": "543",
+                "recovered": "402",
+                "deceased": "14",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Tuttlingen": {
+                "active": "87",
+                "confirmed": "483",
+                "recovered": "381",
+                "deceased": "15",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Sigmaringen": {
+                "active": "46",
+                "confirmed": "773",
+                "recovered": "695",
+                "deceased": "32",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Tuebingen": {
+                "active": "69",
+                "confirmed": "1235",
+                "recovered": "1118",
+                "deceased": "48",
+                "delta": {
+                    "confirmed": "3",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Konstanz": {
+                "active": "86",
+                "confirmed": "443",
+                "recovered": "345",
+                "deceased": "12",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "SK Freiburg i.Breisgau": {
+                "active": "43",
+                "confirmed": "946",
+                "recovered": "830",
+                "deceased": "73",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "SK Heilbronn": {
+                "active": "95",
+                "confirmed": "418",
+                "recovered": "308",
+                "deceased": "15",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Enzkreis": {
+                "active": "164",
+                "confirmed": "564",
+                "recovered": "384",
+                "deceased": "16",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Ostalbkreis": {
+                "active": "276",
+                "confirmed": "1217",
+                "recovered": "919",
+                "deceased": "22",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Rems-Murr-Kreis": {
+                "active": "398",
+                "confirmed": "1354",
+                "recovered": "901",
+                "deceased": "55",
+                "delta": {
+                    "confirmed": "3",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Reutlingen": {
+                "active": "554",
+                "confirmed": "1472",
+                "recovered": "857",
+                "deceased": "61",
+                "delta": {
+                    "confirmed": "2",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Zollernalbkreis": {
+                "active": "216",
+                "confirmed": "1116",
+                "recovered": "836",
+                "deceased": "64",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Biberach": {
+                "active": "76",
+                "confirmed": "556",
+                "recovered": "456",
+                "deceased": "24",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Rastatt": {
+                "active": "62",
+                "confirmed": "499",
+                "recovered": "424",
+                "deceased": "13",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "SK Pforzheim": {
+                "active": "142",
+                "confirmed": "286",
+                "recovered": "138",
+                "deceased": "6",
+                "delta": {
+                    "confirmed": "1",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "SK Mannheim": {
+                "active": "79",
+                "confirmed": "466",
+                "recovered": "377",
+                "deceased": "10",
+                "delta": {
+                    "confirmed": "1",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Emmendingen": {
+                "active": "17",
+                "confirmed": "516",
+                "recovered": "460",
+                "deceased": "39",
+                "delta": {
+                    "confirmed": "1",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Goeppingen": {
+                "active": "42",
+                "confirmed": "770",
+                "recovered": "689",
+                "deceased": "39",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Boeblingen": {
+                "active": "221",
+                "confirmed": "1305",
+                "recovered": "1043",
+                "deceased": "41",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "SK Baden-Baden": {
+                "active": "34",
+                "confirmed": "182",
+                "recovered": "129",
+                "deceased": "19",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Rhein-Neckar-Kreis": {
+                "active": "62",
+                "confirmed": "887",
+                "recovered": "793",
+                "deceased": "32",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Waldshut": {
+                "active": "26",
+                "confirmed": "305",
+                "recovered": "244",
+                "deceased": "35",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Heidenheim": {
+                "active": "80",
+                "confirmed": "487",
+                "recovered": "372",
+                "deceased": "35",
+                "delta": {
+                    "confirmed": "1",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Bodenseekreis": {
+                "active": "6",
+                "confirmed": "283",
+                "recovered": "269",
+                "deceased": "8",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Ravensburg": {
+                "active": "51",
+                "confirmed": "528",
+                "recovered": "470",
+                "deceased": "7",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            }
+        },
+        "statecode": "AB"
+    },
+    "Bremen": {
+        "districtData": {
+            "SK Bremerhaven": {
+                "active": "34",
+                "confirmed": "62",
+                "recovered": "27",
+                "deceased": "1",
+                "delta": {
+                    "confirmed": "6",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "SK Bremen": {
+                "active": "215",
+                "confirmed": "854",
+                "recovered": "609",
+                "deceased": "30",
+                "delta": {
+                    "confirmed": "1",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            }
+        },
+        "statecode": "AB"
+    },
+    "Thueringen": {
+        "districtData": {
+            "LK Saale-Orla-Kreis": {
+                "active": "21",
+                "confirmed": "129",
+                "recovered": "96",
+                "deceased": "12",
+                "delta": {
+                    "confirmed": "3",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "SK Jena": {
+                "active": "1",
+                "confirmed": "158",
+                "recovered": "154",
+                "deceased": "3",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Eichsfeld": {
+                "active": "20",
+                "confirmed": "135",
+                "recovered": "111",
+                "deceased": "4",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Kyffhaeuserkreis": {
+                "active": "5",
+                "confirmed": "41",
+                "recovered": "36",
+                "deceased": "0",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Schmalkalden-Meiningen": {
+                "active": "22",
+                "confirmed": "101",
+                "recovered": "76",
+                "deceased": "3",
+                "delta": {
+                    "confirmed": "2",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Hildburghausen": {
+                "active": "6",
+                "confirmed": "24",
+                "recovered": "17",
+                "deceased": "1",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Weimarer Land": {
+                "active": "2",
+                "confirmed": "70",
+                "recovered": "64",
+                "deceased": "4",
+                "delta": {
+                    "confirmed": "1",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Saalfeld-Rudolstadt": {
+                "active": "8",
+                "confirmed": "64",
+                "recovered": "56",
+                "deceased": "0",
+                "delta": {
+                    "confirmed": "1",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Gotha": {
+                "active": "78",
+                "confirmed": "243",
+                "recovered": "150",
+                "deceased": "15",
+                "delta": {
+                    "confirmed": "2",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Wartburgkreis": {
+                "active": "8",
+                "confirmed": "44",
+                "recovered": "35",
+                "deceased": "1",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Sonneberg": {
+                "active": "35",
+                "confirmed": "118",
+                "recovered": "77",
+                "deceased": "6",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "SK Gera": {
+                "active": "53",
+                "confirmed": "164",
+                "recovered": "104",
+                "deceased": "7",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "SK Erfurt": {
+                "active": "4",
+                "confirmed": "134",
+                "recovered": "128",
+                "deceased": "2",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "SK Suhl": {
+                "active": "0",
+                "confirmed": "13",
+                "recovered": "11",
+                "deceased": "2",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "SK Eisenach": {
+                "active": "9",
+                "confirmed": "22",
+                "recovered": "12",
+                "deceased": "1",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Unstrut-Hainich-Kreis": {
+                "active": "7",
+                "confirmed": "76",
+                "recovered": "67",
+                "deceased": "2",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Greiz": {
+                "active": "129",
+                "confirmed": "497",
+                "recovered": "338",
+                "deceased": "30",
+                "delta": {
+                    "confirmed": "20",
+                    "deceased": "0",
+                    "recovered": "1"
+                }
+            },
+            "LK Ilm-Kreis": {
+                "active": "7",
+                "confirmed": "125",
+                "recovered": "114",
+                "deceased": "4",
+                "delta": {
+                    "confirmed": "2",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "SK Weimar": {
+                "active": "3",
+                "confirmed": "63",
+                "recovered": "60",
+                "deceased": "0",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Soemmerda": {
+                "active": "1",
+                "confirmed": "37",
+                "recovered": "35",
+                "deceased": "1",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Nordhausen": {
+                "active": "4",
+                "confirmed": "59",
+                "recovered": "54",
+                "deceased": "1",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Altenburger Land": {
+                "active": "5",
+                "confirmed": "52",
+                "recovered": "44",
+                "deceased": "3",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Saale-Holzland-Kreis": {
+                "active": "7",
+                "confirmed": "60",
+                "recovered": "51",
+                "deceased": "2",
+                "delta": {
+                    "confirmed": "1",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            }
+        },
+        "statecode": "AB"
+    },
+    "Rheinland-Pfalz": {
+        "districtData": {
+            "LK Kaiserslautern": {
+                "active": "9",
+                "confirmed": "97",
+                "recovered": "88",
+                "deceased": "0",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "SK Trier": {
+                "active": "5",
+                "confirmed": "99",
+                "recovered": "93",
+                "deceased": "1",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Bad Duerkheim": {
+                "active": "13",
+                "confirmed": "315",
+                "recovered": "290",
+                "deceased": "12",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "SK Worms": {
+                "active": "22",
+                "confirmed": "190",
+                "recovered": "161",
+                "deceased": "7",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "SK Ludwigshafen": {
+                "active": "26",
+                "confirmed": "279",
+                "recovered": "251",
+                "deceased": "2",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Mayen-Koblenz": {
+                "active": "21",
+                "confirmed": "347",
+                "recovered": "313",
+                "deceased": "13",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Suedwestpfalz": {
+                "active": "2",
+                "confirmed": "106",
+                "recovered": "101",
+                "deceased": "3",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Rhein-Pfalz-Kreis": {
+                "active": "17",
+                "confirmed": "210",
+                "recovered": "188",
+                "deceased": "5",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "SK Speyer": {
+                "active": "19",
+                "confirmed": "81",
+                "recovered": "62",
+                "deceased": "0",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "SK Mainz": {
+                "active": "62",
+                "confirmed": "528",
+                "recovered": "446",
+                "deceased": "20",
+                "delta": {
+                    "confirmed": "6",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Ahrweiler": {
+                "active": "21",
+                "confirmed": "138",
+                "recovered": "116",
+                "deceased": "1",
+                "delta": {
+                    "confirmed": "1",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Mainz-Bingen": {
+                "active": "43",
+                "confirmed": "395",
+                "recovered": "336",
+                "deceased": "16",
+                "delta": {
+                    "confirmed": "2",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Trier-Saarburg": {
+                "active": "29",
+                "confirmed": "192",
+                "recovered": "157",
+                "deceased": "6",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Bernkastel-Wittlich": {
+                "active": "14",
+                "confirmed": "133",
+                "recovered": "117",
+                "deceased": "2",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Rhein-Hunsrueck-Kreis": {
+                "active": "5",
+                "confirmed": "160",
+                "recovered": "151",
+                "deceased": "4",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Westerwaldkreis": {
+                "active": "18",
+                "confirmed": "333",
+                "recovered": "295",
+                "deceased": "20",
+                "delta": {
+                    "confirmed": "1",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Germersheim": {
+                "active": "5",
+                "confirmed": "140",
+                "recovered": "130",
+                "deceased": "5",
+                "delta": {
+                    "confirmed": "1",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Vulkaneifel": {
+                "active": "17",
+                "confirmed": "115",
+                "recovered": "94",
+                "deceased": "4",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "SK Pirmasens": {
+                "active": "3",
+                "confirmed": "30",
+                "recovered": "27",
+                "deceased": "0",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "SK Landau i.d.Pfalz": {
+                "active": "1",
+                "confirmed": "57",
+                "recovered": "56",
+                "deceased": "0",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "SK Kaiserslautern": {
+                "active": "30",
+                "confirmed": "131",
+                "recovered": "97",
+                "deceased": "4",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Neuwied": {
+                "active": "23",
+                "confirmed": "210",
+                "recovered": "183",
+                "deceased": "4",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "SK Neustadt a.d.Weinstrasse": {
+                "active": "2",
+                "confirmed": "102",
+                "recovered": "98",
+                "deceased": "2",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Bad Kreuznach": {
+                "active": "45",
+                "confirmed": "192",
+                "recovered": "145",
+                "deceased": "2",
+                "delta": {
+                    "confirmed": "3",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Cochem-Zell": {
+                "active": "2",
+                "confirmed": "127",
+                "recovered": "124",
+                "deceased": "1",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Suedliche Weinstrasse": {
+                "active": "12",
+                "confirmed": "150",
+                "recovered": "136",
+                "deceased": "2",
+                "delta": {
+                    "confirmed": "1",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Kusel": {
+                "active": "3",
+                "confirmed": "88",
+                "recovered": "84",
+                "deceased": "1",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Birkenfeld": {
+                "active": "10",
+                "confirmed": "84",
+                "recovered": "74",
+                "deceased": "0",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Alzey-Worms": {
+                "active": "57",
+                "confirmed": "227",
+                "recovered": "165",
+                "deceased": "5",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Bitburg-Pruem": {
+                "active": "12",
+                "confirmed": "175",
+                "recovered": "159",
+                "deceased": "4",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Donnersbergkreis": {
+                "active": "21",
+                "confirmed": "119",
+                "recovered": "93",
+                "deceased": "5",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "SK Koblenz": {
+                "active": "21",
+                "confirmed": "255",
+                "recovered": "216",
+                "deceased": "18",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Altenkirchen": {
+                "active": "12",
+                "confirmed": "154",
+                "recovered": "131",
+                "deceased": "11",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Rhein-Lahn-Kreis": {
+                "active": "1",
+                "confirmed": "154",
+                "recovered": "148",
+                "deceased": "5",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "SK Zweibruecken": {
+                "active": "2",
+                "confirmed": "35",
+                "recovered": "33",
+                "deceased": "0",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "SK Frankenthal": {
+                "active": "5",
+                "confirmed": "41",
+                "recovered": "34",
+                "deceased": "2",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            }
+        },
+        "statecode": "AB"
+    },
+    "Hamburg": {
+        "districtData": {
+            "SK Hamburg": {
+                "active": "566",
+                "confirmed": "4662",
+                "recovered": "3906",
+                "deceased": "190",
+                "delta": {
+                    "confirmed": "6",
+                    "deceased": "1",
+                    "recovered": "0"
+                }
+            }
+        },
+        "statecode": "AB"
+    },
+    "Niedersachsen": {
+        "districtData": {
+            "LK Vechta": {
+                "active": "12",
+                "confirmed": "314",
+                "recovered": "292",
+                "deceased": "10",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Harburg": {
+                "active": "39",
+                "confirmed": "503",
+                "recovered": "454",
+                "deceased": "10",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Stade": {
+                "active": "7",
+                "confirmed": "192",
+                "recovered": "178",
+                "deceased": "7",
+                "delta": {
+                    "confirmed": "1",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Lueneburg": {
+                "active": "4",
+                "confirmed": "166",
+                "recovered": "162",
+                "deceased": "0",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Goettingen": {
+                "active": "113",
+                "confirmed": "765",
+                "recovered": "593",
+                "deceased": "59",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Friesland": {
+                "active": "2",
+                "confirmed": "33",
+                "recovered": "30",
+                "deceased": "1",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Northeim": {
+                "active": "13",
+                "confirmed": "109",
+                "recovered": "94",
+                "deceased": "2",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Leer": {
+                "active": "9",
+                "confirmed": "98",
+                "recovered": "87",
+                "deceased": "2",
+                "delta": {
+                    "confirmed": "1",
+                    "deceased": "0",
+                    "recovered": "1"
+                }
+            },
+            "LK Wolfenbuettel": {
+                "active": "18",
+                "confirmed": "176",
+                "recovered": "148",
+                "deceased": "10",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "SK Delmenhorst": {
+                "active": "7",
+                "confirmed": "46",
+                "recovered": "37",
+                "deceased": "2",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Osnabrueck": {
+                "active": "62",
+                "confirmed": "985",
+                "recovered": "870",
+                "deceased": "53",
+                "delta": {
+                    "confirmed": "3",
+                    "deceased": "0",
+                    "recovered": "1"
+                }
+            },
+            "LK Oldenburg": {
+                "active": "15",
+                "confirmed": "211",
+                "recovered": "186",
+                "deceased": "10",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Helmstedt": {
+                "active": "59",
+                "confirmed": "147",
+                "recovered": "87",
+                "deceased": "1",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Holzminden": {
+                "active": "2",
+                "confirmed": "104",
+                "recovered": "97",
+                "deceased": "5",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "SK Osnabrueck": {
+                "active": "18",
+                "confirmed": "450",
+                "recovered": "419",
+                "deceased": "13",
+                "delta": {
+                    "confirmed": "1",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Schaumburg": {
+                "active": "11",
+                "confirmed": "146",
+                "recovered": "129",
+                "deceased": "6",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Uelzen": {
+                "active": "1",
+                "confirmed": "41",
+                "recovered": "40",
+                "deceased": "0",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Emsland": {
+                "active": "28",
+                "confirmed": "408",
+                "recovered": "360",
+                "deceased": "20",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Nienburg (Weser)": {
+                "active": "5",
+                "confirmed": "69",
+                "recovered": "60",
+                "deceased": "4",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Aurich": {
+                "active": "6",
+                "confirmed": "91",
+                "recovered": "79",
+                "deceased": "6",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "SK Braunschweig": {
+                "active": "18",
+                "confirmed": "306",
+                "recovered": "275",
+                "deceased": "13",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "Region Hannover": {
+                "active": "492",
+                "confirmed": "1975",
+                "recovered": "1410",
+                "deceased": "73",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Cuxhaven": {
+                "active": "33",
+                "confirmed": "120",
+                "recovered": "81",
+                "deceased": "6",
+                "delta": {
+                    "confirmed": "2",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Wesermarsch": {
+                "active": "0",
+                "confirmed": "51",
+                "recovered": "50",
+                "deceased": "1",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Luechow-Dannenberg": {
+                "active": "0",
+                "confirmed": "18",
+                "recovered": "15",
+                "deceased": "3",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Hameln-Pyrmont": {
+                "active": "7",
+                "confirmed": "120",
+                "recovered": "106",
+                "deceased": "7",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Peine": {
+                "active": "3",
+                "confirmed": "139",
+                "recovered": "126",
+                "deceased": "10",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "SK Oldenburg": {
+                "active": "3",
+                "confirmed": "160",
+                "recovered": "156",
+                "deceased": "1",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Hildesheim": {
+                "active": "35",
+                "confirmed": "302",
+                "recovered": "264",
+                "deceased": "3",
+                "delta": {
+                    "confirmed": "5",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Ammerland": {
+                "active": "4",
+                "confirmed": "162",
+                "recovered": "153",
+                "deceased": "5",
+                "delta": {
+                    "confirmed": "1",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "SK Wilhelmshaven": {
+                "active": "4",
+                "confirmed": "22",
+                "recovered": "17",
+                "deceased": "1",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "SK Wolfsburg": {
+                "active": "11",
+                "confirmed": "287",
+                "recovered": "225",
+                "deceased": "51",
+                "delta": {
+                    "confirmed": "2",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Goslar": {
+                "active": "44",
+                "confirmed": "220",
+                "recovered": "164",
+                "deceased": "12",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Osterholz": {
+                "active": "6",
+                "confirmed": "82",
+                "recovered": "76",
+                "deceased": "0",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Rotenburg (Wuemme)": {
+                "active": "7",
+                "confirmed": "99",
+                "recovered": "91",
+                "deceased": "1",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Gifhorn": {
+                "active": "5",
+                "confirmed": "124",
+                "recovered": "115",
+                "deceased": "4",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Verden": {
+                "active": "10",
+                "confirmed": "126",
+                "recovered": "114",
+                "deceased": "2",
+                "delta": {
+                    "confirmed": "2",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Heidekreis": {
+                "active": "3",
+                "confirmed": "70",
+                "recovered": "65",
+                "deceased": "2",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Celle": {
+                "active": "29",
+                "confirmed": "177",
+                "recovered": "136",
+                "deceased": "12",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Cloppenburg": {
+                "active": "7",
+                "confirmed": "101",
+                "recovered": "94",
+                "deceased": "0",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "SK Salzgitter": {
+                "active": "12",
+                "confirmed": "130",
+                "recovered": "112",
+                "deceased": "6",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Grafschaft Bentheim": {
+                "active": "18",
+                "confirmed": "227",
+                "recovered": "196",
+                "deceased": "13",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Wittmund": {
+                "active": "2",
+                "confirmed": "26",
+                "recovered": "24",
+                "deceased": "0",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Diepholz": {
+                "active": "38",
+                "confirmed": "338",
+                "recovered": "277",
+                "deceased": "23",
+                "delta": {
+                    "confirmed": "4",
+                    "deceased": "0",
+                    "recovered": "3"
+                }
+            },
+            "SK Emden": {
+                "active": "1",
+                "confirmed": "17",
+                "recovered": "16",
+                "deceased": "0",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            }
+        },
+        "statecode": "AB"
+    },
+    "Sachsen": {
+        "districtData": {
+            "LK Erzgebirgskreis": {
+                "active": "55",
+                "confirmed": "533",
+                "recovered": "435",
+                "deceased": "43",
+                "delta": {
+                    "confirmed": "6",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Meissen": {
+                "active": "10",
+                "confirmed": "222",
+                "recovered": "195",
+                "deceased": "17",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Zwickau": {
+                "active": "86",
+                "confirmed": "778",
+                "recovered": "652",
+                "deceased": "40",
+                "delta": {
+                    "confirmed": "3",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Leipzig": {
+                "active": "7",
+                "confirmed": "187",
+                "recovered": "176",
+                "deceased": "4",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "SK Leipzig": {
+                "active": "92",
+                "confirmed": "573",
+                "recovered": "471",
+                "deceased": "10",
+                "delta": {
+                    "confirmed": "1",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Mittelsachsen": {
+                "active": "18",
+                "confirmed": "252",
+                "recovered": "227",
+                "deceased": "7",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Nordsachsen": {
+                "active": "25",
+                "confirmed": "138",
+                "recovered": "113",
+                "deceased": "0",
+                "delta": {
+                    "confirmed": "1",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Bautzen": {
+                "active": "85",
+                "confirmed": "361",
+                "recovered": "263",
+                "deceased": "13",
+                "delta": {
+                    "confirmed": "1",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Vogtlandkreis": {
+                "active": "72",
+                "confirmed": "365",
+                "recovered": "284",
+                "deceased": "9",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "SK Chemnitz": {
+                "active": "17",
+                "confirmed": "197",
+                "recovered": "175",
+                "deceased": "5",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Goerlitz": {
+                "active": "16",
+                "confirmed": "266",
+                "recovered": "230",
+                "deceased": "20",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "SK Dresden": {
+                "active": "39",
+                "confirmed": "573",
+                "recovered": "527",
+                "deceased": "7",
+                "delta": {
+                    "confirmed": "2",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Saechsische Schweiz-Osterzgebirge": {
+                "active": "53",
+                "confirmed": "339",
+                "recovered": "284",
+                "deceased": "2",
+                "delta": {
+                    "confirmed": "3",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            }
+        },
+        "statecode": "AB"
+    },
+    "Berlin": {
+        "districtData": {
+            "SK Berlin Tempelhof-Schoeneberg": {
+                "active": "69",
+                "confirmed": "618",
+                "recovered": "528",
+                "deceased": "21",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "SK Berlin Mitte": {
+                "active": "84",
+                "confirmed": "891",
+                "recovered": "797",
+                "deceased": "10",
+                "delta": {
+                    "confirmed": "1",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "SK Berlin Lichtenberg": {
+                "active": "68",
+                "confirmed": "267",
+                "recovered": "191",
+                "deceased": "8",
+                "delta": {
+                    "confirmed": "4",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "SK Berlin Spandau": {
+                "active": "26",
+                "confirmed": "248",
+                "recovered": "216",
+                "deceased": "6",
+                "delta": {
+                    "confirmed": "2",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "SK Berlin Marzahn-Hellersdorf": {
+                "active": "55",
+                "confirmed": "319",
+                "recovered": "262",
+                "deceased": "2",
+                "delta": {
+                    "confirmed": "1",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "SK Berlin Reinickendorf": {
+                "active": "55",
+                "confirmed": "469",
+                "recovered": "394",
+                "deceased": "20",
+                "delta": {
+                    "confirmed": "3",
+                    "deceased": "0",
+                    "recovered": "1"
+                }
+            },
+            "SK Berlin Pankow": {
+                "active": "85",
+                "confirmed": "631",
+                "recovered": "525",
+                "deceased": "21",
+                "delta": {
+                    "confirmed": "4",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "SK Berlin Steglitz-Zehlendorf": {
+                "active": "57",
+                "confirmed": "506",
+                "recovered": "437",
+                "deceased": "12",
+                "delta": {
+                    "confirmed": "2",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "SK Berlin Friedrichshain-Kreuzberg": {
+                "active": "31",
+                "confirmed": "468",
+                "recovered": "432",
+                "deceased": "5",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "SK Berlin Neukoelln": {
+                "active": "64",
+                "confirmed": "661",
+                "recovered": "573",
+                "deceased": "24",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "SK Berlin Charlottenburg-Wilmersdorf": {
+                "active": "48",
+                "confirmed": "690",
+                "recovered": "621",
+                "deceased": "21",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "SK Berlin Treptow-Koepenick": {
+                "active": "31",
+                "confirmed": "319",
+                "recovered": "279",
+                "deceased": "9",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            }
+        },
+        "statecode": "AB"
+    },
+    "Bayern": {
+        "districtData": {
+            "LK Lindau": {
+                "active": "21",
+                "confirmed": "240",
+                "recovered": "213",
+                "deceased": "6",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Muenchen": {
+                "active": "261",
+                "confirmed": "1295",
+                "recovered": "991",
+                "deceased": "43",
+                "delta": {
+                    "confirmed": "11",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Neuburg-Schrobenhausen": {
+                "active": "42",
+                "confirmed": "283",
+                "recovered": "228",
+                "deceased": "13",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Erding": {
+                "active": "46",
+                "confirmed": "574",
+                "recovered": "519",
+                "deceased": "9",
+                "delta": {
+                    "confirmed": "2",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Passau": {
+                "active": "98",
+                "confirmed": "523",
+                "recovered": "405",
+                "deceased": "20",
+                "delta": {
+                    "confirmed": "1",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Donau-Ries": {
+                "active": "49",
+                "confirmed": "336",
+                "recovered": "264",
+                "deceased": "23",
+                "delta": {
+                    "confirmed": "1",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Regensburg": {
+                "active": "32",
+                "confirmed": "411",
+                "recovered": "367",
+                "deceased": "12",
+                "delta": {
+                    "confirmed": "5",
+                    "deceased": "0",
+                    "recovered": "5"
+                }
+            },
+            "LK Kitzingen": {
+                "active": "53",
+                "confirmed": "184",
+                "recovered": "128",
+                "deceased": "3",
+                "delta": {
+                    "confirmed": "1",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Fuerth": {
+                "active": "59",
+                "confirmed": "471",
+                "recovered": "358",
+                "deceased": "54",
+                "delta": {
+                    "confirmed": "1",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Miltenberg": {
+                "active": "18",
+                "confirmed": "276",
+                "recovered": "253",
+                "deceased": "5",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Hof": {
+                "active": "55",
+                "confirmed": "405",
+                "recovered": "324",
+                "deceased": "26",
+                "delta": {
+                    "confirmed": "2",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Altoetting": {
+                "active": "74",
+                "confirmed": "587",
+                "recovered": "473",
+                "deceased": "40",
+                "delta": {
+                    "confirmed": "2",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "SK Augsburg": {
+                "active": "13",
+                "confirmed": "378",
+                "recovered": "352",
+                "deceased": "13",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Aschaffenburg": {
+                "active": "20",
+                "confirmed": "491",
+                "recovered": "439",
+                "deceased": "32",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Garmisch-Partenkirchen": {
+                "active": "26",
+                "confirmed": "264",
+                "recovered": "223",
+                "deceased": "15",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Deggendorf": {
+                "active": "30",
+                "confirmed": "276",
+                "recovered": "234",
+                "deceased": "12",
+                "delta": {
+                    "confirmed": "5",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Fuerstenfeldbruck": {
+                "active": "81",
+                "confirmed": "810",
+                "recovered": "696",
+                "deceased": "33",
+                "delta": {
+                    "confirmed": "1",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Coburg": {
+                "active": "54",
+                "confirmed": "199",
+                "recovered": "137",
+                "deceased": "8",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Roth": {
+                "active": "9",
+                "confirmed": "287",
+                "recovered": "271",
+                "deceased": "7",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Augsburg": {
+                "active": "26",
+                "confirmed": "369",
+                "recovered": "336",
+                "deceased": "7",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Neustadt a.d.Waldnaab": {
+                "active": "66",
+                "confirmed": "776",
+                "recovered": "654",
+                "deceased": "56",
+                "delta": {
+                    "confirmed": "1",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Schweinfurt": {
+                "active": "45",
+                "confirmed": "455",
+                "recovered": "387",
+                "deceased": "23",
+                "delta": {
+                    "confirmed": "1",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Landshut": {
+                "active": "82",
+                "confirmed": "654",
+                "recovered": "545",
+                "deceased": "27",
+                "delta": {
+                    "confirmed": "5",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Weilheim-Schongau": {
+                "active": "9",
+                "confirmed": "332",
+                "recovered": "320",
+                "deceased": "3",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "SK Memmingen": {
+                "active": "6",
+                "confirmed": "51",
+                "recovered": "45",
+                "deceased": "0",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "SK Straubing": {
+                "active": "57",
+                "confirmed": "379",
+                "recovered": "286",
+                "deceased": "36",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "SK Wuerzburg": {
+                "active": "77",
+                "confirmed": "456",
+                "recovered": "329",
+                "deceased": "50",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "SK Ingolstadt": {
+                "active": "33",
+                "confirmed": "397",
+                "recovered": "340",
+                "deceased": "24",
+                "delta": {
+                    "confirmed": "1",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Muehldorf a.Inn": {
+                "active": "67",
+                "confirmed": "487",
+                "recovered": "397",
+                "deceased": "23",
+                "delta": {
+                    "confirmed": "1",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Miesbach": {
+                "active": "62",
+                "confirmed": "520",
+                "recovered": "451",
+                "deceased": "7",
+                "delta": {
+                    "confirmed": "4",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Traunstein": {
+                "active": "230",
+                "confirmed": "1207",
+                "recovered": "906",
+                "deceased": "71",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Lichtenfels": {
+                "active": "26",
+                "confirmed": "210",
+                "recovered": "182",
+                "deceased": "2",
+                "delta": {
+                    "confirmed": "6",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "SK Fuerth": {
+                "active": "71",
+                "confirmed": "359",
+                "recovered": "257",
+                "deceased": "31",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Freising": {
+                "active": "34",
+                "confirmed": "922",
+                "recovered": "851",
+                "deceased": "37",
+                "delta": {
+                    "confirmed": "4",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "SK Schweinfurt": {
+                "active": "25",
+                "confirmed": "169",
+                "recovered": "127",
+                "deceased": "17",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Ebersberg": {
+                "active": "54",
+                "confirmed": "464",
+                "recovered": "405",
+                "deceased": "5",
+                "delta": {
+                    "confirmed": "1",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Main-Spessart": {
+                "active": "4",
+                "confirmed": "144",
+                "recovered": "134",
+                "deceased": "6",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Tirschenreuth": {
+                "active": "40",
+                "confirmed": "1119",
+                "recovered": "960",
+                "deceased": "119",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Pfaffenhofen a.d.Ilm": {
+                "active": "16",
+                "confirmed": "335",
+                "recovered": "301",
+                "deceased": "18",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Straubing-Bogen": {
+                "active": "73",
+                "confirmed": "456",
+                "recovered": "361",
+                "deceased": "22",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "SK Coburg": {
+                "active": "13",
+                "confirmed": "57",
+                "recovered": "44",
+                "deceased": "0",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "SK Ansbach": {
+                "active": "21",
+                "confirmed": "128",
+                "recovered": "100",
+                "deceased": "7",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Erlangen-Hoechstadt": {
+                "active": "8",
+                "confirmed": "202",
+                "recovered": "188",
+                "deceased": "6",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Rosenheim": {
+                "active": "644",
+                "confirmed": "2088",
+                "recovered": "1301",
+                "deceased": "143",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Kulmbach": {
+                "active": "30",
+                "confirmed": "225",
+                "recovered": "184",
+                "deceased": "11",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Nuernberger Land": {
+                "active": "40",
+                "confirmed": "595",
+                "recovered": "517",
+                "deceased": "38",
+                "delta": {
+                    "confirmed": "1",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "SK Aschaffenburg": {
+                "active": "7",
+                "confirmed": "110",
+                "recovered": "102",
+                "deceased": "1",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Bad Kissingen": {
+                "active": "32",
+                "confirmed": "234",
+                "recovered": "183",
+                "deceased": "19",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Bamberg": {
+                "active": "28",
+                "confirmed": "387",
+                "recovered": "325",
+                "deceased": "34",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Eichstaett": {
+                "active": "24",
+                "confirmed": "274",
+                "recovered": "234",
+                "deceased": "16",
+                "delta": {
+                    "confirmed": "2",
+                    "deceased": "0",
+                    "recovered": "1"
+                }
+            },
+            "LK Rhoen-Grabfeld": {
+                "active": "23",
+                "confirmed": "189",
+                "recovered": "160",
+                "deceased": "6",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Wunsiedel i.Fichtelgebirge": {
+                "active": "44",
+                "confirmed": "619",
+                "recovered": "540",
+                "deceased": "35",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Unterallgaeu": {
+                "active": "30",
+                "confirmed": "268",
+                "recovered": "225",
+                "deceased": "13",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "SK Rosenheim": {
+                "active": "212",
+                "confirmed": "462",
+                "recovered": "229",
+                "deceased": "21",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Kronach": {
+                "active": "16",
+                "confirmed": "136",
+                "recovered": "117",
+                "deceased": "3",
+                "delta": {
+                    "confirmed": "2",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Landsberg a.Lech": {
+                "active": "53",
+                "confirmed": "335",
+                "recovered": "272",
+                "deceased": "10",
+                "delta": {
+                    "confirmed": "4",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Ostallgaeu": {
+                "active": "16",
+                "confirmed": "490",
+                "recovered": "441",
+                "deceased": "33",
+                "delta": {
+                    "confirmed": "1",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Guenzburg": {
+                "active": "26",
+                "confirmed": "225",
+                "recovered": "197",
+                "deceased": "2",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "SK Schwabach": {
+                "active": "5",
+                "confirmed": "78",
+                "recovered": "71",
+                "deceased": "2",
+                "delta": {
+                    "confirmed": "1",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Cham": {
+                "active": "36",
+                "confirmed": "405",
+                "recovered": "350",
+                "deceased": "19",
+                "delta": {
+                    "confirmed": "1",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "SK Landshut": {
+                "active": "27",
+                "confirmed": "273",
+                "recovered": "236",
+                "deceased": "10",
+                "delta": {
+                    "confirmed": "1",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Oberallgaeu": {
+                "active": "4",
+                "confirmed": "171",
+                "recovered": "160",
+                "deceased": "7",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Kelheim": {
+                "active": "28",
+                "confirmed": "435",
+                "recovered": "376",
+                "deceased": "31",
+                "delta": {
+                    "confirmed": "1",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "SK Bayreuth": {
+                "active": "17",
+                "confirmed": "194",
+                "recovered": "168",
+                "deceased": "9",
+                "delta": {
+                    "confirmed": "1",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Weissenburg-Gunzenhausen": {
+                "active": "39",
+                "confirmed": "301",
+                "recovered": "246",
+                "deceased": "16",
+                "delta": {
+                    "confirmed": "1",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Ansbach": {
+                "active": "80",
+                "confirmed": "540",
+                "recovered": "439",
+                "deceased": "21",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Rottal-Inn": {
+                "active": "35",
+                "confirmed": "704",
+                "recovered": "630",
+                "deceased": "39",
+                "delta": {
+                    "confirmed": "2",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "SK Nuernberg": {
+                "active": "138",
+                "confirmed": "954",
+                "recovered": "783",
+                "deceased": "33",
+                "delta": {
+                    "confirmed": "9",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Berchtesgadener Land": {
+                "active": "10",
+                "confirmed": "267",
+                "recovered": "243",
+                "deceased": "14",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Bad Toelz-Wolfratshausen": {
+                "active": "20",
+                "confirmed": "409",
+                "recovered": "379",
+                "deceased": "10",
+                "delta": {
+                    "confirmed": "2",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "SK Kempten": {
+                "active": "1",
+                "confirmed": "101",
+                "recovered": "91",
+                "deceased": "9",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Starnberg": {
+                "active": "8",
+                "confirmed": "504",
+                "recovered": "487",
+                "deceased": "9",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "SK Hof": {
+                "active": "3",
+                "confirmed": "102",
+                "recovered": "95",
+                "deceased": "4",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Amberg-Sulzbach": {
+                "active": "71",
+                "confirmed": "454",
+                "recovered": "340",
+                "deceased": "43",
+                "delta": {
+                    "confirmed": "5",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "SK Regensburg": {
+                "active": "43",
+                "confirmed": "436",
+                "recovered": "386",
+                "deceased": "7",
+                "delta": {
+                    "confirmed": "9",
+                    "deceased": "0",
+                    "recovered": "5"
+                }
+            },
+            "SK Passau": {
+                "active": "3",
+                "confirmed": "126",
+                "recovered": "105",
+                "deceased": "18",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "SK Weiden i.d.OPf.": {
+                "active": "30",
+                "confirmed": "299",
+                "recovered": "255",
+                "deceased": "14",
+                "delta": {
+                    "confirmed": "2",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Schwandorf": {
+                "active": "27",
+                "confirmed": "437",
+                "recovered": "395",
+                "deceased": "15",
+                "delta": {
+                    "confirmed": "1",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Dillingen a.d.Donau": {
+                "active": "50",
+                "confirmed": "250",
+                "recovered": "179",
+                "deceased": "21",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "SK Bamberg": {
+                "active": "31",
+                "confirmed": "187",
+                "recovered": "141",
+                "deceased": "15",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "SK Kaufbeuren": {
+                "active": "9",
+                "confirmed": "100",
+                "recovered": "87",
+                "deceased": "4",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Forchheim": {
+                "active": "6",
+                "confirmed": "198",
+                "recovered": "188",
+                "deceased": "4",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "SK Erlangen": {
+                "active": "25",
+                "confirmed": "243",
+                "recovered": "211",
+                "deceased": "7",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Neumarkt i.d.OPf.": {
+                "active": "49",
+                "confirmed": "353",
+                "recovered": "291",
+                "deceased": "13",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Neu-Ulm": {
+                "active": "33",
+                "confirmed": "413",
+                "recovered": "361",
+                "deceased": "19",
+                "delta": {
+                    "confirmed": "1",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Bayreuth": {
+                "active": "33",
+                "confirmed": "395",
+                "recovered": "338",
+                "deceased": "24",
+                "delta": {
+                    "confirmed": "2",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Aichach-Friedberg": {
+                "active": "8",
+                "confirmed": "278",
+                "recovered": "250",
+                "deceased": "20",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Freyung-Grafenau": {
+                "active": "21",
+                "confirmed": "183",
+                "recovered": "151",
+                "deceased": "11",
+                "delta": {
+                    "confirmed": "1",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Hassberge": {
+                "active": "12",
+                "confirmed": "153",
+                "recovered": "136",
+                "deceased": "5",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "SK Muenchen": {
+                "active": "985",
+                "confirmed": "5904",
+                "recovered": "4796",
+                "deceased": "123",
+                "delta": {
+                    "confirmed": "22",
+                    "deceased": "1",
+                    "recovered": "0"
+                }
+            },
+            "LK Regen": {
+                "active": "32",
+                "confirmed": "166",
+                "recovered": "129",
+                "deceased": "5",
+                "delta": {
+                    "confirmed": "1",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Dachau": {
+                "active": "61",
+                "confirmed": "877",
+                "recovered": "793",
+                "deceased": "23",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Wuerzburg": {
+                "active": "82",
+                "confirmed": "403",
+                "recovered": "314",
+                "deceased": "7",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Dingolfing-Landau": {
+                "active": "16",
+                "confirmed": "195",
+                "recovered": "174",
+                "deceased": "5",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "SK Amberg": {
+                "active": "13",
+                "confirmed": "72",
+                "recovered": "56",
+                "deceased": "3",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            },
+            "LK Neustadt a.d.Aisch-Bad Windsheim": {
+                "active": "16",
+                "confirmed": "215",
+                "recovered": "193",
+                "deceased": "6",
+                "delta": {
+                    "confirmed": "0",
+                    "deceased": "0",
+                    "recovered": "0"
+                }
+            }
+        },
+        "statecode": "AB"
+    }
+}

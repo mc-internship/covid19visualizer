@@ -5,6 +5,13 @@ import usadatajson from './data/usadatajson.json';
 import germanydatajson from './data/germanydatajson.json';
 import italydatajson from './data/italydatajson.json';
 import singaporedatajson from './data/singaporedatajson.json';
+import indiaeventsdata from './data/indiaevents.json';
+import usaeventsdata from './data/usaevents.json';
+import germanyeventsdata from './data/germanyevents.json';
+import italyeventsdata from './data/italyevents.json';
+import singaporeeventsdata from './data/singaporeevents.json';
+
+import EventHelper from './EventHelperComponent';
 import DailyNewChart from './ChartHelpers/DailyNew';
 
 import axios from 'axios';
@@ -81,6 +88,9 @@ function Events(props) {
         </div>
         </section>
         </div>
+        <div className = "events">
+          <EventHelper name = {indiaeventsdata.name} events = {indiaeventsdata.events} />
+        </div>
         </div>
         <div id= "usat" className = "timeline-details"> 
         <div className="cards-container">
@@ -89,6 +99,9 @@ function Events(props) {
           <DailyNewChart title="Daily New Cases - USA" timeseries={timeseriesUS} />
         </div>
         </section>
+        </div>
+        <div className = "events">
+          <EventHelper name = {usaeventsdata.name} events = {usaeventsdata.events} />
         </div>
        
         </div>
@@ -100,6 +113,9 @@ function Events(props) {
         </div>
         </section>
         </div>
+        <div className = "events">
+          <EventHelper name = {germanyeventsdata.name} events = {germanyeventsdata.events} />
+        </div>
         
         </div>
         <div id= "italyt" className = "timeline-details"> 
@@ -110,6 +126,9 @@ function Events(props) {
         </div>
         </section>
         </div>
+        <div className = "events">
+          <EventHelper name = {italyeventsdata.name} events = {italyeventsdata.events} />
+        </div>
      
         </div>
         <div id= "singt" className = "timeline-details"> 
@@ -119,6 +138,9 @@ function Events(props) {
           <DailyNewChart title="Daily New Cases - Singapore" timeseries={timeseriesSG} />
         </div>
         </section>
+        </div>
+        <div className = "events">
+          <EventHelper name = {singaporeeventsdata.name} events = {singaporeeventsdata.events} />
         </div>
  
         </div>

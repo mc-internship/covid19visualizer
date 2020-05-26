@@ -1,4 +1,5 @@
 import Row from './RowComponent';
+import Rowwithoutdistrict from './RowComponentwithoutdistricts'
 
 import {STATE_ROW_STATISTICS} from '../../constants.js';
 import {capitalize, abbreviate} from '../../shared/UtilFunctions.js';
@@ -144,16 +145,23 @@ function Table({
               ))}
             </tr>
           </thead>
-
-          {states && (
-            <tbody>
-              {sortedStates.map((state, index) => {
-                if (state.confirmed > 0 && state.statecode !== 'TT') {
+          <div>
+     
+      { console.log(districts) }
+      {console.log(sortedStates)}
+    </div>
+        {sortedStates && (
+          <tbody>
+              
+            {sortedStates.map((state, index) => {
+              if(districts!=5){
+                if (state.confirmed > 0 && state.statecode !== 'TT' && state.state !== 'Dadra and Nagar Haveli') {
+                  
                   return (
                     <Row
                       key={state.statecode}
                       state={state}
-                      /*districts={districts[state.state]?.districtData}*/
+                      districts={districts[state.state]?.districtData}
                       regionHighlighted={
                         equal(regionHighlighted?.state, state.state)
                           ? regionHighlighted
@@ -163,6 +171,24 @@ function Table({
                       onHighlightDistrict={onHighlightDistrict}
                     />
                   );
+                }}
+                else{
+                  if (state.confirmed > 0 && state.statecode !== 'TT' && state.state !== 'Dadra and Nagar Haveli') {
+                  
+                    return (
+                      <Rowwithoutdistrict
+                        key={state.statecode}
+                        state={state}
+                        regionHighlighted={
+                          equal(regionHighlighted?.state, state.state)
+                            ? regionHighlighted
+                            : null
+                        }
+                        onHighlightState={onHighlightState}
+                        onHighlightDistrict={onHighlightDistrict}
+                      />
+                    );
+                  }
                 }
                 return null;
               })}

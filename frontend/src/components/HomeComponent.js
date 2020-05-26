@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 
 function Home(props) {
     return(
-      <div className="container">
+      <div className="homecontainer">
         <h4>Home</h4>
         <div className = "countries">
         <Link to={'/home/india'} style={{ textDecoration: 'none' }}>

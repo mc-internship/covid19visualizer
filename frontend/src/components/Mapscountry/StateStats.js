@@ -1,3 +1,5 @@
+import GenderChart from '../ChartHelpers/GenderDemographics';
+import AgeChart from '../ChartHelpers/AgeDemographics';
 
 import {
     MAP_META,
@@ -35,7 +37,7 @@ const getRegionFromDistrict = (districtData, name) => {
   return region;
 };
 
-function HeadBarAbove({
+function LeftPanel({
   mapName,
   states,
   districts,
@@ -120,14 +122,18 @@ function HeadBarAbove({
 
   return (
     <div
-      className={`MapStatistics fadeInUp`}
+      className={`MapInfo fadeInUp`}
       style={{
         animationDelay: '1.5s'
       }}
     >
-      <div className="map-stats">
+
+      <div className="info fadeInUp" style={{animationDelay: '2.4s'}}>
+        <h2>
+          {hoveredRegion.state}
+        </h2>
         <div
-          className={`stats fadeInUp ${
+          className={`Stats fadeInUp new${
             mapOption === 'confirmed' ? 'focused' : ''
           }`}
           style={{animationDelay: '2s'}}
@@ -135,13 +141,12 @@ function HeadBarAbove({
         >
           <h5>{window.innerWidth <= 769 ? 'Cnfmd': 'Confirmed'}</h5>
           <div className="stats-bottom">
-            <h1>{/*formatNumber(panelRegion.confirmed)*/}</h1>
-            <h6>{/*`+${formatNumber(panelRegion.deltaconfirmed)}`*/}</h6>
+            <h1>{formatNumber(panelRegion.confirmed)}</h1>
+            <h6>{`+${formatNumber(panelRegion.deltaconfirmed)}`}</h6>
           </div>
         </div>
-
         <div
-          className={`stats is-blue fadeInUp ${
+          className={`Stats is-blue fadeInUp ${
             mapOption === 'active' ? 'focused' : ''
           }`}
           style={{animationDelay: '2.1s'}}
@@ -149,13 +154,13 @@ function HeadBarAbove({
         >
           <h5>{window.innerWidth <= 769 ? 'Actv' : 'Active'}</h5>
           <div className="stats-bottom">
-            <h1>{/*formatNumber(panelRegion.active)*/}</h1>
-            <h6>{/*` `*/}</h6>
+            <h1>{formatNumber(panelRegion.active)}</h1>
+            <h6>{` `}</h6>
           </div>
         </div>
 
         <div
-          className={`stats is-green fadeInUp ${
+          className={`Stats is-green fadeInUp ${
             mapOption === 'recovered' ? 'focused' : ''
           }`}
           style={{animationDelay: '2.2s'}}
@@ -163,13 +168,13 @@ function HeadBarAbove({
         >
           <h5>{window.innerWidth <= 769 ? 'Rcvrd' : 'Recovered'}</h5>
           <div className="stats-bottom">
-            <h1>{/*formatNumber(panelRegion.recovered)*/}</h1>
-            <h6>{/*`+${formatNumber(panelRegion.deltarecovered)}`*/}</h6>
+            <h1>{formatNumber(panelRegion.recovered)}</h1>
+            <h6>{`+${formatNumber(panelRegion.deltarecovered)}`}</h6>
           </div>
         </div>
 
         <div
-          className={`stats is-gray fadeInUp ${
+          className={`Stats is-gray fadeInUp ${
             mapOption === 'deceased' ? 'focused' : ''
           }`}
           style={{animationDelay: '2.3s'}}
@@ -177,15 +182,28 @@ function HeadBarAbove({
         >
           <h5>{window.innerWidth <= 769 ? 'Dcsd' : 'Deceased'}</h5>
           <div className="stats-bottom">
-            <h1>{/*formatNumber(panelRegion.deaths)*/}</h1>
-            <h6>{/*`+${formatNumber(panelRegion.deltadeaths)}`*/}</h6>
+            <h1>{formatNumber(panelRegion.deaths)}</h1>
+            <h6>{`+${formatNumber(panelRegion.deltadeaths)}`}</h6>
           </div>
         </div>
+
+        <div className = "statedemographics">
+        <section className="cards">
+        <div className="card fadeInUp" style={{animationDelay: '0.7s'}}>
+          <GenderChart title="Gender Demographics" male = {panelRegion.male} female = {panelRegion.female}/>
+        </div>
+        <div className="card fadeInUp" style={{animationDelay: '0.7s'}}>
+          <AgeChart title="Age Demographics" children = {panelRegion.children} adult = {panelRegion.adult} oldage = {panelRegion.oldage}/>
+        </div>
+        </section>
+        </div>
+  
       </div>
+
     </div>
   );
 }
 
-export default React.memo(HeadBarAbove, isEqual);
+export default React.memo(LeftPanel, isEqual);
 
 

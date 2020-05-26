@@ -1,7 +1,7 @@
 import {STATE_CODES} from '../constants';
  
 export const getStateName = (code) => {
-  return STATE_CODES[code.toUpperCase()];
+  return STATE_CODES[code];
 };
 
 export const formatNumber = (value) => {

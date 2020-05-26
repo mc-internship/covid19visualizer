@@ -45,7 +45,7 @@ function Worldstats(props) {
             </div>
             <div className = "col-2 col-stats" >
             <h3>{formatNumber(datajson[datajson.length-1].active)}</h3>
-                <h6>{`+${formatNumber(datajson[datajson.length-1].deltaactive)}`}</h6>
+                <h6>{datajson[datajson.length-1].deltaactive >=0 ? `+${formatNumber(datajson[datajson.length-1].deltaactive)}` : `${formatNumber(datajson[datajson.length-1].deltaactive)}`}</h6>
                 <h5>Active</h5>
             </div>
             <div className = "col-2 col-stats" >
@@ -59,11 +59,11 @@ function Worldstats(props) {
                 <h5>Deceased</h5>
             </div>
             <div className = "col-2 col-stats" >
-                <h3>6.81%</h3>
+                <h3>{((datajson[datajson.length-1].deceased/datajson[datajson.length-1].confirmed)*100).toFixed(2)}%</h3>
                 <h5>Fatality Rate</h5>
             </div>
             <div className = "col-2 col-stats" >
-                <h3>35.4%</h3>
+            <h3>{((datajson[datajson.length-1].recovered/datajson[datajson.length-1].confirmed)*100).toFixed(2)}%</h3>
                 <h5>Recovery Rate</h5>
             </div>
           

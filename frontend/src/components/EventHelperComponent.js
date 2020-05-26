@@ -17,8 +17,8 @@ function EventHelper(props) {
     });
 
     var eventlist = eventname.map(function(event,index){
-        return <ListGroupItem key = {index}>
-            <h3>{startdates[index]} - {enddates[index]}</h3>
+        return <ListGroupItem key = {index} className = "eventlist">
+            <h3>{startdates[index]} - {enddates[index]} </h3> 
             <p>{event}</p>
         </ListGroupItem>;
     })
