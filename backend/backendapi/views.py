@@ -300,6 +300,68 @@ class events(APIView):
 
 
 
+class statedistrict(APIView):
+
+    def get(self, request, countryid):
+
+        statesindia = RegionsHierarchy.objects.filter(superregionid = countryid)
+        statesindiaserialize = RegionsHierarchySerializer(statesindia, many = True)
+        statesindiadict = statesindiaserialize.data
+
+        finallist = []
+        dict2 = {}
+
+        for i in statesindiadict:
+            stateid = i['regionid']
+            statename = i['regionname']
+            districtsindia = RegionsHierarchy.objects.filter(superregionid = stateid)
+            districtsindiaserialize = RegionsHierarchySerializer(districtsindia, many = True)
+            districtindiadict = districtsindiaserialize.data
+
+            list1 = []
+            dict1 = {}
+            
+            dict3 = {}
+
+            for j in districtindiadict:
+                
+                districtid = j["regionid"]
+                districtname = j['regionname']
+                covdata = Coviddata.objects.raw('''SELECT *
+                                            FROM Coviddata
+                                            WHERE date=(
+                                            SELECT MAX(date) FROM Coviddata WHERE regionid=%s) AND regionid = %s''',[districtid,districtid])
+                covserialize = CoviddataSerializer(covdata, many = True)
+                covdict = covserialize.data
+
+                for k in covdict:
+                    k['deceased'] = k['deaths']
+                    k.pop('deaths')
+                    k.pop('lastupdatedtime')
+                    deltaconfirmed = k.pop('deltaconfirmed')
+                    deltadeceased = k.pop('deltadeaths')
+                    deltarecovered = k.pop('deltarecovered')
+                    delta = {"confirmed": deltaconfirmed, "deceased": deltadeceased, "recovered": deltarecovered}
+                    k["delta"] = delta
+                    dict3[districtname] = k
+             
+            dict1["districtData"] = dict3
+            dict1["statecode"] = "AB"
+            dict2[statename] = dict1
+
+            
+            
+        return Response(dict2)
+
+
+            
+
+
+
+        
+
+
+
         
 
 

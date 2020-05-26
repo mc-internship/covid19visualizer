@@ -28,5 +28,6 @@ urlpatterns = [
     path('statesdaily/<int:countryid>/', views.states_daily.as_view()),
     path('countryattribute/<int:countryid>/',views.countrywise_attribute.as_view()),
     path('world', views.world.as_view()),
-    path('events/<int:countryid>/', views.events.as_view())
+    path('events/<int:countryid>/', views.events.as_view()),
+    path('statedistrict/<int:countryid>/', views.statedistrict.as_view())
 ]
