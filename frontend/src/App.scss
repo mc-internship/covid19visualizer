@@ -981,7 +981,7 @@ table {
   //text-align: center;
   //width: 1000px;
   //background-color: darkblue;
-  
+  overflow-y: scroll;
 
   .cards {
    margin-top: 70px;
@@ -1045,6 +1045,14 @@ table {
     margin-left: unset;
     padding: 1rem;
   }
+}
+
+.card-demographics::-webkit-scrollbar {
+  display: none;
+}
+/* Hide scrollbar for IE and Edge */
+.card-demographics {
+  -ms-overflow-style: none;
 }
 
 .row-header{
