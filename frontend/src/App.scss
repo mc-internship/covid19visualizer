@@ -1055,6 +1055,26 @@ table {
   -ms-overflow-style: none;
 }
 
+.newsfeed{
+  overflow-y: scroll;
+  position: absolute;
+  height: 600px;
+  width: 300px;
+  background-color: #3f3f8f3f;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  float: right;
+  margin-right: 1000px !important;
+  margin-top: 40px !important;
+  
+
+  .a{
+    color: wheat !important;
+  }
+}
+
 .row-header{
   margin:0px auto;
   padding:0px auto;
@@ -1108,17 +1128,6 @@ table {
   background: navy !important; 
 }
 
-.countrycard{
-  color: black;
-  width: 100%;
-  align-items: center;
-  //display: inline-block;
-  //background-color:rgba(231, 152, 34, 0.966);
-  background-color: rgb(71, 165, 189);
-  //background-color: #F79E1B;
-  text-decoration: none;
-  
-}
 
 .col-stats{
   display: inline-block;
@@ -1134,17 +1143,6 @@ table {
     border-width: thin;
   }
 
-}
-
-.countrycard{
-  display: block;
-  margin-left:auto; 
-  margin-right:0;
-  text-align: center;
-  padding: 15px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  float: right;
 }
 
 
@@ -1220,10 +1218,92 @@ table {
   margin-top: 40px !important;
 }
 
+.newsfeed{
+  overflow-y: scroll;
+  //position: absolute;
+  height: 600px;
+  width: 300px;
+  background-color: #3f3f8f3f;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  float: right;
+  margin-right: 1000px !important;
+  margin-top: 40px !important;
+  border-width: 5px;
+  border-color: white;
+  
+  .a{
+    color: wheat !important;
+  }
+}
+
 .homecontainer{
   display: flex;
+  flex-direction: row;
+  //flex-wrap: wrap;
   //margin-right: 0px;
   float: right;
+
+  .countries{
+    display: flex;
+    //float: right;
+    flex-direction: column;
+    width: 400px;
+    //margin-right: 50px;
+    //background-color: red !important;
+
+    .countrycard{
+      display: block;
+      margin-left:auto; 
+      margin-right:0;
+      text-align: center;
+      //padding: 15px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      float: right;
+      color: black;
+      width: 100%;
+      align-items: center;
+      //display: inline-block;
+      //background-color:rgba(231, 152, 34, 0.966);
+      background-color: rgb(71, 165, 189);
+      //background-color: #F79E1B;
+      text-decoration: none;
+    }
+
+  }
+  
+  .globe{
+    display: flex;
+    //float: right;
+    //margin-right: 40px !important;
+    margin-top: 40px !important;
+    width: 550px;
+  }
+  
+  .newsfeed{
+    overflow-y: scroll;
+    //position: absolute;
+    height: 600px;
+    width: 300px;
+    background-color: #3f3f8f3f;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    //float: right;
+    //margin-right: 1000px !important;
+    margin-top: 40px !important;
+    border-width: 5px;
+    border-color: white;
+    
+    .a{
+      color: wheat !important;
+    }
+  }
+  
 }
 
 .MapStatistics{

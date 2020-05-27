@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, CardTitle} from 'reactstrap';
+import { Card, CardTitle, CardBody} from 'reactstrap';
 import { Link } from 'react-router-dom';
 import World from './GlobeComponent';
 import {useEffectOnce} from 'react-use';
@@ -38,35 +38,33 @@ function Home(props) {
     return(
       <div className="homecontainer">
         <Helmet>
-        <title>Home</title>
-        <meta name="title" content="Graphs" />
-      </Helmet>
-        <div className = "globe">
-        <World />
-      </div>
+          <title>Home</title>
+          <meta name="title" content="Graphs" />
+        </Helmet>
 
-      {/*<div>
+        <div className = "newsfeed" styles="overflow-y: scroll; height:400px;">  
+        <React.Fragment>
+          {news && 
+            (news.map((value,index) => <a href = {value.url}>{value.title}</a>))} 
+            </React.Fragment>
+        </div> 
+
+        <div className = "globe">
+          <World />
+        </div>
+
+       
         
-      {news && 
-        (news.map((value,index) => <a href = {value.url}>{value.title}</a>))}
-        
-      </div>*/}
 
         <div className = "countries">
-
-
-
-
-        
-
-
-
-
         <Link to={'/home/india'} style={{ textDecoration: 'none' }}>
           <Card hoverable className = "countrycard">
             <CardTitle>
               India 
             </CardTitle>
+            <CardBody>
+              <h2>Confirmed</h2>
+            </CardBody>
           </Card>
         </Link>
         <Link to={'/home/usa'} style={{ textDecoration: 'none' }}>

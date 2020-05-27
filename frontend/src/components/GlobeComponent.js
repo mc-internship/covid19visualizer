@@ -26,7 +26,7 @@ const markers = [
   {
     "id": 3,
     "city": "Washington D.C.",
-    "color": "orange",
+    "color": "teal",
     "coordinates": [
       38.9072,
       -77.0369
@@ -36,7 +36,7 @@ const markers = [
   {
     "id": 4,
     "city": "New Delhi",
-    "color": "purple",
+    "color": "lightpink",
     "coordinates": [
       28.6139,
       77.2090
@@ -46,7 +46,7 @@ const markers = [
   {
     "id": 5,
     "city": "Berlin",
-    "color": "lightpink",
+    "color": "orange",
     "coordinates": [
       52.5200,
       13.4050
