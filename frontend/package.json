@@ -3,20 +3,37 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "testing-library/jest-dom",
-    "@testing-library/user-event": "testing-library/user-event",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "axios": "^0.19.2",
     "bootstrap": "^4.5.0",
-    "bootstrap-social": "^5.1.1",
-    "font-awesome": "^4.7.0",
-    "jquery": "^3.5.1",
-    "popper.js": "^1.16.1",
+    "bootstrap-social": "5.1.1",
+    "chart.js": "^2.9.3",
+    "d3": "^5.16.0",
+    "date-fns": "^2.13.0",
+    "date-fns-tz": "^1.0.10",
+    "deepmerge": "^4.2.2",
+    "font-awesome": "4.7.0",
+    "intersection-observer": "^0.10.0",
+    "node-sass": "^4.14.1",
     "react": "^16.13.1",
+    "react-chartjs-2": "^2.9.0",
     "react-dom": "^16.13.1",
-    "react-redux": "^7.2.0",
+    "react-feather": "^2.0.8",
+    "react-helmet": "^6.0.0",
+    "react-i18next": "^11.4.0",
+    "react-popper": "0.9.2",
+    "react-redux": "7.2.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
-    "reactstrap": "^8.4.1",
-    "redux": "^4.0.5"
+    "react-tooltip": "^4.2.6",
+    "react-use": "^14.2.0",
+    "reactstrap": "8.4.1",
+    "redux": "4.0.5",
+    "topojson": "^3.0.2",
+    "topojson-client": "^3.1.0",
+    "popper.js": "^1.16.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -24,14 +41,23 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ],
   "engines":{
     "node": "14.2.0",
-    "npm": "6.14.4"
+    "npm": "6.14.5"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }

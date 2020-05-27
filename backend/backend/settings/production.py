@@ -1,4 +1,5 @@
 import os
+import sys
 from backend.settings.base import *
 
 SECRET_KEY = 'averysecretkeythatonlyweknowof'
@@ -18,3 +19,11 @@ STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
 
 STATIC_URL = "/static/"
 WHITENOISE_ROOT = os.path.join(BASE_DIR, "../", "frontend", "build", "root")
+
+if 'test' in sys.argv:
+	DATABASES = {
+    	'default': {
+        	'ENGINE': 'django.db.backends.sqlite3',
+        	'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+    	}
+	}
