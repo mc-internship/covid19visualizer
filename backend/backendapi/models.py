@@ -112,6 +112,21 @@ class Coviddatacombined(models.Model):
         managed = False  # Created from a view. Don't remove.
         db_table = 'Coviddatacombined'
 
+class Usconsumerspending(models.Model):
+    date = models.DateField(db_column='Date', primary_key=True)  # Field name made lowercase.
+    retail = models.FloatField(db_column='Retail')  # Field name made lowercase.
+    food = models.FloatField(db_column='Food')  # Field name made lowercase.
+    tourism = models.FloatField(db_column='Tourism')  # Field name made lowercase.
+    entertainment = models.FloatField(db_column='Entertainment')  # Field name made lowercase.
+    airlines = models.FloatField(db_column='Airlines')  # Field name made lowercase.
+    combined = models.FloatField(db_column='Combined')  # Field name made lowercase.
+
+    class Meta:
+        managed = False
+        db_table = 'USConsumerSpending'
+
+
+
 
 #class Metrics(models.Model):
 #    metricid = models.AutoField(db_column='MetricID', primary_key=True)  # Field name made lowercase.

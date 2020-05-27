@@ -6,6 +6,7 @@ from . models import Attributesdata
 from . models import CvWorldFinal
 from . models import Events
 from . models import Coviddatacombined
+from . models import Usconsumerspending
 
 class CoviddataSerializer(serializers.ModelSerializer):
     active = serializers.CharField(source='activecases')
@@ -64,7 +65,7 @@ class allstatesdataserializer(serializers.ModelSerializer):
     
     class Meta:
         model = Coviddata
-        fields = ['regionid', 'totalcases', 'deaths', 'recoveredcases', 'date']
+        fields = ['regionid', 'newtotalcases', 'newdeaths', 'newrecoveredcases', 'date']
 
 
 
@@ -114,3 +115,16 @@ class coviddatacombinedserializer(serializers.ModelSerializer):
         model = Coviddatacombined
         fields = '__all__'
       
+
+class  UsConsumerSpendingserializer(serializers.ModelSerializer):
+
+    airlines = serializers.CharField()
+    travel = serializers.CharField(source = 'tourism')
+    retail = serializers.CharField()
+    entertainment = serializers.CharField()
+    food = serializers.CharField()
+    combined = serializers.CharField()
+
+    class Meta:
+        model = Usconsumerspending
+        fields = ['date','airlines', 'travel', 'retail', 'entertainment', 'food', 'combined']

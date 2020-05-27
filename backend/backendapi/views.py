@@ -14,6 +14,7 @@ from . models import Attributesdata
 from . models import CvWorldFinal
 from . models import Events
 from . models import Coviddatacombined
+from . models import Usconsumerspending
 from . serializers import CoviddataSerializer
 from . serializers import RegionsHierarchySerializer
 from . serializers import CoviddataSerializerfortimeseries
@@ -24,17 +25,28 @@ from . serializers import attributedataserializer
 from . serializers import worlddataserializer
 from . serializers import eventserializer
 from . serializers import coviddatacombinedserializer
+from . serializers import UsConsumerSpendingserializer
 from django.core import serializers
 import json
 from django.core.serializers.json import DjangoJSONEncoder
 import git
+import requests
+
 
 
 class gitprec(APIView):
 
     def get(self,request):
         
+        #reps = git.Repo.clone_from('git@github.com:mc-internship/databasejsons.git', 'clonedsajal')
         reps = git.Repo('clonedsajal')
+        r = requests.get('https://newsapi.org/v2/everything?qInTitle=+corona&from=2020-05-22&pageSize=50&language=en&sortBy=relevancy&apiKey=9748d4daaf4343efa9ca0e89e48bac5f')
+        j = r.json()
+        dumper = json.dumps(j, indent = 4)
+        with open("./clonedsajal/news.json", "w") as outfile: 
+                outfile.write(dumper)
+        
+        
         
         worlddatajson = world.get(self,request)
         worlddataparse = json.dumps(worlddatajson, indent  = 4)
@@ -105,21 +117,36 @@ class gitprec(APIView):
             elif(i==4):
                 with open("./clonedsajal/usadatajson.json", "w") as outfile: 
                     outfile.write(countrydataparse)
+                    
+                usaconsumejson =  usconsumer.get(self, request)
+                usaconsumeparse = json.dumps(usaconsumejson, indent = 4) 
                 with open("./clonedsajal/USAimpact.json", "w") as outfile: 
-                    outfile.write(countryimpactdataparse)
+                    outfile.write(usaconsumeparse)
                 with open("./clonedsajal/usastatesdaily.json", "w") as outfile: 
                     outfile.write(countrystatesdailydata)
                 with open("./clonedsajal/usacountrydata.json", "w") as outfile: 
-                    outfile.write(countryattributedata)
+                    outfile.write(countryattributedata)    
                 with open("./clonedsajal/usaevents.json", "w") as outfile: 
-                    outfile.write(countryeventsdata)                            
-        
+                    outfile.write(countryeventsdata)         
+            
+        """
+        districtofstatesgermany = statedistrict.get(self,request,1)
+        districtofstatesgermanyparse = json.dumps(districtofstatesgermany, indent  = 4)
+        with open("./clonedsajal/germanysatesdistrict.json", "w") as outfile: 
+                    outfile.write(districtofstatesgermanyparse)  
+
+        districtofstatesusa = statedistrict.get(self,request,5)
+        districtofstatesusaparse = json.dumps(districtofstatesusa, indent  = 4)
+        with open("./clonedsajal/usadistricts.json", "w") as outfile: 
+                    outfile.write(districtofstatesusaparse)
+        """
         
         reps.git.add('--all')
         reps.index.commit('new data')
         reps.remotes.origin.push() 
+        
         return HttpResponse("ok")
-
+        
 
 
 
@@ -314,12 +341,12 @@ class states_daily(APIView):
             for h in allstatesdatadict:
                 if(h['date'] == currdate):
                     regionidname = h['regionid']
-                    if(h['totalcases']):
-                        confirmeddict[regionidname] = str(h['totalcases'])
-                    if(h['recoveredcases']):    
-                        recovereddict[regionidname] = str(h['recoveredcases'])
-                    if(h['deaths']):    
-                        deceaseddict[regionidname] =  str(h['deaths'])
+                    if(h['newtotalcases']):
+                        confirmeddict[regionidname] = str(h['newtotalcases'])
+                    if(h['newrecoveredcases']):    
+                        recovereddict[regionidname] = str(h['newrecoveredcases'])
+                    if(h['newdeaths']):    
+                        deceaseddict[regionidname] =  str(h['newdeaths'])
 
             lists.append(confirmeddict)
             lists.append(recovereddict)
@@ -483,6 +510,20 @@ class statedistricts(APIView):
             dictfinal[statename] = dict2 
 
         return (dictfinal)
+
+
+class usconsumer(APIView):
+
+    def get(self, request):
+
+        usacosumedata = Usconsumerspending.objects.raw(''' SELECT * 
+                                                            FROM Usconsumerspending
+                                                            Order by date''')
+        usaserial = UsConsumerSpendingserializer(usacosumedata, many = True)
+        usadict = usaserial.data
+
+        return usadict                                                    
+
 
             
 
