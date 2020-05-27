@@ -109,10 +109,13 @@ function World(props) {
           radiusScaleRange: [0.02, 0.05],
         }}
         globeOptions={{
-          backgroundTexture: `https://www.colorhexa.com/161625.png`
+          enableBackground: false,
+          //backgroundTexture: `https://www.colorhexa.com/161625.png`
+          glowRadiusScale: 0.15
+
         }}  
         cameraOptions = {{
-          autoRotateSpeed: 10
+          autoRotateSpeed: 5
         }}
         onClickMarker={onClickMarker}
       />

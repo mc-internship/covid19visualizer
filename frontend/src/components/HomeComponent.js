@@ -2,17 +2,60 @@ import React from 'react';
 import { Card, CardTitle} from 'reactstrap';
 import { Link } from 'react-router-dom';
 import World from './GlobeComponent';
+import {useEffectOnce} from 'react-use';
+import  {useState, useCallback} from 'react';
 
 
 
 
 function Home(props) {
+
+    const [news, setNews] = useState(null);
+
+    useEffectOnce(() => {
+      getnews();
+    });
+    
+    const getnews = async () => {
+      try {
+        const test = await fetch("https://newsapi.org/v2/everything?qInTitle=+corona&from=2020-05-22&pageSize=50&language=en&sortBy=relevancy&apiKey=9748d4daaf4343efa9ca0e89e48bac5f", {
+        method: "GET"
+        });
+        const data = await test.json();
+        setNews(data.articles)
+
+        console.log((data.articles[0]).source.id)
+        console.log(data.articles)
+        console.log(news)
+        
+        } catch (err) {
+        console.log(err);
+      }
+    };
+
     return(
       <div className="homecontainer">
         <div className = "globe">
         <World />
       </div>
+
+      {/*<div>
+        
+      {news && 
+        (news.map((value,index) => <a href = {value.url}>{value.title}</a>))}
+        
+      </div>*/}
+
         <div className = "countries">
+
+
+
+
+        
+
+
+
+
         <Link to={'/home/india'} style={{ textDecoration: 'none' }}>
           <Card hoverable className = "countrycard">
             <CardTitle>

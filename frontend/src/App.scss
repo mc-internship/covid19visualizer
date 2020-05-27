@@ -1087,6 +1087,7 @@ table {
 .navbar-dark {
   background-color:#303050;
   //background-color: black;
+  height: 60px;
 
 }
 
@@ -1149,6 +1150,7 @@ table {
 
 .navigator{
   background-color: grey;
+  
 }
 
 .nav-pills{
@@ -1511,9 +1513,18 @@ table {
   .cards{
     background-color: #161625;
   .card{
-    width: 300px !important;
+    width: 250px !important;
     background-color: #161625;
     border: none;
+
+    .charts-header {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      justify-content: flex-start;
+    }
+
   }
 }
 }

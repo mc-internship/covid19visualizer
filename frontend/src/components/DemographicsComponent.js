@@ -12,8 +12,8 @@ function Demographics(props) {
       
 <div className = "navigator">
 <ul class="nav flex-column nav-pills orange">
-  <li class="nav-item ">
-    <a class="nav-link active" onClick={()=>changeSelection("India")} href="#indiat">India</a>
+  <li class="nav-item active">
+    <a class="nav-link active" onClick={()=>changeSelection("India")} href="#indiat" data-toggle="tab">India </a>
   </li>
   <li class="nav-item">
     <a class="nav-link active" onClick={()=>changeSelection("USA")} href="#usat">USA</a>
