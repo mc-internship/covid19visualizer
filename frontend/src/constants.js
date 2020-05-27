@@ -34,35 +34,35 @@ export const MAPS_DIR =
 
 export const MAP_META = {
   India: {
-    geoDataFile: `${MAPS_DIR}/India.json`,
+    geoDataFile: 'https://raw.githubusercontent.com/mc-internship/covid19visualizer/frontend-css/frontend/public/maps/india.json',
     mapType: MAP_TYPES.COUNTRY,
     graphObjectStates: 'india-states',
     graphObjectDistricts: 'india-districts-2019-734',
   },
 
   Germany: {
-    geoDataFile: `${MAPS_DIR}/germany.json`,
+    geoDataFile: 'https://raw.githubusercontent.com/mc-internship/covid19visualizer/frontend-css/frontend/public/maps/germany.json',
     mapType: MAP_TYPES.COUNTRY,
     graphObjectStates: 'layer',
     graphObjectDistricts: 'india-districts-2019-734',
   },
 
   Italy: {
-    geoDataFile: `${MAPS_DIR}/italy.json`,
+    geoDataFile: 'https://raw.githubusercontent.com/mc-internship/covid19visualizer/frontend-css/frontend/public/maps/italy.json',
     mapType: MAP_TYPES.COUNTRY,
     graphObjectStates: 'ITA_adm1',
     graphObjectDistricts: 'india-districts-2019-734',
   },
 
   USA: {
-    geoDataFile: `${MAPS_DIR}/usa.json`,
+    geoDataFile: 'https://raw.githubusercontent.com/mc-internship/covid19visualizer/frontend-css/frontend/public/maps/usa.json',
     mapType: MAP_TYPES.COUNTRY,
     graphObjectStates: 'us',
     graphObjectDistricts: 'india-districts-2019-734',
   },
 
   Singapore: {
-    geoDataFile: `${MAPS_DIR}/singapore.json`,
+    geoDataFile: 'https://raw.githubusercontent.com/mc-internship/covid19visualizer/frontend-css/frontend/public/maps/singapore.json',
     mapType: MAP_TYPES.COUNTRY,
     graphObjectStates: 'ne',
     graphObjectDistricts: 'india-districts-2019-734',
