@@ -1058,6 +1058,19 @@ table {
   -ms-overflow-style: none;
 }
 
+.container-events{
+  height: 500px;
+  overflow-y: scroll;
+}
+
+.container-events::-webkit-scrollbar {
+  display: none;
+}
+/* Hide scrollbar for IE and Edge */
+.container-events {
+  -ms-overflow-style: none;
+}
+
 // .newsfeed{
 //   overflow-y: scroll;
 //   position: absolute;

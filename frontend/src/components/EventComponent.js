@@ -53,7 +53,7 @@ function Events(props) {
 
 
     return(
-      <div className="container">
+      <div className="cards-container">
              <Helmet>
         <title>Events</title>
         <meta name="title" content="Graphs" />
