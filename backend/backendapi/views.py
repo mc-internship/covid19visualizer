@@ -377,7 +377,10 @@ class events(APIView):
 
     def get(self, request, countryid):
 
-        eventdata = Events.objects.filter(regionid = countryid)
+        eventdata = Events.objects.raw('''Select * 
+                                        from Events
+                                        where Regionid = %s
+                                        Order by StartDate''',[countryid])
         eventdataserialize = eventserializer(eventdata, many = True)
         eventdict = eventdataserialize.data
         ultilist = []
