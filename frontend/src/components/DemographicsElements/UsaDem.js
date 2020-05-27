@@ -37,21 +37,21 @@ function UsaDemo(props) {
     return(
       <div className="cards-container">
       <Helmet>
-        <title>USA Timeline</title>
+        <title>USA Demographics</title>
         <meta name="title" content="Graphs" />
       </Helmet>
         <section className="cards">
         <div className="card fadeInUp" style={{animationDelay: '0.7s'}}>
-          <GenderChart title="Gender Demographics - USA" male = {data.male} female = {data.female}/>
+          <GenderChart title="Gender Demographics" male = {data.male} female = {data.female}/>
         </div>
         <div className="card fadeInUp" style={{animationDelay: '0.7s'}}>
-          <AgeChart title="Age Demographics - USA" children = {data.children} adult = {data.adults} oldage = {data.oldage}/>
+          <AgeChart title="Age Demographics" children = {data.children} adult = {data.adults} oldage = {data.oldage}/>
         </div>
         <div className="card fadeInUp" style={{animationDelay: '0.7s'}}>
-          <DiabeticChart title="Percentage of Diabetics Infected - USA" diabetes = {data.diabetes}/>
+          <DiabeticChart title="Percentage of Diabetics" diabetes = {data.diabetes}/>
         </div>
         <div className="card fadeInUp" style={{animationDelay: '0.7s'}}>
-          <SmokersChart title="Percentage of Smokers Infected - USA" malesmokers = {data.malesmokers} femalesmokers = {data.femalesmokers}/>
+          <SmokersChart title="Percentage of Smokers" malesmokers = {data.malesmokers} femalesmokers = {data.femalesmokers}/>
         </div>
         </section>
         </div>

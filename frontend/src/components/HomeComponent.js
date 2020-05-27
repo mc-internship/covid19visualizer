@@ -5,6 +5,8 @@ import World from './GlobeComponent';
 import {useEffectOnce} from 'react-use';
 import  {useState, useCallback} from 'react';
 
+import {Helmet} from 'react-helmet';
+
 
 
 
@@ -35,6 +37,10 @@ function Home(props) {
 
     return(
       <div className="homecontainer">
+        <Helmet>
+        <title>Home</title>
+        <meta name="title" content="Graphs" />
+      </Helmet>
         <div className = "globe">
         <World />
       </div>

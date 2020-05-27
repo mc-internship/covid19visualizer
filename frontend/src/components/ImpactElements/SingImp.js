@@ -35,7 +35,7 @@ function SingIm(props) {
   return (
     <div className="cards-container">
       <Helmet>
-        <title>Sing Impact</title>
+        <title>Singapore Impact</title>
         <meta name="title" content="Graphs" />
       </Helmet>
 

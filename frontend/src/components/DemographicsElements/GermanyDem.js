@@ -39,22 +39,22 @@ function GermanyDemo(props) {
     return(
       <div className="cards-container">
       <Helmet>
-        <title>Germany Timeline</title>
+        <title>Germany Demographics</title>
         <meta name="title" content="Graphs" />
       </Helmet>
 
         <section className="cards">
         <div className="card fadeInUp" style={{animationDelay: '0.7s'}}>
-          <GenderChart title="Gender Demographics - Germany" male = {data.male} female = {data.female}/>
+          <GenderChart title="Gender Demographics" male = {data.male} female = {data.female}/>
         </div>
         <div className="card fadeInUp" style={{animationDelay: '0.7s'}}>
-          <AgeChart title="Age Demographics - Germany" children = {data.children} adult = {data.adults} oldage = {data.oldage}/>
+          <AgeChart title="Age Demographics" children = {data.children} adult = {data.adults} oldage = {data.oldage}/>
         </div>
         <div className="card fadeInUp" style={{animationDelay: '0.7s'}}>
-          <DiabeticChart title="Percentage of Diabetics Infected - Germany" diabetes = {data.diabetes}/>
+          <DiabeticChart title="Percentage of Diabetics" diabetes = {data.diabetes}/>
         </div>
         <div className="card fadeInUp" style={{animationDelay: '0.7s'}}>
-          <SmokersChart title="Percentage of Smokers Infected - Germany" malesmokers = {data.malesmokers} femalesmokers = {data.femalesmokers}/>
+          <SmokersChart title="Percentage of Smokers" malesmokers = {data.malesmokers} femalesmokers = {data.femalesmokers}/>
         </div>
         </section>
         </div>

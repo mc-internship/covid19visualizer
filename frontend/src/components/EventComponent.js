@@ -14,6 +14,8 @@ import singaporeeventsdata from './data/singaporeevents.json';
 import EventHelper from './EventHelperComponent';
 import DailyNewChart from './ChartHelpers/DailyNew';
 
+import {Helmet} from 'react-helmet';
+
 
 function Events(props) {
 
@@ -52,6 +54,10 @@ function Events(props) {
 
     return(
       <div className="container">
+             <Helmet>
+        <title>Events</title>
+        <meta name="title" content="Graphs" />
+      </Helmet>
 
       
 

@@ -37,7 +37,7 @@ function IndiaDemo(props) {
     return(
       <div className="card-demographics">
       <Helmet>
-        <title>India Timeline</title>
+        <title>India Demographics</title>
         <meta name="title" content="Graphs" />
       </Helmet>
         <section className="cards">
@@ -48,10 +48,10 @@ function IndiaDemo(props) {
           <AgeChart title="Age Demographics" children = {data.children} adult = {data.adults} oldage = {data.oldage}/>
         </div>
         <div className="card fadeInUp" style={{animationDelay: '0.7s'}}>
-          <DiabeticChart title="Percentage of Diabetics Infected" diabetes = {data.diabetes}/>
+          <DiabeticChart title="Percentage of Diabetics" diabetes = {data.diabetes}/>
         </div>
         <div className="card fadeInUp" style={{animationDelay: '0.7s'}}>
-          <SmokersChart title="Percentage of Smokers Infected" malesmokers = {data.malesmokers} femalesmokers = {data.femalesmokers}/>
+          <SmokersChart title="Percentage of Smokers" malesmokers = {data.malesmokers} femalesmokers = {data.femalesmokers}/>
         </div>
         </section>
         </div>
