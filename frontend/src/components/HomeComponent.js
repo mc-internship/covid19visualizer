@@ -14,11 +14,11 @@ import italydata from './data/italydatajson.json';
 import singdata from './data/singaporedatajson.json';
 import usadata from './data/usadatajson.json';
 
-import axios from 'axios';
+import data from './data/news.json'
 
 
 
-
+//import axios from 'axios';
 
 function Home(props) {
 
@@ -30,12 +30,12 @@ function Home(props) {
     
     const getnews = async () => {
       try {
-        const test = await axios.get("https://newsapi.org/v2/everything?qInTitle=+corona&from=2020-05-22&pageSize=50&language=en&sortBy=relevancy&apiKey=9748d4daaf4343efa9ca0e89e48bac5f",{
+        //const test = await axios.get("https://newsapi.org/v2/everything?qInTitle=+corona&from=2020-05-22&pageSize=50&language=en&sortBy=relevancy&apiKey=9748d4daaf4343efa9ca0e89e48bac5f",{
 
-        }
-        );
-        console.log(test);
-        const data = test.data;
+       // }
+        //);
+        //console.log(test);
+        //const data = test.data;
         setNews(data.articles)
 
         console.log((data.articles[0]).source.id)
