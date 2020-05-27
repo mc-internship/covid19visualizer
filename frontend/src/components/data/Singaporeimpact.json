@@ -766,5 +766,21 @@
         "retail": "19.98",
         "entertainment": null,
         "food": "2.24"
+    },
+    {
+        "date": "2020-05-21",
+        "airlines": "3.1",
+        "travel": "4.09",
+        "retail": "19.99",
+        "entertainment": "0.7",
+        "food": "2.2"
+    },
+    {
+        "date": "2020-05-22",
+        "airlines": "3.08",
+        "travel": "4.08",
+        "retail": "19.12",
+        "entertainment": "0.69",
+        "food": "2.16"
     }
 ]

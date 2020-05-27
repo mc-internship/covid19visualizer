@@ -746,18 +746,99 @@
             "totalconfirmed": "224760",
             "totaldeceased": "31763",
             "totalrecovered": "122810"
+        },
+        {
+            "dailyconfirmed": "675",
+            "dailydeceased": "145",
+            "dailyrecovered": "2366",
+            "date": "2020-05-17",
+            "totalconfirmed": "225435",
+            "totaldeceased": "31908",
+            "totalrecovered": "125176"
+        },
+        {
+            "dailyconfirmed": "451",
+            "dailydeceased": "99",
+            "dailyrecovered": "2150",
+            "date": "2020-05-18",
+            "totalconfirmed": "225886",
+            "totaldeceased": "32007",
+            "totalrecovered": "127326"
+        },
+        {
+            "dailyconfirmed": "813",
+            "dailydeceased": "162",
+            "dailyrecovered": "2075",
+            "date": "2020-05-19",
+            "totalconfirmed": "226699",
+            "totaldeceased": "32169",
+            "totalrecovered": "129401"
+        },
+        {
+            "dailyconfirmed": "665",
+            "dailydeceased": "161",
+            "dailyrecovered": "2881",
+            "date": "2020-05-20",
+            "totalconfirmed": "227364",
+            "totaldeceased": "32330",
+            "totalrecovered": "132282"
+        },
+        {
+            "dailyconfirmed": "642",
+            "dailydeceased": "156",
+            "dailyrecovered": "2278",
+            "date": "2020-05-21",
+            "totalconfirmed": "228006",
+            "totaldeceased": "32486",
+            "totalrecovered": "134560"
+        },
+        {
+            "dailyconfirmed": "652",
+            "dailydeceased": "130",
+            "dailyrecovered": "2160",
+            "date": "2020-05-22",
+            "totalconfirmed": "228658",
+            "totaldeceased": "32616",
+            "totalrecovered": "136720"
+        },
+        {
+            "dailyconfirmed": "669",
+            "dailydeceased": "119",
+            "dailyrecovered": "2120",
+            "date": "2020-05-23",
+            "totalconfirmed": "229327",
+            "totaldeceased": "32735",
+            "totalrecovered": "138840"
+        },
+        {
+            "dailyconfirmed": "531",
+            "dailydeceased": "50",
+            "dailyrecovered": "1639",
+            "date": "2020-05-24",
+            "totalconfirmed": "229858",
+            "totaldeceased": "32785",
+            "totalrecovered": "140479"
+        },
+        {
+            "dailyconfirmed": "300",
+            "dailydeceased": "92",
+            "dailyrecovered": "1502",
+            "date": "2020-05-25",
+            "totalconfirmed": "230158",
+            "totaldeceased": "32877",
+            "totalrecovered": "141981"
         }
     ],
     "statewise": [
         {
-            "active": "70187",
-            "confirmed": "224760",
-            "deaths": "31763",
-            "deltaconfirmed": "875",
-            "deltadeaths": "153",
-            "deltarecovered": "2605",
-            "lastupdatedtime": "2020-05-16",
-            "recovered": "122810",
+            "active": "55300",
+            "confirmed": "230158",
+            "deaths": "32877",
+            "deltaconfirmed": "300",
+            "deltadeaths": "92",
+            "deltarecovered": "1502",
+            "lastupdatedtime": "2020-05-25",
+            "recovered": "141981",
             "state": "Total",
             "statecode": "TT",
             "statenotes": "",

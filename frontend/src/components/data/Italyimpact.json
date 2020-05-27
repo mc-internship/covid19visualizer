@@ -766,5 +766,45 @@
         "retail": "2.65",
         "entertainment": "9.6",
         "food": "36.56"
+    },
+    {
+        "date": "2020-05-20",
+        "airlines": "7.9",
+        "travel": "11.64",
+        "retail": "2.59",
+        "entertainment": "9.47",
+        "food": "36.32"
+    },
+    {
+        "date": "2020-05-21",
+        "airlines": "8.18",
+        "travel": "13.25",
+        "retail": "2.57",
+        "entertainment": "9.42",
+        "food": "36.43"
+    },
+    {
+        "date": "2020-05-22",
+        "airlines": "8.0",
+        "travel": "12.75",
+        "retail": "2.56",
+        "entertainment": "9.28",
+        "food": "36.02"
+    },
+    {
+        "date": "2020-05-25",
+        "airlines": "8.56",
+        "travel": "12.87",
+        "retail": "2.64",
+        "entertainment": "9.71",
+        "food": "36.27"
+    },
+    {
+        "date": "2020-05-26",
+        "airlines": "9.2",
+        "travel": "13.62",
+        "retail": "2.84",
+        "entertainment": "9.71",
+        "food": "36.02"
     }
 ]

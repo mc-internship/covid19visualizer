@@ -726,5 +726,61 @@
         "retail": "739.42",
         "entertainment": "1158.4",
         "food": "76.05"
+    },
+    {
+        "date": "2020-05-15",
+        "airlines": "367.65",
+        "travel": "21.59",
+        "retail": "739.78",
+        "entertainment": "1137.35",
+        "food": "76.89"
+    },
+    {
+        "date": "2020-05-18",
+        "airlines": "341.62",
+        "travel": "20.55",
+        "retail": "726.31",
+        "entertainment": "1060.35",
+        "food": "74.92"
+    },
+    {
+        "date": "2020-05-19",
+        "airlines": "343.16",
+        "travel": "20.17",
+        "retail": "732.21",
+        "entertainment": "1081.55",
+        "food": "73.59"
+    },
+    {
+        "date": "2020-05-20",
+        "airlines": "340.17",
+        "travel": "20.23",
+        "retail": "765.97",
+        "entertainment": "1107.65",
+        "food": "74.14"
+    },
+    {
+        "date": "2020-05-21",
+        "airlines": "364.31",
+        "travel": "21.02",
+        "retail": "776.97",
+        "entertainment": "1127.15",
+        "food": "73.54"
+    },
+    {
+        "date": "2020-05-22",
+        "airlines": "364.11",
+        "travel": "21.73",
+        "retail": "757.64",
+        "entertainment": "1140.15",
+        "food": "73.35"
+    },
+    {
+        "date": "2020-05-26",
+        "airlines": "352.11",
+        "travel": "22.84",
+        "retail": "730.59",
+        "entertainment": "1137.65",
+        "food": "73.99"
     }
 ]
