@@ -154,7 +154,7 @@ function LeftPanel({
         >
           <h5>{window.innerWidth <= 769 ? 'Actv' : 'Active'}</h5>
           <div className="stats-bottom">
-            <h1>{formatNumber(panelRegion.active)}</h1>
+            <h1>{panelRegion.active === null ? '-' : formatNumber(panelRegion.active)}</h1>
             <h6>{` `}</h6>
           </div>
         </div>
@@ -168,8 +168,8 @@ function LeftPanel({
         >
           <h5>{window.innerWidth <= 769 ? 'Rcvrd' : 'Recovered'}</h5>
           <div className="stats-bottom">
-            <h1>{formatNumber(panelRegion.recovered)}</h1>
-            <h6>{`+${formatNumber(panelRegion.deltarecovered)}`}</h6>
+            <h1>{panelRegion.recovered === null ? '-' : formatNumber(panelRegion.recovered)}</h1>
+            <h6>{`+${panelRegion.deltarecovered === null ? '-' : formatNumber(panelRegion.deltarecovered)}`}</h6>
           </div>
         </div>
 

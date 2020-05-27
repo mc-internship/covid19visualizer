@@ -2,6 +2,26 @@
     "name": "India",
     "events": [
         {
+            "event": "Invoke of provisions of Section 2 of the Epidemic Diseases Act, 1897",
+            "startdate": "2020-03-11",
+            "enddate": "2020-12-31"
+        },
+        {
+            "event": "Invoke of provisions of Disaster Management Act,2005",
+            "startdate": "2020-03-14",
+            "enddate": "2020-12-31"
+        },
+        {
+            "event": "Close of International Borders",
+            "startdate": "2020-03-16",
+            "enddate": "2020-12-31"
+        },
+        {
+            "event": "Janata Curfew",
+            "startdate": "2020-03-22",
+            "enddate": "2020-03-22"
+        },
+        {
             "event": "Lockdown Phase 1",
             "startdate": "2020-03-25",
             "enddate": "2020-04-14"
@@ -15,16 +35,6 @@
             "event": "Lockdown Phase 3",
             "startdate": "2020-05-04",
             "enddate": "2020-05-17"
-        },
-        {
-            "event": "Lockdown Phase 4",
-            "startdate": "2020-05-18",
-            "enddate": "2020-05-31"
-        },
-        {
-            "event": "Janata Curfew",
-            "startdate": "2020-03-22",
-            "enddate": "2020-03-22"
         },
         {
             "event": "Relaxation on shops/e-commerce dealing with essential goods",
@@ -57,33 +67,23 @@
             "enddate": "2020-12-31"
         },
         {
-            "event": "Invoke of provisions of Section 2 of the Epidemic Diseases Act, 1897",
-            "startdate": "2020-03-11",
-            "enddate": "2020-12-31"
-        },
-        {
-            "event": "Invoke of provisions of Disaster Management Act,2005",
-            "startdate": "2020-03-14",
-            "enddate": "2020-12-31"
-        },
-        {
             "event": "Relaxation on 15 special trains",
             "startdate": "2020-05-12",
             "enddate": "2020-12-31"
         },
         {
-            "event": "Close of International Borders",
-            "startdate": "2020-03-16",
+            "event": "Relaxation on Trains",
+            "startdate": "2020-05-12",
             "enddate": "2020-12-31"
+        },
+        {
+            "event": "Lockdown Phase 4",
+            "startdate": "2020-05-18",
+            "enddate": "2020-05-31"
         },
         {
             "event": "Relaxation on Domestic Flights",
             "startdate": "2020-05-25",
-            "enddate": "2020-12-31"
-        },
-        {
-            "event": "Relaxation on Trains",
-            "startdate": "2020-05-12",
             "enddate": "2020-12-31"
         }
     ]

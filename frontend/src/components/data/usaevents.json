@@ -2,6 +2,11 @@
     "name": "USA",
     "events": [
         {
+            "event": "First US Covid-19 case",
+            "startdate": "2020-01-20",
+            "enddate": "2020-01-20"
+        },
+        {
             "event": "US announces restrictions on travel from China",
             "startdate": "2020-01-31",
             "enddate": "2020-12-31"
@@ -25,11 +30,6 @@
             "event": "2 Trillion dollars stimulus package announced CARES ACT",
             "startdate": "2020-03-27",
             "enddate": "2020-03-27"
-        },
-        {
-            "event": "First US Covid-19 case",
-            "startdate": "2020-01-20",
-            "enddate": "2020-01-20"
         },
         {
             "event": "Stimulus Payments start",

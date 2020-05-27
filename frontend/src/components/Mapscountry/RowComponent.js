@@ -24,7 +24,7 @@ function StateCell({state, statistic}) {
         {state[`delta${statistic}`] > 0 && state[`delta${statistic}`]}
       </span>
       <span className="total">
-        {state[statistic] === 0 ? '-' : formatNumber(state[statistic])}
+        {state[statistic] === null ? '-' : formatNumber(state[statistic])}
       </span>
     </td>
   );
@@ -70,7 +70,7 @@ function PureDistrictCell({district, statistic}) {
         {district.delta[statistic] > 0 && <Icon.ArrowUp />}
         {district.delta[statistic] > 0 && district.delta[statistic]}
       </span>
-      <span className="total">{formatNumber(district[statistic])}</span>
+      <span className="total">{district[statistic] === null ? '-' : formatNumber(district[statistic])}</span>
     </td>
   );
 }

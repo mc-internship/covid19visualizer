@@ -1340,5 +1340,49 @@
         "deltadeceased": "5236",
         "deltaconfirmed": "108393",
         "date": "2020-05-22"
+    },
+    {
+        "active": "2855944",
+        "recovered": "2112862",
+        "deceased": "342214",
+        "confirmed": "5311020",
+        "deltaactive": "40006",
+        "deltarecovered": "55878",
+        "deltadeceased": "3980",
+        "deltaconfirmed": "99864",
+        "date": "2020-05-23"
+    },
+    {
+        "active": "2893991",
+        "recovered": "2168563",
+        "deceased": "345059",
+        "confirmed": "5407613",
+        "deltaactive": "38047",
+        "deltarecovered": "55701",
+        "deltadeceased": "2845",
+        "deltaconfirmed": "96593",
+        "date": "2020-05-24"
+    },
+    {
+        "active": "2917091",
+        "recovered": "2231738",
+        "deceased": "346232",
+        "confirmed": "5495061",
+        "deltaactive": "23100",
+        "deltarecovered": "63175",
+        "deltadeceased": "1173",
+        "deltaconfirmed": "87448",
+        "date": "2020-05-25"
+    },
+    {
+        "active": "2952217",
+        "recovered": "2286956",
+        "deceased": "350453",
+        "confirmed": "5589626",
+        "deltaactive": "35126",
+        "deltarecovered": "55218",
+        "deltadeceased": "4221",
+        "deltaconfirmed": "94565",
+        "date": "2020-05-26"
     }
 ]

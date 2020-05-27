@@ -2,21 +2,6 @@
     "name": "Germany",
     "events": [
         {
-            "event": "Bavarian Curfew",
-            "startdate": "2020-03-20",
-            "enddate": "2020-03-22"
-        },
-        {
-            "event": "Nationwide Social Distancing Restrictions(Lockdown)",
-            "startdate": "2020-03-22",
-            "enddate": "2020-05-11"
-        },
-        {
-            "event": "Financial Aid Package of upto 750 billion euros",
-            "startdate": "2020-03-23",
-            "enddate": "2020-12-31"
-        },
-        {
             "event": "Public events banned",
             "startdate": "2020-03-08",
             "enddate": "2020-08-31"
@@ -30,6 +15,21 @@
             "event": "Travel Restrictions on several neighbouring countries",
             "startdate": "2020-03-15",
             "enddate": "2020-05-15"
+        },
+        {
+            "event": "Bavarian Curfew",
+            "startdate": "2020-03-20",
+            "enddate": "2020-03-22"
+        },
+        {
+            "event": "Nationwide Social Distancing Restrictions(Lockdown)",
+            "startdate": "2020-03-22",
+            "enddate": "2020-05-11"
+        },
+        {
+            "event": "Financial Aid Package of upto 750 billion euros",
+            "startdate": "2020-03-23",
+            "enddate": "2020-12-31"
         }
     ]
 }
