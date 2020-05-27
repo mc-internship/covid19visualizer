@@ -96,6 +96,22 @@ class CvWorldFinal(models.Model):
         managed = False
         db_table = 'cv_world_final'
 
+class Coviddatacombined(models.Model):
+    confirmed = models.IntegerField(blank=True, null=True)
+    active = models.IntegerField(blank=True, null=True)
+    recovered = models.IntegerField(blank=True, null=True)
+    deceased = models.IntegerField(blank=True, null=True)
+    deltaconfirmed = models.IntegerField(blank=True, null=True)
+    deltarecovered = models.IntegerField(blank=True, null=True)
+    deltadeceased = models.IntegerField(blank=True, null=True)
+    regionid = models.IntegerField(db_column='Regionid', primary_key = True)  # Field name made lowercase.
+    regionname = models.CharField(db_column='RegionName', max_length=50, blank=True, null=True)  # Field name made lowercase.
+    superregionid = models.IntegerField(db_column='SuperRegionID', blank=True, null=True)  # Field name made lowercase.
+
+    class Meta:
+        managed = False  # Created from a view. Don't remove.
+        db_table = 'Coviddatacombined'
+
 
 #class Metrics(models.Model):
 #    metricid = models.AutoField(db_column='MetricID', primary_key=True)  # Field name made lowercase.

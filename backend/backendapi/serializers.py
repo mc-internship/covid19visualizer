@@ -5,6 +5,7 @@ from . models import Industrydata
 from . models import Attributesdata
 from . models import CvWorldFinal
 from . models import Events
+from . models import Coviddatacombined
 
 class CoviddataSerializer(serializers.ModelSerializer):
     active = serializers.CharField(source='activecases')
@@ -104,3 +105,12 @@ class eventserializer(serializers.ModelSerializer):
     class Meta:
         model = Events
         fields = ['event','startdate','enddate']
+
+
+
+class coviddatacombinedserializer(serializers.ModelSerializer):
+
+    class Meta:
+        model = Coviddatacombined
+        fields = '__all__'
+      

@@ -13,6 +13,7 @@ from . models import Industrydata
 from . models import Attributesdata
 from . models import CvWorldFinal
 from . models import Events
+from . models import Coviddatacombined
 from . serializers import CoviddataSerializer
 from . serializers import RegionsHierarchySerializer
 from . serializers import CoviddataSerializerfortimeseries
@@ -22,9 +23,108 @@ from . serializers import datesserializer
 from . serializers import attributedataserializer
 from . serializers import worlddataserializer
 from . serializers import eventserializer
+from . serializers import coviddatacombinedserializer
 from django.core import serializers
 import json
 from django.core.serializers.json import DjangoJSONEncoder
+import git
+
+
+class gitprec(APIView):
+
+    def get(self,request):
+        
+        reps = git.Repo('clonedsajal')
+        
+        worlddatajson = world.get(self,request)
+        worlddataparse = json.dumps(worlddatajson, indent  = 4)
+        with open("./clonedsajal/worlddata.json", "w") as outfile: 
+                outfile.write(worlddataparse)
+
+        
+        for i in range(5):
+            countrydatajson = covidDataIndiaStatewise.get(self,request,i+1)
+            countrydataparse = json.dumps(countrydatajson, indent  = 4)
+
+            countryimpactjson = covidimpact.get(self,request,i+1)
+            countryimpactdataparse = json.dumps(countryimpactjson, indent = 4)
+
+            countrystatesdailyjson = states_daily.get(self,request,i+1)
+            countrystatesdailydata = json.dumps(countrystatesdailyjson, indent = 4)
+
+            countryattributejson = countrywise_attribute.get(self,request,i+1)
+            countryattributedata = json.dumps(countryattributejson, indent = 4)
+
+            countryeventsjson = events.get(self,request,i+1)
+            countryeventsdata = json.dumps(countryeventsjson, indent = 4)
+
+            if(i==0):
+                with open("./clonedsajal/germanydatajson.json", "w") as outfile: 
+                    outfile.write(countrydataparse)
+                with open("./clonedsajal/Germanyimpact.json", "w") as outfile: 
+                    outfile.write(countryimpactdataparse)
+                with open("./clonedsajal/germanystatesdaily.json", "w") as outfile: 
+                    outfile.write(countrystatesdailydata)
+                with open("./clonedsajal/germanycountrydata.json", "w") as outfile: 
+                    outfile.write(countryattributedata)           
+                with open("./clonedsajal/germanyevents.json", "w") as outfile: 
+                    outfile.write(countryeventsdata)                     
+            elif(i==1):
+                with open("./clonedsajal/indiadatajson.json", "w") as outfile: 
+                    outfile.write(countrydataparse)
+                with open("./clonedsajal/Indiaimpact.json", "w") as outfile: 
+                    outfile.write(countryimpactdataparse)
+                with open("./clonedsajal/indiastatesdaily.json", "w") as outfile: 
+                    outfile.write(countrystatesdailydata)  
+                with open("./clonedsajal/indiacountrydata.json", "w") as outfile: 
+                    outfile.write(countryattributedata)
+                with open("./clonedsajal/indiaevents.json", "w") as outfile: 
+                    outfile.write(countryeventsdata)                          
+            elif(i==2):
+                with open("./clonedsajal/italydatajson.json", "w") as outfile: 
+                    outfile.write(countrydataparse)
+                with open("./clonedsajal/Italyimpact.json", "w") as outfile: 
+                    outfile.write(countryimpactdataparse)
+                with open("./clonedsajal/italystatesdaily.json", "w") as outfile: 
+                    outfile.write(countrystatesdailydata)
+                with open("./clonedsajal/italycountrydata.json", "w") as outfile: 
+                    outfile.write(countryattributedata)   
+                with open("./clonedsajal/italyevents.json", "w") as outfile: 
+                    outfile.write(countryeventsdata)                         
+            elif(i==3):
+                with open("./clonedsajal/singaporedatajson.json", "w") as outfile: 
+                    outfile.write(countrydataparse)
+                with open("./clonedsajal/Singaporeimpact.json", "w") as outfile: 
+                    outfile.write(countryimpactdataparse)
+                with open("./clonedsajal/singaporestatesdaily.json", "w") as outfile: 
+                    outfile.write(countrystatesdailydata)
+                with open("./clonedsajal/singaporecountrydata.json", "w") as outfile: 
+                    outfile.write(countryattributedata)
+                with open("./clonedsajal/singaporeevents.json", "w") as outfile: 
+                    outfile.write(countryeventsdata)                                            
+            elif(i==4):
+                with open("./clonedsajal/usadatajson.json", "w") as outfile: 
+                    outfile.write(countrydataparse)
+                with open("./clonedsajal/USAimpact.json", "w") as outfile: 
+                    outfile.write(countryimpactdataparse)
+                with open("./clonedsajal/usastatesdaily.json", "w") as outfile: 
+                    outfile.write(countrystatesdailydata)
+                with open("./clonedsajal/usacountrydata.json", "w") as outfile: 
+                    outfile.write(countryattributedata)
+                with open("./clonedsajal/usaevents.json", "w") as outfile: 
+                    outfile.write(countryeventsdata)                            
+        
+        
+        reps.git.add('--all')
+        reps.index.commit('new data')
+        reps.remotes.origin.push() 
+        return HttpResponse("ok")
+
+
+
+
+
+
 
 
 
@@ -119,7 +219,7 @@ class covidDataIndiaStatewise(APIView):
 
         lists = {"cases_time_series": countrytimeseriesdata, "statewise" : alist}
 
-        return Response(lists)
+        return (lists)
 
 
 
@@ -133,13 +233,14 @@ class covidimpact(APIView):
 
         totaldata = Industrydata.objects.raw('''SELECT *
                                         FROM Industrydata
-                                        WHERE regionid = %s''',[countryid])
+                                        WHERE regionid = %s
+                                        ORDER by Date''',[countryid])
 
         totalcovserialize = impactdataserializer(totaldata, many = True)
 
         totaldict = totalcovserialize.data
 
-        return Response(totaldict)                                
+        return (totaldict)                                
 
 
 
@@ -226,7 +327,7 @@ class states_daily(APIView):
 
             
         ultimatedict = {"states_daily" : lists} 
-        return Response(ultimatedict)
+        return (ultimatedict)
 
 
 
@@ -257,7 +358,7 @@ class countrywise_attribute(APIView):
 
         
         dictss = {"country":dicts}
-        return Response(dictss)
+        return (dictss)
 
 
 
@@ -270,7 +371,7 @@ class world(APIView):
         worlddataserial = worlddataserializer(worlddata, many = True)
         worlddict = worlddataserial.data
 
-        return Response(worlddict)
+        return (worlddict)
 
 class events(APIView):
 
@@ -295,7 +396,7 @@ class events(APIView):
        
         ultidict = {"name" : name, "events"  : eventdict}
 
-        return Response(ultidict)
+        return (ultidict)
 
 
 
@@ -351,8 +452,34 @@ class statedistrict(APIView):
 
             
             
-        return Response(dict2)
+        return (dict2)
 
+
+
+class statedistricts(APIView):
+
+    def get(self, request, countryid):
+
+        statesindia = RegionsHierarchy.objects.filter(superregionid = countryid)
+        statesindiaserialize = RegionsHierarchySerializer(statesindia, many = True)
+        statesindiadict = statesindiaserialize.data
+
+        finallist = []
+        dictfinal = {}
+
+        for i in statesindiadict:
+            stateid = i['regionid']
+            statename = i['regionname']
+            dict2 = {}
+            districtdata = Coviddatacombined.objects.filter(superregionid = stateid)
+            districtdataserial = coviddatacombinedserializer(districtdata, many = True)
+            districtdatadict = districtdataserial.data
+
+            dict2["districtdata"] = districtdatadict
+            dict2["statecode"] = "AB"
+            dictfinal[statename] = dict2 
+
+        return (dictfinal)
 
             
 
