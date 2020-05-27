@@ -166,6 +166,8 @@ h6 {
     overflow-y: scroll;
     overflow-x:hidden;
   }
+
+  
   
   
   .home-middle {
@@ -1055,25 +1057,23 @@ table {
   -ms-overflow-style: none;
 }
 
-.newsfeed{
-  overflow-y: scroll;
-  position: absolute;
-  height: 600px;
-  width: 300px;
-  background-color: #3f3f8f3f;
-  padding: 10px;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  float: right;
-  margin-right: 1000px !important;
-  margin-top: 40px !important;
-  
+// .newsfeed{
+//   overflow-y: scroll;
+//   position: absolute;
+//   height: 600px;
+//   width: 300px;
+//   background-color: black;
+//   padding: 10px;
+//   border-radius: 10px;
+// }
 
-  .a{
-    color: wheat !important;
-  }
-}
+// .newsfeed::-webkit-scrollbar {
+//   display: none;
+// }
+// /* Hide scrollbar for IE and Edge */
+// .newsfeed {
+//   -ms-overflow-style: none;
+// }
 
 .row-header{
   margin:0px auto;
@@ -1089,6 +1089,277 @@ table {
 
 
 }
+
+/*******COLOR VARIABLES*******/
+:root{
+
+  /* At what screen size do we no longer want to squish the site more? */
+  /* MAKES HAMBURGER MENU DISAPPEAR */
+  /* --minimum-screen-size: 860px; */
+
+  /* Nav Colors */
+  --nav-bg-color:#010915;
+  --nav-font-color:#FEFEFE;
+
+  /* Font Colors */
+  --font-color-tested:#AEAEAE;
+  --font-color-confirmed:#F4B000;
+  --font-color-deaths:#E55465;
+  --font-color-deathrate:#DD1E34;
+
+  /* Card Colors */
+  --card-bg-color:#010915;
+  --card-font-color:#F4F4F4;
+
+  /* Highlight Colors */
+  --background-color-dropdown-hover: ;
+  
+  /* Body Background Color */
+  --body-bg-color: #19202A;
+
+  /* Font Sizes */
+  --font-size-nav-title: 3.7vh;
+  --font-size-nav-link: 2.1vh;
+  --font-size-state-name: 1.9vw;
+  --font-size-table-heading: 4.6vh;
+  --font-size-stats-table-heading: .85vw;
+  --font-size-feed-body: 1.65vh;
+  --font-size-feed-author: 1.2vh;
+  --font-size-card-value: 2.75vw;
+  --font-size-card-category: 2vh;
+  --font-size-card-perc-change: 1.6vh;
+  --font-size-chart-h1: 1.5vw;
+  --font-size-chart-h2: .9vw;
+  --font-size-last-updated: .7vw;
+  --font-size-dropdown-arrow: 1rem;
+  --font-size-github-favicon: 2rem;
+
+  /* Font Weights */
+  --font-weight-stats-numbers: 500;
+  --font-weight-table-headings: 500;
+  --font-weight-bold: 700;
+
+  /* Heights */
+  --max-height-sidebar: 700px;
+  --max-height-chart: 450px;
+
+  /* Margins */
+  --margin-dashboard-containers: 2vw;
+
+  /* Border Radius */
+  --border-radius: .4rem;
+
+  /* About Page Variables */
+  --about-font-color:#fefefe;
+  --about-font-color-black: #010915;
+  --about-border-color:#fefefe;
+  --about-bg-color:#19202A;
+  --about-bg-color-light:#D2D2D2;
+
+  --about-font-family:'Roboto', sans-serif ;
+
+
+  /* Daily Stats */
+  --daily-stats-font-family: 'Lato', sans-serif; 
+  --daily-stats-font-weight: 700;
+  --font-weight-daily-stats-category: 700;
+
+
+  /* Drop Down Selectors */
+  --drop-down-hover-color: #40495B;
+  --drop-down-bg-color:#1F242D;
+  --drop-down-border-color:#f4f4f4;
+  --drop-down-rounded-corners: 7px;
+}
+
+.card-body {
+  background-color: var(--card-bg-color);
+  padding: 1vw;
+  border: none;
+  float: left;
+  width: 300px;
+  border-radius: var(--border-radius);
+  margin-left: 10px;
+  /* box-shadow: 0px 5px rgba(0, 0, 0, 0.2); */
+}
+
+.list-group-item {
+  padding: 0.5rem;
+  text-align: left;
+  margin-bottom: 0.5rem;
+  background-color: none !important;
+}
+
+.card-text {
+  margin-top: -.4rem;
+  font-weight: normal;
+  text-align: center;
+}
+
+// .card {
+//   background-color: #1F242D;
+//   border: none;
+//   border-radius: .4rem;
+//   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+// }
+
+/* ------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------ */
+/*                    👈 Right  Twitter 🐦 News 📰 Feed Sidebar                  */
+/* ------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------ */
+
+/* Active Tab Blur */
+.tab--selected {
+  /* box-shadow: 0px 4px 8px rgba(0, 0, 0, .4); */
+  z-index: 100;
+  position: relative;
+  /* background-color: #1F242D; */
+  border-bottom: 1px solid #f4f4f4 !important;
+}
+
+.tab:hover {
+  color: rgb(199, 199, 199) !important;
+}
+
+
+#mobile-feed-tabs-styled-with-inline {
+  padding-bottom: 12px;
+}
+
+/* get rid of tab padding */
+.card-header {
+  max-width:100%;
+  padding: 0 0 .75rem 0;
+}
+
+.left-col-twitter-feed-content.col-2, .right-col-stats-content.col-2{
+  flex: 0 0 20.49%;
+  max-width: 20.49%;
+}
+
+.left-col-twitter-feed-content.col-2 .card .card-body {
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.left-col-twitter-feed-content.col-2 .list-group-item {
+  background-color: none
+}
+
+
+.left-col-twitter-feed-content .card-body {
+  height: 60vh;
+  max-height: var(--max-height-sidebar);
+  overflow: scroll;
+  padding-bottom: 0;
+}  
+
+/* cards inside the sidebar for tweets and news */
+
+.left-col-feed-cards-text .tweet-item.list-group-item {
+  background-color: var(--card-bg-color);
+}
+
+.left-col-feed-cards-text .list-group .list-group-flush li {
+  background-color: none
+}
+
+.tweet-item.list-group-item , .news-item.list-group-item{
+  background-color: transparent;
+  border: none;
+}
+
+
+.left-col-twitter-feed-content .left-tabs{
+  font-size: var(--font-size-table-heading);
+}
+
+.news-item, .tweet-item {
+  border-bottom: 1px solid rgb(83, 83, 83) !important;
+  padding: 0;
+  margin: 0;
+}
+
+.news-item:hover, .tweet-item:hover {
+  text-decoration: none !important;
+}
+
+.tweet-item-container, .news-item-container {
+  padding: 0 1vw;
+  margin: 1vw 0;
+  line-height: 1.35;
+  color: var(--nav-font-color);
+}
+
+/* Tweet/News Acticle Headline and source */
+
+.news-txt-headline, .tweet-text {
+  font-size: var(--font-size-feed-body);
+  font-weight: normal;
+  line-height: 1.35;
+  margin-bottom: 0.5vw
+}
+
+.news-txt-by-dt, .tweet-dt{
+  font-size: var(--font-size-feed-author);
+}
+
+.tab.left-news-tab {
+  border-top-left-radius: 0.4rem;
+}
+
+.tab.left-twitter-tab.tab--selected {
+  border-top-right-radius: 0.4rem;
+}
+
+.left-twitter-tab {
+  border-top-right-radius: 0.4rem;
+} 
+
+/* overflow disable scroll bar */
+.left-col-feed-cards-text {
+  overflow-y: scroll;
+  height: 73.5vh;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.left-col-feed-cards-text::-webkit-scrollbar { 
+  display: none;  /* Safari and Chrome */
+}
+
+
+.left-col-twitter-feed-content {
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;  /* Firefox */
+}
+.left-col-twitter-feed-content::-webkit-scrollbar { 
+  display: none;  /* Safari and Chrome */
+}
+
+.left-col-twitter-feed-content .card-body {
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;  /* Firefox */
+  /* padding-left: 0;
+  padding-right: 0; */
+}
+
+.left-col-twitter-feed-content .card-body::-webkit-scrollbar { 
+  display: none;  /* Safari and Chrome */
+}
+
+.left-col-twitter-feed-content {
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.left-col-twitter-feed-content::-webkit-scrollbar { 
+  display: none;  /* Safari and Chrome */
+}
+
+
 
 .footer{
   background-color:rgba(216, 2, 27, 0.8);
@@ -1202,7 +1473,6 @@ table {
   background-color: #161625;
 }
 
-
 .homecontainer{
   display: flex;
   flex-direction: row;
@@ -1270,8 +1540,6 @@ table {
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    //float: right;
-    //margin-right: 1000px !important;
     margin-top: 40px !important;
     border-width: 5px;
     border-color: white;

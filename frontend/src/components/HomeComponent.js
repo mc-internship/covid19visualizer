@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, CardTitle, CardBody} from 'reactstrap';
+import { Card, CardTitle, CardBody as CardBody} from 'reactstrap';
 import { Link } from 'react-router-dom';
 import World from './GlobeComponent';
 import {useEffectOnce} from 'react-use';
@@ -37,14 +37,23 @@ function Home(props) {
 
     return(
       <div>
+      <div className = "card-body">
+        <span>News Feed</span>
+      <div id="feed-content" className="left-col-feed-cards-text">
+          <React.Fragment>
+            { news && <ul className="list-group list-group-flush">
+              {(news.map((value,index) =>
+                <a className="news-item list-group-item" n_clicks="0" n_clicks_timestamp="-1" href ={value.url}>
+                <div className="news-item-container"><h6 className="news-txt-headline"> {value.title}
+              </h6><p className="news-txt-by-dt">{value.source.name}  {new Date(value.publishedAt).toDateString()}</p></div></a>))}
+              </ul> 
+            }
+          </React.Fragment>
+          </div>
+      </div> 
 
 
-<div className = "newsfeed">  
-        <React.Fragment>
-          {news && 
-            (news.map((value,index) => <a href = {value.url}>{value.title}</a>))} 
-            </React.Fragment>
-        </div> 
+
 
       <div className="homecontainer">
         <Helmet>
