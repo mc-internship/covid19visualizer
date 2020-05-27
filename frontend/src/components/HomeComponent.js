@@ -28,6 +28,7 @@ function Home(props) {
       try {
         const test = await fetch("https://newsapi.org/v2/everything?qInTitle=+corona&from=2020-05-22&pageSize=50&language=en&sortBy=relevancy&apiKey=9748d4daaf4343efa9ca0e89e48bac5f", {
           method: "GET",
+          mode: "no-cors",
           headers: {
               'Access-Control-Allow-Origin': 'http://covid19visual.herokuapp.com'
         }});
