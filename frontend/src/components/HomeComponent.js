@@ -36,34 +36,49 @@ function Home(props) {
     };
 
     return(
-      <div className="homecontainer">
-        <Helmet>
-          <title>Home</title>
-          <meta name="title" content="Graphs" />
-        </Helmet>
+      <div>
 
-        <div className = "newsfeed" styles="overflow-y: scroll; height:400px;">  
+
+<div className = "newsfeed">  
         <React.Fragment>
           {news && 
             (news.map((value,index) => <a href = {value.url}>{value.title}</a>))} 
             </React.Fragment>
         </div> 
 
+      <div className="homecontainer">
+        <Helmet>
+          <title>Home</title>
+          <meta name="title" content="Graphs" />
+        </Helmet>
+
+
         <div className = "globe">
           <World />
         </div>
-
-       
-        
-
+ 
         <div className = "countries">
         <Link to={'/home/india'} style={{ textDecoration: 'none' }}>
           <Card hoverable className = "countrycard">
-            <CardTitle>
-              India 
-            </CardTitle>
-            <CardBody>
-              <h2>Confirmed</h2>
+          <CardBody>
+              <h1>India</h1>
+            
+              <h2 >1,42,410</h2>
+              <h4>Confirmed</h4>
+              <div className = "cases">
+                <div className = "box">
+              <h5>77,752</h5>
+              <h6>Active</h6>
+              </div>
+              <div className = "box">
+              <h5>4,167</h5>
+              <h6>Deaths</h6>
+              </div>
+              <div className = "box">
+              <h5>60,491</h5>
+              <h6>Recovered</h6>
+              </div>
+              </div>
             </CardBody>
           </Card>
         </Link>
@@ -98,10 +113,7 @@ function Home(props) {
         </div>  
 
       </div>
-
-    
-
-
+      </div>
     );
 }
 

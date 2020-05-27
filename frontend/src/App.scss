@@ -1202,42 +1202,6 @@ table {
   background-color: #161625;
 }
 
-.countries{
-  display: flex;
-  float: right;
-  flex-direction: column;
-  width: 400px;
-  margin-right: 50px;
-  //background-color: red !important;
-}
-
-.globe{
-  display: flex;
-  float: right;
-  margin-right: 40px !important;
-  margin-top: 40px !important;
-}
-
-.newsfeed{
-  overflow-y: scroll;
-  //position: absolute;
-  height: 600px;
-  width: 300px;
-  background-color: #3f3f8f3f;
-  padding: 10px;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  float: right;
-  margin-right: 1000px !important;
-  margin-top: 40px !important;
-  border-width: 5px;
-  border-color: white;
-  
-  .a{
-    color: wheat !important;
-  }
-}
 
 .homecontainer{
   display: flex;
@@ -1271,6 +1235,19 @@ table {
       background-color: rgb(71, 165, 189);
       //background-color: #F79E1B;
       text-decoration: none;
+
+      .cases{
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        justify-content: center;
+        
+        .box{
+          margin: 20px;
+          
+        }
+      }
+
     }
 
   }

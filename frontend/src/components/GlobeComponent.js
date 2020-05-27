@@ -99,14 +99,16 @@ function World(props) {
       <Globe
         markers={markers}
         markerOptions={{
-          activeScale: 1.1,
+          activeScale: 1.5,
           enableTooltip: true,
           enterAnimationDuration: 3000,
           enterEasingFunction: ['Bounce', 'InOut'],
           exitAnimationDuration: 3000,
           exitEasingFunction: ['Cubic', 'Out'],
           getTooltipContent: marker => `${marker.city}`,
-          radiusScaleRange: [0.02, 0.05],
+          radiusScaleRange: [0.01, 0.05],
+          glowRadiusScale: 1
+
         }}
         globeOptions={{
           enableBackground: false,
