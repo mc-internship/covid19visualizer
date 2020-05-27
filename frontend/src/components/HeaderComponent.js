@@ -40,9 +40,9 @@ function Worldstats(props) {
   </div>*/}
             <div className = "col-2 col-stats" >
                 <div className = "boxes">
-                <h3 style = {{color: 'red'}}>{formatNumber(datajson[datajson.length-1].confirmed)}</h3>
-                <h6 style = {{color: 'red'}}>{`+${formatNumber(datajson[datajson.length-1].deltaconfirmed)}`}</h6>
-                <h5 style = {{color: 'red'}}>CONFIRMED</h5>
+                <h3 style = {{color: '#ff6666'}}>{formatNumber(datajson[datajson.length-1].confirmed)}</h3>
+                <h6 style = {{color: '#ff6666'}}>{`+${formatNumber(datajson[datajson.length-1].deltaconfirmed)}`}</h6>
+                <h5 style = {{color: '#ff6666'}}>CONFIRMED</h5>
                 </div>
             </div>
             <div className = "col-2 col-stats" >
@@ -123,7 +123,7 @@ class Header extends Component {
                     <div className = "container">
                         <NavbarToggler onClick = {this.toggleNav} />
                         <div className = "heading">
-                            <h1 style = {{fontFamily: 'arial'}}>COVID-19 TRACKER</h1>
+                            <h1 style = {{fontFamily: 'arial'}}>COVID-19 <font color="salmon">TRACKER</font></h1>
                         </div>
                         <Collapse isOpen = {this.state.isNavOpen} navbar>
                         <Nav navbar className = "navbar-nav ml-auto">

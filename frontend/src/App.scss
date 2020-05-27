@@ -75,37 +75,37 @@ body {
 
 h1 {
   //font-family: 'archia';
-  font-size: 24px !important;
-  font-weight: 900;
+  font-size: 20px !important;
+  font-weight: 700;
 }
 
 h2 {
  // font-family: 'archia';
-  font-size: 18px !important;
-  font-weight: 400;
+  font-size: 17px !important;
+  font-weight: 700;
 }
 
 h3 {
   //font-family: 'archia';
-  font-size: 14px !important;
+  font-size: 11px !important;
   font-weight: 400;
 }
 
 h4 {
   //font-family: 'archia';
-  font-size: 13px !important;
-  font-weight: 900;
+  font-size: 11px !important;
+  font-weight: 700;
 }
 
 h5 {
   //font-family: 'archia';
-  font-size: 12px !important;
-  font-weight: 900;
+  font-size: 10px !important;
+  font-weight: 700;
 }
 
 h6 {
   //font-family: 'archia';
-  font-size: 11px !important;
+  font-size: 9px !important;
   font-weight: 600;
 }
 
@@ -1179,7 +1179,7 @@ table {
   float: left;
   width: 300px;
   border-radius: var(--border-radius);
-  margin-left: 10px;
+  margin-left: 30px;
   /* box-shadow: 0px 5px rgba(0, 0, 0, 0.2); */
 }
 
@@ -1491,30 +1491,33 @@ table {
     .countrycard{
       display: block;
       margin-left:auto; 
-      margin-right:0;
+      margin-right:30px;
       text-align: center;
       //padding: 15px;
-      margin-top: 10px;
-      margin-bottom: 10px;
+      margin-top: 7px;
+      //margin-bottom: 10px;
       float: right;
-      color: black;
-      width: 100%;
+      color: #c2c2d6e0;
+      width: 70%;
       align-items: center;
       //display: inline-block;
       //background-color:rgba(231, 152, 34, 0.966);
-      background-color: rgb(71, 165, 189);
+      //background-color: rgb(71, 165, 189);
+      background-color: rgba(0, 0, 0, 0.829);
       //background-color: #F79E1B;
       text-decoration: none;
+      border-radius: 10px;
+
 
       .cases{
         display: flex;
         flex-direction: row;
         text-align: center;
         justify-content: center;
+        margin: 0px;
         
         .box{
-          margin: 20px;
-          
+          margin: 0px 20px; 
         }
       }
 
@@ -1525,9 +1528,9 @@ table {
   .globe{
     display: flex;
     //float: right;
-    //margin-right: 40px !important;
+    margin-right: 20px !important;
     margin-top: 40px !important;
-    width: 550px;
+    width: 600px;
   }
   
   .newsfeed{

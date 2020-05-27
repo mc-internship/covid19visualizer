@@ -6,7 +6,7 @@ const markers = [
   {
     "id": 1,
     "city": "Singapore",
-    "color": "red",
+    "color": "salmon",
     "coordinates": [
       1.3521,
       103.8198
@@ -16,7 +16,7 @@ const markers = [
   {
     "id": 2,
     "city": "Rome",
-    "color": "lightblue",
+    "color": "cyan",
     "coordinates": [
       41.9028,
       12.4964
@@ -26,7 +26,7 @@ const markers = [
   {
     "id": 3,
     "city": "Washington D.C.",
-    "color": "teal",
+    "color": "plum",
     "coordinates": [
       38.9072,
       -77.0369
@@ -95,7 +95,7 @@ function World(props) {
 
 
   return (
-    <div style={{ width: "550px", height: "550px" }}>
+    <div style={{ width: "650px", height: "600px" }}>
       <Globe
         markers={markers}
         markerOptions={{
@@ -117,7 +117,7 @@ function World(props) {
 
         }}  
         cameraOptions = {{
-          autoRotateSpeed: 5
+          autoRotateSpeed: 3
         }}
         onClickMarker={onClickMarker}
       />

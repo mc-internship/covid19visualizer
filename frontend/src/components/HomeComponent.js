@@ -1,12 +1,18 @@
 import React from 'react';
-import { Card, CardTitle, CardBody as CardBody} from 'reactstrap';
+import { Card, CardTitle} from 'reactstrap';
 import { Link } from 'react-router-dom';
 import World from './GlobeComponent';
 import {useEffectOnce} from 'react-use';
-import  {useState, useCallback} from 'react';
+import  {useState} from 'react';
+import { formatNumber} from '../shared/UtilFunctions.js';
 
 import {Helmet} from 'react-helmet';
 
+import indiadata from './data/indiadatajson.json';
+import germanydata from './data/germanydatajson.json';
+import italydata from './data/italydatajson.json';
+import singdata from './data/singaporedatajson.json';
+import usadata from './data/usadatajson.json';
 
 
 
@@ -69,55 +75,133 @@ function Home(props) {
         <div className = "countries">
         <Link to={'/home/india'} style={{ textDecoration: 'none' }}>
           <Card hoverable className = "countrycard">
-          <CardBody>
-              <h1>India</h1>
-            
-              <h2 >1,42,410</h2>
-              <h4>Confirmed</h4>
+          
+              <h1 style = {{color: '#ffccccd5'}}>India</h1>
+              <h2 style = {{color: '#ff6666dc'}}>{formatNumber(indiadata.cases_time_series[indiadata.cases_time_series.length-1].totalconfirmed)}</h2>
+              <h4 style = {{color: '#ff6666dc'}}>Confirmed</h4>
               <div className = "cases">
                 <div className = "box">
-              <h5>77,752</h5>
-              <h6>Active</h6>
+              <h5 style = {{color: '#80e6ffce'}}>{formatNumber(
+                indiadata.cases_time_series[indiadata.cases_time_series.length-1].totalconfirmed
+                -indiadata.cases_time_series[indiadata.cases_time_series.length-1].totaldeceased
+                -indiadata.cases_time_series[indiadata.cases_time_series.length-1].totalrecovered)}</h5>
+              <h6 style = {{color: '#80e6ffce'}}>Active</h6>
               </div>
               <div className = "box">
-              <h5>4,167</h5>
-              <h6>Deaths</h6>
+              <h5 style = {{color: '#c2c2d6e0'}}>{formatNumber(indiadata.cases_time_series[indiadata.cases_time_series.length-1].totaldeceased)}</h5>
+              <h6 style = {{color: '#c2c2d6e0'}}>Deaths</h6>
               </div>
               <div className = "box">
-              <h5>60,491</h5>
-              <h6>Recovered</h6>
+              <h5 style = {{color: '#7ebf80'}}>{formatNumber(indiadata.cases_time_series[indiadata.cases_time_series.length-1].totalrecovered)}</h5>
+              <h6 style = {{color: '#7ebf80'}}>Recovered</h6>
               </div>
               </div>
-            </CardBody>
+            
           </Card>
         </Link>
         <Link to={'/home/usa'} style={{ textDecoration: 'none' }}>
         <Card hoverable className = "countrycard">
-            <CardTitle>
-              USA
-            </CardTitle>
-          </Card>
+          
+          <h1 style = {{color: '#ffccccd5'}}>USA</h1>
+          <h2 style = {{color: '#ff6666dc'}}>{formatNumber(usadata.cases_time_series[usadata.cases_time_series.length-1].totalconfirmed)}</h2>
+          <h4 style = {{color: '#ff6666dc'}}>Confirmed</h4>
+          <div className = "cases">
+            <div className = "box">
+          <h5 style = {{color: '#80e6ffce'}}>{formatNumber(
+            usadata.cases_time_series[usadata.cases_time_series.length-1].totalconfirmed
+            -usadata.cases_time_series[usadata.cases_time_series.length-1].totaldeceased
+            -usadata.cases_time_series[usadata.cases_time_series.length-1].totalrecovered)}</h5>
+          <h6 style = {{color: '#80e6ffce'}}>Active</h6>
+          </div>
+          <div className = "box">
+          <h5 style = {{color: '#c2c2d6e0'}}>{formatNumber(usadata.cases_time_series[usadata.cases_time_series.length-1].totaldeceased)}</h5>
+          <h6 style = {{color: '#c2c2d6e0'}}>Deaths</h6>
+          </div>
+          <div className = "box">
+          <h5 style = {{color: '#7ebf80'}}>{formatNumber(usadata.cases_time_series[usadata.cases_time_series.length-1].totalrecovered)}</h5>
+          <h6 style = {{color: '#7ebf80'}}>Recovered</h6>
+          </div>
+          </div>
+        
+      </Card>
         </Link>
         <Link to={'/home/germany'} style={{ textDecoration: 'none' }}>
         <Card hoverable className = "countrycard">
-            <CardTitle>
-              Germany
-            </CardTitle>
-          </Card>
+          
+          <h1 style = {{color: '#ffccccd5'}}>Germany</h1>
+          <h2 style = {{color: '#ff6666dc'}}>{formatNumber(germanydata.cases_time_series[germanydata.cases_time_series.length-1].totalconfirmed)}</h2>
+          <h4 style = {{color: '#ff6666dc'}}>Confirmed</h4>
+          <div className = "cases">
+            <div className = "box">
+          <h5 style = {{color: '#80e6ffce'}}>{formatNumber(
+            germanydata.cases_time_series[germanydata.cases_time_series.length-1].totalconfirmed
+            -germanydata.cases_time_series[germanydata.cases_time_series.length-1].totaldeceased
+            -germanydata.cases_time_series[germanydata.cases_time_series.length-1].totalrecovered)}</h5>
+          <h6 style = {{color: '#80e6ffce'}}>Active</h6>
+          </div>
+          <div className = "box">
+          <h5 style = {{color: '#c2c2d6e0'}}>{formatNumber(germanydata.cases_time_series[germanydata.cases_time_series.length-1].totaldeceased)}</h5>
+          <h6 style = {{color: '#c2c2d6e0'}}>Deaths</h6>
+          </div>
+          <div className = "box">
+          <h5 style = {{color: '#7ebf80'}}>{formatNumber(germanydata.cases_time_series[germanydata.cases_time_series.length-1].totalrecovered)}</h5>
+          <h6 style = {{color: '#7ebf80'}}>Recovered</h6>
+          </div>
+          </div>
+        
+      </Card>
         </Link>
         <Link to={'/home/italy'} style={{ textDecoration: 'none' }}>
         <Card hoverable className = "countrycard">
-            <CardTitle>
-              Italy
-            </CardTitle>
-          </Card>
+          
+          <h1 style = {{color: '#ffccccd5'}}>Italy</h1>
+          <h2 style = {{color: '#ff6666dc'}}>{formatNumber(italydata.cases_time_series[italydata.cases_time_series.length-1].totalconfirmed)}</h2>
+          <h4 style = {{color: '#ff6666dc'}}>Confirmed</h4>
+          <div className = "cases">
+            <div className = "box">
+          <h5 style = {{color: '#80e6ffce'}}>{formatNumber(
+            italydata.cases_time_series[italydata.cases_time_series.length-1].totalconfirmed
+            -italydata.cases_time_series[italydata.cases_time_series.length-1].totaldeceased
+            -italydata.cases_time_series[italydata.cases_time_series.length-1].totalrecovered)}</h5>
+          <h6 style = {{color: '#80e6ffce'}}>Active</h6>
+          </div>
+          <div className = "box">
+          <h5 style = {{color: '#c2c2d6e0'}}>{formatNumber(italydata.cases_time_series[italydata.cases_time_series.length-1].totaldeceased)}</h5>
+          <h6 style = {{color: '#c2c2d6e0'}}>Deaths</h6>
+          </div>
+          <div className = "box">
+          <h5 style = {{color: '#7ebf80'}}>{formatNumber(italydata.cases_time_series[italydata.cases_time_series.length-1].totalrecovered)}</h5>
+          <h6 style = {{color: '#7ebf80'}}>Recovered</h6>
+          </div>
+          </div>
+        
+      </Card>
         </Link>
         <Link to={'/home/singapore'} style={{ textDecoration: 'none' }}>
         <Card hoverable className = "countrycard">
-            <CardTitle>
-              Singapore
-            </CardTitle>
-          </Card>
+          
+          <h1 style = {{color: '#ffccccd5'}}>Singapore</h1>
+          <h2 style = {{color: '#ff6666dc'}}>{formatNumber(singdata.cases_time_series[singdata.cases_time_series.length-1].totalconfirmed)}</h2>
+          <h4 style = {{color: '#ff6666dc'}}>Confirmed</h4>
+          <div className = "cases">
+            <div className = "box">
+          <h5 style = {{color: '#80e6ffce'}}>{formatNumber(
+            singdata.cases_time_series[singdata.cases_time_series.length-1].totalconfirmed
+            -singdata.cases_time_series[singdata.cases_time_series.length-1].totaldeceased
+            -singdata.cases_time_series[singdata.cases_time_series.length-1].totalrecovered)}</h5>
+          <h6 style = {{color: '#80e6ffce'}}>Active</h6>
+          </div>
+          <div className = "box">
+          <h5 style = {{color: '#c2c2d6e0'}}>{formatNumber(singdata.cases_time_series[singdata.cases_time_series.length-1].totaldeceased)}</h5>
+          <h6 style = {{color: '#c2c2d6e0'}}>Deaths</h6>
+          </div>
+          <div className = "box">
+          <h5 style = {{color: '#7ebf80'}}>{formatNumber(singdata.cases_time_series[singdata.cases_time_series.length-1].totalrecovered)}</h5>
+          <h6 style = {{color: '#7ebf80'}}>Recovered</h6>
+          </div>
+          </div>
+        
+      </Card>
         </Link>
         </div>  
 
