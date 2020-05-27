@@ -33,7 +33,7 @@ function SingDemo(props) {
 
 
     return(
-      <div className="cards-container">
+      <div className="card-demographics">
       <Helmet>
         <title>Singapore Demographics</title>
         <meta name="title" content="Graphs" />

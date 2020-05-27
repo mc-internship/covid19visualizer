@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, CardTitle} from 'reactstrap';
+import { Card} from 'reactstrap';
 import { Link } from 'react-router-dom';
 import World from './GlobeComponent';
 import {useEffectOnce} from 'react-use';

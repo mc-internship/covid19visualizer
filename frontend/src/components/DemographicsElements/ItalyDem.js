@@ -36,7 +36,7 @@ function ItalyDemo(props) {
 
 
     return(
-      <div className="cards-container">
+      <div className="card-demographics">
       <Helmet>
         <title>Italy Demographics</title>
         <meta name="title" content="Graphs" />
