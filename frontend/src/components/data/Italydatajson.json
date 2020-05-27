@@ -1166,7 +1166,13 @@
             "recovered": "5473",
             "state": "Trentino-Alto Adige",
             "statecode": "Trentino-Alto Adige",
-            "statenotes": ""
+            "statenotes": "",
+            "totalpop": "1072276.0",
+            "female": "50.7",
+            "male": "49.3",
+            "children": "15.0",
+            "adult": "64.1",
+            "oldage": "20.9"
         }
     ]
 }

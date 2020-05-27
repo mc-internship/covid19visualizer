@@ -18,7 +18,6 @@ function SingStats(props) {
 
   const [fetched, setFetched] = useState(false);
   const [timeseries, setTimeseries] = useState([]);
-  const [statesTimeSeries, setStatesTimeSeries] = useState([]);
 
 
   useEffect(() => {

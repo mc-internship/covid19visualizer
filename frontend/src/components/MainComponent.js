@@ -5,7 +5,7 @@ import Impact from './ImpactComponent';
 import Timeline from './TimelineComponent';
 import Demographics from './DemographicsComponent';
 import Events from './EventComponent';
-import Footer from './FooterComponent';
+//import Footer from './FooterComponent';
 import India from './IndiaComponent';
 import Usa from './UsaComponent';
 import Germany from './GermanyComponent';
@@ -40,7 +40,6 @@ class Main extends Component {
                 <Redirect to = "/home"/>
               </Switch>
               
-              <Footer />
             </div>
 
         );

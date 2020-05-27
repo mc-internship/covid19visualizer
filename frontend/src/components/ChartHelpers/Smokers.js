@@ -1,4 +1,4 @@
-import {defaultOptions} from './ChartUtils';
+import {defaultOptions} from './ChartUtilsDonut';
 
 import deepmerge from 'deepmerge';
 import React from 'react';

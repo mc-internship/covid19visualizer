@@ -4,8 +4,6 @@ import AgeChart from '../ChartHelpers/AgeDemographics';
 import DiabeticChart from '../ChartHelpers/Diabetic';
 import SmokersChart from '../ChartHelpers/Smokers';
 
-
-import axios from 'axios';
 import {Helmet} from 'react-helmet';
 
 import datajson from '../data/usacountrydata.json';
@@ -15,7 +13,7 @@ function UsaDemo(props) {
 
   const [fetched, setFetched] = useState(false);
   const [data, setData] = useState([]);
-  const [statesTimeSeries, setStatesTimeSeries] = useState([]);
+
 
   useEffect(() => {
     if (fetched === false) {
@@ -25,13 +23,9 @@ function UsaDemo(props) {
 
   const getStates = async () => {
     try {
-      const [
-        stateDailyResponse,
-      ] = await Promise.all([
-        axios.get('https://api.covid19india.org/states_daily.json'),
-      ]);
+
       setData(datajson.country);
-      setStatesTimeSeries(stateDailyResponse.data.states_daily);
+
       setFetched(true);
     } catch (err) {
       console.log(err);
@@ -46,7 +40,6 @@ function UsaDemo(props) {
         <title>USA Timeline</title>
         <meta name="title" content="Graphs" />
       </Helmet>
-        <h4>USA Demographics</h4>
         <section className="cards">
         <div className="card fadeInUp" style={{animationDelay: '0.7s'}}>
           <GenderChart title="Gender Demographics - USA" male = {data.male} female = {data.female}/>

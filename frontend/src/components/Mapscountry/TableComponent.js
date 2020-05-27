@@ -154,7 +154,7 @@ function Table({
           <tbody>
               
             {sortedStates.map((state, index) => {
-              if(districts!=5){
+              if(districts!==5){
                 if (state.confirmed > 0 && state.statecode !== 'TT' && state.state !== 'Dadra and Nagar Haveli') {
                   
                   return (

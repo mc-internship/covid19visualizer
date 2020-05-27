@@ -74,37 +74,37 @@ body {
 }
 
 h1 {
-  font-family: 'archia';
+  //font-family: 'archia';
   font-size: 24px !important;
   font-weight: 900;
 }
 
 h2 {
-  font-family: 'archia';
+ // font-family: 'archia';
   font-size: 18px !important;
   font-weight: 400;
 }
 
 h3 {
-  font-family: 'archia';
+  //font-family: 'archia';
   font-size: 14px !important;
   font-weight: 400;
 }
 
 h4 {
-  font-family: 'archia';
+  //font-family: 'archia';
   font-size: 13px !important;
   font-weight: 900;
 }
 
 h5 {
-  font-family: 'archia';
+  //font-family: 'archia';
   font-size: 12px !important;
   font-weight: 900;
 }
 
 h6 {
-  font-family: 'archia';
+  //font-family: 'archia';
   font-size: 11px !important;
   font-weight: 600;
 }
@@ -187,7 +187,7 @@ h6 {
   cursor: pointer;
   display: flex;
   flex-direction: row;
-  font-family: 'archia';
+  //font-family: 'archia';
   font-size: .75rem;
   padding-left: 1.5rem;
 
@@ -217,7 +217,7 @@ h6 {
 
   a {
     color: $gray;
-    font-family: 'archia';
+    //font-family: 'archia';
     font-size: .75rem;
     margin-right: .25rem;
     text-decoration: none;
@@ -379,7 +379,7 @@ table {
   border-collapse: separate;
   //border-spacing: 0px 0px;
   border-color: black;
-  font-family: 'archia';
+  //font-family: 'archia';
   position: relative;
 
   //width: 30rem;
@@ -391,8 +391,8 @@ table {
     text-align: left;
 
     th {
-      background: #fb9d3e;
-      color: black;
+      background: #1f6ba8;
+      color: whitesmoke;
       //border-radius: 0px;
       cursor: pointer;
       //padding: .5rem;
@@ -402,7 +402,7 @@ table {
       z-index: 99;
 
       &:hover {
-        background:#fdba62;
+        background:#4798db;
       }
     }
   }
@@ -417,7 +417,8 @@ table {
     font-size: 10px;
 
     abbr {
-      color:rgba(161, 25, 7, 0.918);
+      //color:rgba(161, 25, 7, 0.918);
+      color: whitesmoke;
       text-align: right;
       text-decoration: none;
 
@@ -450,7 +451,8 @@ table {
   }
 
   tbody {
-    color: rgba(255, 153, 51,0.9);
+    //color: rgba(255, 153, 51,0.9);
+    color: #4798db;
 
     tr {
       cursor: pointer;
@@ -458,7 +460,7 @@ table {
      
 
       &.is-highlighted {
-        background:#411e2a!important;
+        background:#0b38496e!important;
       }
 
       &.is-total {
@@ -474,10 +476,10 @@ table {
       }
 
       &:hover {
-        background: #3b232b!important;
+        background: #1a58705d!important;
 
         .dropdown {
-          background: #fb9d3e;
+          background: #255d74be;
         }
       }
     }
@@ -588,7 +590,7 @@ table {
 
     .district-heading {
       background: $gray-light;
-      color: red !important;
+      color: #3ec5fb !important;
 
       &:hover {
         background: $gray-light !important;
@@ -608,7 +610,7 @@ table {
           height: .9rem;
           justify-content: space-between;
           position: relative;
-          color: red !important;
+          color: #3ec5fb !important;
 
           abbr {
             text-align: right;
@@ -754,7 +756,7 @@ table {
 
       text {
         fill: $gray;
-        font-family: 'archia';
+        //font-family: 'archia';
         font-size: 10px;
         font-weight: 600;
         text-align: right;
@@ -852,7 +854,7 @@ table {
 }
 
 .__react_component_tooltip {
-  font-family: 'archia';
+  //font-family: 'archia';
   font-size: 11px;
   font-weight: 600;
   padding: .25rem;
@@ -862,10 +864,10 @@ table {
 
 
 .legend {
-  background:black;
+  background:#161625;
   display: flex;
   flex-wrap: wrap;
-  font-family: archia;
+  //font-family: archia;
   justify-content: center;
   z-index: 101;
 
@@ -891,11 +893,12 @@ table {
 
 .cards-container {
   
-  display: inline;
+  display: inline-block;
   margin-left: 0;
   padding: 2rem;
   height: 500px;
-  width: 88%;
+  width: 90%;
+  overflow-y: scroll;
   
 
 
@@ -905,15 +908,20 @@ table {
     justify-content: space-between;
     height: 100%;
     width: 100%;
+    //background-color: #0a3552;
+    margin: 10px;
 
 
     .card {
       display: inline;
       flex: 0 1 calc(33% - 1em);
       //height: 30rem;
+      border: none;
+      background-color: blue;
       margin-bottom: 2em;
       height: 100%;
       width: 100%;
+      margin: 100px;
 
 
       .charts-header {
@@ -925,8 +933,8 @@ table {
 
 
         .chart-title {
-          color: #FF5F00;
-          font-family: 'archia';
+          color: rgba(119, 151, 151, 0.849);
+          //font-family: 'archia';
           font-size: 1.5rem !important;
           font-weight: 900;
           padding: 20px 0;
@@ -936,11 +944,95 @@ table {
         .chart-content {
           height: 350px;
           width: 100%;
+          margin: 10px;
         }
 
         .chart-note {
           color: $red;
-          font-family: 'archia';
+          //font-family: 'archia';
+          font-size: .8rem;
+          height: 50px;
+          margin-top: 5px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 769px) {
+    margin-left: unset;
+    padding: 1rem;
+  }
+}
+
+.cards-container::-webkit-scrollbar {
+  display: none;
+}
+/* Hide scrollbar for IE and Edge */
+.cards-container {
+  -ms-overflow-style: none;
+}
+
+.card-demographics{
+  
+  display: inline;
+  margin-left: 0;
+  //padding: 2rem;
+  //height: 500px;
+  //text-align: center;
+  //width: 1000px;
+  //background-color: darkblue;
+  
+
+  .cards {
+   margin-top: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    //background-color: darkorange;
+    //padding: 30px;  
+
+    .card {
+      display: inline;
+      flex: 0 1 calc(50% - 0.1em);
+      //height: 30rem;
+      border: none; 
+      //margin-bottom: 2em;
+      height: 400px !important;
+      width: 300px !important;
+      //margin: 5px;
+      //padding: 50px;
+      background-color: #161625;
+      margin-top: 10px;
+      //margin-left: 10px;
+
+
+      .charts-header {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: flex-start;
+
+
+        .chart-title {
+          color:  rgba(119, 151, 151, 0.849);
+          //font-family: 'archia';
+          font-size: 1.5rem !important;
+          font-weight: 900;
+          padding: 20px 0;
+          text-transform: uppercase;
+        }
+
+        .chart-content {
+          height: 350px;
+         width: 100%;
+        }
+
+        .chart-note {
+          color: $red;
+          //font-family: 'archia';
           font-size: .8rem;
           height: 50px;
           margin-top: 5px;
@@ -958,6 +1050,7 @@ table {
 .row-header{
   margin:0px auto;
   padding:0px auto;
+  //background-color: orange;
 
 }
 
@@ -983,7 +1076,8 @@ table {
 .jumbotron {
   padding:15px 2px 15px 2px;
   margin:0px auto;
-  background: rgba(216, 2, 27, 0.8);
+  //background: rgba(216, 2, 27, 0.8);
+  background-color: #161625;
   //background-color: #EB001B;
   color:floralwhite;
   border-radius: 0 !important;
@@ -991,13 +1085,14 @@ table {
 
 
 .navbar-dark {
-  background-color:#121212;
+  background-color:#303050;
   //background-color: black;
 
 }
 
 .heading{
-  color:#FF5F00;
+  color: rgb(179, 185, 189);
+  font-family: 'Arial' !important;
 }
 
 .body { 
@@ -1009,7 +1104,8 @@ table {
   width: 100%;
   align-items: center;
   //display: inline-block;
-  background-color:rgba(231, 152, 34, 0.966);
+  //background-color:rgba(231, 152, 34, 0.966);
+  background-color: rgb(71, 165, 189);
   //background-color: #F79E1B;
   text-decoration: none;
   
@@ -1018,6 +1114,16 @@ table {
 .col-stats{
   display: inline-block;
   text-align: center;
+  //background-color: orange;
+  
+  .boxes{
+    background-color: #3f3f8f3f;
+    border-radius: 10px;
+    padding: 10px;
+    height: 100px;
+    border-color: whitesmoke;
+    border-width: thin;
+  }
 
 }
 
@@ -1039,6 +1145,10 @@ table {
   height: 100%;
   z-index: 0;
  
+}
+
+.navigator{
+  background-color: grey;
 }
 
 .nav-pills{
@@ -1075,21 +1185,34 @@ table {
 }
 
 .orange a{ 
-  background-color: rgba(231, 152, 34, 0.966) !important;
+  //background-color: rgba(231, 152, 34, 0.966) !important;
   //background-color: #F79E1B !important;
+  background-color: rgb(50, 127, 158) !important;
 }
 
 .eventlist{
-  background-color: black;
+  background-color: #161625;
 }
 
 .countries{
-  width: 90%;
-  margin-right: 0px;
+  display: flex;
+  float: right;
+  flex-direction: column;
+  width: 400px;
+  margin-right: 50px;
+  //background-color: red !important;
+}
+
+.globe{
+  display: flex;
+  float: right;
+  margin-right: 40px !important;
+  margin-top: 40px !important;
 }
 
 .homecontainer{
-  margin-right: 0px;
+  display: flex;
+  //margin-right: 0px;
   float: right;
 }
 
@@ -1260,8 +1383,8 @@ table {
   //padding: 0px;
   //float: left;
 
-  .map-stats {
-    background: burlywood !important;
+  .info {
+    /*background: burlywood !important;
     display: flex;
     flex-direction: row;
     //flex-direction: row;
@@ -1272,7 +1395,11 @@ table {
     position: absolute;
     width: 400px !important;
     z-index: 0;
-    //float: left;
+    //float: left;*/
+
+    .h2{
+      margin-left: 50px !important;
+    }
 
 
     .stats {
@@ -1290,10 +1417,14 @@ table {
       padding: .25rem;
       position: relative;
       transition: all .1s ease-in-out;
-      width: 10px;
+      width: 250px;
+
+      h6,h1{
+        margin-left: 30px;
+      }
 
 
-      .stats-bottom {
+      /*.stats-bottom {
         display: flex;
         flex-direction: column;
 
@@ -1302,106 +1433,67 @@ table {
           margin-bottom: .25rem;
           margin-top: auto;
         }
-      }
+      }*/
 
-      h1 {
+      /*h1 {
         color: $cherry;
         font-size: 1em !important;
         font-weight: 600;
-      }
+      }*/
 
       &.is-green {
         background: $green-light;
 
-        h5,
+        h5{
+          color: $green-mid;
+          //margin-left: 10px;
+        }
+
         h6 {
           color: $green-mid;
+          margin-left: 30px;
         }
 
         h1 {
           color: $green;
+          margin-left: 30px;
         }
       }
 
       &.is-blue {
         background: $blue-light;
 
-        h5,
+        h5{
+          color: $blue-mid;
+        }
         h6 {
           color: $blue-mid;
+          margin-left: 30px;
         }
 
         h1 {
           color: $blue;
+          margin-left: 30px;
         }
       }
 
       &.is-gray {
         background: $gray-light;
 
-        h5,
+        h5{
+          color: $gray-mid;
+        }
         h6 {
           color: $gray-mid;
+          margin-left: 30px;
         }
 
         h1 {
           color: $gray;
+          margin-left: 30px;
         }
       }
-
-      &.is-yellow {
-        background: $yellow;
-
-        h5,
-        h6 {
-          color: $white;
-        }
-
-        h1 {
-          color: $white;
-        }
-      }
-
-      &.is-purple {
-        background: $purple-light;
-        padding-right: 1rem;
-
-        h5,
-        h6 {
-          color: $purple-mid;
-
-          &.timestamp {
-            font-weight: 900;
-            margin: 0;
-          }
-        }
-
-        h1 {
-          color: $purple;
-        }
-
-        svg {
-          cursor: pointer;
-          position: absolute;
-          right: .35rem;
-          stroke: $purple-mid;
-          stroke-width: 3;
-          top: 0;
-          transition: stroke .2s ease-in-out;
-          width: 12px;
-
-          &:hover {
-            stroke: $purple;
-          }
-        }
-      }
-
-      &.focused {
-        margin-bottom: .5rem;
-        margin-top: -.5rem;
-        padding-bottom: .75rem;
-        padding-top: .75rem;
-      }
+      
     }
   }
 
@@ -1414,99 +1506,20 @@ table {
 }
 
 .statedemographics{
+  background-color: #161625;
+
   .cards{
+    background-color: #161625;
   .card{
-    width: 200px !important;
+    width: 300px !important;
+    background-color: #161625;
+    border: none;
   }
 }
 }
 
 
 
-
-
-/*@media (min-width: 769px) {
-
-}
-
-@media (max-width: 769px) {
-  table,
-  .header,
-  .MapExplorer,
-  .updates,
-  .updates-header{
-    width: calc(100% - 2rem);
-  }
-
-  .MapExplorer {
-    .svg-parent {
-      width: 100%;
-    }
-
-    .header {
-      margin-top: 2rem;
-    }
-  }
-
-  .link,
-  .faq {
-    width: calc(100% - 2rem);
-  }
-
-  .map-stats {
-    .stats {
-      .timestamp {
-        width: 4.5rem;
-        
-      }
-    }
-  }
-
-  a {
-    &.button {
-      display: flex;
-      flex: row;
-      justify-content: center;
-      width: 10rem;
-
-      & > * {
-        align-self: center;
-      }
-
-      svg {
-        width: 38px;
-      }
-    }
-  }
-
-  table {
-    td {
-      max-width: 6.75rem;
-    }
-  }
-
-  .cards-container {
-    padding: .5rem;
-
-
-    .cards {
-      .card {
-        flex: 0 1 100%;
-        height: 25rem;
-        margin-bottom: 0;
-      }
-
-      .chart-title {
-        padding: 20px 0 10px;
-      }
-
-      .card-big {
-        height: 30rem;
-      }
-    }
-  }
-
-}*/
 
 // Dark Mode
 

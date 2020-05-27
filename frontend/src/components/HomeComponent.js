@@ -1,6 +1,7 @@
 import React from 'react';
 import { Card, CardTitle} from 'reactstrap';
 import { Link } from 'react-router-dom';
+import World from './GlobeComponent';
 
 
 
@@ -8,7 +9,9 @@ import { Link } from 'react-router-dom';
 function Home(props) {
     return(
       <div className="homecontainer">
-        <h4>Home</h4>
+        <div className = "globe">
+        <World />
+      </div>
         <div className = "countries">
         <Link to={'/home/india'} style={{ textDecoration: 'none' }}>
           <Card hoverable className = "countrycard">
@@ -46,6 +49,7 @@ function Home(props) {
           </Card>
         </Link>
         </div>  
+
       </div>
 
     

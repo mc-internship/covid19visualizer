@@ -7,7 +7,7 @@ import RecVsDeathChart from '../ChartHelpers/DailyRecVsDeaths';
 import ActiveVsRecChart from '../ChartHelpers/ActiveVsRec';
 
 
-import axios from 'axios';
+
 import {Helmet} from 'react-helmet';
 
 import datajson from '../data/indiadatajson.json';
@@ -29,11 +29,7 @@ function IndiaStats(props) {
 
   const getStates = async () => {
     try {
-      const [
-        stateDailyResponse,
-      ] = await Promise.all([
-        axios.get('https://api.covid19india.org/states_daily.json'),
-      ]);
+
       setTimeseries(datajson.cases_time_series);
       setStatesTimeSeries(statesdata.states_daily);
       setFetched(true);

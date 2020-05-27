@@ -7,48 +7,49 @@ import SingIm from './ImpactElements/SingImp';
 
 
 function Impact(props) {
+  const [selectedCountry, changeSelection] = React.useState("India");
     return(
       <div className="container">
-        <h4>Impact</h4>
-      
-
-<div>
+ 
+        <div>
+          
 <ul class="nav flex-column nav-pills orange">
-  <li class="nav-item">
-    <a class="nav-link active" href="#indiat">India</a>
+  <li class="nav-item ">
+    <a class="nav-link active" onClick={()=>changeSelection("India")} href="#indiat">India</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link active" href="#usat">USA</a>
+    <a class="nav-link active" onClick={()=>changeSelection("USA")} href="#usat">USA</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link active" href="#germanyt">Germany</a>
+    <a class="nav-link active" onClick={()=>changeSelection("Germany")} href="#germanyt">Germany</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link active" href="#italyt">Italy</a>
+    <a class="nav-link active" onClick={()=>changeSelection("Italy")} href="#italyt">Italy</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link active" href="#singt">Singapore</a>
+    <a class="nav-link active" onClick={()=>changeSelection("Singapore")} href="#singt">Singapore</a>
   </li>
 </ul>
 </div>
 
     <div className = "content">
-        <div id= "indiat" className = "timeline-details">
+        {selectedCountry === "India" && <div id= "indiat" className = "timeline-details">
           <IndiaIm />
-        </div>
-        <div id= "usat" className = "timeline-details"> 
+        </div> }
+        {selectedCountry === "USA" && <div id= "usat" className = "timeline-details"> 
           <UsaIm />
-        </div>
-        <div id= "germanyt" className = "timeline-details"> 
+        </div>}
+        {selectedCountry === "Germany" && <div id= "germanyt" className = "timeline-details"> 
           <GermanyIm />
-        </div>
-        <div id= "italyt" className = "timeline-details"> 
+        </div>}
+        {selectedCountry === "Italy" && <div id= "italyt" className = "timeline-details"> 
           <ItalyIm />
-        </div>
-        <div id= "singt" className = "timeline-details"> 
+        </div>}
+        {selectedCountry === "Singapore" && <div id= "singt" className = "timeline-details"> 
           <SingIm />
-        </div>
+        </div>}
     </div>
+  
   
 </div>
     )

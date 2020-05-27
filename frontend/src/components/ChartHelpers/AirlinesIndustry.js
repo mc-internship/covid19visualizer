@@ -14,11 +14,11 @@ function AirlinesChart(props) {
   }
 
   props.timeseries.forEach((data, index) => {
-    if (index >= 31) {
+    
       const date = parse(data.date, 'y-M-d', new Date(2020, 0, 1));
       dates.push(date);
       airlineindex.push(data.airlines);
-    }
+    
   });
 
   const dataset = {

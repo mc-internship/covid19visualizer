@@ -4,8 +4,6 @@ import AgeChart from '../ChartHelpers/AgeDemographics';
 import DiabeticChart from '../ChartHelpers/Diabetic';
 import SmokersChart from '../ChartHelpers/Smokers';
 
-
-import axios from 'axios';
 import {Helmet} from 'react-helmet';
 
 import datajson from '../data/singaporecountrydata.json';
@@ -15,7 +13,6 @@ function SingDemo(props) {
 
   const [fetched, setFetched] = useState(false);
   const [data, setData] = useState([]);
-  const [statesTimeSeries, setStatesTimeSeries] = useState([]);
 
   useEffect(() => {
     if (fetched === false) {
@@ -25,13 +22,8 @@ function SingDemo(props) {
 
   const getStates = async () => {
     try {
-      const [
-        stateDailyResponse,
-      ] = await Promise.all([
-        axios.get('https://api.covid19india.org/states_daily.json'),
-      ]);
+
       setData(datajson.country);
-      setStatesTimeSeries(stateDailyResponse.data.states_daily);
       setFetched(true);
     } catch (err) {
       console.log(err);
@@ -46,7 +38,6 @@ function SingDemo(props) {
         <title>Singapore Timeline</title>
         <meta name="title" content="Graphs" />
       </Helmet>
-        <h4>Singapore Demographics</h4>
         <section className="cards">
         <div className="card fadeInUp" style={{animationDelay: '0.7s'}}>
           <GenderChart title="Gender Demographics - Singapore" male = {data.male} female = {data.female}/>

@@ -32,7 +32,7 @@ import {
         {
           data: confirmed,
           label: 'Confirmed',
-          backgroundColor: '#ff3333',
+          backgroundColor: '#ff6862',
         },
       ],
     };

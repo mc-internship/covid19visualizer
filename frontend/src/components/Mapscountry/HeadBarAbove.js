@@ -5,10 +5,9 @@ import {
     MAP_TYPES,
     MAP_VIEWS,
   } from '../../constants.js';
-import { formatNumber} from '../../shared/UtilFunctions.js';
 
 import equal from 'fast-deep-equal';
-import React, {useState, useEffect, useMemo} from 'react';
+import React, {useState, useEffect} from 'react';
 
 const isEqual = (prevProps, currProps) => {
   if (!equal(prevProps.regionHighlighted, currProps.regionHighlighted)) {
@@ -23,7 +22,7 @@ const isEqual = (prevProps, currProps) => {
   return true;
 };
 
-const getRegionFromState = (state) => {
+/*const getRegionFromState = (state) => {
   if (!state) return;
   const region = {...state};
   return region;
@@ -33,7 +32,7 @@ const getRegionFromDistrict = (districtData, name) => {
   if (!districtData) return;
   const region = {...districtData};
   return region;
-};
+};*/
 
 function HeadBarAbove({
   mapName,
@@ -54,7 +53,7 @@ function HeadBarAbove({
   });
   const currentMapMeta = MAP_META[currentMap.name];
 
-  const [hoveredRegion, panelRegion] = useMemo(() => {
+  /*const [hoveredRegion, panelRegion] = useMemo(() => {
     if (!regionHighlighted.district) {
       const state = getRegionFromState(
         states.find((state) => regionHighlighted.state === state.state)
@@ -85,7 +84,7 @@ function HeadBarAbove({
         state = states.find((state) => state.state === 'Total');
       return [district, state];
     }
-  }, [states, districts, currentMapMeta.mapType, regionHighlighted]);
+  }, [states, districts, currentMapMeta.mapType, regionHighlighted]);*/
 
   useEffect(() => {
     if (regionHighlighted === undefined || regionHighlighted === null) return;

@@ -129,11 +129,11 @@ function LeftPanel({
     >
 
       <div className="info fadeInUp" style={{animationDelay: '2.4s'}}>
-        <h2>
+        <h1>
           {hoveredRegion.state}
-        </h2>
+        </h1>
         <div
-          className={`Stats fadeInUp new${
+          className={`stats fadeInUp new${
             mapOption === 'confirmed' ? 'focused' : ''
           }`}
           style={{animationDelay: '2s'}}
@@ -146,7 +146,7 @@ function LeftPanel({
           </div>
         </div>
         <div
-          className={`Stats is-blue fadeInUp ${
+          className={`stats is-blue fadeInUp ${
             mapOption === 'active' ? 'focused' : ''
           }`}
           style={{animationDelay: '2.1s'}}
@@ -160,7 +160,7 @@ function LeftPanel({
         </div>
 
         <div
-          className={`Stats is-green fadeInUp ${
+          className={`stats is-green fadeInUp ${
             mapOption === 'recovered' ? 'focused' : ''
           }`}
           style={{animationDelay: '2.2s'}}
@@ -174,7 +174,7 @@ function LeftPanel({
         </div>
 
         <div
-          className={`Stats is-gray fadeInUp ${
+          className={`stats is-gray fadeInUp ${
             mapOption === 'deceased' ? 'focused' : ''
           }`}
           style={{animationDelay: '2.3s'}}

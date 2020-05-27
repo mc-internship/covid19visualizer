@@ -10,7 +10,6 @@ import '../../App.scss'
 import MapExplorer from './MapMain';
 import  Table from './TableComponent';
 
-import axios from 'axios';
 import React, {useState, useCallback} from 'react';
 import {useEffectOnce} from 'react-use';
 import HeadBarAbove from './HeadBarAbove';
@@ -53,9 +52,9 @@ function Home(props) {
     } catch (err) {
       console.log(err);
     }*/
-    if(props.nameofmap == "Germany")
+    if(props.nameofmap === "Germany")
       setStateDistrictWiseData(germanystatesdistrict);
-    else if(props.nameofmap == "USA")
+    else if(props.nameofmap === "USA")
       setStateDistrictWiseData(usastatesdistrict);  
     else 
       setStateDistrictWiseData(5)

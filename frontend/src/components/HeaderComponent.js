@@ -1,4 +1,4 @@
-import React, {Component, useState, useEffect} from 'react';
+import React, {Component} from 'react';
 import { Navbar, Nav, NavbarToggler, Collapse, NavItem, Jumbotron} from 'reactstrap';
 import { NavLink } from 'react-router-dom';
 //import axios from 'axios';
@@ -35,36 +35,50 @@ function Worldstats(props) {
   return(
     <Jumbotron>
     <div className = "container">
-        <div className = "row row-header align-items-left ">
-            <h6>WorldWide Stats</h6>
-        </div>
+        {/*<div className = "row row-header align-items-left ">
+            <h6>WorldWide</h6>
+  </div>*/}
             <div className = "col-2 col-stats" >
-                <h3>{formatNumber(datajson[datajson.length-1].confirmed)}</h3>
-                <h6>{`+${formatNumber(datajson[datajson.length-1].deltaconfirmed)}`}</h6>
-                <h5>Confirmed</h5>
+                <div className = "boxes">
+                <h3 style = {{color: 'red'}}>{formatNumber(datajson[datajson.length-1].confirmed)}</h3>
+                <h6 style = {{color: 'red'}}>{`+${formatNumber(datajson[datajson.length-1].deltaconfirmed)}`}</h6>
+                <h5 style = {{color: 'red'}}>CONFIRMED</h5>
+                </div>
             </div>
             <div className = "col-2 col-stats" >
-            <h3>{formatNumber(datajson[datajson.length-1].active)}</h3>
-                <h6>{datajson[datajson.length-1].deltaactive >=0 ? `+${formatNumber(datajson[datajson.length-1].deltaactive)}` : `${formatNumber(datajson[datajson.length-1].deltaactive)}`}</h6>
-                <h5>Active</h5>
+            <div className = "boxes">
+            <h3 style = {{color: 'lightblue'}}>{formatNumber(datajson[datajson.length-1].active)}</h3>
+                <h6 style = {{color: 'lightblue'}}>{datajson[datajson.length-1].deltaactive >=0 ? `+${formatNumber(datajson[datajson.length-1].deltaactive)}` : `${formatNumber(datajson[datajson.length-1].deltaactive)}`}</h6>
+                <h5 style = {{color: 'lightblue'}}>ACTIVE</h5>
+            </div>
             </div>
             <div className = "col-2 col-stats" >
-            <h3>{formatNumber(datajson[datajson.length-1].recovered)}</h3>
-                <h6>{`+${formatNumber(datajson[datajson.length-1].deltarecovered)}`}</h6>
-                <h5>Recovered</h5>
+            <div className = "boxes">
+            <h3 style = {{color: 'lightgreen'}}>{formatNumber(datajson[datajson.length-1].recovered)}</h3>
+                <h6 style = {{color: 'lightgreen'}}>{`+${formatNumber(datajson[datajson.length-1].deltarecovered)}`}</h6>
+                <h5 style = {{color: 'lightgreen'}}>RECOVERED</h5>
+            </div>
             </div>
             <div className = "col-2 col-stats" >
-            <h3>{formatNumber(datajson[datajson.length-1].deceased)}</h3>
-                <h6>{`+${formatNumber(datajson[datajson.length-1].deltadeceased)}`}</h6>
-                <h5>Deceased</h5>
+            <div className = "boxes">
+            <h3 style = {{color: 'lightgrey'}}>{formatNumber(datajson[datajson.length-1].deceased)}</h3>
+                <h6 style = {{color: 'lightgrey'}}>{`+${formatNumber(datajson[datajson.length-1].deltadeceased)}`}</h6>
+                <h5 style = {{color: 'lightgrey'}}>DECEASED</h5>
+            </div>
             </div>
             <div className = "col-2 col-stats" >
-                <h3>{((datajson[datajson.length-1].deceased/datajson[datajson.length-1].confirmed)*100).toFixed(2)}%</h3>
-                <h5>Fatality Rate</h5>
+            <div className = "boxes">
+                <h3 style = {{color: 'orange'}}>{((datajson[datajson.length-1].deceased/datajson[datajson.length-1].confirmed)*100).toFixed(2)}%</h3>
+                <h5 style = {{color: 'orange'}}>FATALITY</h5>
+                <h5 style = {{color: 'orange'}}>RATE</h5>
+            </div>
             </div>
             <div className = "col-2 col-stats" >
-            <h3>{((datajson[datajson.length-1].recovered/datajson[datajson.length-1].confirmed)*100).toFixed(2)}%</h3>
-                <h5>Recovery Rate</h5>
+            <div className = "boxes">
+            <h3 style = {{color: 'lightpink'}}>{((datajson[datajson.length-1].recovered/datajson[datajson.length-1].confirmed)*100).toFixed(2)}%</h3>
+                <h5 style = {{color: 'lightpink'}}>RECOVERY</h5>
+                <h5 style = {{color: 'lightpink'}}>RATE</h5>
+            </div>
             </div>
           
     </div>
@@ -109,7 +123,7 @@ class Header extends Component {
                     <div className = "container">
                         <NavbarToggler onClick = {this.toggleNav} />
                         <div className = "heading">
-                            <h1>COVID-19 TRACKER</h1>
+                            <h1 style = {{fontFamily: 'arial'}}>COVID-19 TRACKER</h1>
                         </div>
                         <Collapse isOpen = {this.state.isNavOpen} navbar>
                         <Nav navbar className = "navbar-nav ml-auto">
@@ -143,38 +157,6 @@ class Header extends Component {
                         
                     </div>
                 </Navbar>
-                {/*<Jumbotron>
-                    <div className = "container">
-                        <div className = "row row-header align-items-left ">
-                            <h6>WorldWide Stats</h6>
-                        </div>
-                            <div className = "col-2 col-stats" >
-                                <h3>41,20,159</h3>
-                                <h5>Confirmed</h5>
-                            </div>
-                            <div className = "col-2 col-stats" >
-                                <h3>23,80,997</h3>
-                                <h5>Active</h5>
-                            </div>
-                            <div className = "col-2 col-stats" >
-                                <h3>14,58,399</h3>
-                                <h5>Recovered</h5>
-                            </div>
-                            <div className = "col-2 col-stats" >
-                                <h3>2,80,763</h3>
-                                <h5>Dead</h5>
-                            </div>
-                            <div className = "col-2 col-stats" >
-                                <h3>6.81%</h3>
-                                <h5>Fatality Rate</h5>
-                            </div>
-                            <div className = "col-2 col-stats" >
-                                <h3>35.4%</h3>
-                                <h5>Recovery Rate</h5>
-                            </div>
-                          
-                    </div>
-                </Jumbotron>*/}
                 <Worldstats/>
             </>
         );

@@ -8,7 +8,7 @@ import classnames from 'classnames';
 import equal from 'fast-deep-equal';
 import React, {useState, useCallback, useMemo} from 'react';
 import * as Icon from 'react-feather';
-import ReactTooltip from 'react-tooltip';
+
 
 function StateCell({state, statistic}) {
   const ArrowUp = useMemo(() => <Icon.ArrowUp />, []);

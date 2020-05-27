@@ -36,17 +36,17 @@ import {
         {
           data: recovered,
           label: 'Recovered',
-          backgroundColor: '#00b33c',
+          backgroundColor: '#7ebf80',
         },
         {
           data: deceased,
           label: 'Deceased',
-          backgroundColor: '#ffffff',
+          backgroundColor: '#6c757d',
         },
         {
           data: confirmed,
           label: 'Confirmed',
-          backgroundColor: '#ff3333',
+          backgroundColor: '#ff6862',
         },
       ],
     };

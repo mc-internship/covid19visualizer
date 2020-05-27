@@ -5,7 +5,7 @@ import DiabeticChart from '../ChartHelpers/Diabetic';
 import SmokersChart from '../ChartHelpers/Smokers';
 
 
-import axios from 'axios';
+
 import {Helmet} from 'react-helmet';
 
 import datajson from '../data/indiacountrydata.json';
@@ -15,7 +15,6 @@ function IndiaDemo(props) {
 
   const [fetched, setFetched] = useState(false);
   const [data, setData] = useState([]);
-  const [statesTimeSeries, setStatesTimeSeries] = useState([]);
 
   useEffect(() => {
     if (fetched === false) {
@@ -25,13 +24,8 @@ function IndiaDemo(props) {
 
   const getStates = async () => {
     try {
-      const [
-        stateDailyResponse,
-      ] = await Promise.all([
-        axios.get('https://api.covid19india.org/states_daily.json'),
-      ]);
+
       setData(datajson.country);
-      setStatesTimeSeries(stateDailyResponse.data.states_daily);
       setFetched(true);
     } catch (err) {
       console.log(err);
@@ -41,24 +35,23 @@ function IndiaDemo(props) {
 
 
     return(
-      <div className="cards-container">
+      <div className="card-demographics">
       <Helmet>
         <title>India Timeline</title>
         <meta name="title" content="Graphs" />
       </Helmet>
-        <h4>India Demographics</h4>
         <section className="cards">
-        <div className="card fadeInUp" style={{animationDelay: '0.7s'}}>
-          <GenderChart title="Gender Demographics - India" male = {data.male} female = {data.female}/>
+        <div className="card fadeInUp" style={{animationDelay: '0.7s',border: 'none'}}>
+          <GenderChart title="Gender Demographics" male = {data.male} female = {data.female}/>
         </div>
         <div className="card fadeInUp" style={{animationDelay: '0.7s'}}>
-          <AgeChart title="Age Demographics - India" children = {data.children} adult = {data.adults} oldage = {data.oldage}/>
+          <AgeChart title="Age Demographics" children = {data.children} adult = {data.adults} oldage = {data.oldage}/>
         </div>
         <div className="card fadeInUp" style={{animationDelay: '0.7s'}}>
-          <DiabeticChart title="Percentage of Diabetics Infected - India" diabetes = {data.diabetes}/>
+          <DiabeticChart title="Percentage of Diabetics Infected" diabetes = {data.diabetes}/>
         </div>
         <div className="card fadeInUp" style={{animationDelay: '0.7s'}}>
-          <SmokersChart title="Percentage of Smokers Infected - India" malesmokers = {data.malesmokers} femalesmokers = {data.femalesmokers}/>
+          <SmokersChart title="Percentage of Smokers Infected" malesmokers = {data.malesmokers} femalesmokers = {data.femalesmokers}/>
         </div>
         </section>
         </div>
