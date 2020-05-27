@@ -1058,16 +1058,18 @@ table {
   -ms-overflow-style: none;
 }
 
-.container-events{
+.events{
   height: 500px;
   overflow-y: scroll;
+  margin-right: 200px !important;
+  position: relative;
 }
 
-.container-events::-webkit-scrollbar {
+.events::-webkit-scrollbar {
   display: none;
 }
 /* Hide scrollbar for IE and Edge */
-.container-events {
+.events {
   -ms-overflow-style: none;
 }
 
@@ -1486,6 +1488,8 @@ table {
 .eventlist{
   background-color: #161625;
 }
+
+
 
 .homecontainer{
   display: flex;

@@ -14,7 +14,6 @@ import singaporeeventsdata from './data/singaporeevents.json';
 import EventHelper from './EventHelperComponent';
 import DailyNewChart from './ChartHelpers/DailyNew';
 
-import {Helmet} from 'react-helmet';
 
 
 function Events(props) {
@@ -28,7 +27,6 @@ function Events(props) {
   const [timeseriesIT, setTimeseriesIT] = useState([]);
   const [timeseriesSG, setTimeseriesSG] = useState([]);
 
-
   useEffect(() => {
     if (fetched === false) {
       getStates();
@@ -37,13 +35,11 @@ function Events(props) {
 
   const getStates = async () => {
     try {
-
       setTimeseriesIN(indiadatajson.cases_time_series);
       setTimeseriesUS(usadatajson.cases_time_series);
       setTimeseriesGR(germanydatajson.cases_time_series);
       setTimeseriesIT(italydatajson.cases_time_series);
       setTimeseriesSG(singaporedatajson.cases_time_series);
-
       setFetched(true);
     } catch (err) {
       console.log(err);
@@ -53,11 +49,7 @@ function Events(props) {
 
 
     return(
-      <div className="cards-container">
-             <Helmet>
-        <title>Events</title>
-        <meta name="title" content="Graphs" />
-      </Helmet>
+      <div className="container">
 
       
 
@@ -89,9 +81,10 @@ function Events(props) {
           <DailyNewChart title="Daily New Cases - India" timeseries={timeseriesIN} />
         </div>
         </section>
-        </div>
+        
         <div className = "events">
           <EventHelper name = {indiaeventsdata.name} events = {indiaeventsdata.events} />
+        </div>
         </div>
         </div>}
 
