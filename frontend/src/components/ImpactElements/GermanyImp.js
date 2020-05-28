@@ -40,22 +40,22 @@ function GermanyIm(props) {
         <title>Germany Impact</title>
         <meta name="title" content="Graphs" />
       </Helmet>
-
+      <h1 style = {{textAlign: 'center', fontSize: '30px'}}>Germany</h1>
       <section className="cards">
         <div className="card fadeInUp" style={{animationDelay: '0.7s'}}>
-          <AirlinesChart title="Airline Industry Indices with Time - Germany" timeseries={timeseries} />
+          <AirlinesChart title="Airline Industry Indices with Time - Germany" note = "Index of stock used - LHAG- Deutsche Lufthansa AG" timeseries={timeseries} />
         </div>
         <div className="card fadeInUp" style={{animationDelay: '0.7s'}}>
-          <TravelChart title="Travel Industry Indices with Time - Germany" timeseries={timeseries} />
+          <TravelChart title="Travel Industry Indices with Time - Germany" note = "Index of stock used - TUI1d- Tui AG NA" timeseries={timeseries} />
         </div>
         <div className="card fadeInUp" style={{animationDelay: '0.7s'}}>
-          <EntertainmentChart title="Entertainment Industry Indices with Time - Germany" timeseries={timeseries} />
+          <EntertainmentChart title="Entertainment Industry Indices with Time - Germany" note = "Index of stock used - CXPDX- DAX Media" timeseries={timeseries} />
         </div>
         <div className="card fadeInUp" style={{animationDelay: '0.7s'}}>
-          <FoodChart title="Food Industry Indices with Time - Germany" timeseries={timeseries} />
+          <FoodChart title="Food Industry Indices with Time - Germany" note = "Index of stock used - CXPFX- DAX Food and Beverage" timeseries={timeseries} />
         </div>
         <div className="card fadeInUp" style={{animationDelay: '0.7s'}}>
-          <RetailChart title="Retail Industry Indices with Time - Germany" timeseries={timeseries} />
+          <RetailChart title="Retail Industry Indices with Time - Germany" note = "Index of stock used - CXPRX- DAX Retail" timeseries={timeseries} />
         </div>
       </section>
     </div>

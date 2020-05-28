@@ -40,22 +40,22 @@ function ItalyIm(props) {
         <title>Italy Impact</title>
         <meta name="title" content="Graphs" />
       </Helmet>
-
+      <h1 style = {{textAlign: 'center', fontSize: '30px'}}>Italy</h1>
       <section className="cards">
         <div className="card fadeInUp" style={{animationDelay: '0.7s'}}>
-          <AirlinesChart title="Airline Industry Indices with Time - Italy" timeseries={timeseries} />
+          <AirlinesChart title="Airline Industry Indices with Time - Italy" note = "Outstanding Share volume weighted average of Adj. Close value of AF, LHA" timeseries={timeseries} />
         </div>
         <div className="card fadeInUp" style={{animationDelay: '0.7s'}}>
-          <TravelChart title="Travel Industry Indices with Time - Italy" timeseries={timeseries} />
+          <TravelChart title="Travel Industry Indices with Time - Italy" note = "Outstanding Share volume weighted average of Adj. Close value of TRIP.MI, IGV.MI, PSA.MI" timeseries={timeseries} />
         </div>
         <div className="card fadeInUp" style={{animationDelay: '0.7s'}}>
-          <EntertainmentChart title="Entertainment Industry Indices with Time - Italy" timeseries={timeseries} />
+          <EntertainmentChart title="Entertainment Industry Indices with Time - Italy" note = "Outstanding Share volume weighted average of Adj. Close value of VIV.MI, IE.MI, JUVE.MI" timeseries={timeseries} />
         </div>
         <div className="card fadeInUp" style={{animationDelay: '0.7s'}}>
-          <FoodChart title="Food Industry Indices with Time - Italy" timeseries={timeseries} />
+          <FoodChart title="Food Industry Indices with Time - Italy" note = "Outstanding Share volume weighted average of Adj. Close value of AD, DNN, MARR" timeseries={timeseries} />
         </div>
         <div className="card fadeInUp" style={{animationDelay: '0.7s'}}>
-          <RetailChart title="Retail Industry Indices with Time - Italy" timeseries={timeseries} />
+          <RetailChart title="Retail Industry Indices with Time - Italy" note = "Outstanding Share volume weighted average of Adj. Close value of AD, DNN, MARR" timeseries={timeseries} />
         </div>
       </section>
     </div>

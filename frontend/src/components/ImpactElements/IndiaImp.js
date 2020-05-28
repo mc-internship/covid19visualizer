@@ -39,22 +39,22 @@ function IndiaIm(props) {
         <title>India Impact</title>
         <meta name="title" content="Graphs" />
       </Helmet>
-
+      <h1 style = {{textAlign: 'center', fontSize: '30px'}}>India</h1>
       <section className="cards">
         <div className="card fadeInUp" style={{animationDelay: '0.7s'}}>
-          <AirlinesChart title="Airline Industry Indices with Time - India" timeseries={timeseries} />
+          <AirlinesChart title="Airline Industry Indices with Time - India" note = "The index is the Total Outstanding Shares Volume (MRQ) -weighted average of tHe close values of SPJT, JET, INGL, GLVE" timeseries={timeseries} />
         </div>
         <div className="card fadeInUp" style={{animationDelay: '0.7s'}}>
-          <TravelChart title="Travel Industry Indices with Time - India" timeseries={timeseries} />
+          <TravelChart title="Travel Industry Indices with Time - India" note = "The index is the Total Outstanding Shares Volume (MRQ) -weighted average of tHe close values of THOM, BLSN, ITRV, TRNS, COKI" timeseries={timeseries} />
         </div>
         <div className="card fadeInUp" style={{animationDelay: '0.7s'}}>
-          <EntertainmentChart title="Entertainment Industry Indices with Time - India" timeseries={timeseries} />
+          <EntertainmentChart title="Entertainment Industry Indices with Time - India" note = "NIFTY MEDIA Index" timeseries={timeseries} />
         </div>
         <div className="card fadeInUp" style={{animationDelay: '0.7s'}}>
-          <FoodChart title="Food Industry Indices with Time - India" timeseries={timeseries} />
+          <FoodChart title="Food Industry Indices with Time - India" note = "The index is the Total Outstanding Shares Volume (MRQ) -weighted average of tHe close values of KRBL, LTOL, CLSE, Himalaya Food, KOFO, KOVI" timeseries={timeseries} />
         </div>
         <div className="card fadeInUp" style={{animationDelay: '0.7s'}}>
-          <RetailChart title="Retail Industry Indices with Time - India" timeseries={timeseries} />
+          <RetailChart title="Retail Industry Indices with Time - India" note = "The index is the Total Outstanding Shares Volume (MRQ) -weighted average of tHe close values of AVEU, TREN, ADIA, FRTL, VMAR, SHOP, ARVF" timeseries={timeseries} />
         </div>
       </section>
     </div>
