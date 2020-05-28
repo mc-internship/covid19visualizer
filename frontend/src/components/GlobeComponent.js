@@ -117,7 +117,8 @@ function World(props) {
 
         }}  
         cameraOptions = {{
-          autoRotateSpeed: 3
+          autoRotateSpeed: 1.5,
+          enableZoom: false
         }}
         onClickMarker={onClickMarker}
       />
