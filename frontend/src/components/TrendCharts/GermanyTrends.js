@@ -47,7 +47,7 @@ function GermanyStats(props) {
         <title>Germany Timeline</title>
         <meta name="title" content="Graphs" />
       </Helmet>
-
+      <h1 style = {{textAlign: 'center', fontSize: '30px'}}>Germany</h1>
       <section className="cards">
         <div className="card fadeInUp" style={{animationDelay: '0.7s'}}>
           <TotalConfirmedChart title="Total Cases - Germany" timeseries={timeseries} />

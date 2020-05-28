@@ -38,22 +38,22 @@ function SingIm(props) {
         <title>Singapore Impact</title>
         <meta name="title" content="Graphs" />
       </Helmet>
-
+      <h1 style = {{textAlign: 'center', fontSize: '30px'}}>Singapore</h1>
       <section className="cards">
         <div className="card fadeInUp" style={{animationDelay: '0.7s'}}>
-          <AirlinesChart title="Airline Industry Indices with Time - Singapore" timeseries={timeseries} />
+          <AirlinesChart title="Airline Industry Indices with Time - Singapore" note = "Outstanding Share volume weighted average of Adj. Close value of SIA ENGINEERING, SIA" timeseries={timeseries} />
         </div>
         <div className="card fadeInUp" style={{animationDelay: '0.7s'}}>
-          <TravelChart title="Travel Industry Indices with Time - Singapore" timeseries={timeseries} />
+          <TravelChart title="Travel Industry Indices with Time - Singapore" note = "Outstanding Share volume weighted average of Adj. Close value of SHANGRI LA SKD, Far East Hospitality Trust FEHT, MAN ORIENTAL US" timeseries={timeseries} />
         </div>
         <div className="card fadeInUp" style={{animationDelay: '0.7s'}}>
-          <EntertainmentChart title="Entertainment Industry Indices with Time - Singapore" timeseries={timeseries} />
+          <EntertainmentChart title="Entertainment Industry Indices with Time - Singapore" note = "Outstanding Share volume weighted average of Adj. Close value of GENTING, STRACO, MM2ASIA" timeseries={timeseries} />
         </div>
         <div className="card fadeInUp" style={{animationDelay: '0.7s'}}>
-          <FoodChart title="Food Industry Indices with Time - Singapore" timeseries={timeseries} />
+          <FoodChart title="Food Industry Indices with Time - Singapore" note = "Outstanding Share volume weighted average of Adj. Close value of SHENG SIONG, DAIRYFARM USD, OLAM INTL" timeseries={timeseries} />
         </div>
         <div className="card fadeInUp" style={{animationDelay: '0.7s'}}>
-          <RetailChart title="Retail Industry Indices with Time - Singapore" timeseries={timeseries} />
+          <RetailChart title="Retail Industry Indices with Time - Singapore" note = "Outstanding Share volume weighted average of Adj. Close value of JSH USD, JARDINE, ISETAN" timeseries={timeseries} />
         </div>
       </section>
     </div>
