@@ -41,6 +41,7 @@ function IndiaDemo(props) {
         <meta name="title" content="Graphs" />
       </Helmet>
       <h1 style = {{textAlign: 'center', fontSize: '30px'}}>India</h1>
+      <h2 style = {{textAlign: 'center', color:"salmon"}}>0.010% of Population Affected</h2>
         <section className="cards">
         <div className="card fadeInUp" style={{animationDelay: '0.7s',border: 'none'}}>
           <GenderChart title="Gender Demographics" male = {data.male} female = {data.female}/>
