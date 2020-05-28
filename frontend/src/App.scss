@@ -1193,7 +1193,7 @@ table {
   padding: 1vw;
   border: none;
   float: left;
-  width: 300px;
+  width: 300px !important;
   border-radius: var(--border-radius);
   margin-left: 30px;
   /* box-shadow: 0px 5px rgba(0, 0, 0, 0.2); */
@@ -1494,15 +1494,22 @@ table {
 .homecontainer{
   display: flex;
   flex-direction: row;
-  //flex-wrap: wrap;
+  flex-wrap: no wrap;
+  justify-content: space-between;
   //margin-right: 0px;
-  float: right;
+  //float: right;
+  //background-color: blue;
+
+  .card-body{
+    width: 300px !important;
+    flex: 0 0 auto;
+  }
 
   .countries{
     display: flex;
     //float: right;
     flex-direction: column;
-    width: 400px;
+    //width: 400px;
     //margin-right: 50px;
     //background-color: red !important;
 
@@ -1516,7 +1523,7 @@ table {
       //margin-bottom: 10px;
       float: right;
       color: #c2c2d6e0;
-      width: 70%;
+      width: 300px;
       align-items: center;
       //display: inline-block;
       //background-color:rgba(231, 152, 34, 0.966);
@@ -1544,30 +1551,19 @@ table {
   }
   
   .globe{
-    display: flex;
+    //display: flex;
     //float: right;
-    margin-right: 20px !important;
-    margin-top: 40px !important;
-    width: 600px;
-  }
-  
-  .newsfeed{
-    overflow-y: scroll;
-    //position: absolute;
-    height: 600px;
-    width: 300px;
-    background-color: #3f3f8f3f;
-    padding: 10px;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    margin-top: 40px !important;
-    border-width: 5px;
-    border-color: white;
-    
-    .a{
-      color: wheat !important;
-    }
+    //margin-right: 50px !important;
+    //margin-left: 50px !important;
+    //margin: auto;
+    //margin-top: 40px !important;
+    //width: 600px;
+    //background-color:black;
+    //position: fixed;
+    top: 50%;
+    //left: 50%;
+    //margin-top: -50px;
+    //margin-left: -100px;
   }
   
 }
