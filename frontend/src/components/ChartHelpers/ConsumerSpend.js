@@ -29,7 +29,7 @@ function Consumer(props) {
         data: consumerindex,
         borderCapStyle: 'round',
         pointBackgroundColor: '#ff6862',
-        label: 'Airline Industry Index',
+        label: 'Consumer Spend',
         borderColor: '#ff6862',
         pointHoverRadius: 4,
       }
