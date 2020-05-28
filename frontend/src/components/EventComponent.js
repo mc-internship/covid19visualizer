@@ -95,10 +95,11 @@ function Events(props) {
           <DailyNewChart title="Daily New Cases - USA" timeseries={timeseriesUS} />
         </div>
         </section>
-        </div>
+        
         <div className = "events">
           <EventHelper name = {usaeventsdata.name} events = {usaeventsdata.events} />
         </div> 
+        </div>
         </div>}
 
         {selectedCountry === "Germany" && <div id= "germanyt" className = "timeline-details"> 
@@ -108,9 +109,10 @@ function Events(props) {
           <DailyNewChart title="Daily New Cases - Germany" timeseries={timeseriesGR} />
         </div>
         </section>
-        </div>
+        
         <div className = "events">
           <EventHelper name = {germanyeventsdata.name} events = {germanyeventsdata.events} />
+        </div>
         </div>
         </div>}
 
@@ -121,9 +123,10 @@ function Events(props) {
           <DailyNewChart title="Daily New Cases - Italy" timeseries={timeseriesIT} />
         </div>
         </section>
-        </div>
+        
         <div className = "events">
           <EventHelper name = {italyeventsdata.name} events = {italyeventsdata.events} />
+        </div>
         </div>
         </div>}
 
@@ -134,9 +137,10 @@ function Events(props) {
           <DailyNewChart title="Daily New Cases - Singapore" timeseries={timeseriesSG} />
         </div>
         </section>
-        </div>
+        
         <div className = "events">
           <EventHelper name = {singaporeeventsdata.name} events = {singaporeeventsdata.events} />
+        </div>
         </div>
     </div> }
 
