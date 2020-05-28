@@ -79,9 +79,9 @@ function Home(props) {
         </div>
  
         <div className = "countries">
-        <Link to={'/home/india'} style={{ textDecoration: 'none' }}>
+        
           <Card hoverable="true" className = "countrycard">
-          
+          <Link to={'/home/india'} style={{ textDecoration: 'none' }}>
               <h1 style = {{color: '#ffccccd5'}}>India</h1>
               <h2 style = {{color: '#ff6666dc'}}>{formatNumber(indiadata.cases_time_series[indiadata.cases_time_series.length-1].totalconfirmed)}</h2>
               <h4 style = {{color: '#ff6666dc'}}>Confirmed</h4>
@@ -102,12 +102,12 @@ function Home(props) {
               <h6 style = {{color: '#7ebf80'}}>Recovered</h6>
               </div>
               </div>
-            
+              </Link>
           </Card>
-        </Link>
-        <Link to={'/home/usa'} style={{ textDecoration: 'none' }}>
+        
+        
         <Card hoverable="true" className = "countrycard">
-          
+        <Link to={'/home/usa'} style={{ textDecoration: 'none' }}>
           <h1 style = {{color: '#ffccccd5'}}>USA</h1>
           <h2 style = {{color: '#ff6666dc'}}>{formatNumber(usadata.cases_time_series[usadata.cases_time_series.length-1].totalconfirmed)}</h2>
           <h4 style = {{color: '#ff6666dc'}}>Confirmed</h4>
@@ -128,11 +128,12 @@ function Home(props) {
           <h6 style = {{color: '#7ebf80'}}>Recovered</h6>
           </div>
           </div>
-        
+          </Link>
       </Card>
-        </Link>
-        <Link to={'/home/germany'} style={{ textDecoration: 'none' }}>
+       
+        
         <Card hoverable="true" className = "countrycard">          
+        <Link to={'/home/germany'} style={{ textDecoration: 'none' }}>
           <h1 style = {{color: '#ffccccd5'}}>Germany</h1>
           <h2 style = {{color: '#ff6666dc'}}>{formatNumber(germanydata.cases_time_series[germanydata.cases_time_series.length-1].totalconfirmed)}</h2>
           <h4 style = {{color: '#ff6666dc'}}>Confirmed</h4>
@@ -153,11 +154,12 @@ function Home(props) {
           <h6 style = {{color: '#7ebf80'}}>Recovered</h6>
           </div>
           </div>
-        
+          </Link>
       </Card>
-        </Link>
-        <Link to={'/home/italy'} style={{ textDecoration: 'none' }}>
-        <Card hoverable="true" className = "countrycard">          
+       
+        
+        <Card hoverable="true" className = "countrycard">      
+        <Link to={'/home/italy'} style={{ textDecoration: 'none' }}>   
           <h1 style = {{color: '#ffccccd5'}}>Italy</h1>
           <h2 style = {{color: '#ff6666dc'}}>{formatNumber(italydata.cases_time_series[italydata.cases_time_series.length-1].totalconfirmed)}</h2>
           <h4 style = {{color: '#ff6666dc'}}>Confirmed</h4>
@@ -178,11 +180,12 @@ function Home(props) {
           <h6 style = {{color: '#7ebf80'}}>Recovered</h6>
           </div>
           </div>
-        
+          </Link> 
       </Card>
-        </Link>
+        
+        
+        <Card hoverable="true" className = "countrycard">         
         <Link to={'/home/singapore'} style={{ textDecoration: 'none' }}>
-        <Card hoverable="true" className = "countrycard">          
           <h1 style = {{color: '#ffccccd5'}}>Singapore</h1>
           <h2 style = {{color: '#ff6666dc'}}>{formatNumber(singdata.cases_time_series[singdata.cases_time_series.length-1].totalconfirmed)}</h2>
           <h4 style = {{color: '#ff6666dc'}}>Confirmed</h4>
@@ -203,9 +206,9 @@ function Home(props) {
           <h6 style = {{color: '#7ebf80'}}>Recovered</h6>
           </div>
           </div>
-        
+          </Link>
       </Card>
-        </Link>
+        
         </div>  
 
       </div>
