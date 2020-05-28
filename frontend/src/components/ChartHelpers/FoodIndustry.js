@@ -56,6 +56,10 @@ function FoodChart(props) {
       ],
       xAxes: [
         deepmerge(xAxisDefaults, {
+          scaleLabel: {
+            display: true,
+            labelString: props.note,
+          },
           type: 'time',
           time: {
             unit: 'day',

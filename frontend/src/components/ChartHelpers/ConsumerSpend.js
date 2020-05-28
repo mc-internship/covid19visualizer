@@ -5,19 +5,19 @@ import deepmerge from 'deepmerge';
 import React from 'react';
 import {Line} from 'react-chartjs-2';
 
-function AirlinesChart(props) {
+function Consumer(props) {
   const dates = [];
-  const airlineindex = [];
+  const consumerindex = [];
   
   if (!props.timeseries || props.timeseries.length === 0) {
     return <div></div>;
   }
 
-  props.timeseries.forEach((data, index) => {
+  props.timeseries.forEach((data) => {
     
       const date = parse(data.date, 'y-M-d', new Date(2020, 0, 1));
       dates.push(date);
-      airlineindex.push(data.airlines);
+      consumerindex.push(data.combined);
     
   });
 
@@ -26,7 +26,7 @@ function AirlinesChart(props) {
     datasets: [
       {
         borderWidth: 2,
-        data: airlineindex,
+        data: consumerindex,
         borderCapStyle: 'round',
         pointBackgroundColor: '#ff6862',
         label: 'Airline Industry Index',
@@ -56,10 +56,10 @@ function AirlinesChart(props) {
       ],
       xAxes: [
         deepmerge(xAxisDefaults, {
-          scaleLabel: {
-            display: true,
-            labelString: props.note,
-          },
+            scaleLabel: {
+                display: true,
+                labelString: props.note,
+              },
           type: 'time',
           time: {
             unit: 'day',
@@ -118,4 +118,4 @@ function AirlinesChart(props) {
   );
 }
 
-export default AirlinesChart;
+export default Consumer;

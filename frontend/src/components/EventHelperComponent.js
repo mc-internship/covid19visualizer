@@ -25,7 +25,7 @@ function EventHelper(props) {
 
     return(
         <div className="container">
-            <h2> {props.name} </h2>
+            <h2> Events in {props.name} </h2>
 
             <div>
             {eventlist}

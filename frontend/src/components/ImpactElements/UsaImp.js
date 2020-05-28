@@ -4,6 +4,7 @@ import TravelChart from '../ChartHelpers/TravelIndustry';
 import RetailChart from '../ChartHelpers/RetailIndustry';
 import FoodChart from '../ChartHelpers/FoodIndustry';
 import EntertainmentChart from '../ChartHelpers/EntertainmentIndustry';
+import Consumer from '../ChartHelpers/ConsumerSpend';
 
 //import axios from 'axios';
 import {Helmet} from 'react-helmet';
@@ -41,6 +42,9 @@ function UsaIm(props) {
       </Helmet>
 
       <section className="cards">
+      <div className="card fadeInUp" style={{animationDelay: '0.7s'}}>
+          <Consumer title="Consumer Spend with Time - USA" note = "Consumer Spending Data sourced from https://tracktherecovery.org/timeseries={timeseries}" timeseries={timeseries}/>
+        </div>
         <div className="card fadeInUp" style={{animationDelay: '0.7s'}}>
           <AirlinesChart title="Airline Industry Indices with Time - USA" timeseries={timeseries} />
         </div>

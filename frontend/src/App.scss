@@ -923,7 +923,7 @@ table {
       margin-bottom: 2em;
       height: 100%;
       width: 100%;
-      margin: 100px;
+      //margin: 100px;
 
 
       .charts-header {
@@ -987,7 +987,7 @@ table {
   overflow-y: scroll;
 
   .cards {
-   margin-top: 70px;
+   //margin-top: 70px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -1059,7 +1059,7 @@ table {
 }
 
 .events{
-  height: 500px;
+  height: 600px;
   overflow-y: scroll;
   margin-right: 200px !important;
   position: relative;
