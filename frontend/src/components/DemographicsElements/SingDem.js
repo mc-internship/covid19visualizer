@@ -39,6 +39,7 @@ function SingDemo(props) {
         <meta name="title" content="Graphs" />
       </Helmet>
       <h1 style = {{textAlign: 'center', fontSize: '30px'}}>Singapore</h1>
+      <h2 style = {{textAlign: 'center', color:"salmon"}}>0.552% of Population Affected</h2>
         <section className="cards">
         <div className="card fadeInUp" style={{animationDelay: '0.7s'}}>
           <GenderChart title="Gender Demographics" male = {data.male} female = {data.female}/>
