@@ -48,8 +48,13 @@ function Home(props) {
     };
 
     return(
-      <div>
-      <div className = "card-body">
+      <div className="homecontainer">
+        <Helmet>
+          <title>Home</title>
+          <meta name="title" content="Graphs" />
+        </Helmet>
+
+        <div className = "card-body">
         <span>News Feed</span>
       <div id="feed-content" className="left-col-feed-cards-text">
           <React.Fragment>
@@ -64,19 +69,12 @@ function Home(props) {
           </div>
       </div> 
 
-
-
-
-      <div className="homecontainer">
-        <Helmet>
-          <title>Home</title>
-          <meta name="title" content="Graphs" />
-        </Helmet>
-
-
-        <div className = "globe">
+      <div className = "globe">
           <World />
         </div>
+
+
+       
  
         <div className = "countries">
         
@@ -211,7 +209,6 @@ function Home(props) {
         
         </div>  
 
-      </div>
       </div>
     );
 }
