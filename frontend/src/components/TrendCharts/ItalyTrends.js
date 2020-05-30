@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState, useEffectOnce} from 'react';
 import DailyConfirmedChart from '../ChartHelpers/DailyCases';
 import TotalConfirmedChart from '../ChartHelpers/TotalCases';
 import NewVsRecChart from '../ChartHelpers/NewVsRec';
@@ -22,7 +22,7 @@ function ItalyStats(props) {
   const [statesTimeSeries, setStatesTimeSeries] = useState([]);
 
 
-  useEffect(() => {
+  useEffectOnce(() => {
     if (fetched === false) {
       getStates();
     }

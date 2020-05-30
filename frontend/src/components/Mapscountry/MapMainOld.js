@@ -9,7 +9,7 @@ import {
 } from '../../constants.js';
 
 import equal from 'fast-deep-equal';
-import React, {useState, useEffect, useMemo} from 'react';
+import React, {useState, useEffectOnce, useMemo} from 'react';
 
 const isEqual = (prevProps, currProps) => {
   if (!equal(prevProps.regionHighlighted, currProps.regionHighlighted)) {
@@ -100,7 +100,7 @@ function MapExplorer({
   ]);
 
   
-  useEffect(() => {
+  useEffectOnce(() => {
     if (regionHighlighted === undefined || regionHighlighted === null) return;
 
     if ('district' in regionHighlighted) {

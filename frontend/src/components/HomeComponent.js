@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState, useEffectOnce} from 'react';
 import { Card} from 'reactstrap';
 import { Link } from 'react-router-dom';
 import World from './GlobeComponent';
@@ -22,7 +22,7 @@ function Home(props) {
     const [singdata, setSG] = useState([]);
 
 
-    useEffect(() => {
+    useEffectOnce(() => {
       if (fetched === false) {
         getStates();
       }

@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState, useEffectOnce} from 'react';
 import GenderChart from '../ChartHelpers/GenderDemographics';
 import AgeChart from '../ChartHelpers/AgeDemographics';
 import DiabeticChart from '../ChartHelpers/Diabetic';
@@ -17,7 +17,7 @@ function ItalyDemo(props) {
   const [data, setData] = useState([]);
 
 
-  useEffect(() => {
+  useEffectOnce(() => {
     if (fetched === false) {
       getStates();
     }

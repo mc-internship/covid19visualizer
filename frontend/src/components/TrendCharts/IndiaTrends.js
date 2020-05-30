@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState, useEffectOnce} from 'react';
 import AllStatesChart from '../ChartHelpers/StatesChart';
 import DailyConfirmedChart from '../ChartHelpers/DailyCases';
 import TotalConfirmedChart from '../ChartHelpers/TotalCases';
@@ -21,7 +21,7 @@ function IndiaStats(props) {
   const [timeseries, setTimeseries] = useState([]);
   const [statesTimeSeries, setStatesTimeSeries] = useState([]);
 
-  useEffect(() => {
+  useEffectOnce(() => {
     if (fetched === false) {
       getStates();
     }

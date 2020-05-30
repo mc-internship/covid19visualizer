@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState, useEffectOnce} from 'react';
 import AirlinesChart from '../ChartHelpers/AirlinesIndustry';
 import TravelChart from '../ChartHelpers/TravelIndustry';
 import RetailChart from '../ChartHelpers/RetailIndustry';
@@ -16,7 +16,7 @@ function IndiaIm(props) {
   const [fetched, setFetched] = useState(false);
   const [timeseries, setTimeseries] = useState([]);
 
-  useEffect(() => {
+  useEffectOnce(() => {
     if (fetched === false) {
       getStates();
     }

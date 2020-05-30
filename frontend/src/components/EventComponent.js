@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState, useEffectOnce} from 'react';
 
 import {indiadatajson, usadatajson, germanydatajson, italydatajson, singaporedatajson, 
 indiaevents, usaevents, germanyevents, italyevents, singaporeevents}  from './dataexport.js';
@@ -24,7 +24,7 @@ function Events(props) {
   const [eventsIT, setEventsIT] = useState([]);
   const [eventsSG, setEventsSG] = useState([]);
 
-  useEffect(() => {
+  useEffectOnce(() => {
     if (fetched === false) {
       getStates();
     }

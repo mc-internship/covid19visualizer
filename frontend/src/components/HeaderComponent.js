@@ -1,4 +1,4 @@
-import React, {Component, useState, useEffect} from 'react';
+import React, {Component, useState, useEffectOnce} from 'react';
 import { Navbar, Nav, NavbarToggler, Collapse, NavItem, Jumbotron} from 'reactstrap';
 import { NavLink } from 'react-router-dom';
 //import axios from 'axios';
@@ -10,7 +10,7 @@ function Worldstats(props) {
     const [fetched, setFetched] = useState(false);
     const [datajson, setData] = useState([]);
 
-    useEffect(() => {
+    useEffectOnce(() => {
         if (fetched === false) {
           getStates();
         }

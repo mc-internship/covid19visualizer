@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState, useEffectOnce} from 'react';
 import DailyConfirmedChart from '../ChartHelpers/DailyCases';
 import TotalConfirmedChart from '../ChartHelpers/TotalCases';
 import NewVsRecChart from '../ChartHelpers/NewVsRec';
@@ -20,7 +20,7 @@ function SingStats(props) {
   const [timeseries, setTimeseries] = useState([]);
 
 
-  useEffect(() => {
+  useEffectOnce(() => {
     if (fetched === false) {
       getStates();
     }

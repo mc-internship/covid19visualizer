@@ -4,7 +4,7 @@ import {MAP_META, MAP_STATISTICS, MAP_TYPES, MAP_VIEWS} from '../../constants.js
 import {capitalizeAll, formatNumber} from '../../shared/UtilFunctions.js';
 
 import * as d3 from 'd3';
-import React, {useCallback, useEffect, useRef} from 'react';
+import React, {useCallback, useEffectOnce, useRef} from 'react';
 import * as topojson from 'topojson';
 
 function ChoroplethMap({
@@ -365,7 +365,7 @@ function ChoroplethMap({
     ]
   );
 
-  useEffect(() => {
+  useEffectOnce(() => {
     (async () => {
       const data = await d3.json(mapMeta.geoDataFile);
       if (statistic && choroplethMap.current) {
@@ -374,7 +374,7 @@ function ChoroplethMap({
     })();
   }, [mapMeta, statistic, ready]);
 
-  useEffect(() => {
+  useEffectOnce(() => {
     const highlightRegionInMap = (region) => {
       const paths = d3.selectAll('.path-region');
       paths.attr('stroke', null);

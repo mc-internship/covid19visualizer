@@ -10,7 +10,7 @@ import {
 
 
 import equal from 'fast-deep-equal';
-import React, {useState, useEffect, useMemo, useCallback} from 'react';
+import React, {useState, useEffectOnce, useMemo, useCallback} from 'react';
 import ReactDOM from 'react-dom';
 
 import {useTranslation} from 'react-i18next';
@@ -158,7 +158,7 @@ function MapExplorer({
     states,
   ]);
 
-  useEffect(() => {
+  useEffectOnce(() => {
     if (regionHighlighted === undefined || regionHighlighted === null) return;
 
     if ('district' in regionHighlighted) {
