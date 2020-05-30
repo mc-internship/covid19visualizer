@@ -10,8 +10,8 @@ import AllStatesChart from '../ChartHelpers/StatesChart';
 //import axios from 'axios';
 import {Helmet} from 'react-helmet';
 
-import datajson from '../data/italydatajson.json';
-import statesdata from '../data/italystatesdaily.json';
+import italydatajson from './dataexport.js';
+import italystatesdaily from './dataexport.js';
 
 
 
@@ -30,8 +30,12 @@ function ItalyStats(props) {
 
   const getStates = async () => {
     try {
-      setTimeseries(datajson.cases_time_series);
-      setStatesTimeSeries(statesdata.states_daily);
+      let testJson1;
+      testJson1 = await italydatajson();
+      let testJson2;
+      testJson2 = await italystatesdaily();
+      setTimeseries(testJson1.cases_time_series);
+      setStatesTimeSeries(testJson2.states_daily);
 
       setFetched(true);
     } catch (err) {

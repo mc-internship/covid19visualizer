@@ -95,7 +95,7 @@ function World(props) {
 
 
   return (
-    <div style={{ width: "650px", height: "600px" }}>
+    <div style={{ width: "600px", height: "600px" }}>
       <Globe
         markers={markers}
         markerOptions={{
@@ -113,7 +113,7 @@ function World(props) {
         globeOptions={{
           enableBackground: false,
           //backgroundTexture: `https://www.colorhexa.com/161625.png`
-          glowRadiusScale: 0.15
+          glowRadiusScale: 0.1
 
         }}  
         cameraOptions = {{

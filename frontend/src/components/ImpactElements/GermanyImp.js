@@ -8,7 +8,7 @@ import EntertainmentChart from '../ChartHelpers/EntertainmentIndustry';
 //import axios from 'axios';
 import {Helmet} from 'react-helmet';
 
-import datajson from '../data/Germanyimpact.json';
+import germanyimpact from './dataexport.js';
 
 
 function GermanyIm(props) {
@@ -25,7 +25,11 @@ function GermanyIm(props) {
 
   const getStates = async () => {
     try {
-      setTimeseries(datajson);
+
+      let testJson;
+      testJson = await germanyimpact();
+
+      setTimeseries(testJson);
       setFetched(true);
     } catch (err) {
       console.log(err);

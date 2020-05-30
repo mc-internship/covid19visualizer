@@ -9,7 +9,7 @@ import Consumer from '../ChartHelpers/ConsumerSpend';
 //import axios from 'axios';
 import {Helmet} from 'react-helmet';
 
-import datajson from '../data/USAimpact.json';
+import usaimpact from './dataexport.js';
 
 
 function UsaIm(props) {

@@ -8,7 +8,7 @@ import EntertainmentChart from '../ChartHelpers/EntertainmentIndustry';
 //import axios from 'axios';
 import {Helmet} from 'react-helmet';
 
-import datajson from '../data/Indiaimpact.json';
+import indiaimpact from './dataexport.js';
 
 
 function IndiaIm(props) {
@@ -24,7 +24,10 @@ function IndiaIm(props) {
 
   const getStates = async () => {
     try {
-      setTimeseries(datajson);
+      let testJson;
+      testJson = await indiaimpact();
+
+      setTimeseries(testJson);
       setFetched(true);
     } catch (err) {
       console.log(err);

@@ -8,39 +8,55 @@ import { formatNumber} from '../shared/UtilFunctions.js';
 
 import {Helmet} from 'react-helmet';
 
-import indiadata from './data/indiadatajson.json';
-import germanydata from './data/germanydatajson.json';
-import italydata from './data/italydatajson.json';
-import singdata from './data/singaporedatajson.json';
-import usadata from './data/usadatajson.json';
+import {germanydatajson,indiadatajson,italydatajson,singaporedatajson,usadatajson} from './dataexport.js';
 
-import data from './data/news.json'
+import news from './dataexport.js';
 
-
-
-//import axios from 'axios';
 
 function Home(props) {
 
-    const [news, setNews] = useState(null);
+    const [newsdata, setNews] = useState(null);
+    const [indiadata, setIN] = useState([]);
+    const [usadata, setUS] = useState([]);
+    const [germanydata, setGR] = useState([]);
+    const [italydata, setIT] = useState([]);
+    const [singdata, setSG] = useState([]);
 
-    useEffectOnce(() => {
-      getnews();
-    });
+
+    useEffect(() => {
+      if (fetched === false) {
+        getStates();
+      }
+    }, [fetched]);
     
-    const getnews = async () => {
+    const getStates = async () => {
       try {
-        //const test = await axios.get("https://newsapi.org/v2/everything?qInTitle=+corona&from=2020-05-22&pageSize=50&language=en&sortBy=relevancy&apiKey=9748d4daaf4343efa9ca0e89e48bac5f",{
 
-       // }
-        //);
-        //console.log(test);
-        //const data = test.data;
-        setNews(data.articles)
+        let testJson1;
+        testJson1 = await indiadatajson();
+        setIN(testJson1);
+        let testJson2;
+        testJson2 = await usadatajson();
+        setUS(testJson2);
+        let testJson3;
+        testJson3 = await germanydatajson();
+        setGR(testJson3);
+        let testJson4;
+        testJson4 = await italydatajson();
+        setIT(testJson4);
+        let testJson5;
+        testJson5 = await singaporedatajson();
+        setSG(testJson5);
 
-        console.log((data.articles[0]).source.id)
-        console.log(data.articles)
-        console.log(news)
+        let testJson6;
+        testJson6 = await news();
+        setNews(testJson6.articles)
+
+        console.log((testJson6.articles[0]).source.id)
+        console.log(testJson6.articles)
+        console.log(newsdata)
+
+        setFetched(true);
         
         } catch (err) {
         console.log(err);
@@ -58,8 +74,8 @@ function Home(props) {
         <span>News Feed</span>
       <div id="feed-content" className="left-col-feed-cards-text">
           <React.Fragment>
-            { news && <ul className="list-group list-group-flush">
-              {(news.map((value,index) =>
+            { newsdata && <ul className="list-group list-group-flush">
+              {(newsdata.map((value,index) =>
                 <a className="news-item list-group-item" n_clicks="0" n_clicks_timestamp="-1" href ={value.url}>
                 <div className="news-item-container"><h6 className="news-txt-headline"> {value.title}
               </h6><p className="news-txt-by-dt">{value.source.name}  {new Date(value.publishedAt).toDateString()}</p></div></a>))}

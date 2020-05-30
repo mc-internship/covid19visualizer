@@ -1,10 +1,12 @@
-import indiadatajson from '../data/indiadatajson.json';
+/*import indiadatajson from '../data/indiadatajson.json';
 import germandatajson from '../data/germanydatajson.json'
 import italydatajson from '../data/italydatajson.json'
 import usadatajson from '../data/usadatajson.json'
 import singaporedatajson from '../data/singaporedatajson.json'
 import germanystatesdistrict from '../data/germanysatesdistrict.json'
-import usastatesdistrict from '../data/usadistricts.json'
+import usastatesdistrict from '../data/usadistricts.json'*/
+
+import {germanydatajson,indiadatajson,italydatajson,singaporedatajson,usadatajson,germanysatesdistrict,usadistricts} from './dataexport.js';
 
 import '../../App.scss'
 import MapExplorer from './MapMain';
@@ -29,40 +31,46 @@ function Home(props) {
   });
   
   const getStates = async () => {
-    try {
-    
-     /* const [
-        /*{data},
-        {data: stateDistrictWiseResponse},
-    
-      ] = await Promise.all([
-        /*axios.get('http://localhost:8000/covidDataIndiaStatewise/2/?format=json'),
-        axios.get('https://api.covid19india.org/state_district_wise.json')  
-      ]);*/
+  try {
       
-  if(props.nameofmap === 'India'){setStates(indiadatajson.statewise);}
-  if(props.nameofmap === 'Germany'){setStates(germandatajson.statewise);}
-  if(props.nameofmap === 'Italy'){setStates(italydatajson.statewise);}
-  if(props.nameofmap === 'USA'){setStates(usadatajson.statewise);}
-  if(props.nameofmap === 'Singapore'){setStates(singaporedatajson.statewise);}
+  let testJson;
+  if(props.nameofmap === 'India'){testJson = await indiadatajson();}
+  if(props.nameofmap === 'Germany'){testJson = await germanydatajson();}
+  if(props.nameofmap === 'Italy'){testJson = await italydatajson()}
+  if(props.nameofmap === 'USA'){testJson = await usadatajson();}
+  if(props.nameofmap === 'Singapore'){testJson = await singaporedatajson();}
 
   
-      /*setStateDistrictWiseData(stateDistrictWiseResponse);
-      setFetched(true);
-    } catch (err) {
-      console.log(err);
-    }*/
-    if(props.nameofmap === "Germany")
-      setStateDistrictWiseData(germanystatesdistrict);
-    else if(props.nameofmap === "USA")
-      setStateDistrictWiseData(usastatesdistrict);  
+  setStates(testJson.statewise)
+
+
+    let testJson2;
+    if(props.nameofmap === "Germany"){
+      testJson2 = await germanysatesdistrict();
+      setStateDistrictWiseData(testJson2)
+    }
+    else if(props.nameofmap === "USA"){
+      testJson2 = await usadistricts(); 
+      setStateDistrictWiseData(testJson2);
+    } 
     else 
       setStateDistrictWiseData(5)
+
       setFetched(true);
     } catch (err) {
       console.log(err);
     }
   };
+
+  const onHighlightState = useCallback((state) => {
+    if (!state) return setRegionHighlighted(null);
+    setRegionHighlighted({state: state.state});
+  }, []);
+
+  const onHighlightDistrict = useCallback((district, state) => {
+   
+  }, []);
+
 
   const onHighlightState = useCallback((state) => {
     if (!state) return setRegionHighlighted(null);

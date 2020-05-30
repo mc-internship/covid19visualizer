@@ -8,7 +8,7 @@ import EntertainmentChart from '../ChartHelpers/EntertainmentIndustry';
 //import axios from 'axios';
 import {Helmet} from 'react-helmet';
 
-import datajson from '../data/Singaporeimpact.json';
+import singaporeimpact from './dataexport.js';
 
 
 function SingIm(props) {
@@ -24,7 +24,10 @@ function SingIm(props) {
 
   const getStates = async () => {
     try {
-      setTimeseries(datajson);
+      let testJson;
+      testJson = await singaporeimpact();
+
+      setTimeseries(testJson);
       setFetched(true);
     } catch (err) {
       console.log(err);

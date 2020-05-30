@@ -10,10 +10,11 @@ import AllStatesChart from '../ChartHelpers/StatesChart';
 //import axios from 'axios';
 import {Helmet} from 'react-helmet';
 
-import datajson from '../data/germanydatajson.json';
-import statesdata from '../data/germanystatesdaily.json';
+//import datajson from '../data/germanydatajson.json';
+//import statesdata from '../data/germanystatesdaily.json';
 
-
+import germanydatajson from './dataexport.js';
+import germanystatesdaily from './dataexport.js';
 
 function GermanyStats(props) {
 
@@ -30,8 +31,12 @@ function GermanyStats(props) {
 
   const getStates = async () => {
     try {
-      setTimeseries(datajson.cases_time_series);
-      setStatesTimeSeries(statesdata.states_daily);
+      let testJson1;
+      testJson1 = await germanydatajson();
+      let testJson2;
+      testJson2 = await germanystatesdaily();
+      setTimeseries(testJson1.cases_time_series);
+      setStatesTimeSeries(testJson2.states_daily);
 
       setFetched(true);
     } catch (err) {

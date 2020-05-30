@@ -1,36 +1,34 @@
-import React, {Component} from 'react';
+import React, {Component, useState, useEffect} from 'react';
 import { Navbar, Nav, NavbarToggler, Collapse, NavItem, Jumbotron} from 'reactstrap';
 import { NavLink } from 'react-router-dom';
 //import axios from 'axios';
 import { formatNumber} from '../shared/UtilFunctions.js';
-import datajson from './data/worlddata.json';
+import worlddata from './dataexport.js';
 
 function Worldstats(props) {
 
-   /* const [fetched, setFetched] = useState(false);
-  const [worlddata, setTimeseries] = useState([]);
-  const [statesTimeSeries, setStatesTimeSeries] = useState([]);
+    const [fetched, setFetched] = useState(false);
+    const [datajson, setData] = useState([]);
 
-  useEffect(() => {
-    if (fetched === false) {
-      getStates();
-    }
-  }, [fetched]);
+    useEffect(() => {
+        if (fetched === false) {
+          getStates();
+        }
+      }, [fetched]);
 
-  const getStates = async () => {
+    const getStates = async () => {
     try {
-      const [
-        stateDailyResponse,
-      ] = await Promise.all([
-        axios.get('https://api.covid19india.org/states_daily.json'),
-      ]);
-      setTimeseries(datajson);
-      setStatesTimeSeries(stateDailyResponse.data.states_daily);
-      setFetched(true);
+        let testJson;
+        testJson = await worlddata();
+
+        setData(testJson);
+        setFetched(true);
     } catch (err) {
-      console.log(err);
+        console.log(err);
     }
-  };*/
+    };  
+
+
 
   return(
     <Jumbotron>

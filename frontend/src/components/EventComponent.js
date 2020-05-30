@@ -1,15 +1,7 @@
 import React, {useState, useEffect} from 'react';
 
-import indiadatajson from './data/indiadatajson.json';
-import usadatajson from './data/usadatajson.json';
-import germanydatajson from './data/germanydatajson.json';
-import italydatajson from './data/italydatajson.json';
-import singaporedatajson from './data/singaporedatajson.json';
-import indiaeventsdata from './data/indiaevents.json';
-import usaeventsdata from './data/usaevents.json';
-import germanyeventsdata from './data/germanyevents.json';
-import italyeventsdata from './data/italyevents.json';
-import singaporeeventsdata from './data/singaporeevents.json';
+import {indiadatajson, usadatajson, germanydatajson, italydatajson, singaporedatajson, 
+indiaevents, usaevents, germanyevents, italyevents, singaporeevents}  from './dataexport.js';
 
 import EventHelper from './EventHelperComponent';
 import DailyNewChart from './ChartHelpers/DailyNew';
@@ -26,6 +18,11 @@ function Events(props) {
   const [timeseriesGR, setTimeseriesGR] = useState([]);
   const [timeseriesIT, setTimeseriesIT] = useState([]);
   const [timeseriesSG, setTimeseriesSG] = useState([]);
+  const [eventsIN, setEventsIN] = useState([]);
+  const [eventsUS, setEventsUS] = useState([]);
+  const [eventsGR, setEventsGR] = useState([]);
+  const [eventsIT, setEventsIT] = useState([]);
+  const [eventsSG, setEventsSG] = useState([]);
 
   useEffect(() => {
     if (fetched === false) {
@@ -35,11 +32,38 @@ function Events(props) {
 
   const getStates = async () => {
     try {
-      setTimeseriesIN(indiadatajson.cases_time_series);
-      setTimeseriesUS(usadatajson.cases_time_series);
-      setTimeseriesGR(germanydatajson.cases_time_series);
-      setTimeseriesIT(italydatajson.cases_time_series);
-      setTimeseriesSG(singaporedatajson.cases_time_series);
+      let testJson1;
+      testJson1 = await indiadatajson();
+      let testJson2;
+      testJson2 = await usadatajson();
+      let testJson3;
+      testJson3 = await germanydatajson();
+      let testJson4;
+      testJson4 = await italydatajson();
+      let testJson5;
+      testJson5 = await singaporedatajson();
+      setTimeseriesIN(testJson1.cases_time_series);
+      setTimeseriesUS(testJson2.cases_time_series);
+      setTimeseriesGR(testJson3.cases_time_series);
+      setTimeseriesIT(testJson4.cases_time_series);
+      setTimeseriesSG(testJson5.cases_time_series);
+
+      let testJson6;
+      testJson6 = await indiaevents();
+      setEventsIN(testJson6);
+      let testJson7;
+      testJson7 = await usaevents();
+      setEventsUS(testJson7);
+      let testJson8;
+      testJson8 = await germanyevents();
+      setEventsGR(testJson8);
+      let testJson9;
+      testJson9 = await italyevents();
+      setEventsIT(testJson9);
+      let testJson10;
+      testJson6 = await singaporeevents();
+      setEventsSG(testJson10);
+
       setFetched(true);
     } catch (err) {
       console.log(err);
@@ -83,7 +107,7 @@ function Events(props) {
         </section>
         
         <div className = "events">
-          <EventHelper name = {indiaeventsdata.name} events = {indiaeventsdata.events} />
+          <EventHelper name = {eventsIN.name} events = {eventsIN.events} />
         </div>
         </div>
         </div>}
@@ -97,7 +121,7 @@ function Events(props) {
         </section>
         
         <div className = "events">
-          <EventHelper name = {usaeventsdata.name} events = {usaeventsdata.events} />
+          <EventHelper name = {eventsUS.name} events = {eventsUS.events} />
         </div> 
         </div>
         </div>}
@@ -111,7 +135,7 @@ function Events(props) {
         </section>
         
         <div className = "events">
-          <EventHelper name = {germanyeventsdata.name} events = {germanyeventsdata.events} />
+          <EventHelper name = {eventsGR.name} events = {eventsGR.events} />
         </div>
         </div>
         </div>}
@@ -125,7 +149,7 @@ function Events(props) {
         </section>
         
         <div className = "events">
-          <EventHelper name = {italyeventsdata.name} events = {italyeventsdata.events} />
+          <EventHelper name = {eventsIT.name} events = {eventsIT.events} />
         </div>
         </div>
         </div>}
@@ -139,7 +163,7 @@ function Events(props) {
         </section>
         
         <div className = "events">
-          <EventHelper name = {singaporeeventsdata.name} events = {singaporeeventsdata.events} />
+          <EventHelper name = {eventsSG.name} events = {eventsSG.events} />
         </div>
         </div>
     </div> }

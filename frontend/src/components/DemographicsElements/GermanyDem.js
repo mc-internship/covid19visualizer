@@ -8,7 +8,7 @@ import SmokersChart from '../ChartHelpers/Smokers';
 
 import {Helmet} from 'react-helmet';
 
-import datajson from '../data/germanycountrydata.json';
+import germanycountrydata from './dataexport.js';
 
 
 function GermanyDemo(props) {
@@ -25,8 +25,11 @@ function GermanyDemo(props) {
 
   const getStates = async () => {
     try {
+
+      let testJson;
+      testJson = await germanycountrydata();
   
-      setData(datajson.country);
+      setData(testJson.country);
   
       setFetched(true);
     } catch (err) {

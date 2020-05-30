@@ -10,7 +10,7 @@ import ActiveVsRecChart from '../ChartHelpers/ActiveVsRec';
 //import axios from 'axios';
 import {Helmet} from 'react-helmet';
 
-import datajson from '../data/singaporedatajson.json';
+import singaporedatajson from './dataexport.js';
 
 
 
@@ -28,7 +28,9 @@ function SingStats(props) {
 
   const getStates = async () => {
     try {
-      setTimeseries(datajson.cases_time_series);
+      let testJson1;
+      testJson1 = await singaporedatajson();
+      setTimeseries(testJson1.cases_time_series);
 
       setFetched(true);
     } catch (err) {

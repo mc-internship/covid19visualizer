@@ -10,8 +10,8 @@ import ActiveVsRecChart from '../ChartHelpers/ActiveVsRec';
 
 import {Helmet} from 'react-helmet';
 
-import datajson from '../data/indiadatajson.json';
-import statesdata from '../data/indiastatesdaily.json';
+import indiadatajson from './dataexport.js';
+import indiastatesdaily from './dataexport.js';
 
 
 
@@ -29,9 +29,12 @@ function IndiaStats(props) {
 
   const getStates = async () => {
     try {
-
-      setTimeseries(datajson.cases_time_series);
-      setStatesTimeSeries(statesdata.states_daily);
+      let testJson1;
+      testJson1 = await indiadatajson();
+      let testJson2;
+      testJson2 = await indiastatesdaily();
+      setTimeseries(testJson1.cases_time_series);
+      setStatesTimeSeries(testJson2.states_daily);
       setFetched(true);
     } catch (err) {
       console.log(err);
