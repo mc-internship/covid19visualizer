@@ -1,11 +1,11 @@
-import React, {useState, useEffectOnce} from 'react';
+import React, {useState} from 'react';
 import { Card} from 'reactstrap';
 import { Link } from 'react-router-dom';
 import World from './GlobeComponent';
 import { formatNumber} from '../shared/UtilFunctions.js';
 
 import {Helmet} from 'react-helmet';
-
+import {useEffectOnce} from 'react-use';
 import {germanydatajson,indiadatajson,italydatajson,singaporedatajson,usadatajson} from './dataexport.js';
 
 import {news} from './dataexport.js';

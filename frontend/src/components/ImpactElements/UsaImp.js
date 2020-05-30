@@ -1,4 +1,4 @@
-import React, {useState, useEffectOnce} from 'react';
+import React, {useState} from 'react';
 import AirlinesChart from '../ChartHelpers/AirlinesIndustry';
 import TravelChart from '../ChartHelpers/TravelIndustry';
 import RetailChart from '../ChartHelpers/RetailIndustry';
@@ -8,7 +8,7 @@ import Consumer from '../ChartHelpers/ConsumerSpend';
 
 //import axios from 'axios';
 import {Helmet} from 'react-helmet';
-
+import {useEffectOnce} from 'react-use';
 import {usaimpact} from '../dataexport.js';
 
 

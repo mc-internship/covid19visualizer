@@ -1,9 +1,9 @@
-import React, {useState, useEffectOnce} from 'react';
+import React, {useState} from 'react';
 import GenderChart from '../ChartHelpers/GenderDemographics';
 import AgeChart from '../ChartHelpers/AgeDemographics';
 import DiabeticChart from '../ChartHelpers/Diabetic';
 import SmokersChart from '../ChartHelpers/Smokers';
-
+import {useEffectOnce} from 'react-use';
 
 
 import {Helmet} from 'react-helmet';

@@ -1,10 +1,11 @@
-import React, {useState, useEffectOnce} from 'react';
+import React, {useState} from 'react';
 import AirlinesChart from '../ChartHelpers/AirlinesIndustry';
 import TravelChart from '../ChartHelpers/TravelIndustry';
 import RetailChart from '../ChartHelpers/RetailIndustry';
 import FoodChart from '../ChartHelpers/FoodIndustry';
 import EntertainmentChart from '../ChartHelpers/EntertainmentIndustry';
 
+import {useEffectOnce} from 'react-use';
 //import axios from 'axios';
 import {Helmet} from 'react-helmet';
 

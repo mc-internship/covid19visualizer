@@ -7,7 +7,8 @@ import {
   } from '../../constants.js';
 
 import equal from 'fast-deep-equal';
-import React, {useState, useEffectOnce} from 'react';
+import React, {useState} from 'react';
+import {useEffectOnce} from 'react-use';
 
 const isEqual = (prevProps, currProps) => {
   if (!equal(prevProps.regionHighlighted, currProps.regionHighlighted)) {

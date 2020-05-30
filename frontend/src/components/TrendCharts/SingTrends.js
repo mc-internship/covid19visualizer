@@ -1,10 +1,10 @@
-import React, {useState, useEffectOnce} from 'react';
+import React, {useState} from 'react';
 import DailyConfirmedChart from '../ChartHelpers/DailyCases';
 import TotalConfirmedChart from '../ChartHelpers/TotalCases';
 import NewVsRecChart from '../ChartHelpers/NewVsRec';
 import RecVsDeathChart from '../ChartHelpers/DailyRecVsDeaths';
 import ActiveVsRecChart from '../ChartHelpers/ActiveVsRec';
-
+import {useEffectOnce} from 'react-use';
 
 
 //import axios from 'axios';

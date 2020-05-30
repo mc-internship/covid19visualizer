@@ -1,9 +1,10 @@
-import React, {Component, useState, useEffectOnce} from 'react';
+import React, {Component, useState} from 'react';
 import { Navbar, Nav, NavbarToggler, Collapse, NavItem, Jumbotron} from 'reactstrap';
 import { NavLink } from 'react-router-dom';
 //import axios from 'axios';
 import { formatNumber} from '../shared/UtilFunctions.js';
 import {worlddata} from './dataexport.js';
+import {useEffectOnce} from 'react-use';
 
 function Worldstats(props) {
 

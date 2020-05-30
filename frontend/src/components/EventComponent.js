@@ -1,10 +1,11 @@
-import React, {useState, useEffectOnce} from 'react';
+import React, {useState} from 'react';
 
 import {indiadatajson, usadatajson, germanydatajson, italydatajson, singaporedatajson, 
 indiaevents, usaevents, germanyevents, italyevents, singaporeevents}  from './dataexport.js';
 
 import EventHelper from './EventHelperComponent';
 import DailyNewChart from './ChartHelpers/DailyNew';
+import {useEffectOnce} from 'react-use';
 
 
 
