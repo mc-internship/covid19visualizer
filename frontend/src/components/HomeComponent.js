@@ -1,9 +1,7 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import { Card} from 'reactstrap';
 import { Link } from 'react-router-dom';
 import World from './GlobeComponent';
-import {useEffectOnce} from 'react-use';
-import  {useState} from 'react';
 import { formatNumber} from '../shared/UtilFunctions.js';
 
 import {Helmet} from 'react-helmet';
@@ -15,6 +13,7 @@ import news from './dataexport.js';
 
 function Home(props) {
 
+   const [fetched, setFetched] = useState(false);
     const [newsdata, setNews] = useState(null);
     const [indiadata, setIN] = useState([]);
     const [usadata, setUS] = useState([]);

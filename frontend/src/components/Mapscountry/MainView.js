@@ -72,16 +72,6 @@ function Home(props) {
   }, []);
 
 
-  const onHighlightState = useCallback((state) => {
-    if (!state) return setRegionHighlighted(null);
-    setRegionHighlighted({state: state.state});
-  }, []);
-
-  const onHighlightDistrict = useCallback((district, state) => {
-   
-  }, []);
-
-
   return (
 
     <React.Fragment>

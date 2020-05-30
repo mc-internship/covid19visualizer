@@ -25,7 +25,10 @@ function UsaIm(props) {
 
   const getStates = async () => {
     try {
-      setTimeseries(datajson);
+      let testJson;
+      testJson = await usaimpact();
+
+      setTimeseries(testJson);
       setFetched(true);
     } catch (err) {
       console.log(err);
