@@ -3,7 +3,7 @@ import { Navbar, Nav, NavbarToggler, Collapse, NavItem, Jumbotron} from 'reactst
 import { NavLink } from 'react-router-dom';
 //import axios from 'axios';
 import { formatNumber} from '../shared/UtilFunctions.js';
-import worlddata from './dataexport.js';
+import {worlddata} from './dataexport.js';
 
 function Worldstats(props) {
 

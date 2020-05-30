@@ -8,7 +8,7 @@ import EntertainmentChart from '../ChartHelpers/EntertainmentIndustry';
 //import axios from 'axios';
 import {Helmet} from 'react-helmet';
 
-import indiaimpact from './dataexport.js';
+import {indiaimpact} from '../dataexport.js';
 
 
 function IndiaIm(props) {

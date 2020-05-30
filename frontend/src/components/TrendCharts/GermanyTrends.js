@@ -13,8 +13,8 @@ import {Helmet} from 'react-helmet';
 //import datajson from '../data/germanydatajson.json';
 //import statesdata from '../data/germanystatesdaily.json';
 
-import germanydatajson from './dataexport.js';
-import germanystatesdaily from './dataexport.js';
+import {germanydatajson} from '../dataexport.js';
+import {germanystatesdaily} from '../dataexport.js';
 
 function GermanyStats(props) {
 

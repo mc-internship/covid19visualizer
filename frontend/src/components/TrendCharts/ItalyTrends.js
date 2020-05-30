@@ -10,8 +10,8 @@ import AllStatesChart from '../ChartHelpers/StatesChart';
 //import axios from 'axios';
 import {Helmet} from 'react-helmet';
 
-import italydatajson from './dataexport.js';
-import italystatesdaily from './dataexport.js';
+import {italydatajson} from '../dataexport.js';
+import {italystatesdaily} from '../dataexport.js';
 
 
 

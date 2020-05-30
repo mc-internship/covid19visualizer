@@ -6,7 +6,7 @@ import singaporedatajson from '../data/singaporedatajson.json'
 import germanystatesdistrict from '../data/germanysatesdistrict.json'
 import usastatesdistrict from '../data/usadistricts.json'*/
 
-import {germanydatajson,indiadatajson,italydatajson,singaporedatajson,usadatajson,germanysatesdistrict,usadistricts} from './dataexport.js';
+import {germanydatajson,indiadatajson,italydatajson,singaporedatajson,usadatajson,germanysatesdistrict,usadistricts} from '../dataexport.js';
 
 import '../../App.scss'
 import MapExplorer from './MapMain';

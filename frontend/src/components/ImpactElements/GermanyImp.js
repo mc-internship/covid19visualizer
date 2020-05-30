@@ -8,7 +8,7 @@ import EntertainmentChart from '../ChartHelpers/EntertainmentIndustry';
 //import axios from 'axios';
 import {Helmet} from 'react-helmet';
 
-import germanyimpact from './dataexport.js';
+import {germanyimpact} from '../dataexport.js';
 
 
 function GermanyIm(props) {

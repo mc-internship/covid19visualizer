@@ -8,7 +8,7 @@ import SmokersChart from '../ChartHelpers/Smokers';
 
 import {Helmet} from 'react-helmet';
 
-import italycountrydata from './dataexport.js';
+import {italycountrydata} from '../dataexport.js';
 
 
 function ItalyDemo(props) {

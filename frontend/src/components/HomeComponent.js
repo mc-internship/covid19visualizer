@@ -8,7 +8,7 @@ import {Helmet} from 'react-helmet';
 
 import {germanydatajson,indiadatajson,italydatajson,singaporedatajson,usadatajson} from './dataexport.js';
 
-import news from './dataexport.js';
+import {news} from './dataexport.js';
 
 
 function Home(props) {

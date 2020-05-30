@@ -10,7 +10,7 @@ import ActiveVsRecChart from '../ChartHelpers/ActiveVsRec';
 //import axios from 'axios';
 import {Helmet} from 'react-helmet';
 
-import singaporedatajson from './dataexport.js';
+import {singaporedatajson} from '../dataexport.js';
 
 
 

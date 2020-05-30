@@ -10,8 +10,8 @@ import ActiveVsRecChart from '../ChartHelpers/ActiveVsRec';
 
 import {Helmet} from 'react-helmet';
 
-import indiadatajson from './dataexport.js';
-import indiastatesdaily from './dataexport.js';
+import {indiadatajson} from '../dataexport.js';
+import {indiastatesdaily} from '../dataexport.js';
 
 
 
