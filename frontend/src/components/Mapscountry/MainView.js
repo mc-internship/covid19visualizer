@@ -1,11 +1,10 @@
-/*import indiadatajson from '../data/indiadatajson.json';
-import germandatajson from '../data/germanydatajson.json'
+//import indiadatajson from '../data/indiadatajson.json';
+/*import germandatajson from '../data/germanydatajson.json'
 import italydatajson from '../data/italydatajson.json'
 import usadatajson from '../data/usadatajson.json'
 import singaporedatajson from '../data/singaporedatajson.json'
 import germanystatesdistrict from '../data/germanysatesdistrict.json'
 import usastatesdistrict from '../data/usadistricts.json'*/
-
 import {germanydatajson,indiadatajson,italydatajson,singaporedatajson,usadatajson,germanysatesdistrict,usadistricts} from '../dataexport.js';
 
 import '../../App.scss'
@@ -31,8 +30,10 @@ function Home(props) {
   });
   
   const getStates = async () => {
-  try {
+    try {
       
+
+ 
   let testJson;
   if(props.nameofmap === 'India'){testJson = await indiadatajson();}
   if(props.nameofmap === 'Germany'){testJson = await germanydatajson();}
@@ -55,6 +56,9 @@ function Home(props) {
     } 
     else 
       setStateDistrictWiseData(5)
+
+    
+
 
       setFetched(true);
     } catch (err) {

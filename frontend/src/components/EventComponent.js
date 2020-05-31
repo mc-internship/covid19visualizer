@@ -62,7 +62,7 @@ function Events(props) {
       testJson9 = await italyevents();
       setEventsIT(testJson9);
       let testJson10;
-      testJson6 = await singaporeevents();
+      testJson10 = await singaporeevents();
       setEventsSG(testJson10);
 
       setFetched(true);
@@ -75,7 +75,8 @@ function Events(props) {
 
     return(
       <div className="container">
-
+        {fetched &&
+<>
       
 
 <div>
@@ -170,7 +171,8 @@ function Events(props) {
     </div> }
 
     </div>
-  
+  </>
+}
 </div>
     )
 

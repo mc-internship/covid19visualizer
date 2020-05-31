@@ -7,8 +7,7 @@ import {
   } from '../../constants.js';
 
 import equal from 'fast-deep-equal';
-import React, {useState} from 'react';
-import {useEffectOnce} from 'react-use';
+import React, {useState, useEffect} from 'react';
 
 const isEqual = (prevProps, currProps) => {
   if (!equal(prevProps.regionHighlighted, currProps.regionHighlighted)) {
@@ -87,7 +86,7 @@ function HeadBarAbove({
     }
   }, [states, districts, currentMapMeta.mapType, regionHighlighted]);*/
 
-  useEffectOnce(() => {
+  useEffect(() => {
     if (regionHighlighted === undefined || regionHighlighted === null) return;
 
     if ('district' in regionHighlighted) {

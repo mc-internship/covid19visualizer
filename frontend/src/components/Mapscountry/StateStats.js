@@ -10,7 +10,7 @@ import {
 import { formatNumber} from '../../shared/UtilFunctions.js';
 
 import equal from 'fast-deep-equal';
-import React, {useState, useEffectOnce, useMemo} from 'react';
+import React, {useState, useEffect, useMemo} from 'react';
 
 const isEqual = (prevProps, currProps) => {
   if (!equal(prevProps.regionHighlighted, currProps.regionHighlighted)) {
@@ -89,7 +89,7 @@ function LeftPanel({
     }
   }, [states, districts, currentMapMeta.mapType, regionHighlighted]);
 
-  useEffectOnce(() => {
+  useEffect(() => {
     if (regionHighlighted === undefined || regionHighlighted === null) return;
 
     if ('district' in regionHighlighted) {

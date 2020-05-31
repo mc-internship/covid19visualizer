@@ -64,6 +64,8 @@ function Home(props) {
 
     return(
       <div className="homecontainer">
+        {fetched && 
+        <>
         <Helmet>
           <title>Home</title>
           <meta name="title" content="Graphs" />
@@ -223,7 +225,8 @@ function Home(props) {
       </Card>
         
         </div>  
-
+      </>
+}
       </div>
     );
 }

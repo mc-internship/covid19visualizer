@@ -33,6 +33,7 @@ function Worldstats(props) {
 
   return(
     <Jumbotron>
+     {fetched &&   
     <div className = "container">
         {/*<div className = "row row-header align-items-left ">
             <h6>WorldWide</h6>
@@ -81,6 +82,7 @@ function Worldstats(props) {
             </div>
           
     </div>
+}
 </Jumbotron>
   );
 
