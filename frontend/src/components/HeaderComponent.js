@@ -1,6 +1,94 @@
-import React, { Component } from 'react';
+import React, {Component, useState} from 'react';
 import { Navbar, Nav, NavbarToggler, Collapse, NavItem, Jumbotron} from 'reactstrap';
 import { NavLink } from 'react-router-dom';
+//import axios from 'axios';
+import { formatNumber} from '../shared/UtilFunctions.js';
+import {worlddata} from './dataexport.js';
+import {useEffectOnce} from 'react-use';
+
+function Worldstats(props) {
+
+    const [fetched, setFetched] = useState(false);
+    const [datajson, setData] = useState([]);
+
+    useEffectOnce(() => {
+        if (fetched === false) {
+          getStates();
+        }
+      }, [fetched]);
+
+    const getStates = async () => {
+    try {
+        let testJson;
+        testJson = await worlddata();
+
+        setData(testJson);
+        setFetched(true);
+    } catch (err) {
+        console.log(err);
+    }
+    };  
+
+
+
+  return(
+    <Jumbotron>
+     {fetched &&   
+    <div className = "container">
+        {/*<div className = "row row-header align-items-left ">
+            <h6>WorldWide</h6>
+  </div>*/}
+            <div className = "col-2 col-stats" >
+                <div className = "boxes">
+                <h3 style = {{color: '#ff6666'}}>{formatNumber(datajson[datajson.length-1].confirmed)}</h3>
+                <h6 style = {{color: '#ff6666'}}>{`+${formatNumber(datajson[datajson.length-1].deltaconfirmed)}`}</h6>
+                <h5 style = {{color: '#ff6666'}}>CONFIRMED</h5>
+                </div>
+            </div>
+            <div className = "col-2 col-stats" >
+            <div className = "boxes">
+            <h3 style = {{color: 'lightblue'}}>{formatNumber(datajson[datajson.length-1].active)}</h3>
+                <h6 style = {{color: 'lightblue'}}>{datajson[datajson.length-1].deltaactive >=0 ? `+${formatNumber(datajson[datajson.length-1].deltaactive)}` : `${formatNumber(datajson[datajson.length-1].deltaactive)}`}</h6>
+                <h5 style = {{color: 'lightblue'}}>ACTIVE</h5>
+            </div>
+            </div>
+            <div className = "col-2 col-stats" >
+            <div className = "boxes">
+            <h3 style = {{color: 'lightgreen'}}>{formatNumber(datajson[datajson.length-1].recovered)}</h3>
+                <h6 style = {{color: 'lightgreen'}}>{`+${formatNumber(datajson[datajson.length-1].deltarecovered)}`}</h6>
+                <h5 style = {{color: 'lightgreen'}}>RECOVERED</h5>
+            </div>
+            </div>
+            <div className = "col-2 col-stats" >
+            <div className = "boxes">
+            <h3 style = {{color: 'lightgrey'}}>{formatNumber(datajson[datajson.length-1].deceased)}</h3>
+                <h6 style = {{color: 'lightgrey'}}>{`+${formatNumber(datajson[datajson.length-1].deltadeceased)}`}</h6>
+                <h5 style = {{color: 'lightgrey'}}>DECEASED</h5>
+            </div>
+            </div>
+            <div className = "col-2 col-stats" >
+            <div className = "boxes">
+                <h3 style = {{color: 'orange'}}>{((datajson[datajson.length-1].deceased/datajson[datajson.length-1].confirmed)*100).toFixed(2)}%</h3>
+                <h5 style = {{color: 'orange'}}>FATALITY</h5>
+                <h5 style = {{color: 'orange'}}>RATE</h5>
+            </div>
+            </div>
+            <div className = "col-2 col-stats" >
+            <div className = "boxes">
+            <h3 style = {{color: 'lightpink'}}>{((datajson[datajson.length-1].recovered/datajson[datajson.length-1].confirmed)*100).toFixed(2)}%</h3>
+                <h5 style = {{color: 'lightpink'}}>RECOVERY</h5>
+                <h5 style = {{color: 'lightpink'}}>RATE</h5>
+            </div>
+            </div>
+          
+    </div>
+}
+</Jumbotron>
+  );
+
+
+
+}
 
 class Header extends Component {
 
@@ -26,6 +114,8 @@ class Header extends Component {
         });
     }
 
+    
+
     render() {
         return(
            
@@ -34,7 +124,7 @@ class Header extends Component {
                     <div className = "container">
                         <NavbarToggler onClick = {this.toggleNav} />
                         <div className = "heading">
-                            <h1>Covid-19 Tracker</h1>
+                            <h1 style = {{fontFamily: 'arial'}}>COVID-19 <font color="salmon">TRACKER</font></h1>
                         </div>
                         <Collapse isOpen = {this.state.isNavOpen} navbar>
                         <Nav navbar className = "navbar-nav ml-auto">
@@ -58,43 +148,17 @@ class Header extends Component {
                                     <span className = "fa fa-university fa-lg"></span> Impact
                                 </NavLink>
                             </NavItem>
+                            <NavItem>
+                                <NavLink className = "nav-link" to = "/events">
+                                    <span className = "fa fa-calendar fa-lg"></span> Events
+                                </NavLink>
+                            </NavItem>
                         </Nav>
                         </Collapse>
                         
                     </div>
                 </Navbar>
-                <Jumbotron>
-                    <div className = "container">
-                        <div className = "row row-header align-items-left ">
-                            <h6>WorldWide Stats</h6>
-                        </div>
-                            <div className = "col-2 col-stats" >
-                                <h3>41,20,159</h3>
-                                <h5>Confirmed</h5>
-                            </div>
-                            <div className = "col-2 col-stats" >
-                                <h3>23,80,997</h3>
-                                <h5>Active</h5>
-                            </div>
-                            <div className = "col-2 col-stats" >
-                                <h3>14,58,399</h3>
-                                <h5>Recovered</h5>
-                            </div>
-                            <div className = "col-2 col-stats" >
-                                <h3>2,80,763</h3>
-                                <h5>Dead</h5>
-                            </div>
-                            <div className = "col-2 col-stats" >
-                                <h3>6.81%</h3>
-                                <h5>Fatality Rate</h5>
-                            </div>
-                            <div className = "col-2 col-stats" >
-                                <h3>35.4%</h3>
-                                <h5>Recovery Rate</h5>
-                            </div>
-                          
-                    </div>
-                </Jumbotron>
+                <Worldstats/>
             </>
         );
     }

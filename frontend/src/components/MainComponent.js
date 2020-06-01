@@ -4,7 +4,8 @@ import Home from './HomeComponent';
 import Impact from './ImpactComponent';
 import Timeline from './TimelineComponent';
 import Demographics from './DemographicsComponent';
-import Footer from './FooterComponent';
+import Events from './EventComponent';
+//import Footer from './FooterComponent';
 import India from './IndiaComponent';
 import Usa from './UsaComponent';
 import Germany from './GermanyComponent';
@@ -13,9 +14,9 @@ import Singapore from './SingComponent';
 import { Switch, Route, Redirect } from 'react-router-dom';
 
 
-class Main extends Component {
 
-      
+class Main extends Component {
+   
   
  
     render(){
@@ -30,6 +31,7 @@ class Main extends Component {
                 <Route exact path='/timeline' component={Timeline} />
                 <Route exact path = "/demographics" component = {Demographics} />
                 <Route exact path = "/impact" component = {Impact} />
+                <Route exact path = "/events" component = {Events} />
                 <Route exact path = "/home/india" component = {India}/>
                 <Route exact path = "/home/usa" component = {Usa}/>
                 <Route exact path = "/home/germany" component = {Germany}/>
@@ -38,7 +40,6 @@ class Main extends Component {
                 <Redirect to = "/home"/>
               </Switch>
               
-              <Footer />
             </div>
 
         );

@@ -1,9 +1,17 @@
 import React from 'react';
+import Home from './Mapscountry/MainView.js'
+import {Helmet} from 'react-helmet';
+
 
 function Singapore(props) {
     return(
-      <div className="container">
-        <h4>Singapore</h4>
+      <div>
+             <Helmet>
+        <title>Singapore</title>
+        <meta name="title" content="Graphs" />
+      </Helmet>
+        <Home 
+        nameofmap = "Singapore"/>
       </div>
     );
 }
