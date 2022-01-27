@@ -34,7 +34,7 @@
     "react-use": "^14.2.0",
     "reactstrap": "8.4.1",
     "redux": "4.0.5",
-    "three": "^0.116.1",
+    "three": "^0.137.0",
     "topojson": "^3.0.2",
     "topojson-client": "^3.1.0"
   },
